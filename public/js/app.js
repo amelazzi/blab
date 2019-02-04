@@ -67821,7 +67821,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    border: 1px solid ", ";\n    width: 345px;\n    padding: 24px;\n    text-align: center;\n    img{\n        width: 80%;\n    }\n    h1{\n        padding: 16px;\n        font-weight: bold;\n        font-size: 2.8rem;\n    }\n    p{\n        padding: 16px;\n        padding-top: 0;\n        padding-bottom: 0;\n        color: ", ";\n        font-size: 2.2rem;\n        line-height: 1.3;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    border: 1px solid ", ";\n    width: 345px;\n    padding: 24px;\n    text-align: center;\n    img{\n        width: 80%;\n    }\n    h1{\n        padding: 16px;\n        padding-left: 0;\n        padding-right: 0;\n        font-weight: bold;\n        font-size: 2.8rem;\n    }\n    p{\n        padding: 16px;\n        padding-top: 0;\n        padding-bottom: 0;\n        color: ", ";\n        font-size: 2.2rem;\n        line-height: 1.3;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67874,7 +67874,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    padding : 7rem;\n    padding-bottom: 4rem;\n    color: white;\n    h1,h2,h3{\n        color: white;\n        width : 75%;\n        margin-left: 12.5%;\n        text-align: center;\n    }\n    h1{\n        font-size: 4.5rem;\n    }\n    h2{\n        margin-top: 7rem;\n        font-size: 2.5rem;\n    }\n    h3{\n        padding: 3rem;\n        font-size: 2rem;\n    }\n    form {\n        width: 50%;\n        height: 6rem;\n        margin-top: 12rem;\n        margin-left: 25%;\n        display:flex;\n        flex-direction:row;\n        padding: 0;\n    }\n    input[type=\"text\"] {\n        padding-right: 50px;\n        width: 100%;\n        border-radius: 8px;\n        border: none;\n    }\n    \n    ::placeholder, input[type=text]{\n        padding-left: 24px;\n        font-size: 1.8rem;\n    }\n\n    input[type=\"submit\"] {\n        margin-top: 1.5rem;\n        margin-left: -24%;\n        width: 20%;\n        height: 3rem;\n        background: ", ";\n        color: white;\n        border: none;\n        border-radius: 8px;\n        -webkit-appearance: none;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    padding : 7rem;\n    padding-bottom: 4rem;\n    color: white;\n    h1,h2,h3{\n        color: white;\n        width : 80%;\n        text-align: center;\n        margin-left: 10%;\n    }\n    h1{\n        font-size: 4.5rem;\n    }\n    h2{\n        margin-top: 7rem;\n        margin-bottom: 7rem;\n        font-size: 2.5rem;\n    }\n    h3{\n        padding: 3rem;\n        font-size: 2rem;\n    }\n    form {\n        width: 50%;\n        height: 6rem;\n        margin-top: 12rem;\n        margin-left: 25%;\n        display:flex;\n        flex-direction:row;\n        padding: 0;\n    }\n    input[type=\"text\"] {\n        padding-right: 50px;\n        width: 100%;\n        border-radius: 8px;\n        border: none;\n    }\n    \n    ::placeholder, input[type=text]{\n        padding-left: 24px;\n        font-size: 1.8rem;\n    }\n\n    input[type=\"submit\"] {\n        margin-top: 1.5rem;\n        margin-left: -24%;\n        width: 20%;\n        height: 3rem;\n        background: ", ";\n        color: white;\n        border: none;\n        border-radius: 8px;\n        -webkit-appearance: none;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -67933,7 +67933,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Card */ "./resources/js/src/containers/Home/components/Card.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    padding: 14rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    padding: 14rem;\n    padding-bottom:12rem;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67965,7 +67965,15 @@ var Home = function Home() {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Learn at your convinence",
     text: "Learning has been made easier with our mobile friendly package. Swith between your computer, tablet or mobile devices at anytime."
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
+    title: "Get the best qualified Tutors",
+    text: "Hire a tutor from our wide range of qualified  teachers who are passionate to impact knowledge to you."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
+    title: "Wide range of Language",
+    text: "Select a language to learn from our wide range of foreign language."
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " What our customers are saying "));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);

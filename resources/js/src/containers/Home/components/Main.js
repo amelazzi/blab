@@ -13,15 +13,16 @@ const StyledHead = styled.div`
     color: white;
     h1,h2,h3{
         color: white;
-        width : 75%;
-        margin-left: 12.5%;
+        width : 80%;
         text-align: center;
+        margin-left: 10%;
     }
     h1{
         font-size: 4.5rem;
     }
     h2{
         margin-top: 7rem;
+        margin-bottom: 7rem;
         font-size: 2.5rem;
     }
     h3{

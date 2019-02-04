@@ -11,6 +11,7 @@ const CardsContainer = styled.div`
     justify-content: space-between;
     background: white;
     padding: 14rem;
+    padding-bottom:12rem;
 `;
 
 const Home = () => {
@@ -38,7 +39,18 @@ const Home = () => {
                     Swith between your computer, tablet or mobile devices at
                     anytime.">
                 </Card>
+                <Card icon={require("../../pictures/icon.png")} 
+                    title="Get the best qualified Tutors"
+                    text="Hire a tutor from our wide range of qualified 
+                    teachers who are passionate to impact knowledge to you.">
+                </Card>
+                <Card icon={require("../../pictures/icon.png")} 
+                    title="Wide range of Language"
+                    text="Select a language to learn from our wide range of
+                    foreign language.">
+                </Card>
             </CardsContainer>
+            <h1> What our customers are saying </h1>
         </>
     );
 };

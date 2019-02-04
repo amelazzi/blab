@@ -13,6 +13,8 @@ const StyledCard = styled.div`
     }
     h1{
         padding: 16px;
+        padding-left: 0;
+        padding-right: 0;
         font-weight: bold;
         font-size: 2.8rem;
     }
