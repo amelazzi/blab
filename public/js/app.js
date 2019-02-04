@@ -67690,6 +67690,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 60%;\n    margin-left: 20%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-flow: row wrap\n    \n    button{\n        border: none;\n        border: 2px solid white;\n        background: transparent;\n        color: white;\n        padding-top: 2px;\n        padding-bottom: 2px;\n        padding-left: 48px;\n        padding-right: 48px;\n        margin: 32px;\n        margin-top: 0;\n        font-size: 2rem;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    padding : 7rem;\n    padding-bottom: 4rem;\n    color: white;\n    h1,h2,h3{\n        color: white;\n        width : 75%;\n        margin-left: 12.5%;\n        text-align: center;\n    }\n    h1{\n        font-size: 4.5rem;\n    }\n    h2{\n        margin-top: 7rem;\n        font-size: 2.5rem;\n    }\n    h3{\n        padding: 3rem;\n        font-size: 2rem;\n    }\n    form {\n        width: 50%;\n        height: 6rem;\n        margin-top: 12rem;\n        margin-left: 25%;\n        display:flex;\n        flex-direction:row;\n        padding: 0;\n    }\n    input[type=\"text\"] {\n        padding-right: 50px;\n        width: 100%;\n        border-radius: 8px;\n        border: none;\n    }\n    \n    ::placeholder, input[type=text]{\n        padding-left: 24px;\n        font-size: 1.8rem;\n    }\n\n    input[type=\"submit\"] {\n        margin-top: 1.5rem;\n        margin-left: -24%;\n        width: 20%;\n        height: 3rem;\n        background: ", ";\n        color: white;\n        border: none;\n        border-radius: 8px;\n        -webkit-appearance: none;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n    flex: 1;\n"]);
 
@@ -67706,9 +67726,17 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var StyledMain = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].main(_templateObject());
+var StyledHead = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["blue"]);
+var TopLanguages = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 
 var Main = function Main() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledMain, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sit enim cillum ad duis est veniam elit incididunt aliqua eiusmod laborum anim eu."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Occaecat amet duis minim cupidatat veniam aliqua laboris fugiat eu aliquip. Consequat voluptate velit adipisicing aliqua minim cupidatat incididunt cupidatat. Magna et veniam consectetur officia adipisicing culpa. Est veniam culpa voluptate incididunt dolor quis magna proident amet cupidatat sunt. Sit id voluptate sit esse qui reprehenderit ea commodo."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sunt in voluptate exercitation nulla est incididunt labore consectetur et minim qui qui. Occaecat occaecat exercitation culpa reprehenderit voluptate do amet duis consectetur Lorem. Anim in officia ipsum exercitation consectetur aliqua nulla reprehenderit reprehenderit nisi."));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledMain, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHead, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Learn Languages From All Over Ther World At Ease "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " From our list of qualified tutors, learn any Language of your choice via our online platform. Learning has never been easier."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Search Courses"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "submit",
+    value: "Search"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Top Languages "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopLanguages, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Chiness "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Chiness "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Chiness "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Chiness "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Chiness "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Chiness "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Chiness "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sit enim cillum ad duis est veniam elit incididunt aliqua eiusmod laborum anim eu."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Occaecat amet duis minim cupidatat veniam aliqua laboris fugiat eu aliquip. Consequat voluptate velit adipisicing aliqua minim cupidatat incididunt cupidatat. Magna et veniam consectetur officia adipisicing culpa. Est veniam culpa voluptate incididunt dolor quis magna proident amet cupidatat sunt. Sit id voluptate sit esse qui reprehenderit ea commodo."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sunt in voluptate exercitation nulla est incididunt labore consectetur et minim qui qui. Occaecat occaecat exercitation culpa reprehenderit voluptate do amet duis consectetur Lorem. Anim in officia ipsum exercitation consectetur aliqua nulla reprehenderit reprehenderit nisi."));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Main);
