@@ -6,11 +6,11 @@ const StyledMain = styled.main`
     flex: 1;
 `;
 
-const Main = () => {
+const Main = ({children, props}) => {
     return (
-        <StyledMain>
-            <Head></Head>
-        </StyledMain>
+        <>
+            {children}
+        </>
     );
 };
 

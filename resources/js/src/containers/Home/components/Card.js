@@ -5,21 +5,21 @@ import { dark, darkGray } from '../../../styles/utilities/Colors';
 const StyledCard = styled.div`
     background: white;
     border: 1px solid ${dark};
-    width: 345px;
+    width: 325px;
     padding: 24px;
     text-align: center;
     img{
         width: 80%;
     }
     h1{
-        padding: 16px;
+        padding: 8px;
         padding-left: 0;
         padding-right: 0;
         font-weight: bold;
         font-size: 2.8rem;
     }
     p{
-        padding: 16px;
+        padding: 8px;
         padding-top: 0;
         padding-bottom: 0;
         color: ${darkGray};
