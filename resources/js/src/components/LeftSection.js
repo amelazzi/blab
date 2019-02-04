@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { dark, lightGray, blue } from '../styles/utilities/Colors';
 
 const StyledSection = styled.div`
-    background: white;     
+    background: white;    
     padding: 7rem;
     display: flex;
     flex-direction: row;
@@ -37,28 +37,18 @@ const StyledContent = styled.div`
         font-size: 2.8rem;
         line-height: 1.2;
     }
-    button{
-        border: none;
-        border-radius: 8px;
-        background: ${blue};
-        color: white;
-        margin-left: 8px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
 `;
 
-const RightSection = ({picture, title, text}) => (
+const LeftSection = ({title, text, picture}) => (
     <StyledSection>
-        <StyledImg>
-            <img src={picture} />
-        </StyledImg>
         <StyledContent>
             <h1> {title} </h1>
             <p> {text} </p>
-            <button> Explore Language </button>
         </StyledContent>
+        <StyledImg>
+            <img src={picture} />
+        </StyledImg>
     </StyledSection>
 );
 
-export default RightSection;
+export default LeftSection;

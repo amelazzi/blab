@@ -67551,6 +67551,71 @@ var Header = function Header() {
 
 /***/ }),
 
+/***/ "./resources/js/src/components/LeftSection.js":
+/*!****************************************************!*\
+  !*** ./resources/js/src/components/LeftSection.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 50%;\n    padding: 16px;\n    padding-right: 0;\n    h1{\n        margin-top: 8rem;\n        margin-bottom: 16px;\n        color: ", ";\n        font-size: 4.5rem;\n        font-weight: bold\n    }\n    p{  \n        width:90%\n        margin-bottom: 16px;\n        margin-left: 8px;\n        color: ", ";\n        font-size: 2.8rem;\n        line-height: 1.2;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    margin-top: 4rem;\n    padding: 8px;\n    width: 50%;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;    \n    padding: 7rem;\n    display: flex;\n    flex-direction: row;\n    img{\n        width: 100%;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledSection = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var StyledImg = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var StyledContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+
+var LeftSection = function LeftSection(_ref) {
+  var title = _ref.title,
+      text = _ref.text,
+      picture = _ref.picture;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSection, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", text, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledImg, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: picture
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (LeftSection);
+
+/***/ }),
+
 /***/ "./resources/js/src/components/RightSection.js":
 /*!*****************************************************!*\
   !*** ./resources/js/src/components/RightSection.js ***!
@@ -67585,7 +67650,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    padding: 7rem;\n    display: flex;\n    flex-direction: row;\n    img{\n        width: 100%;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;     \n    padding: 7rem;\n    display: flex;\n    flex-direction: row;\n    img{\n        width: 100%;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67742,6 +67807,49 @@ var Home = function Home() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Home/components/Card.js":
+/*!*************************************************************!*\
+  !*** ./resources/js/src/containers/Home/components/Card.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    border: 1px solid ", ";\n    width: 345px;\n    padding: 24px;\n    text-align: center;\n    img{\n        width: 80%;\n    }\n    h1{\n        padding: 16px;\n        font-weight: bold;\n        font-size: 2.8rem;\n    }\n    p{\n        padding: 16px;\n        padding-top: 0;\n        padding-bottom: 0;\n        color: ", ";\n        font-size: 2.2rem;\n        line-height: 1.3;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["darkGray"]);
+
+var Card = function Card(_ref) {
+  var icon = _ref.icon,
+      title = _ref.title,
+      text = _ref.text;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: icon
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", text, " "));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Home/components/Main.js":
 /*!*************************************************************!*\
   !*** ./resources/js/src/containers/Home/components/Main.js ***!
@@ -67821,19 +67929,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Main */ "./resources/js/src/containers/Home/components/Main.js");
 /* harmony import */ var _components_RightSection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/RightSection */ "./resources/js/src/components/RightSection.js");
+/* harmony import */ var _components_LeftSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/LeftSection */ "./resources/js/src/components/LeftSection.js");
+/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Card */ "./resources/js/src/containers/Home/components/Card.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    padding: 14rem;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
 
+
+
+
+
+var CardsContainer = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject());
 
 var Home = function Home() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_2__["default"], {
     picture: __webpack_require__(/*! ../../pictures/pic1.png */ "./resources/js/src/pictures/pic1.png"),
     title: "Over 30 languages course taken on this platform.",
     text: "Let us take you on a journey through the varieties of  languages thought on this platform by qualified tours."
-  }));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    picture: __webpack_require__(/*! ../../pictures/pic2.png */ "./resources/js/src/pictures/pic2.png"),
+    title: "Why use Blab?",
+    text: "Over here at Blab, we take learning really serious,  thats why we have put together the best tutors to take you throught the experience of learning your favorite languageat your convenience. With our mobile friendly platform, you can your online classes at anywhere you are in the world."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
+    title: "Learn at your convinence",
+    text: "Learning has been made easier with our mobile friendly package. Swith between your computer, tablet or mobile devices at anytime."
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/icon.png":
+/*!********************************************!*\
+  !*** ./resources/js/src/pictures/icon.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/icon.png?36da1e72f62588bd913d14c2436c0622";
 
 /***/ }),
 
@@ -67845,6 +67991,17 @@ var Home = function Home() {
 /***/ (function(module, exports) {
 
 module.exports = "/images/pic1.png?a264cb9c026d3aac67eaabe747c475d1";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/pic2.png":
+/*!********************************************!*\
+  !*** ./resources/js/src/pictures/pic2.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/pic2.png?6d85c058dd7f6c59afd269261c93ea20";
 
 /***/ }),
 
