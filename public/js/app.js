@@ -64557,7 +64557,7 @@ function isStyledComponent(target) {
 
 // 
 
-var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
+var SC_ATTR = typeof process !== 'undefined' && Object({"NODE_ENV":"development"}).SC_ATTR || 'data-styled';
 
 var SC_VERSION_ATTR = 'data-styled-version';
 
@@ -67476,6 +67476,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    border-radius: 8px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-flow: row nowrap;\n    justify-content: start;\n    background: ", ";\n    width: 20.5%;\n    padding: 2.5rem;\n    font-weight: bold;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
   var data = _taggedTemplateLiteral(["\n    flex: 1;\n    a {\n        font-weight: bolder;\n        font-size: 2rem;\n        &:after {\n            display: none !important;\n        }\n    }\n"]);
 
@@ -67487,7 +67507,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    font-size: 1.8rem;\n    * {\n        margin: 0;\n    }\n\n    nav {\n        display: flex;\n        flex-flow: row nowrap;\n        justify-content: start;\n        padding: 3.2rem;\n        align-items: center;\n    }\n\n    a {\n        color: ", ";\n        padding: 0 2rem;\n        position: relative;\n        text-decoration: none;\n\n        &:hover,\n        &:focus,\n        &.active {\n            &:after {\n                content: '';\n                display: block;\n                position: absolute;\n                bottom: 0;\n                left: calc(3.4rem / 2);\n                width: calc(100% - 3.2rem);\n                height: 0.5rem;\n                background: ", ";\n                border-radius: 1rem;\n            }\n        }\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    font-size: 1.8rem;\n    display: flex;\n    justify-content: space-between;\n    * {\n        margin: 0;\n    }\n\n    nav {\n        width: 79.5%;\n        display: flex;\n        flex-flow: row nowrap;\n        justify-content: start;\n        padding: 2.5rem;\n        align-items: center;\n    }\n\n    a {\n        color: ", ";\n        padding: 0 2rem;\n        position: relative;\n        text-decoration: none;\n\n        &:hover,\n        &:focus,\n        &.active {\n            &:after {\n                content: '';\n                display: block;\n                position: absolute;\n                bottom: -4px;\n                left: calc(3.4rem / 2);\n                width: calc(100% - 3.2rem);\n                height: 0.5rem;\n                background: ", ";\n                border-radius: 1rem;\n            }\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67504,15 +67524,27 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["darkGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["light"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["pink"]);
 var StyledLogo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+var StyledLogIn = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+var StyledLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["darkGray"]);
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLogo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/"
   }, "Blab")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/about"
-  }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, " Home "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/about"
+  }, " Language "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/contact-us"
-  }, "Contact us")));
+  }, " Getting Started "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/contact-us"
+  }, " Contact us "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/about"
+  }, " Account ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLogIn, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/contact-us"
+  }, " Log in "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/contact-us"
+  }, " Sign up "))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -67657,6 +67689,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n    flex: 1;\n"]);
 
@@ -67668,6 +67701,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -67738,7 +67772,7 @@ var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["createG
 /*!*****************************************************!*\
   !*** ./resources/js/src/styles/utilities/Colors.js ***!
   \*****************************************************/
-/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, orange, darkGray, gray, lightGray */
+/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, orange, darkGray, gray, lightGray */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67749,6 +67783,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dark", function() { return dark; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blue", function() { return blue; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pink", function() { return pink; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "purple", function() { return purple; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "orange", function() { return orange; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "darkGray", function() { return darkGray; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gray", function() { return gray; });
@@ -67759,6 +67794,7 @@ var light = '#F6F6FD';
 var dark = 'rgb(0, 0, 0)';
 var blue = 'rgb(77, 112, 244)';
 var pink = 'rgb(217, 43, 95)';
+var purple = '#4D70F4';
 var orange = 'rgb(238, 97, 88)';
 var darkGray = 'rgb(59, 59, 59)';
 var gray = 'rgb(89, 89, 89)';
@@ -67812,7 +67848,7 @@ var fontFamily = "font-family: 'Notable', sans-serif";
 /*!****************************************************!*\
   !*** ./resources/js/src/styles/utilities/index.js ***!
   \****************************************************/
-/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, orange, darkGray, gray, lightGray, elevation, fontFamily */
+/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, orange, darkGray, gray, lightGray, elevation, fontFamily */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67829,6 +67865,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "blue", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["blue"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "pink", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["pink"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "purple", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["purple"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "orange", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["orange"]; });
 
@@ -67868,8 +67906,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! H:\Laravel\blab\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! H:\Laravel\blab\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/macos/Desktop/blab/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/macos/Desktop/blab/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

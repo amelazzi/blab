@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { darkGray, light, pink, purple, gray } from '../../../styles/utilities/Colors';
+
 const StyledMain = styled.main`
     flex: 1;
 `;
+
 const Main = () => {
     return (
         <StyledMain>

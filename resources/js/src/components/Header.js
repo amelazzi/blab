@@ -1,20 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { darkGray, light, pink } from '../styles/utilities';
+import { darkGray, light, pink, purple } from '../styles/utilities';
 
 const StyledHeader = styled.header`
     background: ${darkGray};
     font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
     * {
         margin: 0;
     }
 
     nav {
+        width: 79.5%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;
-        padding: 3.2rem;
+        padding: 2.5rem;
         align-items: center;
     }
 
@@ -31,7 +34,7 @@ const StyledHeader = styled.header`
                 content: '';
                 display: block;
                 position: absolute;
-                bottom: 0;
+                bottom: -4px;
                 left: calc(3.4rem / 2);
                 width: calc(100% - 3.2rem);
                 height: 0.5rem;
@@ -53,15 +56,39 @@ const StyledLogo = styled.div`
     }
 `;
 
+const StyledLogIn = styled.div`
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    background: ${purple};
+    width: 20.5%;
+    padding: 2.5rem;
+    font-weight: bold;
+`;
+
+const StyledLink = styled.div`
+    background: ${darkGray};
+    border-radius: 8px;
+`;
+
 const Header = () => (
     <StyledHeader>
         <nav>
             <StyledLogo>
                 <Link to="/">Blab</Link>
             </StyledLogo>
-            <Link to="/about">About</Link>
-            <Link to="/contact-us">Contact us</Link>
+            <Link to="/about"> Home </Link>
+            <Link to="/about"> Language </Link>
+            <Link to="/contact-us"> Getting Started </Link>
+            <Link to="/contact-us"> Contact us </Link>
+            <Link to="/about"> Account </Link>
         </nav>
+        <StyledLogIn>
+            <Link to="/contact-us"> Log in </Link>
+            <StyledLink>
+                <Link to="/contact-us"> Sign up </Link>
+            </StyledLink>
+        </StyledLogIn>
     </StyledHeader>
 );
 
