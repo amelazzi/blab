@@ -50,7 +50,6 @@ const Home = () => {
                     foreign language.">
                 </Card>
             </CardsContainer>
-            <h1> What our customers are saying </h1>
         </>
     );
 };
