@@ -67945,6 +67945,86 @@ var Main = function Main(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Home/components/RatedTutor.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/src/containers/Home/components/RatedTutor.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    width: 10%;\n    img{\n        width: 100%;\n    }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    color: ", " !important\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    h1{\n        color: ", "\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    width: 19%;\n    text-align: center;\n    img{\n        width: 100%;\n    }\n    h1{\n        padding: 8px;\n        padding-bottom: 0;\n        font-size: 2.6rem;\n    }\n    h2{\n        color: ", ";\n        font-size: 2.2rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledTutor = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["gray"]);
+var StyledRates = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["pink"]);
+var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+
+var RatedTutor = function RatedTutor(_ref) {
+  var pic = _ref.pic,
+      name = _ref.name,
+      language = _ref.language,
+      rate = _ref.rate,
+      votes = _ref.votes;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTutor, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: pic
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", name, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, language, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRates, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../pictures/star.png */ "./resources/js/src/pictures/star.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " ", rate, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " (", votes, ") ")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RatedTutor);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Home/components/Testimony.js":
 /*!******************************************************************!*\
   !*** ./resources/js/src/containers/Home/components/Testimony.js ***!
@@ -68027,10 +68107,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_LeftSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/LeftSection */ "./resources/js/src/components/LeftSection.js");
 /* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Card */ "./resources/js/src/containers/Home/components/Card.js");
 /* harmony import */ var _components_Testimony__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Testimony */ "./resources/js/src/containers/Home/components/Testimony.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_RatedTutor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/RatedTutor */ "./resources/js/src/containers/Home/components/RatedTutor.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 4rem;\n    padding-bottom: 14rem;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    padding: 10rem;\n    background: white;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    padding: 10rem;\n    padding-top:0;\n    background: white;\n"]);
+  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    color: ", ";\n    font-size: 2.5rem;\n    padding: 2rem;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -68040,7 +68141,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    color: ", ";\n    font-size: 4.5rem;\n    font-weight: bold;\n    padding: 8rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    color: ", ";\n    font-size: 4.5rem;\n    font-weight: bold;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -68050,7 +68151,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    padding: 14rem;\n    padding-bottom: 0rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    padding: 14rem;\n    padding-bottom: 10rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -68080,10 +68181,13 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledHome = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject());
-var CardsContainer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject2());
-var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].h1(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_7__["dark"]);
-var Testimonies = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject4());
+
+var StyledHome = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject());
+var CardsContainer = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject2());
+var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].h1(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_8__["dark"]);
+var StyledH2 = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].h2(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_8__["gray"]);
+var Testimonies = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject5());
+var TopTutors = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject6());
 
 var Home = function Home() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHome, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -68110,6 +68214,12 @@ var Home = function Home() {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
     text: "Blab really help me in my transfer to Spain, I am now fluent in spanish thanks tu tutors at Blab.",
     author: "Paul Robinson"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Featured Tutors "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH2, null, " Take a look at our top rating tutors for the week "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopTutors, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RatedTutor__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    name: "David Mark",
+    language: "Chiness",
+    rate: "4.7",
+    votes: "15"
   }))));
 };
 
@@ -68158,6 +68268,17 @@ module.exports = "/images/pic2.png?6d85c058dd7f6c59afd269261c93ea20";
 /***/ (function(module, exports) {
 
 module.exports = "/images/profile.png?5df5bca82373d15283ce9f018c890bd2";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/star.png":
+/*!********************************************!*\
+  !*** ./resources/js/src/pictures/star.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/star.png?4fe78447544eec069decf20f7152809f";
 
 /***/ }),
 

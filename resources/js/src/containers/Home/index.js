@@ -5,8 +5,9 @@ import RightSection from '../../components/RightSection'
 import LeftSection from '../../components/LeftSection'
 import Card from './components/Card'
 import Testimony from './components/Testimony'
+import RatedTutor from './components/RatedTutor'
 
-import {dark} from '../../styles/utilities/Colors'
+import {dark, gray} from '../../styles/utilities/Colors'
 
 import styled from 'styled-components'
 
@@ -19,7 +20,7 @@ const CardsContainer = styled.div`
     justify-content: space-between;
     background: white;
     padding: 14rem;
-    padding-bottom: 0rem;
+    padding-bottom: 10rem;
 `;
 
 const StyledH1 = styled.h1`
@@ -27,13 +28,24 @@ const StyledH1 = styled.h1`
     color: ${dark};
     font-size: 4.5rem;
     font-weight: bold;
-    padding: 8rem;
+`;
+
+const StyledH2 = styled.h2`
+    text-align: center;
+    color: ${gray};
+    font-size: 2.5rem;
+    padding: 2rem;
 `;
 
 const Testimonies = styled.div`
     padding: 10rem;
-    padding-top:0;
     background: white;
+`;
+
+const TopTutors = styled.div`
+    background: white;
+    padding: 4rem;
+    padding-bottom: 14rem;
 `;
 
 const Home = () => {
@@ -78,9 +90,19 @@ const Home = () => {
                     <Testimony pic={require("../../pictures/profile.png")}
                         text="Blab really help me in my transfer to Spain, I am
                         now fluent in spanish thanks tu tutors at Blab."
-                        author="Paul Robinson"
-                    ></Testimony>
+                        author="Paul Robinson">
+                    </Testimony>
                 </Testimonies>
+                <StyledH1> Featured Tutors </StyledH1>
+                <StyledH2> Take a look at our top rating tutors for the week </StyledH2>
+                <TopTutors>
+                    <RatedTutor pic={require("../../pictures/profile.png")}
+                        name="David Mark"
+                        language="Chiness"
+                        rate="4.7"
+                        votes="15">
+                    </RatedTutor>
+                </TopTutors>
             </Main>
         </StyledHome>
     );
