@@ -68,12 +68,12 @@ const SignUp = () => {
                 your choice in the screen below.   
             </h3>
             <Cards>
-                <StyledLink to="/"> 
+                <StyledLink to="/sign-up2"> 
                     <Card icon={require("../../pictures/student.png")} 
                         title="Blabee" 
                         type="Student"></Card> 
                 </StyledLink>
-                <StyledLink to="/">
+                <StyledLink to="/sign-up2">
                     <Card icon={require("../../pictures/student.png")} 
                         title="Blabber" 
                         type="Tutor"></Card>

@@ -67323,6 +67323,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _containers_Login__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./containers/Login */ "./resources/js/src/containers/Login/index.js");
 /* harmony import */ var _containers_SignUp__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./containers/SignUp */ "./resources/js/src/containers/SignUp/index.js");
+/* harmony import */ var _containers_SignUp_2__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./containers/SignUp-2 */ "./resources/js/src/containers/SignUp-2/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -67352,6 +67353,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -67397,6 +67399,9 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/sign-up",
         component: _containers_SignUp__WEBPACK_IMPORTED_MODULE_11__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/sign-up2",
+        component: _containers_SignUp_2__WEBPACK_IMPORTED_MODULE_12__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_GlobalStyle__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
     }
   }]);
@@ -68350,6 +68355,143 @@ var Login = function Login() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/SignUp-2/index.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/src/containers/SignUp-2/index.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 2.3rem;\n    margin-left: 4px;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: center;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: center;\n    input{\n        width: 50%;\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    width: 50%;\n    form{\n        margin-top: 3rem;\n        display: flex;\n        flex-direction: column\n    }\n    input[type=\"submit\"]{\n        border: none;\n        width: 60%;\n        background: ", ";\n        color: white;\n        font-size: 3rem;\n    }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 50%;\n    padding: 2rem;\n    img{\n        width: 100%;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 3rem 0 0 0;\n    align-items: center;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    background: white;\n    padding: 6rem 2rem 6rem 2rem;\n    text-align: center;\n    h2{\n        color: ", ";\n        font-size: 3rem;\n    }\n    h1{\n        font-size: 3.6rem;\n    }\n    h3{\n        font-size: 2.3rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var StyledStep = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["lightGray"]);
+var StyledContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var StyledImg = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var StyledForm = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+var ParalelInput = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5());
+var StyledSignIn = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6());
+var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"])(_templateObject7(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+
+var SignUp2 = function SignUp2() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledStep, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Step 2 of 3 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledImg, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pictures/step2.png */ "./resources/js/src/pictures/step2.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledForm, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Setup your account now "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ParalelInput, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "First Name"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Last Name"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Date of birth"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ParalelInput, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Country"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "State"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Native Language"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "password",
+    placeholder: "Password"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "password",
+    placeholder: "Confirm Password"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSignIn, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Already have an account?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+    to: "/log-in"
+  }, " Sign In ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "submit",
+    value: "Register"
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SignUp2);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/SignUp/components/Card.js":
 /*!***************************************************************!*\
   !*** ./resources/js/src/containers/SignUp/components/Card.js ***!
@@ -68517,13 +68659,13 @@ var SignUp = function SignUp() {
       main: "#4D70F4"
     }
   }, "SELECT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " YOUR MODE ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Are you registrating as a Student? or a Tutor? select your choice in the screen below."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Cards, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-    to: "/"
+    to: "/sign-up2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
     icon: __webpack_require__(/*! ../../pictures/student.png */ "./resources/js/src/pictures/student.png"),
     title: "Blabee",
     type: "Student"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-    to: "/"
+    to: "/sign-up2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
     icon: __webpack_require__(/*! ../../pictures/student.png */ "./resources/js/src/pictures/student.png"),
     title: "Blabber",
@@ -68587,6 +68729,17 @@ module.exports = "/images/profile.png?5df5bca82373d15283ce9f018c890bd2";
 /***/ (function(module, exports) {
 
 module.exports = "/images/star.png?4fe78447544eec069decf20f7152809f";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/step2.png":
+/*!*********************************************!*\
+  !*** ./resources/js/src/pictures/step2.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/step2.png?a16fbfcd5066ddec3467a10c54aff8a6";
 
 /***/ }),
 
