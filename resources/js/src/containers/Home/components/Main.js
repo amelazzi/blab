@@ -4,6 +4,7 @@ import Head from './Head'
 
 const StyledMain = styled.main`
     flex: 1;
+    background: white;
 `;
 
 const Main = ({children, props}) => {

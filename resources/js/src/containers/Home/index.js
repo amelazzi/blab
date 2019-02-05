@@ -4,20 +4,41 @@ import Head from './components/Head'
 import RightSection from '../../components/RightSection'
 import LeftSection from '../../components/LeftSection'
 import Card from './components/Card'
+import Testimony from './components/Testimony'
+
+import {dark} from '../../styles/utilities/Colors'
 
 import styled from 'styled-components'
+
+const StyledHome = styled.div`
+    background: white;
+`;
 
 const CardsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     background: white;
     padding: 14rem;
-    padding-bottom:12rem;
+    padding-bottom: 0rem;
+`;
+
+const StyledH1 = styled.h1`
+    text-align: center;
+    color: ${dark};
+    font-size: 4.5rem;
+    font-weight: bold;
+    padding: 8rem;
+`;
+
+const Testimonies = styled.div`
+    padding: 10rem;
+    padding-top:0;
+    background: white;
 `;
 
 const Home = () => {
     return (
-        <>
+        <StyledHome>
             <Main>
                 <Head/>
                 <RightSection picture={require("../../pictures/pic1.png")} 
@@ -52,8 +73,16 @@ const Home = () => {
                         foreign language.">
                     </Card>
                 </CardsContainer>
+                <StyledH1> What our customers are saying </StyledH1>
+                <Testimonies>
+                    <Testimony pic={require("../../pictures/profile.png")}
+                        text="Blab really help me in my transfer to Spain, I am
+                        now fluent in spanish thanks tu tutors at Blab."
+                        author="Paul Robinson"
+                    ></Testimony>
+                </Testimonies>
             </Main>
-        </>
+        </StyledHome>
     );
 };
 

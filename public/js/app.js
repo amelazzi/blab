@@ -67919,7 +67919,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Head */ "./resources/js/src/containers/Home/components/Head.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    flex: 1;\n"]);
+  var data = _taggedTemplateLiteral(["\n    flex: 1;\n    background: white;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67945,6 +67945,71 @@ var Main = function Main(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Home/components/Testimony.js":
+/*!******************************************************************!*\
+  !*** ./resources/js/src/containers/Home/components/Testimony.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 70%;\n    padding: 4rem;\n    h1,h2{\n        color: ", ";\n        font-size: 3.2rem;\n    }\n    h1{\n        font-weight: bold;\n    }\n    h2{\n        margin-top: 32px; \n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    width: 25%;\n    img{\n        width: 100%;\n        border: none;\n        border-radius: 8px;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    display: flex;\n    justify-content: space-between;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledTestimony = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
+
+var Testimony = function Testimony(_ref) {
+  var pic = _ref.pic,
+      text = _ref.text,
+      author = _ref.author;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTestimony, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: pic
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " \"", text, "\" "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " ", author, " ")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Testimony);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Home/index.js":
 /*!***************************************************!*\
   !*** ./resources/js/src/containers/Home/index.js ***!
@@ -67961,9 +68026,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_RightSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/RightSection */ "./resources/js/src/components/RightSection.js");
 /* harmony import */ var _components_LeftSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/LeftSection */ "./resources/js/src/components/LeftSection.js");
 /* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Card */ "./resources/js/src/containers/Home/components/Card.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_Testimony__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Testimony */ "./resources/js/src/containers/Home/components/Testimony.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    padding: 10rem;\n    padding-top:0;\n    background: white;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    color: ", ";\n    font-size: 4.5rem;\n    font-weight: bold;\n    padding: 8rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    padding: 14rem;\n    padding-bottom: 0rem;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    padding: 14rem;\n    padding-bottom:12rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67981,10 +68078,15 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var CardsContainer = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject());
+
+
+var StyledHome = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject());
+var CardsContainer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject2());
+var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].h1(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_7__["dark"]);
+var Testimonies = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject4());
 
 var Home = function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHome, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
     picture: __webpack_require__(/*! ../../pictures/pic1.png */ "./resources/js/src/pictures/pic1.png"),
     title: "Over 30 languages course taken on this platform.",
     text: "Let us take you on a journey through the varieties of  languages thought on this platform by qualified tours."
@@ -68004,6 +68106,10 @@ var Home = function Home() {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Wide range of Language",
     text: "Select a language to learn from our wide range of foreign language."
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " What our customers are saying "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Testimonies, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimony__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    text: "Blab really help me in my transfer to Spain, I am now fluent in spanish thanks tu tutors at Blab.",
+    author: "Paul Robinson"
   }))));
 };
 
@@ -68041,6 +68147,17 @@ module.exports = "/images/pic1.png?a264cb9c026d3aac67eaabe747c475d1";
 /***/ (function(module, exports) {
 
 module.exports = "/images/pic2.png?6d85c058dd7f6c59afd269261c93ea20";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/profile.png":
+/*!***********************************************!*\
+  !*** ./resources/js/src/pictures/profile.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/profile.png?5df5bca82373d15283ce9f018c890bd2";
 
 /***/ }),
 
