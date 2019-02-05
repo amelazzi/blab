@@ -46,6 +46,8 @@ const TopTutors = styled.div`
     background: white;
     padding: 4rem;
     padding-bottom: 14rem;
+    display: flex;
+    justify-content: space-between;
 `;
 
 const Home = () => {
@@ -96,6 +98,24 @@ const Home = () => {
                 <StyledH1> Featured Tutors </StyledH1>
                 <StyledH2> Take a look at our top rating tutors for the week </StyledH2>
                 <TopTutors>
+                    <RatedTutor pic={require("../../pictures/profile.png")}
+                        name="David Mark"
+                        language="Chiness"
+                        rate="4.7"
+                        votes="15">
+                    </RatedTutor>
+                    <RatedTutor pic={require("../../pictures/profile.png")}
+                        name="David Mark"
+                        language="Chiness"
+                        rate="4.7"
+                        votes="15">
+                    </RatedTutor>
+                    <RatedTutor pic={require("../../pictures/profile.png")}
+                        name="David Mark"
+                        language="Chiness"
+                        rate="4.7"
+                        votes="15">
+                    </RatedTutor>
                     <RatedTutor pic={require("../../pictures/profile.png")}
                         name="David Mark"
                         language="Chiness"

@@ -68111,7 +68111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 4rem;\n    padding-bottom: 14rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 4rem;\n    padding-bottom: 14rem;\n    display: flex;\n    justify-content: space-between;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -68215,6 +68215,24 @@ var Home = function Home() {
     text: "Blab really help me in my transfer to Spain, I am now fluent in spanish thanks tu tutors at Blab.",
     author: "Paul Robinson"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Featured Tutors "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH2, null, " Take a look at our top rating tutors for the week "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopTutors, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RatedTutor__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    name: "David Mark",
+    language: "Chiness",
+    rate: "4.7",
+    votes: "15"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RatedTutor__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    name: "David Mark",
+    language: "Chiness",
+    rate: "4.7",
+    votes: "15"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RatedTutor__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    name: "David Mark",
+    language: "Chiness",
+    rate: "4.7",
+    votes: "15"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RatedTutor__WEBPACK_IMPORTED_MODULE_7__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
     name: "David Mark",
     language: "Chiness",
