@@ -84,9 +84,9 @@ const Header = () => (
             <Link to="/about"> Account </Link>
         </nav>
         <StyledLogIn>
-            <Link to="/login"> Log in </Link>
+            <Link to="/log-in"> Log in </Link>
             <StyledLink>
-                <Link to="/contact-us"> Sign up </Link>
+                <Link to="/sign-up"> Sign up </Link>
             </StyledLink>
         </StyledLogIn>
     </StyledHeader>

@@ -97,7 +97,7 @@ const Login = () => {
                 <StyledH3> forgot your password? </StyledH3>
                 <StyledSignUp>
                     <h3> Don't have an account?</h3>
-                    <StyledLink to="/"> Sign Up </StyledLink>
+                    <StyledLink to="/sign-up"> Sign Up </StyledLink>
                 </StyledSignUp>
             </StyledFooter>
         </StyledLogin>

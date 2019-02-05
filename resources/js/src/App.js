@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import GlobalStyle from './styles/GlobalStyle';
 import styled from 'styled-components';
 import Login from './containers/Login';
+import SignUp from './containers/SignUp';
 const StyledContainer = styled.div`
     display: flex;
     justify-content: flex-start;
@@ -26,7 +27,8 @@ class App extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/contact-us" component={ContactUs} />
-                    <Route path="/login" component={Login} />
+                    <Route path="/log-in" component={Login} />
+                    <Route path="/sign-up" component={SignUp} />
                     <Footer />
                     <GlobalStyle />
                 </StyledContainer>
