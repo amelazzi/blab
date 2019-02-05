@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import { purple,gray, dark, lightGray } from '../../styles/utilities';
+import { Link } from 'react-router-dom';
+import { gray, lightGray } from '../../styles/utilities';
 
 import Card from './components/Card'
 
@@ -44,6 +45,15 @@ const Cards = styled.div`
     padding: 3rem;
     width: 75%;
     margin-left: 12.5%;
+    display: flex;
+    justify-content: space-between
+`;
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    :hover{
+        text-decoration: none;
+    }
 `;
 
 const SignUp = () => {
@@ -58,7 +68,16 @@ const SignUp = () => {
                 your choice in the screen below.   
             </h3>
             <Cards>
-                <Card title="Blabee" type="Student"></Card>
+                <StyledLink to="/"> 
+                    <Card icon={require("../../pictures/student.png")} 
+                        title="Blabee" 
+                        type="Student"></Card> 
+                </StyledLink>
+                <StyledLink to="/">
+                    <Card icon={require("../../pictures/student.png")} 
+                        title="Blabber" 
+                        type="Tutor"></Card>
+                </StyledLink>
             </Cards>
         </StyledSignUp>
     );

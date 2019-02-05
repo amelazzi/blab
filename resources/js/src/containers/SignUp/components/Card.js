@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { dark, darkGray, purple, gray } from '../../../styles/utilities/Colors';
+import { dark, darkGray, purple, gray, lightGray } from '../../../styles/utilities/Colors';
 
 const StyledCard = styled.div`
-    border: 2px solid ${dark};
     width: 350px;
     text-align: center;
+    -webkit-box-shadow: 1px 1px 10px ${lightGray};
+        box-shadow: 1px 1px 10px ${lightGray};
     h1{
         color: ${dark};
         padding: 16px 16px;
@@ -43,12 +44,12 @@ const StyledFooter = styled.div`
     }
 `;
 
-const Card = ({title, type}) => {
+const Card = ({icon, title, type}) => {
     return (
         <StyledCard>
             <StyledContent>
                 <StyledImg>
-                    <img src={require("../../../pictures/student.png")} />
+                    <img src={icon} />
                 </StyledImg>
                 <h1> {title} </h1>
                 <p> Sign up as a {type} </p>

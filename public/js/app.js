@@ -68394,7 +68394,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    border: 2px solid ", ";\n    width: 350px;\n    text-align: center;\n    h1{\n        color: ", ";\n        padding: 16px 16px;\n        padding-left: 0;\n        padding-right: 0;\n        font-size: 3rem;\n    }\n    p{\n        padding: 8px;\n        padding-top: 0;\n        padding-bottom: 0;\n        color: ", ";\n        font-size: 2.3rem;\n        line-height: 1.3;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 350px;\n    text-align: center;\n    -webkit-box-shadow: 1px 1px 10px ", ";\n        box-shadow: 1px 1px 10px ", ";\n    h1{\n        color: ", ";\n        padding: 16px 16px;\n        padding-left: 0;\n        padding-right: 0;\n        font-size: 3rem;\n    }\n    p{\n        padding: 8px;\n        padding-top: 0;\n        padding-bottom: 0;\n        color: ", ";\n        font-size: 2.3rem;\n        line-height: 1.3;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -68408,16 +68408,17 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["gray"]);
+var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["gray"]);
 var StyledContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var StyledImg = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
 
 var Card = function Card(_ref) {
-  var title = _ref.title,
+  var icon = _ref.icon,
+      title = _ref.title,
       type = _ref.type;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledImg, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../../pictures/student.png */ "./resources/js/src/pictures/student.png")
+    src: icon
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Sign up as a ", type, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Continue ")));
 };
 
@@ -68437,10 +68438,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
-/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Card */ "./resources/js/src/containers/SignUp/components/Card.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
+/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Card */ "./resources/js/src/containers/SignUp/components/Card.js");
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    text-decoration: none;\n    :hover{\n        text-decoration: none;\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    padding: 3rem;\n    width: 75%;\n    margin-left: 12.5%;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 3rem;\n    width: 75%;\n    margin-left: 12.5%;\n    display: flex;\n    justify-content: space-between\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -68485,7 +68497,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledSignUp = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"]);
+
+var StyledSignUp = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["lightGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["gray"]);
 var MainTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_templateObject3(), function (props) {
   return props.theme.main;
@@ -68494,6 +68507,7 @@ var theme = {
   main: "${dark}"
 };
 var Cards = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"])(_templateObject5());
 
 var SignUp = function SignUp() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSignUp, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Step 1 of 3 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainTitle, {
@@ -68502,10 +68516,19 @@ var SignUp = function SignUp() {
     theme: {
       main: "#4D70F4"
     }
-  }, "SELECT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " YOUR MODE ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Are you registrating as a Student? or a Tutor? select your choice in the screen below."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Cards, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "SELECT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " YOUR MODE ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Are you registrating as a Student? or a Tutor? select your choice in the screen below."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Cards, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+    to: "/"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: __webpack_require__(/*! ../../pictures/student.png */ "./resources/js/src/pictures/student.png"),
     title: "Blabee",
     type: "Student"
-  })));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+    to: "/"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: __webpack_require__(/*! ../../pictures/student.png */ "./resources/js/src/pictures/student.png"),
+    title: "Blabber",
+    type: "Tutor"
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SignUp);
