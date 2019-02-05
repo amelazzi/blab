@@ -99,7 +99,9 @@ const SignUp2 = () => {
                         <h3> Already have an account?</h3>
                         <StyledLink to="/log-in"> Sign In </StyledLink>
                     </StyledSignIn>
-                    <input type="submit" value="Register" />
+                    <Link to="/congrats">
+                        <input type="submit" value="Register" />
+                    </Link>
                 </StyledForm>
             </StyledContent>
         </StyledStep>

@@ -11,6 +11,7 @@ import styled from 'styled-components';
 import Login from './containers/Login';
 import SignUp from './containers/SignUp';
 import SignUp2 from './containers/SignUp-2';
+import Congrats from './containers/Congrats';
 const StyledContainer = styled.div`
     display: flex;
     justify-content: flex-start;
@@ -31,6 +32,7 @@ class App extends Component {
                     <Route path="/log-in" component={Login} />
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/sign-up2" component={SignUp2} />
+                    <Route path="/congrats" component={Congrats} />
                     <Footer />
                     <GlobalStyle />
                 </StyledContainer>

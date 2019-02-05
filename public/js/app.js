@@ -67324,6 +67324,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_Login__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./containers/Login */ "./resources/js/src/containers/Login/index.js");
 /* harmony import */ var _containers_SignUp__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./containers/SignUp */ "./resources/js/src/containers/SignUp/index.js");
 /* harmony import */ var _containers_SignUp_2__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./containers/SignUp-2 */ "./resources/js/src/containers/SignUp-2/index.js");
+/* harmony import */ var _containers_Congrats__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./containers/Congrats */ "./resources/js/src/containers/Congrats/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -67353,6 +67354,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -67402,6 +67404,9 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/sign-up2",
         component: _containers_SignUp_2__WEBPACK_IMPORTED_MODULE_12__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/congrats",
+        component: _containers_Congrats__WEBPACK_IMPORTED_MODULE_13__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_GlobalStyle__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
     }
   }]);
@@ -67756,6 +67761,53 @@ var Home = function Home() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Congrats/index.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/src/containers/Congrats/index.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background: white;\n    padding: 8rem;\n    text-align: center;\n    h1{\n        color: ", ";\n        font-size: 5rem;\n        font-weight: bold\n    }\n    p{\n        font-size: 3.4rem;\n        color: ", ";\n        padding: 3rem 8rem 3rem 8rem;\n        line-height: 1.2\n    }\n    img{\n        width: 38%;\n    }\n    input[type=\"submit\"]{\n        border: none;\n        padding-left: 16rem;\n        padding-right: 16rem;\n        background: ", ";\n        color: white;\n        font-size: 3rem;\n        margin-top: 5rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var StyledCongrats = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["purple"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+
+var Congrats = function Congrats() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledCongrats, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " CONGRATULATIONS "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " First Name your account has been registred. Click on the link below to proceed to your dashboard"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pictures/congrats.png */ "./resources/js/src/pictures/congrats.png")
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "submit",
+    value: "Proceed"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Congrats);
 
 /***/ }),
 
@@ -68482,10 +68534,12 @@ var SignUp2 = function SignUp2() {
     placeholder: "Confirm Password"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSignIn, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Already have an account?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     to: "/log-in"
-  }, " Sign In ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, " Sign In ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/congrats"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "submit",
     value: "Register"
-  }))));
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SignUp2);
@@ -68674,6 +68728,17 @@ var SignUp = function SignUp() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SignUp);
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/congrats.png":
+/*!************************************************!*\
+  !*** ./resources/js/src/pictures/congrats.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/congrats.png?79705a117a7a94cc2102c8d05c5f5b40";
 
 /***/ }),
 
