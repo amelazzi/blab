@@ -16,6 +16,26 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     color: ${dark};
   }
+
+  input{
+    margin: 2rem;
+  }
+
+  input:focus{
+      outline: none
+  }
+
+  ::placeholder, input[type="text"],input[type="email"], input[type="password"]{
+      font-size: 2.2rem;
+      padding-bottom: 1rem;
+      color: ${gray}
+  }
+
+  input[type="text"], input[type="email"], input[type="password"]{
+      border: none;
+      border-bottom: 1px solid ${gray}
+  }
+
 `;
 
 export default GlobalStyle;

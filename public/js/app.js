@@ -68310,7 +68310,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    padding: 8rem;\n    background: white;\n    text-align: center;\n    h1{\n        padding: 2rem;\n        font-size: 6rem;\n        color: ", ";\n        font-weight: bold\n    }\n    h2{\n        color: ", ";\n        font-size: 2.5rem;\n    }\n    form{\n        width: 50%;\n        margin-left: 25%;\n        background: white;\n        padding: 4.5rem;\n        padding-bottom: 0;\n        display: flex;\n        flex-direction: column;\n    }\n    input{\n        margin: 2rem;\n    }\n\n    input:focus{\n        outline: none\n    }\n\n    ::placeholder, input[type=\"email\"], input[type=\"password\"]{\n        font-size: 2.2rem;\n        padding-top: 2rem;\n        padding-bottom: 1rem;\n        color: ", "\n    }\n    \n    input[type=\"email\"], input[type=\"password\"]{\n        border: none;\n        border-bottom: 1px solid ", "\n    }\n    input[type=\"submit\"]{\n        border: none;\n        padding: 1rem;\n        background: ", ";\n        color: white;\n        font-size: 3rem;\n        font-weight: bold\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 8rem;\n    background: white;\n    text-align: center;\n    h1{\n        padding: 2rem;\n        font-size: 6rem;\n        color: ", ";\n        font-weight: bold\n    }\n    h2{\n        color: ", ";\n        font-size: 2.5rem;\n    }\n    form{\n        width: 50%;\n        margin-left: 25%;\n        background: white;\n        padding: 4.5rem;\n        padding-bottom: 0;\n        display: flex;\n        flex-direction: column;\n    }\n    input[type=\"submit\"]{\n        border: none;\n        padding: 1rem;\n        background: ", ";\n        color: white;\n        font-size: 3rem;\n        font-weight: bold\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -68325,7 +68325,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledLogin = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var StyledLogin = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
 var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 var StyledSignUp = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 var StyledH3 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h3(_templateObject4(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
@@ -68613,7 +68613,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utilities */ "./resources/js/src/styles/utilities/index.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css?family=Open+Sans');\n  html {\n      font-size: 10px;\n  }\n  body {\n    ", ";\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n    color: ", "\n  }\n  h1, h2, h3, h4, h5, h6 {\n    color: ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css?family=Open+Sans');\n  html {\n      font-size: 10px;\n  }\n  body {\n    ", ";\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n    color: ", "\n  }\n  h1, h2, h3, h4, h5, h6 {\n    color: ", ";\n  }\n\n  input{\n    margin: 2rem;\n  }\n\n  input:focus{\n      outline: none\n  }\n\n  ::placeholder, input[type=\"text\"],input[type=\"email\"], input[type=\"password\"]{\n      font-size: 2.2rem;\n      padding-bottom: 1rem;\n      color: ", "\n  }\n\n  input[type=\"text\"], input[type=\"email\"], input[type=\"password\"]{\n      border: none;\n      border-bottom: 1px solid ", "\n  }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -68626,7 +68626,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"])(_templateObject(), _utilities__WEBPACK_IMPORTED_MODULE_1__["fontFamily"], _utilities__WEBPACK_IMPORTED_MODULE_1__["gray"], _utilities__WEBPACK_IMPORTED_MODULE_1__["dark"]);
+var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"])(_templateObject(), _utilities__WEBPACK_IMPORTED_MODULE_1__["fontFamily"], _utilities__WEBPACK_IMPORTED_MODULE_1__["gray"], _utilities__WEBPACK_IMPORTED_MODULE_1__["dark"], _utilities__WEBPACK_IMPORTED_MODULE_1__["gray"], _utilities__WEBPACK_IMPORTED_MODULE_1__["gray"]);
 /* harmony default export */ __webpack_exports__["default"] = (GlobalStyle);
 
 /***/ }),

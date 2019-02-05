@@ -27,25 +27,6 @@ const StyledLogin = styled.div`
         display: flex;
         flex-direction: column;
     }
-    input{
-        margin: 2rem;
-    }
-
-    input:focus{
-        outline: none
-    }
-
-    ::placeholder, input[type="email"], input[type="password"]{
-        font-size: 2.2rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        color: ${gray}
-    }
-    
-    input[type="email"], input[type="password"]{
-        border: none;
-        border-bottom: 1px solid ${gray}
-    }
     input[type="submit"]{
         border: none;
         padding: 1rem;
