@@ -68262,11 +68262,83 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 2.3rem;\n    margin-left: 4px;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    color: ", " !important;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    width: 60%;\n    margin-left: 20%;\n    h3{\n        color: ", ";\n        font-size: 2.3rem;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    padding: 8rem;\n    background: white;\n    text-align: center;\n    h1{\n        padding: 2rem;\n        font-size: 6rem;\n        color: ", ";\n        font-weight: bold\n    }\n    h2{\n        color: ", ";\n        font-size: 2.5rem;\n    }\n    form{\n        width: 50%;\n        margin-left: 25%;\n        background: white;\n        padding: 4.5rem;\n        padding-bottom: 0;\n        display: flex;\n        flex-direction: column;\n    }\n    input{\n        margin: 2rem;\n    }\n\n    input:focus{\n        outline: none\n    }\n\n    ::placeholder, input[type=\"email\"], input[type=\"password\"]{\n        font-size: 2.2rem;\n        padding-top: 2rem;\n        padding-bottom: 1rem;\n        color: ", "\n    }\n    \n    input[type=\"email\"], input[type=\"password\"]{\n        border: none;\n        border-bottom: 1px solid ", "\n    }\n    input[type=\"submit\"]{\n        border: none;\n        padding: 1rem;\n        background: ", ";\n        color: white;\n        font-size: 3rem;\n        font-weight: bold\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
+
+
+
+var StyledLogin = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["dark"]);
+var StyledSignUp = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var StyledH3 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h3(_templateObject4(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"])(_templateObject5(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
 
 var Login = function Login() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLogin, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Login "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Welcome back! login to access your account "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "email",
+    placeholder: "Email"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "password",
+    placeholder: "Password"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "submit",
+    value: "Sign In"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH3, null, " forgot your password? "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSignUp, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Don't have an account?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+    to: "/"
+  }, " Sign Up "))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Login);
