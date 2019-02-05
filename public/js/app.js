@@ -68350,6 +68350,81 @@ var Login = function Login() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/SignUp/components/Card.js":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/containers/SignUp/components/Card.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    margin-top: 6rem;\n    h1{\n        color: white !important;\n        padding: 12px 12px;\n    }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 60%;\n    margin-left: 20%;\n    img{\n        width: 100%;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    padding: 3rem;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    border: 2px solid ", ";\n    width: 350px;\n    text-align: center;\n    h1{\n        color: ", ";\n        padding: 16px 16px;\n        padding-left: 0;\n        padding-right: 0;\n        font-size: 3rem;\n    }\n    p{\n        padding: 8px;\n        padding-top: 0;\n        padding-bottom: 0;\n        color: ", ";\n        font-size: 2.3rem;\n        line-height: 1.3;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["gray"]);
+var StyledContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var StyledImg = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+
+var Card = function Card(_ref) {
+  var title = _ref.title,
+      type = _ref.type;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledImg, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../pictures/student.png */ "./resources/js/src/pictures/student.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Sign up as a ", type, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Continue ")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/SignUp/index.js":
 /*!*****************************************************!*\
   !*** ./resources/js/src/containers/SignUp/index.js ***!
@@ -68363,14 +68438,74 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Card */ "./resources/js/src/containers/SignUp/components/Card.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    padding: 3rem;\n    width: 75%;\n    margin-left: 12.5%;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 6rem;\n    padding: 3rem 3rem 0 0;\n    font-weight: bold;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 6rem;\n    h2{\n        text-align: center;\n        color: ", ";\n        font-size: 3rem;\n    }\n\n    h3{\n        width: 70%;\n        margin-left: 15%;\n        padding: 2rem;\n        text-align: center;\n        color: ", ";\n        font-size: 2.5rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
 
 
+
+var StyledSignUp = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"]);
+var MainTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_templateObject3(), function (props) {
+  return props.theme.main;
+});
+var theme = {
+  main: "${dark}"
+};
+var Cards = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
 
 var SignUp = function SignUp() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSignUp, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Step 1 of 3 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainTitle, {
+    theme: theme
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, {
+    theme: {
+      main: "#4D70F4"
+    }
+  }, "SELECT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " YOUR MODE ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Are you registrating as a Student? or a Tutor? select your choice in the screen below."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Cards, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Blabee",
+    type: "Student"
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SignUp);
@@ -68429,6 +68564,17 @@ module.exports = "/images/profile.png?5df5bca82373d15283ce9f018c890bd2";
 /***/ (function(module, exports) {
 
 module.exports = "/images/star.png?4fe78447544eec069decf20f7152809f";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/student.png":
+/*!***********************************************!*\
+  !*** ./resources/js/src/pictures/student.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/student.png?35e21faa1cbbfeb8cc0c71faf75658db";
 
 /***/ }),
 
