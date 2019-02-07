@@ -10,4 +10,8 @@ class Topic extends Model
         'title',
         'description',
     ];
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class);
+    }
 }

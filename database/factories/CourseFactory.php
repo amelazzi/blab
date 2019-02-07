@@ -10,5 +10,6 @@ $factory->define(App\Course::class, function (Faker $faker) {
         'rate' => $faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = 5),
         'price' => $faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = NULL),
         'tutor_id' => \App\Tutor::inRandomOrder()->first()->id,
+        'language_id' => \App\Language::inRandomOrder()->first()->id,
     ];
 });

@@ -20,10 +20,10 @@ class DatabaseSeeder extends Seeder
 
         $this->call(CoursesTableSeeder::class);
         // $this->call(BlabClassesTableSeeder::class); // included within courses
+        // $this->call(TopicsTableSeeder::class); // included within courses ::many-to-many::
 
-        $this->call(TopicsTableSeeder::class);
         $this->call(ReviewsTableSeeder::class);
 
-        $this->call(ContactUsMessagesTableSeeder::class);
+        $this->call(ContactUsMessagesTableSeeder::class); // no relationships
     }
 }

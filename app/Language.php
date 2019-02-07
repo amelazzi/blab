@@ -14,4 +14,9 @@ class Language extends Model
     {
         return $this->hasMany('App\TutorRequest');
     }
+
+    public function courses()
+    {
+        return $this->hasMany('App\Course');
+    }
 }
