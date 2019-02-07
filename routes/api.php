@@ -17,3 +17,4 @@ Route::resource('contact-us', 'ContactUsMessageController');
 Route::resource('wallets', 'WalletController');
 Route::resource('tutor-requests', 'TutorRequestController');
 Route::resource('languages', 'LanguageController');
+Route::resource('classes', 'BlabClassController');

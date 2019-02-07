@@ -11,6 +11,7 @@ class Tutor extends Model
         'about',
         'image',
         'rate',
+        'user_id',
     ];
 
     public function user()

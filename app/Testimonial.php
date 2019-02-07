@@ -8,7 +8,8 @@ class Testimonial extends Model
 {
   protected $fillable = [
         'body',
-        'weight'
+        'weight',
+        'user_id'
     ];
     public function user()
     {

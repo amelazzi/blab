@@ -4,20 +4,24 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCoursesTable extends Migration
+class CreateBlabClassesTable extends Migration
 {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function up()
     {
-        Schema::create('courses', function (Blueprint $table) {
+        Schema::create('blab_classes', function (Blueprint $table) {
             $table->increments('id');
+
             $table->string('title');
             $table->string('description');
-            $table->string('image');
-            $table->double('rate');
-            $table->double('price');
+            $table->dateTime('date');
 
-            $table->unsignedInteger('tutor_id');
-            $table->foreign('tutor_id')->references('id')->on('tutors');
+            $table->unsignedInteger('course_id');
+            $table->foreign('course_id')->references('id')->on('courses');
 
             $table->timestamps();
         });
@@ -30,6 +34,6 @@ class CreateCoursesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('courses');
+        Schema::dropIfExists('blab_classes');
     }
 }

@@ -11,6 +11,7 @@ class Student extends Model
         'about',
         'image',
         'rate',
+        'user_id',
     ];
 
     public function user()

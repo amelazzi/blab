@@ -10,6 +10,7 @@ class Message extends Model
       'body',
       'read',
       'from',
+      'student_id',
   ];
 
   public function student()

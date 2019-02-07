@@ -19,8 +19,11 @@ class DatabaseSeeder extends Seeder
         $this->call(MessagesTableSeeder::class); // requires students and tutors
 
         $this->call(CoursesTableSeeder::class);
+        // $this->call(BlabClassesTableSeeder::class); // included within courses
+
         $this->call(TopicsTableSeeder::class);
         $this->call(ReviewsTableSeeder::class);
+
         $this->call(ContactUsMessagesTableSeeder::class);
     }
 }

@@ -8,6 +8,7 @@ class TutorRequest extends Model
 {
   protected $fillable = [
         'body',
+        'language_id',
     ];
 
     public function student()

@@ -12,10 +12,16 @@ class Course extends Model
         'image',
         'rate',
         'price',
+        'tutor_id',
     ];
 
     public function tutor()
     {
         return $this->belongsTo('App\Tutor');
+    }
+
+    public function blabClasses()
+    {
+        return $this->hasMany('App\BlabClass');
     }
 }
