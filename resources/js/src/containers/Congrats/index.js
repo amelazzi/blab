@@ -24,16 +24,22 @@ const StyledCongrats = styled.div`
     img{
         width: 38%;
     }
-    input[type="submit"]{
-        border: none;
-        padding-left: 16rem;
-        padding-right: 16rem;
-        background: ${purple};
+`;
+
+const StyledLink = styled(Link)`
+    border: none;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    background: ${purple};
+    color: white;
+    font-size: 3rem;
+    margin-top: 5rem;
+    :hover{
+        text-decoration: none;
         color: white;
-        font-size: 3rem;
-        margin-top: 5rem;
     }
 `;
+
 
 const Congrats = () => {
     return (
@@ -43,9 +49,7 @@ const Congrats = () => {
                 link below to proceed to your dashboard
             </p>
             <img src={require("../../pictures/congrats.png")} />
-            <Link to="/">
-                <input type="submit" value="Proceed" />
-            </Link>
+            <StyledLink to="/"> Proceed </StyledLink>
         </StyledCongrats>
     );
 };

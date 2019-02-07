@@ -77,7 +77,7 @@ const Header = () => (
             <StyledLogo>
                 <Link to="/">Blab</Link>
             </StyledLogo>
-            <Link to="/about"> Home </Link>
+            <Link to="/"> Home </Link>
             <Link to="/about"> Language </Link>
             <Link to="/contact-us"> Getting Started </Link>
             <Link to="/contact-us"> Contact us </Link>
