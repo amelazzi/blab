@@ -28,4 +28,10 @@ class Student extends Model
     {
         return $this->hasMany('App\Message');
     }
+
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class, 'enrollments');
+
+    }
 }

@@ -10,5 +10,7 @@ class Review extends Model
         'title',
         'body',
         'rate',
+        'from',
+        'enrollment_id'
     ];
 }

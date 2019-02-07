@@ -18,6 +18,11 @@ class CreateReviewsTable extends Migration
             $table->string('title');
             $table->string('body');
             $table->double('rate');
+            $table->string('from');
+
+            $table->unsignedInteger('enrollment_id');
+            $table->foreign('enrollment_id')->references('id')->on('enrollments');
+
             $table->timestamps();
         });
     }

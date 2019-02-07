@@ -12,6 +12,11 @@ class CoursesTableSeeder extends Seeder
             factory(App\Topic::class, 3)->create()->each(function($topic) use ($course) {
                 $course->topics()->attach($topic->id);
             });
+
+            $course->students()->attach(
+                1
+            );
+
         });
     }
 }
