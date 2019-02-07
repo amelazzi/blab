@@ -19,6 +19,10 @@ class CreateStudentsTable extends Migration
             $table->string('about');
             $table->string('image');
             $table->double('rate');
+
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+
             $table->timestamps();
         });
     }

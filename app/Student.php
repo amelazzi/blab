@@ -12,4 +12,19 @@ class Student extends Model
         'image',
         'rate',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+
+    public function tutorRequests()
+    {
+        return $this->hasMany('App\TutorRequest');
+    }
+
+    public function messages()
+    {
+        return $this->hasMany('App\Message');
+    }
 }

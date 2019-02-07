@@ -9,5 +9,6 @@ $factory->define(App\Course::class, function (Faker $faker) {
         'image' => $faker->imageUrl($width = 640, $height = 480),
         'rate' => $faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = 5),
         'price' => $faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = NULL),
+        'tutor_id' => \App\Tutor::inRandomOrder()->first()->id,
     ];
 });

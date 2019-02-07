@@ -17,6 +17,10 @@ class CreateTestimonialsTable extends Migration
             $table->increments('id');
             $table->string('body');
             $table->integer('weight');
+
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+
             $table->timestamps();
         });
     }

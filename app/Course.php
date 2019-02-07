@@ -13,4 +13,9 @@ class Course extends Model
         'rate',
         'price',
     ];
+
+    public function tutor()
+    {
+        return $this->belongsTo('App\Tutor');
+    }
 }

@@ -13,6 +13,10 @@ class CreateNotificationsTable extends Migration
             $table->string('title');
             $table->string('body');
             $table->integer('type');
+
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+
             $table->timestamps();
         });
     }

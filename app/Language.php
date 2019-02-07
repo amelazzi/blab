@@ -9,4 +9,9 @@ class Language extends Model
   protected $fillable = [
         'name',
     ];
+
+    public function tutorRequests()
+    {
+        return $this->hasMany('App\TutorRequest');
+    }
 }

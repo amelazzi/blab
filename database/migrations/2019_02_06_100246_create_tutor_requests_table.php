@@ -11,6 +11,13 @@ class CreateTutorRequestsTable extends Migration
         Schema::create('tutor_requests', function (Blueprint $table) {
             $table->increments('id');
             $table->string('body');
+
+            $table->unsignedInteger('student_id');
+            $table->foreign('student_id')->references('id')->on('students');
+
+            $table->unsignedInteger('language_id');
+            $table->foreign('language_id')->references('id')->on('languages');
+
             $table->timestamps();
         });
     }

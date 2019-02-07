@@ -20,6 +20,10 @@ class CreateCoursesTable extends Migration
             $table->string('image');
             $table->double('rate');
             $table->double('price');
+
+            $table->unsignedInteger('tutor_id');
+            $table->foreign('tutor_id')->references('id')->on('tutors');
+
             $table->timestamps();
         });
     }
