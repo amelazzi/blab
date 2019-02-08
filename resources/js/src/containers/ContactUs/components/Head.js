@@ -5,22 +5,22 @@ import { purple, gray } from '../../../styles/utilities/Colors';
 
 
 const StyledHead = styled.div`
-    padding : 4rem;
+    padding : 6rem 6rem 0 6rem;
     background: white;
 `;
 
 const HeadContent = styled.div`
-    padding: 12rem 9rem 12rem 9rem;
+    padding: 15rem 8rem 12rem 8rem;
     h1{
         width : 50%;
-        font-size: 4.5rem;
+        font-size: 6rem;
         font-weight: bold;
         color: ${purple}
     }
     p{
-        padding: 2rem 0 5rem 0;
+        padding: 3rem 0 5rem 0;
         color: ${gray};
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;

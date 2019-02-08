@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   ::placeholder, input[type="text"],input[type="email"], input[type="password"]{
       font-size: 2.2rem;
       padding-bottom: 1rem;
-      color: ${gray}
+      color: ${gray};
   }
 
   input[type="text"], input[type="email"], input[type="password"]{

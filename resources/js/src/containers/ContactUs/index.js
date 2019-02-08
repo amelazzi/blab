@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Main from './components/Main';
 import Head from './components/Head';
+import Form from './components/Form';
 
 const StyledContactUs = styled.div`
 `;
@@ -12,6 +13,7 @@ const ContactUs = () => {
         <StyledContactUs>
             <Main>
                 <Head/>
+                <Form/>
             </Main>
         </StyledContactUs>
     );

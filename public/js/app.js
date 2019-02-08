@@ -67819,6 +67819,104 @@ var Congrats = function Congrats() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/ContactUs/components/Form.js":
+/*!******************************************************************!*\
+  !*** ./resources/js/src/containers/ContactUs/components/Form.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    width: 50%; \n    display: flex;\n    flex-direction: row;\n    input{\n        margin: 0 0 8rem 1rem !important;\n        border: 1px solid ", " !important;\n        padding: 0.5rem 0 0.5rem 0.5rem !important;\n    }\n    ::placeholder, input[type=\"text\"]{\n        color: ", " !important;\n        font-weight: 300 !important;\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    margin-bottom: 6rem;\n    h1{\n        color: ", ";\n    }\n    p{\n        font-size: 2.2rem;\n        padding: 0;\n        color: ", ";\n        font-weight: 350;\n    }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 50%;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    width: 70%;    \n    display: flex;\n    justify-content: space-between;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    padding: 8rem 0 16rem 12rem;    \n    display: flex;\n    flex-direction: column;\n    background: white;\n    textarea{\n        width: 71rem;\n        height: 16rem;\n        padding: 0.5rem 0 0.5rem 0.5rem !important;\n        color: ", " !important;\n    }\n\n    textarea::-webkit-input-placeholder {\n        color: ", " !important;\n        font-weight: 300 !important;\n        font-size: 1.8rem !important;\n    }\n\n    input[type=\"submit\"]{\n        border: none;\n        width: 250px;\n        padding: 1rem 4rem 1rem 4rem;\n        background: ", ";\n        color: white;\n        font-size: 1.8rem;\n        font-weight: normal;\n        margin-left: 0 !important;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var Forms = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+var StyledForm = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var FormContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"]);
+var StyledInputs = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"]);
+
+var From = function From() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Forms, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledForm, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FormContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Chicago, USA "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 345 Micheal Jackson Road ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " +1 (626) 807-1686 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Mon to Fri 9am - 5pm ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Support@blab.com "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Send us feedback anytime "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInputs, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Enter your name"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Enter phone number"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Enter email address"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    placeholder: "Enter Message"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "submit",
+    value: "Send Message"
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (From);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/ContactUs/components/Head.js":
 /*!******************************************************************!*\
   !*** ./resources/js/src/containers/ContactUs/components/Head.js ***!
@@ -67834,7 +67932,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    padding: 12rem 9rem 12rem 9rem;\n    h1{\n        width : 50%;\n        font-size: 4.5rem;\n        font-weight: bold;\n        color: ", "\n    }\n    p{\n        padding: 2rem 0 5rem 0;\n        color: ", ";\n        font-size: 2rem;\n        font-weight: normal;\n        font-style: normal;\n        font-stretch: normal;\n        line-height: normal;\n        letter-spacing: normal;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 15rem 8rem 12rem 8rem;\n    h1{\n        width : 50%;\n        font-size: 6rem;\n        font-weight: bold;\n        color: ", "\n    }\n    p{\n        padding: 3rem 0 5rem 0;\n        color: ", ";\n        font-size: 2.5rem;\n        font-weight: normal;\n        font-style: normal;\n        font-stretch: normal;\n        line-height: normal;\n        letter-spacing: normal;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -67844,7 +67942,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    padding : 4rem;\n    background: white;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding : 6rem 6rem 0 6rem;\n    background: white;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67922,6 +68020,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Main */ "./resources/js/src/containers/ContactUs/components/Main.js");
 /* harmony import */ var _components_Head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Head */ "./resources/js/src/containers/ContactUs/components/Head.js");
+/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Form */ "./resources/js/src/containers/ContactUs/components/Form.js");
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n"]);
 
@@ -67938,10 +68037,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledContactUs = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 
 var ContactUs = function ContactUs() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContactUs, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_2__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContactUs, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_2__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Form__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ContactUs);
@@ -68914,7 +69014,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utilities */ "./resources/js/src/styles/utilities/index.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css?family=Open+Sans');\n  html {\n      font-size: 10px;\n  }\n  body {\n    ", ";\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n    color: ", "\n  }\n  h1, h2, h3, h4, h5, h6 {\n    color: ", ";\n  }\n\n  input{\n    margin: 2rem;\n  }\n\n  input:focus{\n      outline: none\n  }\n\n  ::placeholder, input[type=\"text\"],input[type=\"email\"], input[type=\"password\"]{\n      font-size: 2.2rem;\n      padding-bottom: 1rem;\n      color: ", "\n  }\n\n  input[type=\"text\"], input[type=\"email\"], input[type=\"password\"]{\n      border: none;\n      border-bottom: 1px solid ", "\n  }\n\n"]);
+  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css?family=Open+Sans');\n  html {\n      font-size: 10px;\n  }\n  body {\n    ", ";\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n    color: ", "\n  }\n  h1, h2, h3, h4, h5, h6 {\n    color: ", ";\n  }\n\n  input{\n    margin: 2rem;\n  }\n\n  input:focus{\n      outline: none\n  }\n\n  ::placeholder, input[type=\"text\"],input[type=\"email\"], input[type=\"password\"]{\n      font-size: 2.2rem;\n      padding-bottom: 1rem;\n      color: ", ";\n  }\n\n  input[type=\"text\"], input[type=\"email\"], input[type=\"password\"]{\n      border: none;\n      border-bottom: 1px solid ", "\n  }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
