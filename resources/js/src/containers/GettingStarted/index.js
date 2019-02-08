@@ -40,11 +40,11 @@ const GettingStarted = () => {
             <h1> Cool! you have taken your first step. </h1>
             <h2> Select your status </h2>
             <Cards>
-                <StyledLink to="/sign-up2"> 
+                <StyledLink to="/getting-started-student"> 
                     <Card icon={require("../../pictures/student.png")}
                         type="Students"></Card> 
                 </StyledLink>
-                <StyledLink to="/sign-up2">
+                <StyledLink to="/getting-started-student">
                     <Card icon={require("../../pictures/student.png")}
                         type="Tutors"></Card>
                 </StyledLink>
