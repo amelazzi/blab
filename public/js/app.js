@@ -67615,7 +67615,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;    \n    padding: 7rem;\n    display: flex;\n    flex-direction: row;\n    img{\n        width: 100%;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white; \n    align-items: center;   \n    padding: 7rem;\n    display: flex;\n    flex-direction: row;\n    img{\n        width: 100%;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67680,7 +67680,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;     \n    padding: 7rem;\n    display: flex;\n    flex-direction: row;\n    img{\n        width: 100%;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white; \n    align-items: center;    \n    padding: 7rem;\n    display: flex;\n    flex-direction: row;\n    img{\n        width: 100%;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -68222,7 +68222,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n    margin-top: 3rem;\n    padding-top: 1.5rem;\n    width: 16rem;\n    height: 6rem;\n    text-align: center;\n    background: ", ";\n    color: white;\n    text-decoration: none;\n    border-radius: 32px;\n    font-size: 2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin-top: 3rem;\n    padding-top: 1.5rem;\n    width: 16rem;\n    height: 6rem;\n    text-align: center;\n    background: ", ";\n    color: white;\n    text-decoration: none;\n    border-radius: 32px;\n    font-size: 2rem;\n    :hover{\n        text-decoration: none;\n        color: white\n    }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -68262,7 +68262,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    flex: 1;\n    background: white;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 6rem 3rem 3rem 10rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    flex: 1;\n    background: white;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 6rem 3rem 6rem 10rem;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -68292,7 +68292,7 @@ var Head = function Head() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHead, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Student (Blabee) "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSubmit, {
     theme: theme
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-    to: "/",
+    to: "/log-in",
     theme: {
       main: "#4D70F4"
     }
@@ -68351,15 +68351,63 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 /* harmony import */ var _components_Main__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Main */ "./resources/js/src/containers/GettingStartedStudent/components/Main.js");
 /* harmony import */ var _components_Head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Head */ "./resources/js/src/containers/GettingStartedStudent/components/Head.js");
+/* harmony import */ var _components_LeftSection__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/LeftSection */ "./resources/js/src/components/LeftSection.js");
+/* harmony import */ var _components_RightSection__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/RightSection */ "./resources/js/src/components/RightSection.js");
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    font-size: 4rem;\n    font-weight: bold;\n    padding: 3rem;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
 
 
 
 
+
+
+
+var Styled = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_templateObject2());
 
 var GettingStartedStudent = function GettingStartedStudent() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Styled, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " How it works "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    picture: __webpack_require__(/*! ../../pictures/1.png */ "./resources/js/src/pictures/1.png"),
+    title: "Become a Blabee",
+    text: "Here on Blab, you are regarded as a Blabee while Toturs regarder as Blabers. So have fun pairing with a blabber today."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    picture: __webpack_require__(/*! ../../pictures/2.png */ "./resources/js/src/pictures/2.png"),
+    title: "Mobility",
+    text: "Learn and study on the regardless of your device"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    picture: __webpack_require__(/*! ../../pictures/3.png */ "./resources/js/src/pictures/3.png"),
+    title: "Make Payment",
+    text: "Pay for yout class after being paired with a blabber. Each class cost $10, and you only pay for the class you receive."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    picture: __webpack_require__(/*! ../../pictures/4.png */ "./resources/js/src/pictures/4.png"),
+    title: "Taking Class",
+    text: "Receive your class online via our platform, with access to live chat and video coverage."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    picture: __webpack_require__(/*! ../../pictures/5.png */ "./resources/js/src/pictures/5.png"),
+    title: "Request for Blabber",
+    text: "Request a tutor right from your dashboard, send out specific iinformation and receive various request  by available blabbers."
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (GettingStartedStudent);
@@ -69229,6 +69277,61 @@ var SignUp = function SignUp() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SignUp);
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/1.png":
+/*!*****************************************!*\
+  !*** ./resources/js/src/pictures/1.png ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/1.png?78c19c4a10d6ae2ed309ab8376b00d83";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/2.png":
+/*!*****************************************!*\
+  !*** ./resources/js/src/pictures/2.png ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/2.png?e5a866f61f045d599ac3d7bf81d110d0";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/3.png":
+/*!*****************************************!*\
+  !*** ./resources/js/src/pictures/3.png ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/3.png?cfda36a7705b58b6b072221fab74dad2";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/4.png":
+/*!*****************************************!*\
+  !*** ./resources/js/src/pictures/4.png ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/4.png?cd0bd0621d93ffa5fc00b6906bb0dc88";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/5.png":
+/*!*****************************************!*\
+  !*** ./resources/js/src/pictures/5.png ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/5.png?8c1c80e3a308cb3732f5c5c8b4425c1c";
 
 /***/ }),
 

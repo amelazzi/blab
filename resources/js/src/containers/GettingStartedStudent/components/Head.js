@@ -10,7 +10,7 @@ const StyledHead = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6rem 3rem 3rem 10rem;
+    padding: 6rem 3rem 6rem 10rem;
 `;
 
 const StyledContent = styled.div`
@@ -45,6 +45,10 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     border-radius: 32px;
     font-size: 2rem;
+    :hover{
+        text-decoration: none;
+        color: white
+    }
 `;
 
 const theme = {
@@ -57,7 +61,7 @@ const Head = () => {
             <StyledContent >
                 <h1> Student (Blabee) </h1>
                 <StyledSubmit theme={theme}>
-                    <StyledLink to="/" theme={{ main: "#4D70F4" }}> 
+                    <StyledLink to="/log-in" theme={{ main: "#4D70F4" }}> 
                         Log in 
                     </StyledLink>
                     <StyledLink to="/" theme={{ main: "#3D3D3D" }}> 

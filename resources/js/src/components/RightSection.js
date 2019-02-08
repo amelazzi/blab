@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { dark, lightGray, blue } from '../styles/utilities/Colors';
 
 const StyledSection = styled.div`
-    background: white;     
+    background: white; 
+    align-items: center;    
     padding: 7rem;
     display: flex;
     flex-direction: row;
