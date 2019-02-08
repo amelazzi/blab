@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import { lightGray } from '../../styles/utilities/Colors'
 import Main from './components/Main'
-import Head from './components/Head'
+import StartedHead from '../../components/StartedHead'
 import LefSection from '../../components/LeftSection'
 import RightSection from '../../components/RightSection'
 
@@ -18,11 +18,13 @@ const StyledH1 = styled.h1`
     padding: 3rem;
 `;
 
-const GettingStartedStudent = () => {
+const StartedStudent = () => {
     return (
         <Styled> 
             <Main>
-                <Head/>
+                <StartedHead type="Student (Blabee)" 
+                    picture={require("../../pictures/get-started-student.png")}>
+                </StartedHead>
                 <StyledH1> How it works </StyledH1>
                 <LefSection picture={require("../../pictures/1.png")}
                     title="Become a Blabee"
@@ -54,4 +56,4 @@ const GettingStartedStudent = () => {
     );
 };
 
-export default GettingStartedStudent;
+export default StartedStudent;

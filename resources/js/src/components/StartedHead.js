@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { purple } from '../../../styles/utilities/Colors';
+import { purple } from '../styles/utilities/Colors';
 
 
 const StyledHead = styled.div`
@@ -55,11 +55,11 @@ const theme = {
     main: "#4D70F4"
 }
 
-const Head = () => {
+const StartedHead = ({type, picture}) => {
     return (
         <StyledHead>
             <StyledContent >
-                <h1> Student (Blabee) </h1>
+                <h1> {type}</h1>
                 <StyledSubmit theme={theme}>
                     <StyledLink to="/log-in" theme={{ main: "#4D70F4" }}> 
                         Log in 
@@ -70,10 +70,10 @@ const Head = () => {
                 </StyledSubmit>
             </StyledContent>
             <StyledImg>
-                <img src={require("../../../pictures/get-started-student.png")} />
+                <img src={picture} />
             </StyledImg>
         </StyledHead>
     );
 };
 
-export default Head;
+export default StartedHead;

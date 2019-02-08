@@ -38,15 +38,6 @@ const StyledContent = styled.div`
         font-size: 2.8rem;
         line-height: 1.2;
     }
-    button{
-        border: none;
-        border-radius: 8px;
-        background: ${blue};
-        color: white;
-        margin-left: 8px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
 `;
 
 const RightSection = ({picture, title, text}) => (
@@ -57,7 +48,6 @@ const RightSection = ({picture, title, text}) => (
         <StyledContent>
             <h1> {title} </h1>
             <p> {text} </p>
-            <button> Explore Language </button>
         </StyledContent>
     </StyledSection>
 );

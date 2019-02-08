@@ -44,7 +44,7 @@ const GettingStarted = () => {
                     <Card icon={require("../../pictures/student.png")}
                         type="Students"></Card> 
                 </StyledLink>
-                <StyledLink to="/getting-started-student">
+                <StyledLink to="/getting-started-tutor">
                     <Card icon={require("../../pictures/student.png")}
                         type="Tutors"></Card>
                 </StyledLink>
