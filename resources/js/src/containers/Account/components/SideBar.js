@@ -36,7 +36,7 @@ const StyledSidBar = styled.div`
 `;
 
 
-const SidBar = ({children}) => {
+const SideBar = ({children}) => {
     return (
         <StyledSidBar>
             {children}
@@ -44,4 +44,4 @@ const SidBar = ({children}) => {
     );
 };
 
-export default SidBar;
+export default SideBar;

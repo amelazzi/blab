@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { Link, Route, Switch } from 'react-router-dom';
 
 
-import SidBar from './components/SideBar'
-import Dashboard from './containers/Dashboard/Dashboard';
+import SideBar from './components/SideBar'
+import Dashboard from './containers/Dashboard/index';
 
 const StyledAccount  = styled.div`
     display: flex;
@@ -14,7 +14,7 @@ const StyledAccount  = styled.div`
 const Account = () => {
     return (
         <StyledAccount> 
-            <SidBar>
+            <SideBar>
                 <nav>
                     <Link to="/account"> Dashboard 
                         <img src={require("../../pictures/book.png")}/>
@@ -35,7 +35,7 @@ const Account = () => {
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                 </nav>  
-            </SidBar>  
+            </SideBar>  
 
             <Switch>
                 <Route path="/account" exact component={Dashboard} />
