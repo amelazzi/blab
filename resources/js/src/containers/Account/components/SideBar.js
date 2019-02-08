@@ -1,3 +1,4 @@
+
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -35,29 +36,10 @@ const StyledSidBar = styled.div`
 `;
 
 
-const SidBar = () => {
+const SidBar = ({children}) => {
     return (
         <StyledSidBar>
-            <nav>
-                <Link to="/"> Dashboard 
-                    <img src={require("../../../pictures/book.png")}/>
-                </Link>
-                <Link to="/"> My Class 
-                    <img src={require("../../../pictures/book.png")}/>
-                </Link>
-                <Link to="/"> Blabber 
-                    <img src={require("../../../pictures/book.png")}/>
-                </Link>
-                <Link to="/"> Find a Blabber 
-                    <img src={require("../../../pictures/book.png")}/>
-                </Link>
-                <Link to="/"> Message 
-                    <img src={require("../../../pictures/book.png")}/>
-                </Link>
-                <Link to="/"> Notification 
-                    <img src={require("../../../pictures/book.png")}/>
-                </Link>
-            </nav>
+            {children}
         </StyledSidBar>
     );
 };
