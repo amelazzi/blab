@@ -24,11 +24,7 @@ class Account extends Component {
 
                 <Switch>
                     <Route path="/account" exact component={Dashboard} />
-                </Switch>
-                <Switch>
                     <Route path="/account/courses" component={Courses} />
-                </Switch>
-                <Switch>
                     <Route
                         path="/account/notifications"
                         component={Notifications}
