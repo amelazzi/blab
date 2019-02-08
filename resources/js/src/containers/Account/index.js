@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import SideBar from './components/SideBar';
-import Courses from './components/Courses';
-import Notifications from './components/Notifications';
-import Dashboard from './components/Dashboard';
+import Courses from './containers/Courses';
+import Notifications from './containers/Notifications';
+import Dashboard from './containers/Dashboard';
 
 class Account extends Component {
     render() {

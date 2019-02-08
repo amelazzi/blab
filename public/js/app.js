@@ -67891,70 +67891,6 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ "./resources/js/src/containers/Account/components/Courses.js":
-/*!*******************************************************************!*\
-  !*** ./resources/js/src/containers/Account/components/Courses.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-var Courses = function Courses() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Courses"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Courses);
-
-/***/ }),
-
-/***/ "./resources/js/src/containers/Account/components/Dashboard.js":
-/*!*********************************************************************!*\
-  !*** ./resources/js/src/containers/Account/components/Dashboard.js ***!
-  \*********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-var Dashboard = function Dashboard() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dashboard"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Dashboard);
-
-/***/ }),
-
-/***/ "./resources/js/src/containers/Account/components/Notifications.js":
-/*!*************************************************************************!*\
-  !*** ./resources/js/src/containers/Account/components/Notifications.js ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-var Notifications = function Notifications(_ref) {
-  var children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Notifications"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Notifications);
-
-/***/ }),
-
 /***/ "./resources/js/src/containers/Account/components/SideBar.js":
 /*!*******************************************************************!*\
   !*** ./resources/js/src/containers/Account/components/SideBar.js ***!
@@ -67992,6 +67928,70 @@ var SideBar = function SideBar(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Account/containers/Courses/index.js":
+/*!*************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Courses/index.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Courses = function Courses() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Courses"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Courses);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Dashboard/index.js":
+/*!***************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Dashboard/index.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Dashboard = function Dashboard() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dashboard"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Dashboard);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Notifications/index.js":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Notifications/index.js ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Notifications = function Notifications(_ref) {
+  var children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Notifications"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Notifications);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Account/index.js":
 /*!******************************************************!*\
   !*** ./resources/js/src/containers/Account/index.js ***!
@@ -68005,9 +68005,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _components_SideBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/SideBar */ "./resources/js/src/containers/Account/components/SideBar.js");
-/* harmony import */ var _components_Courses__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Courses */ "./resources/js/src/containers/Account/components/Courses.js");
-/* harmony import */ var _components_Notifications__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Notifications */ "./resources/js/src/containers/Account/components/Notifications.js");
-/* harmony import */ var _components_Dashboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Dashboard */ "./resources/js/src/containers/Account/components/Dashboard.js");
+/* harmony import */ var _containers_Courses__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/Courses */ "./resources/js/src/containers/Account/containers/Courses/index.js");
+/* harmony import */ var _containers_Notifications__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/Notifications */ "./resources/js/src/containers/Account/containers/Notifications/index.js");
+/* harmony import */ var _containers_Dashboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./containers/Dashboard */ "./resources/js/src/containers/Account/containers/Dashboard/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -68056,13 +68056,13 @@ function (_Component) {
       }, "Notifications"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/account",
         exact: true,
-        component: _components_Dashboard__WEBPACK_IMPORTED_MODULE_5__["default"]
+        component: _containers_Dashboard__WEBPACK_IMPORTED_MODULE_5__["default"]
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/account/courses",
-        component: _components_Courses__WEBPACK_IMPORTED_MODULE_3__["default"]
+        component: _containers_Courses__WEBPACK_IMPORTED_MODULE_3__["default"]
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/account/notifications",
-        component: _components_Notifications__WEBPACK_IMPORTED_MODULE_6__["default"]
+        component: _containers_Notifications__WEBPACK_IMPORTED_MODULE_4__["default"]
       })));
     }
   }]);
