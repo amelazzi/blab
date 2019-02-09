@@ -64557,7 +64557,7 @@ function isStyledComponent(target) {
 
 // 
 
-var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
+var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
 
 var SC_VERSION_ATTR = 'data-styled-version';
 
@@ -67886,6 +67886,8 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
@@ -67900,15 +67902,16 @@ var Tabs =
 function (_Component) {
   _inherits(Tabs, _Component);
 
-  function Tabs() {
+  function Tabs(props) {
     var _this;
 
     _classCallCheck(this, Tabs);
 
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Tabs).call(this, props));
     _this.state = {
       activeTabs: []
     };
-    return _possibleConstructorReturn(_this);
+    return _this;
   }
 
   _createClass(Tabs, [{
@@ -67916,25 +67919,25 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement(react__WEBPACK_IMPORTED_MODULE_0__["React"].Fragment, null, react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement(react__WEBPACK_IMPORTED_MODULE_0__["React"].Fragment, null, react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement("button", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
           return _this2.setState({
             activeTab: 1
           });
         }
-      }, "tab1"), react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement("button", {
+      }, "tab1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
           return _this2.setState({
             activeTab: 2
           });
         }
-      }, "tab2"), react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement("button", {
+      }, "tab2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
           return _this2.setState({
             activeTab: 3
           });
         }
-      }, "tab3")), react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement(react__WEBPACK_IMPORTED_MODULE_0__["React"].Fragment, null, this.state.activeTab == 1 ? react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement("div", null, " tab 1 content ") : this.state.activeTab == 2 ? react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement("div", null, " tab 2 content ") : react__WEBPACK_IMPORTED_MODULE_0__["React"].createElement("div", null, " tab 3 content ")));
+      }, "tab3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.state.activeTab == 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " tab 1 content ") : this.state.activeTab == 2 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " tab 2 content ") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " tab 3 content ")));
     }
   }]);
 
@@ -69065,26 +69068,26 @@ var Home = function Home() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHome, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
     picture: __webpack_require__(/*! ../../pictures/pic1.png */ "./resources/js/src/pictures/pic1.png"),
     title: "Over 30 languages course taken on this platform.",
-    text: "Let us take you on a journey through the varieties of  languages thought on this platform by qualified tours."
+    text: "Let us take you on a journey through the varieties of \r languages thought on this platform by qualified tours."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
     picture: __webpack_require__(/*! ../../pictures/pic2.png */ "./resources/js/src/pictures/pic2.png"),
     title: "Why use Blab?",
-    text: "Over here at Blab, we take learning really serious,  thats why we have put together the best tutors to take you throught the experience of learning your favorite languageat your convenience. With our mobile friendly platform, you can your online classes at anywhere you are in the world."
+    text: "Over here at Blab, we take learning really serious, \r thats why we have put together the best tutors to take you throught\r the experience of learning your favorite languageat your convenience.\r With our mobile friendly platform, you can your online classes at\r anywhere you are in the world."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Learn at your convinence",
-    text: "Learning has been made easier with our mobile friendly package. Swith between your computer, tablet or mobile devices at anytime."
+    text: "Learning has been made easier with our mobile friendly package.\r Swith between your computer, tablet or mobile devices at\r anytime."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Get the best qualified Tutors",
-    text: "Hire a tutor from our wide range of qualified  teachers who are passionate to impact knowledge to you."
+    text: "Hire a tutor from our wide range of qualified \r teachers who are passionate to impact knowledge to you."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Wide range of Language",
-    text: "Select a language to learn from our wide range of foreign language."
+    text: "Select a language to learn from our wide range of\r foreign language."
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " What our customers are saying "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Testimonies, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimony__WEBPACK_IMPORTED_MODULE_6__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    text: "Blab really help me in my transfer to Spain, I am now fluent in spanish thanks tu tutors at Blab.",
+    text: "Blab really help me in my transfer to Spain, I am\r now fluent in spanish thanks tu tutors at Blab.",
     author: "Paul Robinson"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Featured Tutors "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH2, null, " Take a look at our top rating tutors for the week "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopTutors, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RatedTutor__WEBPACK_IMPORTED_MODULE_7__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
@@ -69619,7 +69622,7 @@ var StartedStudent = function StartedStudent() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " How it works "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/1.png */ "./resources/js/src/pictures/1.png"),
     title: "Become a Blabee",
-    text: "Here on Blab, you are regarded as a Blabee while Toturs regarder as Blabers. So have fun pairing with a blabber today."
+    text: "Here on Blab, you are regarded as a Blabee while Toturs\r regarder as Blabers.\r So have fun pairing with a blabber today."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/2.png */ "./resources/js/src/pictures/2.png"),
     title: "Mobility",
@@ -69627,15 +69630,15 @@ var StartedStudent = function StartedStudent() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/3.png */ "./resources/js/src/pictures/3.png"),
     title: "Make Payment",
-    text: "Pay for yout class after being paired with a blabber. Each class cost $10, and you only pay for the class you receive."
+    text: "Pay for yout class after being paired with a blabber.\r Each class cost $10, and you only pay for the class you receive."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/4.png */ "./resources/js/src/pictures/4.png"),
     title: "Taking Class",
-    text: "Receive your class online via our platform, with access to live chat and video coverage."
+    text: "Receive your class online via our platform,\r with access to live chat and video coverage."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/5.png */ "./resources/js/src/pictures/5.png"),
     title: "Request for Blabber",
-    text: "Request a tutor right from your dashboard, send out specific iinformation and receive various request  by available blabbers."
+    text: "Request a tutor right from your dashboard, send out specific\r iinformation and receive various request  by available blabbers."
   })));
 };
 
@@ -69726,23 +69729,23 @@ var StartedStudent = function StartedStudent() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " How it works "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/1.png */ "./resources/js/src/pictures/1.png"),
     title: "Become a Blabber",
-    text: "Here on Blab, you are regarded as a Blabber while students are regarded as a blabee. So have fun pairing and teaching a blabee today."
+    text: "Here on Blab, you are regarded as a Blabber while students are regarded as a blabee.\r So have fun pairing and teaching a blabee today."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/2.png */ "./resources/js/src/pictures/2.png"),
     title: "Mobility",
-    text: "Explore our convinient services to teach students any time and anywhere, regardless of your device"
+    text: "Explore our convinient services to teach students any time and anywhere,\r regardless of your device"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/get-paied.png */ "./resources/js/src/pictures/get-paied.png"),
     title: "Receiving Payment",
-    text: "Get paid via  our system which pay directly to your paypal or payonner  account linked to your account."
+    text: "Get paid via  our system which pay directly to your paypal or payonner \r account linked to your account."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/4.png */ "./resources/js/src/pictures/4.png"),
     title: "Tutoring",
-    text: "Teach your students online via our live class session,  which includes live video and chat services."
+    text: "Teach your students online via our live class session, \r which includes live video and chat services."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/find-student.png */ "./resources/js/src/pictures/find-student.png"),
     title: "Find Student",
-    text: "Search for new students via our student offers menu,  and select based on your native language."
+    text: "Search for new students via our student offers menu, \r and select based on your native language."
   })));
 };
 
@@ -70116,8 +70119,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/macos/Desktop/blab/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/macos/Desktop/blab/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! H:\Laravel\blab\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! H:\Laravel\blab\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
