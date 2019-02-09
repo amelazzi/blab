@@ -13,9 +13,9 @@ const StyledCard  = styled.div`
         margin-left: 38%;
         border: 3px solid green;
         border-radius: 8px;
-        padding: 0 4rem 0 4rem;
+        padding: 0 3rem 0 3rem;
         background: white;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 `;
 
@@ -24,7 +24,7 @@ const TutorProfil = styled.div`
     text-align: center;
     padding-bottom: 4rem;
     width: 18%;
-    box-shadow: 3px 3px ${lightGray};
+    box-shadow: 3px 3px ${light};
     h3{
         font-size: 1.8rem;
         padding: 1rem 0 0 0;

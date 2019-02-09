@@ -6,6 +6,7 @@ import Head from './components/Head';
 import Form from './components/Form';
 
 const StyledContactUs = styled.div`
+    background: white;
 `;
 
 const ContactUs = () => {

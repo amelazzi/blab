@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
     }
 
     nav {
-        width: 79.5%;
+        width: 79%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;

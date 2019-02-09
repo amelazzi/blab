@@ -5,10 +5,12 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 import SideBar from './components/SideBar'
 import Dashboard from './containers/Dashboard/index';
+import MyClass from './containers/Class/index';
 
 const StyledAccount  = styled.div`
     display: flex;
     justify-content: space-between;
+    background: white;
 `;
 
 const Account = () => {
@@ -19,7 +21,7 @@ const Account = () => {
                     <Link to="/account"> Dashboard 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
-                    <Link to="/account/courses"> My Class 
+                    <Link to="/account/my-class"> My Class 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                     <Link to="/"> Blabber 
@@ -39,6 +41,7 @@ const Account = () => {
 
             <Switch>
                 <Route path="/account" exact component={Dashboard} />
+                <Route path="/account/my-class" component={MyClass} />
             </Switch>
         </StyledAccount>
     );

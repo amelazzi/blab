@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Card from '../containers/Dashboard/components/Card'
-import { gray, purple } from '../../../styles/utilities/Colors';
+import Card from './Card'
+import { gray, purple } from '../../../../../styles/utilities/Colors';
 
 const TabsContent = styled.div`
     display: flex;
-    margin-left: 2rem;
-    margin-right: 2rem;
     border-bottom: 1px solid ${gray};
     align-items: flex-start;
-    padding: 0 1rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 4rem;
     button{
         border: none;
         font-size: 2.4rem;
@@ -19,7 +17,6 @@ const TabsContent = styled.div`
 `;
 
 const Courses = styled.div`
-    background: white;
     padding: 6rem 4rem 0 2rem;
 `;
 
@@ -83,13 +80,13 @@ class Tabs extends Component {
                         <Courses>
                             <Course>
                                 <h1> Next class </h1>
-                                <Card tutorPic={require("../../../pictures/profile.png")}
+                                <Card tutorPic={require("../../../../../pictures/profile.png")}
                                     tutorName="John Doe"
                                     className="English"/>
                             </Course>
                             <Course>
                                 <h1> Missed class </h1>
-                                <Card tutorPic={require("../../../pictures/profile.png")}
+                                <Card tutorPic={require("../../../../../pictures/profile.png")}
                                     tutorName="John Doe"
                                     className="English"/>
                             </Course>
