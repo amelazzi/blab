@@ -16,9 +16,9 @@ Route::group(['middleware' => ['json.response']], function () {
         Route::post('/login', 'LoginController@login');
         Route::post('/register', 'RegisterController@register');
 
-        Route::post('/password/create', 'PasswordResetController@create');
-        Route::get('/password/find/{token}', 'PasswordResetController@find');
-        Route::post('/password/reset', 'PasswordResetController@reset');
+        Route::post('/password/create', 'ResetPasswordController@create');
+        Route::get('/password/find/{token}', 'ResetPasswordController@find');
+        Route::post('/password/reset', 'ResetPasswordController@reset');
     });
 
     Route::middleware('auth:api')->group(function () {
