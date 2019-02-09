@@ -8,8 +8,18 @@ Route::group(['middleware' => ['json.response']], function () {
         return $request->user();
     });
 
-    Route::post('/login', 'Auth\LoginController@login')->name('login.api');
-    Route::post('/register', 'Auth\RegisterController@register')->name('register.api');
+
+    Route::group([
+        'namespace' => 'Auth',
+        'middleware' => 'api',
+    ], function () {
+        Route::post('/login', 'LoginController@login');
+        Route::post('/register', 'RegisterController@register');
+
+        Route::post('/password/create', 'PasswordResetController@create');
+        Route::get('/password/find/{token}', 'PasswordResetController@find');
+        Route::post('/password/reset', 'PasswordResetController@reset');
+    });
 
     Route::middleware('auth:api')->group(function () {
         Route::get('/logout', 'Auth\LoginController@logout')->name('logout');

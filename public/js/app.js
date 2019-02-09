@@ -64557,7 +64557,7 @@ function isStyledComponent(target) {
 
 // 
 
-var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
+var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
 
 var SC_VERSION_ATTR = 'data-styled-version';
 
@@ -68193,26 +68193,26 @@ var Home = function Home() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHome, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
     picture: __webpack_require__(/*! ../../pictures/pic1.png */ "./resources/js/src/pictures/pic1.png"),
     title: "Over 30 languages course taken on this platform.",
-    text: "Let us take you on a journey through the varieties of  languages thought on this platform by qualified tours."
+    text: "Let us take you on a journey through the varieties of \r languages thought on this platform by qualified tours."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
     picture: __webpack_require__(/*! ../../pictures/pic2.png */ "./resources/js/src/pictures/pic2.png"),
     title: "Why use Blab?",
-    text: "Over here at Blab, we take learning really serious,  thats why we have put together the best tutors to take you throught the experience of learning your favorite languageat your convenience. With our mobile friendly platform, you can your online classes at anywhere you are in the world."
+    text: "Over here at Blab, we take learning really serious, \r thats why we have put together the best tutors to take you throught\r the experience of learning your favorite languageat your convenience.\r With our mobile friendly platform, you can your online classes at\r anywhere you are in the world."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Learn at your convinence",
-    text: "Learning has been made easier with our mobile friendly package. Swith between your computer, tablet or mobile devices at anytime."
+    text: "Learning has been made easier with our mobile friendly package.\r Swith between your computer, tablet or mobile devices at\r anytime."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Get the best qualified Tutors",
-    text: "Hire a tutor from our wide range of qualified  teachers who are passionate to impact knowledge to you."
+    text: "Hire a tutor from our wide range of qualified \r teachers who are passionate to impact knowledge to you."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Wide range of Language",
-    text: "Select a language to learn from our wide range of foreign language."
+    text: "Select a language to learn from our wide range of\r foreign language."
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " What our customers are saying "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Testimonies, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimony__WEBPACK_IMPORTED_MODULE_6__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    text: "Blab really help me in my transfer to Spain, I am now fluent in spanish thanks tu tutors at Blab.",
+    text: "Blab really help me in my transfer to Spain, I am\r now fluent in spanish thanks tu tutors at Blab.",
     author: "Paul Robinson"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Featured Tutors "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH2, null, " Take a look at our top rating tutors for the week "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopTutors, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RatedTutor__WEBPACK_IMPORTED_MODULE_7__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
@@ -68468,8 +68468,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/macos/Desktop/blab/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/macos/Desktop/blab/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! H:\Laravel\blab\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! H:\Laravel\blab\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
