@@ -67860,6 +67860,56 @@ var SideBar = function SideBar(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Account/components/Tabs.js":
+/*!****************************************************************!*\
+  !*** ./resources/js/src/containers/Account/components/Tabs.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+var _this = undefined;
+
+
+
+
+
+
+var Tabs = function Tabs() {
+  state = {
+    activeTab: 1
+  };
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return _this.setState({
+        activeTab: 1
+      });
+    }
+  }, "tab1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return _this.setState({
+        activeTab: 2
+      });
+    }
+  }, "tab2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return _this.setState({
+        activeTab: 3
+      });
+    }
+  }, "tab3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, state.activeTab == 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " tab 1 content ") : state.activeTab == 2 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " tab 2 content ") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " tab 3 content ")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Tabs);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Account/containers/Dashboard/components/Card.js":
 /*!*************************************************************************************!*\
   !*** ./resources/js/src/containers/Account/containers/Dashboard/components/Card.js ***!
@@ -67950,7 +68000,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Card */ "./resources/js/src/containers/Account/containers/Dashboard/components/Card.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var _components_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Tabs */ "./resources/js/src/containers/Account/components/Tabs.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject9() {
   var data = _taggedTemplateLiteral(["\n    padding-bottom: 4rem;\n    border-bottom: 1px solid ", ";\n    h2{\n        padding: 3rem 0 0 0;\n        font-size: 2.2rem;\n    }\n    p{\n        padding-left: 4rem;\n        font-size: 5rem;\n        font-weight: bold;\n    }\n"]);
 
@@ -68048,15 +68099,16 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledDashboard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject2());
 var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
-var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["gray"]);
+var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["gray"]);
 var Courses = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5());
 var Course = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6());
 var Wallet = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject7());
 var CreditAccount = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject8());
-var Balance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject9(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["gray"]);
+var Balance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject9(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["gray"]);
 
 var Dashboard = function Dashboard() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDashboard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
@@ -68073,7 +68125,7 @@ var Dashboard = function Dashboard() {
     tutorPic: __webpack_require__(/*! ../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
     tutorName: "John Doe",
     className: "English"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wallet, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Balance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreditAccount, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Credit Account "))));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wallet, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Balance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreditAccount, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Credit Account "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Dashboard);
