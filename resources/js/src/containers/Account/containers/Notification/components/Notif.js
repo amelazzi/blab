@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { lightGray, pink } from '../../../../../styles/utilities/Colors';
 
 const StyledNotif = styled.div`
-    padding: 1rem 0 1rem 0;
+    padding: 2rem 0 2rem 0;
     display: flex;
     align-items: center;
     border-bottom: 1px solid ${lightGray};
@@ -17,7 +17,7 @@ const ImgContainer = styled.div`
 `;
 
 const NotifContainer = styled.div`
-    margin-left: 4rem;
+    margin-left: 6rem;
     h1{
         font-size: 2.4rem !important;
         padding: 0 !important;

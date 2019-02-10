@@ -32,7 +32,7 @@ const InputContent = styled.div`
 `;
 
 const Notifications = styled.div`
-
+    margin-top: 6rem;
 `;
 
 const Notification = () => {
@@ -43,6 +43,15 @@ const Notification = () => {
                 <Input type="text" placeholder="Sort" />
             </InputContent>
             <Notifications>
+                <Notif title="Your class with Mark John has started"
+                    detail="Spanish class"
+                    time="20 min"/>
+                <Notif title="Your class with Mark John has started"
+                    detail="Spanish class"
+                    time="20 min"/>
+                <Notif title="Your class with Mark John has started"
+                    detail="Spanish class"
+                    time="20 min"/>
                 <Notif title="Your class with Mark John has started"
                     detail="Spanish class"
                     time="20 min"/>

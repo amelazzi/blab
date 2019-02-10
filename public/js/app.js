@@ -68630,7 +68630,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    margin-left: 4rem;\n    h1{\n        font-size: 2.4rem !important;\n        padding: 0 !important;\n    }\n    h2{\n        font-size: 2.4rem;\n        color: ", ";\n        font-weight: 300;\n    }\n    p{\n        margin-top: 1rem;\n        font-size: 2.4rem;\n        color: ", "\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin-left: 6rem;\n    h1{\n        font-size: 2.4rem !important;\n        padding: 0 !important;\n    }\n    h2{\n        font-size: 2.4rem;\n        color: ", ";\n        font-weight: 300;\n    }\n    p{\n        margin-top: 1rem;\n        font-size: 2.4rem;\n        color: ", "\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -68650,7 +68650,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    padding: 1rem 0 1rem 0;\n    display: flex;\n    align-items: center;\n    border-bottom: 1px solid ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 2rem 0 2rem 0;\n    display: flex;\n    align-items: center;\n    border-bottom: 1px solid ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -68696,7 +68696,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 /* harmony import */ var _components_Notif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Notif */ "./resources/js/src/containers/Account/containers/Notification/components/Notif.js");
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin-top: 6rem;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -68754,6 +68754,18 @@ var Notification = function Notification() {
     type: "text",
     placeholder: "Sort"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Notifications, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Your class with Mark John has started",
+    detail: "Spanish class",
+    time: "20 min"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Your class with Mark John has started",
+    detail: "Spanish class",
+    time: "20 min"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "Your class with Mark John has started",
+    detail: "Spanish class",
+    time: "20 min"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
     title: "Your class with Mark John has started",
     detail: "Spanish class",
     time: "20 min"
