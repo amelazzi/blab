@@ -5,6 +5,7 @@ import { gray, purple, lightGray, pink, light } from '../../../../../styles/util
 
 const StyledCard = styled.div`
     background: white;
+    margin: 2rem;
     text-align: center;
     width: 260px;
     box-shadow: 3px 3px ${light};

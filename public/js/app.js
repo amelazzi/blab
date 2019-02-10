@@ -67860,6 +67860,70 @@ var SideBar = function SideBar(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Account/containers/Blabber/index.js":
+/*!*************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Blabber/index.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 0\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    margin: 0;\n    &:nth-child(1){\n        width: 65%;\n    }\n    &:nth-child(2){\n        width: 30%;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    width: 75%;\n    padding: 2rem 2rem 0 2rem;\n    padding-bottom: 12rem;\n    h1{\n        padding-left: 2rem;\n        font-size: 3rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+var StyledBlabber = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject2());
+var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+
+var Blabber = function Blabber() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledBlabber, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+    type: "text",
+    placeholder: "Type to search"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+    type: "text",
+    placeholder: "Sort"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Blabber);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Account/containers/Class/components/ClassCard.js":
 /*!**************************************************************************************!*\
   !*** ./resources/js/src/containers/Account/containers/Class/components/ClassCard.js ***!
@@ -67894,7 +67958,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    text-align: center;\n    width: 260px;\n    box-shadow: 3px 3px ", ";\n    h1, h2, p{\n        padding: 0.25rem;\n    }\n    h1{\n        margin-top: 2rem;\n        font-size: 1.8rem;\n    }\n    h2{\n        font-size: 1.6rem;\n        color: ", "\n    }\n    p{\n        font-size: 1.4rem;\n        color: ", "\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    margin: 2rem;\n    text-align: center;\n    width: 260px;\n    box-shadow: 3px 3px ", ";\n    h1, h2, p{\n        padding: 0.25rem;\n    }\n    h1{\n        margin-top: 2rem;\n        font-size: 1.8rem;\n    }\n    h2{\n        font-size: 1.6rem;\n        color: ", "\n    }\n    p{\n        font-size: 1.4rem;\n        color: ", "\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -67958,7 +68022,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: center;\n    padding: 6rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 2rem;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -68048,7 +68112,7 @@ function (_Component) {
         blabberName: "Mark John",
         className: "English Language",
         timeLeft: "10min"
-      })) : this.state.activeTab == 2 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Hello from tab 2 ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Hello from tab 3 "))));
+      })) : this.state.activeTab == 2 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Hello from tab 3 "))));
     }
   }]);
 
@@ -68429,6 +68493,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SideBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/SideBar */ "./resources/js/src/containers/Account/components/SideBar.js");
 /* harmony import */ var _containers_Dashboard_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/Dashboard/index */ "./resources/js/src/containers/Account/containers/Dashboard/index.js");
 /* harmony import */ var _containers_Class_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./containers/Class/index */ "./resources/js/src/containers/Account/containers/Class/index.js");
+/* harmony import */ var _containers_Blabber__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./containers/Blabber */ "./resources/js/src/containers/Account/containers/Blabber/index.js");
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n"]);
 
@@ -68440,6 +68505,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -68459,7 +68525,7 @@ var Account = function Account() {
   }, " My Class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/"
+    to: "/account/blabber"
   }, " Blabber", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
@@ -68481,6 +68547,9 @@ var Account = function Account() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/account/my-class",
     component: _containers_Class_index__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/account/blabber",
+    component: _containers_Blabber__WEBPACK_IMPORTED_MODULE_6__["default"]
   })));
 };
 

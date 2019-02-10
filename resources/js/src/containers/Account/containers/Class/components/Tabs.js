@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { gray, purple, lightGray } from '../../../../../styles/utilities/Colors';
+import { lightGray } from '../../../../../styles/utilities/Colors';
 import ClassCard from './ClassCard'
 
 const StyledClass = styled.div`
@@ -24,8 +24,9 @@ const TabsContent = styled.div`
 
 const CurrentClasses = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 6rem;
+    padding: 2rem;
 `;
 
 class Tabs extends Component {
@@ -58,7 +59,6 @@ class Tabs extends Component {
                         </CurrentClasses>) : this.state.activeTab == 2?
                         ( 
                         <div>
-                            <h1> Hello from tab 2 </h1>
                         </div>):
                         ( 
                             <div>
