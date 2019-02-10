@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import {lightGray, purple} from '../../../../../styles/utilities/Colors'
 
 const StyledSidBar = styled.div`
-    width: 13em;
     padding:  4.9rem 6rem 18.8rem 6rem;
     -webkit-box-shadow: 0 0 10px 0px ${lightGray};
     font-size: 2.5rem;
@@ -18,11 +17,14 @@ const StyledLink = styled(Link)`
 `;
 
 const ImgContainer = styled.div`
-    width: 100%;
+    width: 30rem;
+    height: 30rem;
     margin-top: 4.6rem;
     margin-bottom: 1.3rem;
     img{
         width: 100%;
+        height: 100%;
+        object-fit: cover
     }
 `;
 

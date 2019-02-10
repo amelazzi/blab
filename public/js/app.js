@@ -73139,7 +73139,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    margin-top: 4.6rem;\n    margin-bottom: 1.3rem;\n    img{\n        width: 100%;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 30rem;\n    height: 30rem;\n    margin-top: 4.6rem;\n    margin-bottom: 1.3rem;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -73159,7 +73159,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    width: 13em;\n    padding:  4.9rem 6rem 18.8rem 6rem;\n    -webkit-box-shadow: 0 0 10px 0px ", ";\n    font-size: 2.5rem;\n    display: flex;\n    flex-direction: column;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding:  4.9rem 6rem 18.8rem 6rem;\n    -webkit-box-shadow: 0 0 10px 0px ", ";\n    font-size: 2.5rem;\n    display: flex;\n    flex-direction: column;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
