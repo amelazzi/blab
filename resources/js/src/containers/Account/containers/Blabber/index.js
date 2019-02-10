@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from 'styled-components'
+import BlabberCard from './components/BlabberCard'
 
 const StyledBlabber  = styled.div`
     width: 75%;
     padding: 2rem 2rem 0 2rem;
     padding-bottom: 12rem;
-    h1{
-        padding-left: 2rem;
-        font-size: 3rem;
-    }
 `;
+
+const StyledH1 = styled.h1`
+    padding: 2rem;
+    padding-left: 4rem;
+    font-size: 3rem;
+`;
+
 
 const Input = styled.input`
     margin: 0;
@@ -27,6 +31,20 @@ const InputContent = styled.div`
     padding: 0
 `;
 
+const RecentBlabbers = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+`;
+
+const RcmdBlabbers = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+`;
+
+
+
 
 const Blabber = () => {
     return (
@@ -35,6 +53,24 @@ const Blabber = () => {
                 <Input type="text" placeholder="Type to search" />
                 <Input type="text" placeholder="Sort" />
             </InputContent>
+            <StyledH1> Recent </StyledH1>
+            <RecentBlabbers>
+                <BlabberCard blabberName="Mark John"
+                    classNbr="27"/>
+                <BlabberCard blabberName="Mark John"
+                    classNbr="27"/>
+                <BlabberCard blabberName="Mark John"
+                    classNbr="27"/>
+            </RecentBlabbers>
+            <StyledH1> Recommended </StyledH1>
+            <RcmdBlabbers>
+                <BlabberCard blabberName="Mark John"
+                    classNbr="27"/>
+                <BlabberCard blabberName="Mark John"
+                    classNbr="27"/>
+                <BlabberCard blabberName="Mark John"
+                    classNbr="27"/>
+            </RcmdBlabbers>
         </StyledBlabber>
     );
 };
