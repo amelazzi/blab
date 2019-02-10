@@ -8,7 +8,7 @@ import Dashboard from './containers/Dashboard';
 import MyClass from './containers/Class';
 import Blabber from './containers/Blabber';
 import FindBlabber from './containers/FindBlabber';
-import Notification from './containers/Notification'
+import Notification from './containers/Notification';
 
 const StyledAccount  = styled.div`
     display: flex;
@@ -43,10 +43,10 @@ const Account = () => {
             </SideBar>  
 
             <Switch>
-                <Route path="/account/dashboard" exact component={Dashboard} />
+                <Route path="/account" exact component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/blabber" component={Blabber} />
-                <Route path="/account" component={FindBlabber} />
+                <Route path="/account/find-blabber" component={FindBlabber} />
                 <Route path="/account/notification" component={Notification} />
             </Switch>
         </StyledAccount>

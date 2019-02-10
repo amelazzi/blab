@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Tabs from './components/Tabs'
 import { purple } from '../../../../styles/utilities/Colors';
 
-
 const StyledDashboard  = styled.div`
     width: 75%;
     padding: 2rem 2rem 0 2rem;
@@ -27,7 +26,7 @@ const Input = styled.input`
 const InputContent = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 0
+    padding: 0;
 `;
 
 const Dashboard = () => {

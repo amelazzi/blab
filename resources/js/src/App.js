@@ -15,6 +15,7 @@ import GettingStarted from './containers/GettingStarted';
 import StartedStudent from './containers/StartedStudent';
 import StartedTutor from './containers/StartedTutor';
 import Account from './containers/Account';
+import Profil from './containers/Account/containers/Profil';
 
 const StyledContainer = styled.div`
     display: flex;
@@ -34,6 +35,7 @@ class App extends Component {
                     <Route path="/getting-started" component={GettingStarted} />
                     <Route path="/contact-us" component={ContactUs} />
                     <Route path="/account" component={Account} />
+                    <Route path="/profil" component={Profil} />
                     <Route path="/log-in" component={Login} />
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/sign-up2" component={SignUp2} />
