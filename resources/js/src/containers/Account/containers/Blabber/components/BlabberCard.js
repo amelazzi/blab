@@ -37,8 +37,24 @@ const ImgContainer = styled.div`
     }
 `;
 
+const Rates = styled.div`
+    width: 35%;
+    margin-left: 32.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
 
-const BlabberCard = ({blabberName, classNbr}) => {
+const StarContainer = styled.div`
+    width: 20%;
+    margin: 0.125rem;
+    img{
+        width: 100%;
+    }
+`;
+
+
+const BlabberCard = ({blabberName, classNbr, starNbr}) => {
     return (
         <StyledCard>
             <ImgContainer>
@@ -46,6 +62,23 @@ const BlabberCard = ({blabberName, classNbr}) => {
             </ImgContainer>
             <h1> {blabberName} </h1>
             <h2> Completed Classes : {classNbr} </h2>
+            <Rates>
+                <StarContainer> 
+                    <img src={require("../../../../../pictures/ratedstar.png")} /> 
+                </StarContainer>
+                <StarContainer> 
+                    <img src={require("../../../../../pictures/ratedstar.png")} /> 
+                </StarContainer>
+                <StarContainer> 
+                    <img src={require("../../../../../pictures/ratedstar.png")} /> 
+                </StarContainer>
+                <StarContainer> 
+                    <img src={require("../../../../../pictures/ratedstar.png")} /> 
+                </StarContainer>
+                <StarContainer> 
+                    <img src={require("../../../../../pictures/star-2.png")} /> 
+                </StarContainer>
+            </Rates>
         </StyledCard>
     );
 };

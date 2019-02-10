@@ -4,9 +4,10 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 
 import SideBar from './components/SideBar'
-import Dashboard from './containers/Dashboard/index';
-import MyClass from './containers/Class/index';
+import Dashboard from './containers/Dashboard';
+import MyClass from './containers/Class';
 import Blabber from './containers/Blabber';
+import Notification from './containers/Notification'
 
 const StyledAccount  = styled.div`
     display: flex;
@@ -34,7 +35,7 @@ const Account = () => {
                     <Link to="/"> Message 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
-                    <Link to="/"> Notification 
+                    <Link to="/account/notification"> Notification 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                 </nav>  
@@ -44,6 +45,7 @@ const Account = () => {
                 <Route path="/account" exact component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/blabber" component={Blabber} />
+                <Route path="/account/notification" component={Notification} />
             </Switch>
         </StyledAccount>
     );
