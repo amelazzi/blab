@@ -7,6 +7,7 @@ import SideBar from './components/SideBar'
 import Dashboard from './containers/Dashboard';
 import MyClass from './containers/Class';
 import Blabber from './containers/Blabber';
+import FindBlabber from './containers/FindBlabber';
 import Notification from './containers/Notification'
 
 const StyledAccount  = styled.div`
@@ -20,7 +21,7 @@ const Account = () => {
         <StyledAccount> 
             <SideBar>
                 <nav>
-                    <Link to="/account"> Dashboard 
+                    <Link to="/account/dashboard"> Dashboard 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                     <Link to="/account/my-class"> My Class 
@@ -29,7 +30,7 @@ const Account = () => {
                     <Link to="/account/blabber"> Blabber 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
-                    <Link to="/"> Find a Blabber 
+                    <Link to="/account/find-blabber"> Find a Blabber 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                     <Link to="/"> Message 
@@ -42,9 +43,10 @@ const Account = () => {
             </SideBar>  
 
             <Switch>
-                <Route path="/account" exact component={Dashboard} />
+                <Route path="/account/dashboard" exact component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/blabber" component={Blabber} />
+                <Route path="/account" component={FindBlabber} />
                 <Route path="/account/notification" component={Notification} />
             </Switch>
         </StyledAccount>
