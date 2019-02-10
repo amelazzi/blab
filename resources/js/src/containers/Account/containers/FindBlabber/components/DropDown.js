@@ -67,9 +67,7 @@ class SimpleDropdown extends Component {
           Dropdown Button
         </StyledButton>
         <StyledDropdownMenu hidden={hidden}>
-          <DropdownItem>Action</DropdownItem>
-          <DropdownItem>Another action</DropdownItem>
-          <DropdownItem>Something else here</DropdownItem>
+            {this.props.args}
         </StyledDropdownMenu>
       </Dropdown>
     );

@@ -72826,7 +72826,7 @@ function (_Component) {
         }
       }, "Dropdown Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDropdownMenu, {
         hidden: hidden
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, "Another action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, "Something else here")));
+      }, this.props.args));
     }
   }]);
 
@@ -72852,8 +72852,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 /* harmony import */ var _components_DropDown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/DropDown */ "./resources/js/src/containers/Account/containers/FindBlabber/components/DropDown.js");
+/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-dropdown-component */ "./node_modules/styled-dropdown-component/lib/index.js");
+/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__);
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    line-height: 2rem;\n    padding-left: 6rem !important;\n    padding-right: 6rem !important;\n    margin: auto;\n    font-size: 2rem !important;\n    margin-top: 14.2rem;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    height: 21.7rem;\n    padding: 1rem 0.8rem;\n    margin-top: 0.5rem;\n    outline: none;\n    border: 1px solid ", ";\n    border-radius: 5px;\n    ::placeholder{\n        font-size: 1.9rem;\n        font-weight: 500;\n    }\n\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    padding: 8.8rem 10rem 8.8rem 10rem;\n    h1{\n        font-size: 2.4rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n    padding: 8.8rem 10rem 4rem 10rem;\n    border-radius: 3px;\n    box-shadow: 0 4px 4px 0 #4d70f4;\n    h1{\n        margin:0;\n        margin-top: 2rem;\n        font-size: 2.4rem;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -72863,7 +72885,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    padding: 1.6rem;\n    border: none;\n    background: ", ";\n    color: white;\n    font-size: 2.4rem;\n    border-radius: 0.4rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 1.2rem;\n    margin-bottom: -3.4rem;\n    z-index:1;\n    border: none;\n    background: ", ";\n    color: white;\n    font-size: 2.4rem;\n    border-radius: 0.4rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -72888,12 +72910,37 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledFindBlabber = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
-var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var FakeButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
 var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var StyledTextArea = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].textarea(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var RealButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(FakeButton)(_templateObject5());
+/*----------------------------- Variables --------------------------*/
+
+var LearnedLangs = [{
+  name: "English"
+}, {
+  name: "Spanish"
+}, {
+  name: "French"
+}];
+var LearnedLang = LearnedLangs.map(function (learnLang) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], {
+    key: learnLang.name
+  }, learnLang.name);
+});
 
 var FindBlabber = function FindBlabber() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFindBlabber, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, null, " Request Details "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Choose language to learn "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFindBlabber, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FakeButton, null, " Request Details "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Choose language to learn "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    args: LearnedLang
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Current language skills"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    args: LearnedLang
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Select native language "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    args: LearnedLang
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Short description "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTextArea, {
+    placeholder: "Short note to tutor"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RealButton, null, " Proceed ")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FindBlabber);
