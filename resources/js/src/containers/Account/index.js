@@ -9,6 +9,8 @@ import MyClass from './containers/Class';
 import Blabber from './containers/Blabber';
 import FindBlabber from './containers/FindBlabber';
 import Notification from './containers/Notification';
+import StudentRequest from './containers/StudiantRequest'
+
 
 const StyledAccount  = styled.div`
     display: flex;
@@ -39,15 +41,19 @@ const Account = () => {
                     <Link to="/account/notification"> Notification 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
+                    <Link to="/account"> Student Request 
+                        <img src={require("../../pictures/book.png")}/>
+                    </Link>
                 </nav>  
             </SideBar>  
 
             <Switch>
-                <Route path="/account" exact component={Dashboard} />
+                <Route path="/account/dashboard" exact component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/blabber" component={Blabber} />
                 <Route path="/account/find-blabber" component={FindBlabber} />
                 <Route path="/account/notification" component={Notification} />
+                <Route path="/account" component={StudentRequest} />
             </Switch>
         </StyledAccount>
     );

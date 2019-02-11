@@ -73434,6 +73434,215 @@ var Profil = function Profil() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Account/containers/StudiantRequest/components/Row.js":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/StudiantRequest/components/Row.js ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    font-size: 1.5rem;\n    line-height: 1.23;\n    letter-spacing: -0.2px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 6.4rem;\n    height: 6.4rem;\n    margin: auto;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    margin: auto;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: 0.7fr 0.9fr 1fr 1fr 1fr;\n    border-bottom: 1px solid ", ";\n    padding-top: 2.2rem;\n    h1{\n        text-align: center;\n        color: ", ";\n        font-size: 2.2rem;\n        font-weight: 500;\n        line-height: 1.7;\n    }\n    button{\n        margin-top: 4rem;\n        width: 168px;\n        height: 34px;\n        border: none;\n        border-radius: 6px;\n        background-color: ", ";\n        color: white;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var ProfilContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var Description = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_templateObject4());
+
+var Row = function Row(_ref) {
+  var pic = _ref.pic,
+      name = _ref.name,
+      descript = _ref.descript,
+      nativeLanguage = _ref.nativeLanguage,
+      skills = _ref.skills;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfilContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: pic
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", name, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Description, null, " ", descript, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, nativeLanguage), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, skills), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Send Offer "));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Row);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/StudiantRequest/components/RowTitle.js":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/StudiantRequest/components/RowTitle.js ***!
+  \***********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: 0.7fr 0.9fr 1fr 1fr 1fr;\n    text-align:center;\n    border-bottom: 1px solid ", ";\n    padding: 0 1rem;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+
+var RowTitle = function RowTitle() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Student "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Description "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Native language "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Skills "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Offer "));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RowTitle);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/StudiantRequest/index.js":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/StudiantRequest/index.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var _components_RowTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/RowTitle */ "./resources/js/src/containers/Account/containers/StudiantRequest/components/RowTitle.js");
+/* harmony import */ var _components_Row__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Row */ "./resources/js/src/containers/Account/containers/StudiantRequest/components/Row.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    margin-top: 6rem;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    font-size: 2rem !important;\n    font-weight: normal;\n    font-style: normal;\n    font-stretch: normal;\n    line-height: 1.7;\n    letter-spacing: normal;\n    border: none !important;\n    margin: 0;\n    &:nth-child(1){\n        width: 65%;\n    }\n    &:nth-child(2){\n        width: 30%;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 0;\n    border-bottom: 1px solid ", ";\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    width: 75%;\n    padding: 4rem 3.8rem;\n    padding-bottom: 12rem;\n    h2{\n        font-size: 2.2rem;\n        font-weight: 500;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+var StyledIndex = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject3());
+var Rows = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+
+var StudiantRequest = function StudiantRequest() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIndex, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Active "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+    type: "text",
+    placeholder: "Type to search"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+    type: "text",
+    placeholder: "Sort"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Rows, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RowTitle__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    pic: __webpack_require__(/*! ../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    name: "John Mark",
+    descript: "I need a teacher to guide me in my spanish language,  i am a novies just tryi...",
+    nativeLanguage: "Spanich",
+    skills: "Basic"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    pic: __webpack_require__(/*! ../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    name: "John Mark",
+    descript: "I need a teacher to guide me in my spanish language,  i am a novies just tryi...",
+    nativeLanguage: "Spanich",
+    skills: "Basic"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (StudiantRequest);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Account/index.js":
 /*!******************************************************!*\
   !*** ./resources/js/src/containers/Account/index.js ***!
@@ -73453,6 +73662,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_Blabber__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./containers/Blabber */ "./resources/js/src/containers/Account/containers/Blabber/index.js");
 /* harmony import */ var _containers_FindBlabber__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./containers/FindBlabber */ "./resources/js/src/containers/Account/containers/FindBlabber/index.js");
 /* harmony import */ var _containers_Notification__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./containers/Notification */ "./resources/js/src/containers/Account/containers/Notification/index.js");
+/* harmony import */ var _containers_StudiantRequest__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./containers/StudiantRequest */ "./resources/js/src/containers/Account/containers/StudiantRequest/index.js");
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n"]);
 
@@ -73464,6 +73674,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -73501,8 +73712,12 @@ var Account = function Account() {
     to: "/account/notification"
   }, " Notification", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/account"
+  }, " Student Request", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/account",
+    path: "/account/dashboard",
     exact: true,
     component: _containers_Dashboard__WEBPACK_IMPORTED_MODULE_4__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
@@ -73517,6 +73732,9 @@ var Account = function Account() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/account/notification",
     component: _containers_Notification__WEBPACK_IMPORTED_MODULE_8__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/account",
+    component: _containers_StudiantRequest__WEBPACK_IMPORTED_MODULE_9__["default"]
   })));
 };
 
