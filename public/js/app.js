@@ -73541,7 +73541,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: 0.7fr 0.9fr 1fr 1fr 1fr;\n    text-align:center;\n    border-bottom: 1px solid ", ";\n    padding: 0 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: 0.7fr 0.9fr 1fr 1fr 1fr;\n    text-align:center;\n    border-bottom: 1px solid ", ";\n    padding:  0 1rem 1rem 1rem;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -73580,8 +73580,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 /* harmony import */ var _components_RowTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/RowTitle */ "./resources/js/src/containers/Account/containers/StudiantRequest/components/RowTitle.js");
 /* harmony import */ var _components_Row__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Row */ "./resources/js/src/containers/Account/containers/StudiantRequest/components/Row.js");
-function _templateObject4() {
+function _templateObject6() {
   var data = _taggedTemplateLiteral(["\n    margin-top: 6rem;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    font-size: 2rem !important;\n    font-weight: normal;\n    font-style: normal;\n    font-stretch: normal;\n    line-height: 1.7;\n    letter-spacing: normal;\n    border: none !important;\n    margin: 0;\n    &:nth-child(1){\n        width: 65%;\n    }\n    &:nth-child(2){\n        width: 30%;\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 0;\n    border-bottom: 1px solid ", ";\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -73591,7 +73611,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    font-size: 2rem !important;\n    font-weight: normal;\n    font-style: normal;\n    font-stretch: normal;\n    line-height: 1.7;\n    letter-spacing: normal;\n    border: none !important;\n    margin: 0;\n    &:nth-child(1){\n        width: 65%;\n    }\n    &:nth-child(2){\n        width: 30%;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 3.6rem;\n    height: 3.6rem;\n    background: ", ";\n    border-radius: 50%;\n    text-align: center;\n    margin-left: 1rem;\n    p{\n        color: white;\n        font-size: 2.2rem;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -73601,7 +73621,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 0;\n    border-bottom: 1px solid ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: start;\n    align-items: center;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -73628,12 +73648,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var StyledIndex = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
-var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
-var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject3());
-var Rows = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+var Active = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var ActiveNumber = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject5());
+var Rows = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6());
 
 var StudiantRequest = function StudiantRequest() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIndex, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Active "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIndex, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Active, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Active "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ActiveNumber, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 3 "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
     type: "text",
     placeholder: "Type to search"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {

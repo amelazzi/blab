@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import { lightGray } from '../../../../styles/utilities/Colors';
+import { lightGray, purple } from '../../../../styles/utilities/Colors';
 
 import RowTitle from './components/RowTitle'
 import Row from './components/Row'
@@ -15,12 +15,32 @@ const StyledIndex = styled.div`
     }
 `;
 
+const Active = styled.div`
+    display: flex;
+    justify-content: start;
+    align-items: center;
+`;
+
+const ActiveNumber = styled.div`
+    width: 3.6rem;
+    height: 3.6rem;
+    background: ${purple};
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 1rem;
+    p{
+        color: white;
+        font-size: 2.2rem;
+    }
+`;
+
 const InputContent = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0;
     border-bottom: 1px solid ${lightGray};
 `;
+
 
 const Input = styled.input`
     font-size: 2rem !important;
@@ -48,7 +68,12 @@ const StudiantRequest = () => {
     return(
         <StyledIndex>
             <InputContent>
-                <h2> Active </h2>
+                <Active>
+                    <h2> Active </h2>
+                    <ActiveNumber>
+                        <p> 3 </p>
+                    </ActiveNumber>
+                </Active>
                 <Input type="text" placeholder="Type to search" />
                 <Input type="text" placeholder="Sort" />
             </InputContent>
