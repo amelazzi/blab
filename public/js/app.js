@@ -72505,7 +72505,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card */ "./resources/js/src/containers/Account/containers/Dashboard/components/Card.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var _TutorWallet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TutorWallet */ "./resources/js/src/containers/Account/containers/Dashboard/components/TutorWallet.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -72524,28 +72525,128 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function _templateObject9() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    margin-right: 8rem;\n    button{\n        width: 21.5rem;\n        height: 6rem;\n        border: none;\n        background: none;\n        cursor: pointer;\n        padding: 0;\n        img{\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n            margin: 0;\n        }\n    }\n    p{\n        font-size: 25px;\n        font-weight: normal;\n        font-style: normal;\n        font-stretch: normal;\n        line-height: 1.7;\n        margin-top: 3.6rem;\n    }\n"]);
-
-  _templateObject9 = function _templateObject9() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: start;\n    align-items: center;\n    text-align: center;\n    margin-top: 8.7rem;\n    margin-left: 9.4rem;\n"]);
-
-  _templateObject8 = function _templateObject8() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject7() {
+function _templateObject4() {
   var data = _taggedTemplateLiteral(["\n    background: ", ";\n    border: none;\n    border-radius: 100%;\n    padding: 0;\n    width: 8rem;\n    height: 8rem;\n    margin-left: 92%;\n    color: white;\n    font-size: 3.8rem;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    padding-bottom: 6rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    padding: 6rem 4rem 0 2rem;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    border-bottom: 1px solid ", ";\n    align-items: flex-start;\n    padding: 1rem 2rem 1rem 4rem;\n    button{\n        border: none;\n        font-size: 2.4rem;\n        background: none;\n        margin-right: 4rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["gray"]);
+var Courses = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var Course = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var Fab = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["purple"]);
+
+var Tabs =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Tabs, _Component);
+
+  function Tabs(props) {
+    var _this;
+
+    _classCallCheck(this, Tabs);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Tabs).call(this, props));
+    _this.state = {
+      activeTabs: []
+    };
+    _this.state.activeTab = 1;
+    return _this;
+  }
+
+  _createClass(Tabs, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabsContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: function onClick() {
+          return _this2.setState({
+            activeTab: 1
+          });
+        }
+      }, "My Course "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: function onClick() {
+          return _this2.setState({
+            activeTab: 2
+          });
+        }
+      }, "My Wallet ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.state.activeTab == 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Courses, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Course, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Next class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        tutorPic: __webpack_require__(/*! ../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+        tutorName: "John Doe",
+        className: "English"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Course, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Missed class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        tutorPic: __webpack_require__(/*! ../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+        tutorName: "John Doe",
+        className: "English"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fab, null, " + ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TutorWallet__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+    }
+  }]);
+
+  return Tabs;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Tabs);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Dashboard/components/TutorWallet.js":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Dashboard/components/TutorWallet.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card */ "./resources/js/src/containers/Account/containers/Dashboard/components/Card.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: start;\n    align-items: center;\n    button{\n        width: 21.5rem;\n        height: 6rem;\n        border: none;\n        background: none;\n        cursor: pointer;\n        padding: 0;\n        margin: 0 4rem;\n        img{\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n            margin: 0;\n        }\n    }\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -72555,7 +72656,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n    padding-bottom: 4rem;\n    border-bottom: 1px solid ", ";\n    h2{\n        padding: 3rem 0 0 0;\n        font-size: 2.2rem;\n    }\n    p{\n        padding-left: 4rem;\n        font-size: 5rem;\n        font-weight: bold;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    border-right: 1px solid ", ";\n    :nth-child(3){\n        border: none;\n    }\n    text-align: center;\n    h2{\n        font-size: 2.2rem;\n    }\n    p{\n        font-size: 5rem;\n        font-weight: bold;\n    }\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -72565,7 +72666,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n    padding-top: 4rem;   \n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 1.4rem 2.2rem; \n    border: 1px solid ", ";\n    display: grid;\n    grid-template-columns: 1fr 1fr 1.2fr 0.8fr;\n    box-shadow: 0 4px 4px 0 #3dec83;\n    margin-top: 3rem;\n    margin-bottom: 6rem;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -72623,68 +72724,20 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
 var Courses = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var Course = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
-var Wallet = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
-var CreditAccount = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5());
-var Balance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
-var Fab = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject7(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
-var Payment = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject8());
-var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject9());
+var MyEarning = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+var EarningCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"]);
+var EarningBalance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
+var WithDrow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject7());
 
-var Tabs =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Tabs, _Component);
+var TutorWallet = function TutorWallet() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MyEarning, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Withdrawn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $830 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Pending Clearance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $50 "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Analytics "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Withdrawn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $830 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Pending Clearance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $50 "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WithDrow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Withdrow "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
+  }))));
+};
 
-  function Tabs(props) {
-    var _this;
-
-    _classCallCheck(this, Tabs);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Tabs).call(this, props));
-    _this.state = {
-      activeTabs: []
-    };
-    _this.state.activeTab = 1;
-    return _this;
-  }
-
-  _createClass(Tabs, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabsContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        onClick: function onClick() {
-          return _this2.setState({
-            activeTab: 1
-          });
-        }
-      }, "My Course "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        onClick: function onClick() {
-          return _this2.setState({
-            activeTab: 2
-          });
-        }
-      }, "My Wallet ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.state.activeTab == 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Courses, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Course, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Next class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        tutorPic: __webpack_require__(/*! ../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-        tutorName: "John Doe",
-        className: "English"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Course, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Missed class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        tutorPic: __webpack_require__(/*! ../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-        tutorName: "John Doe",
-        className: "English"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fab, null, " + ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wallet, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Balance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreditAccount, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Credit Account "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Payment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Paypal Account ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Credit Card ")))))));
-    }
-  }]);
-
-  return Tabs;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Tabs);
+/* harmony default export */ __webpack_exports__["default"] = (TutorWallet);
 
 /***/ }),
 
@@ -72723,7 +72776,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    width: 75%;\n    padding: 2rem 2rem 0 2rem;\n    padding-bottom: 12rem;\n    h1{\n        padding-left: 2rem;\n        font-size: 3rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 75%;\n    padding: 3.4rem;\n    padding-bottom: 12rem;\n    h1{\n        padding-left: 2rem;\n        font-size: 3rem;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

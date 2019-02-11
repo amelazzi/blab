@@ -5,7 +5,7 @@ import { purple } from '../../../../styles/utilities/Colors';
 
 const StyledDashboard  = styled.div`
     width: 75%;
-    padding: 2rem 2rem 0 2rem;
+    padding: 3.4rem;
     padding-bottom: 12rem;
     h1{
         padding-left: 2rem;
