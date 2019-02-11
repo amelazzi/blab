@@ -41,19 +41,19 @@ const Account = () => {
                     <Link to="/account/notification"> Notification 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
-                    <Link to="/account"> Student Request 
+                    <Link to="/account/student-request"> Student Request 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                 </nav>  
             </SideBar>  
 
             <Switch>
-                <Route path="/account/dashboard" exact component={Dashboard} />
+                <Route path="/account" exact component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/blabber" component={Blabber} />
                 <Route path="/account/find-blabber" component={FindBlabber} />
                 <Route path="/account/notification" component={Notification} />
-                <Route path="/account" component={StudentRequest} />
+                <Route path="/account/student-request" component={StudentRequest} />
             </Switch>
         </StyledAccount>
     );
