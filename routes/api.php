@@ -13,6 +13,7 @@ Route::group(['middleware' => ['json.response']], function () {
         'namespace' => 'Auth',
         'middleware' => 'api',
     ], function () {
+        // php artisan passport:client --personal
         Route::post('/login', 'LoginController@login');
         Route::post('/register', 'RegisterController@register');
 
