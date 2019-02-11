@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import {lightGray, light} from '../../../../../styles/utilities/Colors'
 
 const StyledCard  = styled.div`
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     padding: 2rem;
     border: 1px solid ${lightGray};

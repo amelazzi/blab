@@ -4,7 +4,7 @@ import { lightGray } from '../../../../../styles/utilities/Colors';
 
 const StyledRow = styled.div`
     display: grid;
-    grid-template-columns: 0.7fr 0.9fr 1fr 1fr 1fr;
+    grid-template-columns: 0.7fr 1fr 1fr 0.8fr 1fr;
     text-align:center;
     border-bottom: 1px solid ${lightGray};
     padding:  0 1rem 1rem 1rem;

@@ -71948,7 +71948,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    width: 13em;\n    padding:  12rem 0 0 2rem;\n    -webkit-box-shadow: 0 0 10px 0px ", ";\n    font-size: 2.5rem;\n    display: flex;\n    nav {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n    }\n\n    a {\n        color: ", ";\n        position: relative;\n        text-decoration: none;\n        padding: 1rem;\n        margin-bottom: 2rem;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        &:hover{\n            color: ", ";\n            border-right: 3px solid ", "\n        }\n    }\n    img{\n        padding-right: 1rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 34.2rem;\n    &,\n    *{\n        box-sizing: border-box;\n    }\n    padding:  12rem 0 0 2rem;\n    -webkit-box-shadow: 0 0 10px 0px ", ";\n    font-size: 2.5rem;\n    display: flex;\n    nav {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n    }\n\n    a {\n        color: ", ";\n        position: relative;\n        text-decoration: none;\n        padding: 1rem;\n        margin-bottom: 2rem;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        &:hover{\n            color: ", ";\n            border-right: 3px solid ", "\n        }\n    }\n    img{\n        padding-right: 1rem;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -72460,7 +72460,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    align-items: flex-start;\n    flex-wrap: nowrap;\n    padding: 2rem;\n    border: 1px solid ", ";\n    button{\n        margin-top: 13rem;\n        margin-left: 38%;\n        border: 3px solid green;\n        border-radius: 8px;\n        padding: 0 3rem 0 3rem;\n        background: white;\n        font-size: 1.8rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    display: flex;\n    justify-content: flex-start;\n    flex-wrap: nowrap;\n    padding: 2rem;\n    border: 1px solid ", ";\n    button{\n        margin-top: 13rem;\n        margin-left: 38%;\n        border: 3px solid green;\n        border-radius: 8px;\n        padding: 0 3rem 0 3rem;\n        background: white;\n        font-size: 1.8rem;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -72523,6 +72523,26 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    margin-right: 8rem;\n    button{\n        width: 21.5rem;\n        height: 6rem;\n        border: none;\n        background: none;\n        cursor: pointer;\n        padding: 0;\n        img{\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n            margin: 0;\n        }\n    }\n    p{\n        font-size: 25px;\n        font-weight: normal;\n        font-style: normal;\n        font-stretch: normal;\n        line-height: 1.7;\n        margin-top: 3.6rem;\n    }\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: start;\n    align-items: center;\n    text-align: center;\n    margin-top: 8.7rem;\n    margin-left: 9.4rem;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject7() {
   var data = _taggedTemplateLiteral(["\n    background: ", ";\n    border: none;\n    border-radius: 100%;\n    padding: 0;\n    width: 8rem;\n    height: 8rem;\n    margin-left: 92%;\n    color: white;\n    font-size: 3.8rem;\n"]);
@@ -72607,6 +72627,8 @@ var Wallet = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_temp
 var CreditAccount = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5());
 var Balance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
 var Fab = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject7(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+var Payment = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject8());
+var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject9());
 
 var Tabs =
 /*#__PURE__*/
@@ -72651,7 +72673,11 @@ function (_Component) {
         tutorPic: __webpack_require__(/*! ../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
         tutorName: "John Doe",
         className: "English"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fab, null, " + ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wallet, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Balance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreditAccount, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Credit Account ")))));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fab, null, " + ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wallet, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Balance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreditAccount, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Credit Account "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Payment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Paypal Account ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Credit Card ")))))));
     }
   }]);
 
@@ -73459,7 +73485,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    font-size: 1.5rem;\n    line-height: 1.23;\n    letter-spacing: -0.2px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    font-size: 1.5rem;\n    line-height: 1.23;\n    letter-spacing: -0.2px;\n    padding: 0 1rem;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -73489,7 +73515,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: 0.7fr 0.9fr 1fr 1fr 1fr;\n    border-bottom: 1px solid ", ";\n    padding-top: 2.2rem;\n    h1{\n        text-align: center;\n        color: ", ";\n        font-size: 2.2rem;\n        font-weight: 500;\n        line-height: 1.7;\n    }\n    button{\n        margin-top: 4rem;\n        width: 168px;\n        height: 34px;\n        border: none;\n        border-radius: 6px;\n        background-color: ", ";\n        color: white;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: 0.7fr 1fr 1fr 0.8fr 1fr;\n    border-bottom: 1px solid ", ";\n    padding-top: 2.2rem;\n    h1{\n        text-align: center;\n        color: ", ";\n        font-size: 2.2rem;\n        font-weight: 500;\n        line-height: 1.7;\n    }\n    button{\n        margin-top: 4rem;\n        width: 168px;\n        height: 34px;\n        border: none;\n        border-radius: 6px;\n        background-color: ", ";\n        color: white;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -73541,7 +73567,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: 0.7fr 0.9fr 1fr 1fr 1fr;\n    text-align:center;\n    border-bottom: 1px solid ", ";\n    padding:  0 1rem 1rem 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: grid;\n    grid-template-columns: 0.7fr 1fr 1fr 0.8fr 1fr;\n    text-align:center;\n    border-bottom: 1px solid ", ";\n    padding:  0 1rem 1rem 1rem;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -75404,6 +75430,17 @@ module.exports = "/images/get-started-student.png?8e9f9bf1ed7f0c9e18ca282fdb4267
 /***/ (function(module, exports) {
 
 module.exports = "/images/icon.png?36da1e72f62588bd913d14c2436c0622";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/paypal.png":
+/*!**********************************************!*\
+  !*** ./resources/js/src/pictures/paypal.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/paypal.png?624ba67119885c5e553cee64a5763286";
 
 /***/ }),
 

@@ -58,6 +58,43 @@ const Fab = styled.button`
     font-size: 3.8rem;
 `;
 
+const Payment = styled.div`
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-top: 8.7rem;
+    margin-left: 9.4rem;
+`;
+
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-right: 8rem;
+    button{
+        width: 21.5rem;
+        height: 6rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+        }
+    }
+    p{
+        font-size: 25px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.7;
+        margin-top: 3.6rem;
+    }
+`;
+
 class Tabs extends Component {
     constructor(props) {
         super(props);
@@ -100,6 +137,20 @@ class Tabs extends Component {
                             </Balance>
                             <CreditAccount>
                                 <h1> Credit Account </h1>
+                                <Payment>
+                                    <Content>
+                                        <button>
+                                            <img src={require("../../../../../pictures/paypal.png")}/>
+                                        </button>
+                                        <p> Paypal Account </p>
+                                    </Content>
+                                    <Content>
+                                        <button>
+                                            <img src={require("../../../../../pictures/paypal.png")}/>
+                                        </button>
+                                        <p> Credit Card </p>
+                                    </Content>
+                                </Payment>
                             </CreditAccount>
                         </Wallet>
                     )}

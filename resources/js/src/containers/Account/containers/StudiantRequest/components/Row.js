@@ -5,7 +5,7 @@ import { lightGray, purple } from '../../../../../styles/utilities/Colors'
 
 const StyledRow = styled.div`
     display: grid;
-    grid-template-columns: 0.7fr 0.9fr 1fr 1fr 1fr;
+    grid-template-columns: 0.7fr 1fr 1fr 0.8fr 1fr;
     border-bottom: 1px solid ${lightGray};
     padding-top: 2.2rem;
     h1{
@@ -47,6 +47,7 @@ const Description = styled.p`
     font-size: 1.5rem;
     line-height: 1.23;
     letter-spacing: -0.2px;
+    padding: 0 1rem;
 `;
 
 const StyledLink = styled(Link)`

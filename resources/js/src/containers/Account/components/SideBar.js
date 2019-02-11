@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom';
 import {purple, dark, lightGray} from '../../../styles/utilities/Colors'
 
 const StyledSidBar = styled.div`
-    width: 13em;
+    width: 34.2rem;
+    &,
+    *{
+        box-sizing: border-box;
+    }
     padding:  12rem 0 0 2rem;
     -webkit-box-shadow: 0 0 10px 0px ${lightGray};
     font-size: 2.5rem;
