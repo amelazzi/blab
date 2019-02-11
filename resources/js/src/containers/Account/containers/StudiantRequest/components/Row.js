@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 import { lightGray, purple } from '../../../../../styles/utilities/Colors'
 
 const StyledRow = styled.div`
@@ -48,6 +49,14 @@ const Description = styled.p`
     letter-spacing: -0.2px;
 `;
 
+const StyledLink = styled(Link)`
+    color: ${purple};
+    :hover{
+        text-decoration: none;
+        color: ${purple}
+    }
+`;
+
 const Row = ({pic, name, descript, nativeLanguage, skills}) => {
     return(
         <StyledRow>
@@ -57,7 +66,7 @@ const Row = ({pic, name, descript, nativeLanguage, skills}) => {
                 </ImgContainer>
                 <h1> {name} </h1>
             </ProfilContainer>
-            <Description> {descript} </Description>
+            <Description> {descript} <StyledLink  to="/"> Read More </StyledLink> </Description>
             <h1>{nativeLanguage}</h1>
             <h1>{skills}</h1>
             <button> Send Offer </button>

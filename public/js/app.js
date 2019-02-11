@@ -73446,7 +73446,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    :hover{\n        text-decoration: none;\n        color: ", "\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject4() {
   var data = _taggedTemplateLiteral(["\n    font-size: 1.5rem;\n    line-height: 1.23;\n    letter-spacing: -0.2px;\n"]);
 
@@ -73492,10 +73503,12 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+
+var StyledRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
 var ProfilContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 var Description = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_templateObject4());
+var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"])(_templateObject5(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
 
 var Row = function Row(_ref) {
   var pic = _ref.pic,
@@ -73505,7 +73518,9 @@ var Row = function Row(_ref) {
       skills = _ref.skills;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfilContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: pic
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", name, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Description, null, " ", descript, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, nativeLanguage), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, skills), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Send Offer "));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", name, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Description, null, " ", descript, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+    to: "/"
+  }, " Read More "), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, nativeLanguage), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, skills), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Send Offer "));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Row);
