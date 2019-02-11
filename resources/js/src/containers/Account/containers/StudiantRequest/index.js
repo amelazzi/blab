@@ -60,12 +60,6 @@ const StudiantRequest = () => {
                     i am a novies just tryi..."
                     nativeLanguage="Spanich"
                     skills="Basic"/>
-                <Row pic={require("../../../../pictures/profile.png")}
-                    name="John Mark"
-                    descript="I need a teacher to guide me in my spanish language, 
-                    i am a novies just tryi..."
-                    nativeLanguage="Spanich"
-                    skills="Basic"/>
             </Rows>
         </StyledIndex>
     );

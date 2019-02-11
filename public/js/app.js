@@ -73630,12 +73630,6 @@ var StudiantRequest = function StudiantRequest() {
     descript: "I need a teacher to guide me in my spanish language,  i am a novies just tryi...",
     nativeLanguage: "Spanich",
     skills: "Basic"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    pic: __webpack_require__(/*! ../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    name: "John Mark",
-    descript: "I need a teacher to guide me in my spanish language,  i am a novies just tryi...",
-    nativeLanguage: "Spanich",
-    skills: "Basic"
   })));
 };
 
