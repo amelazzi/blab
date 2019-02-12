@@ -16,6 +16,8 @@ import StartedStudent from './containers/StartedStudent';
 import StartedTutor from './containers/StartedTutor';
 import Account from './containers/Account';
 import Profil from './containers/Account/containers/Profil';
+import LiveClass from './containers/Account/containers/LiveClass'
+
 
 const StyledContainer = styled.div`
     display: flex;
@@ -31,7 +33,7 @@ class App extends Component {
             <Router>
                 <StyledContainer>
                     <Header />
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/home" component={Home} />
                     <Route path="/getting-started" component={GettingStarted} />
                     <Route path="/contact-us" component={ContactUs} />
                     <Route path="/account" component={Account} />
@@ -40,6 +42,7 @@ class App extends Component {
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/sign-up2" component={SignUp2} />
                     <Route path="/congrats" component={Congrats} />
+                    <Route path="/" component={LiveClass} />
                     <Route path="/getting-started-student" component={StartedStudent} />
                     <Route path="/getting-started-tutor" component={StartedTutor} />
                     <Footer />

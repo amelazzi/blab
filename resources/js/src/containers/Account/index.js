@@ -10,6 +10,7 @@ import Blabber from './containers/Blabber';
 import FindBlabber from './containers/FindBlabber';
 import Notification from './containers/Notification';
 import StudentRequest from './containers/StudiantRequest'
+import LiveClass from './containers/LiveClass'
 
 
 const StyledAccount  = styled.div`
@@ -48,7 +49,7 @@ const Account = () => {
             </SideBar>  
 
             <Switch>
-                <Route path="/account" exact component={Dashboard} />
+                <Route path="/account/dashboard" exact component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/blabber" component={Blabber} />
                 <Route path="/account/find-blabber" component={FindBlabber} />

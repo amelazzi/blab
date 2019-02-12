@@ -77,11 +77,12 @@ const Header = () => (
             <StyledLogo>
                 <Link to="/">Blab</Link>
             </StyledLogo>
-            <Link to="/"> Home </Link>
+            <Link to="/home"> Home </Link>
             <Link to="/getting-started"> Getting Started </Link>
             <Link to="/contact-us"> Contact us </Link>
             <Link to="/account"> Account </Link>
             <Link to="/profil"> Profil </Link>
+            <Link to="/"> Live </Link>
         </nav>
         <StyledLogIn>
             <Link to="/log-in"> Log in </Link>
