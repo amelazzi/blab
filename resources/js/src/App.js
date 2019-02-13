@@ -33,7 +33,7 @@ class App extends Component {
             <Router>
                 <StyledContainer>
                     <Header />
-                    <Route exact path="/home" component={Home} />
+                    <Route exact path="/" component={Home} />
                     <Route path="/getting-started" component={GettingStarted} />
                     <Route path="/contact-us" component={ContactUs} />
                     <Route path="/account" component={Account} />
@@ -42,7 +42,7 @@ class App extends Component {
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/sign-up2" component={SignUp2} />
                     <Route path="/congrats" component={Congrats} />
-                    <Route path="/" component={LiveClass} />
+                    <Route path="/live" component={LiveClass} />
                     <Route path="/getting-started-student" component={StartedStudent} />
                     <Route path="/getting-started-tutor" component={StartedTutor} />
                     <Footer />

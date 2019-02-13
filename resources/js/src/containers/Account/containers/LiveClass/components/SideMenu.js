@@ -51,7 +51,7 @@ const SideMenu = () => {
             <SimpleDropdown classType="Basic"
                 args={BasicClass}/>
             <SimpleDropdown classType="Basic"
-                args={BasicClass}/>
+                args={BasicClass}/> 
         </StyleSideMenu>
     );
 };

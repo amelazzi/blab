@@ -18,13 +18,16 @@
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0"
     },
     "dependencies": {
+        "react": "^16.8.1",
+        "react-collapsible": "^2.5.0",
+        "react-custom-scrollbars": "^4.2.1",
+        "react-dom": "^16.8.1",
+        "react-responsive-accordion": "^1.0.0",
         "react-router-dom": "^4.3.1",
         "styled-button-component": "^3.0.1",
         "styled-components": "^4.1.3",

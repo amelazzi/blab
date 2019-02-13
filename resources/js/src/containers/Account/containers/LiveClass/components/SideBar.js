@@ -17,7 +17,7 @@ const StyledSideBar = styled.div`
         color: ${dark};
         text-decoration: none;
         margin-bottom: 2rem;
-        padding: 0 2.1rem;
+        padding: 0 2rem;
         &:hover{
             color: ${purple};
             border-right: 3px solid ${purple};

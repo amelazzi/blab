@@ -10,7 +10,7 @@ import Blabber from './containers/Blabber';
 import FindBlabber from './containers/FindBlabber';
 import Notification from './containers/Notification';
 import StudentRequest from './containers/StudiantRequest'
-import LiveClass from './containers/LiveClass'
+import Message from './containers/Message';
 
 
 const StyledAccount  = styled.div`
@@ -36,7 +36,7 @@ const Account = () => {
                     <Link to="/account/find-blabber"> Find a Blabber 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
-                    <Link to="/"> Message 
+                    <Link to="/account"> Message 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                     <Link to="/account/notification"> Notification 
@@ -53,6 +53,7 @@ const Account = () => {
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/blabber" component={Blabber} />
                 <Route path="/account/find-blabber" component={FindBlabber} />
+                <Route path="/account" component={Message} />
                 <Route path="/account/notification" component={Notification} />
                 <Route path="/account/student-request" component={StudentRequest} />
             </Switch>
