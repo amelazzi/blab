@@ -7,6 +7,7 @@ import ContactUs from './containers/ContactUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import GlobalStyle from './styles/GlobalStyle';
+import Stripe from './components/Stripe';
 import styled from 'styled-components';
 const StyledContainer = styled.div`
     display: flex;
@@ -20,14 +21,15 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <StyledContainer>
+                {/* <StyledContainer>
                     <Header />
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/contact-us" component={ContactUs} />
                     <Footer />
                     <GlobalStyle />
-                </StyledContainer>
+                </StyledContainer> */}
+                <Stripe />
             </Router>
         );
     }
