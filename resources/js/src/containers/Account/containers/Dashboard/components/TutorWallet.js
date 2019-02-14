@@ -96,16 +96,16 @@ const TutorWallet = () => {
             <h1> Analytics </h1>
             <EarningCard>
                 <EarningBalance>
-                    <h2> Available balance </h2>
-                    <p> $300 </p>
+                    <h2> Total earning </h2>
+                    <p> $2000 </p>
                 </EarningBalance>
                 <EarningBalance>
-                    <h2> Withdrawn</h2>
-                    <p> $830 </p>
+                    <h2> Total completed class </h2>
+                    <p> 58 </p>
                 </EarningBalance>
                 <EarningBalance>
-                    <h2> Pending Clearance </h2>
-                    <p> $50 </p>
+                    <h2> Earned this month </h2>
+                    <p> $1800 </p>
                 </EarningBalance>
             </EarningCard>
             <WithDrow>

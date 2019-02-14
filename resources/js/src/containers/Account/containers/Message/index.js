@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Conversation from './components/Conversation'
-import ChatRoute from './components/ChatRoute/ChatRoute'
+import Chat from './components/Chat'
 import { gray, lightGray } from '../../../../styles/utilities/Colors';
 
 const StyledMessage = styled.div`
@@ -33,7 +33,7 @@ const Input = styled.input`
 const Content = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
     justify-content: space-between;
 `;
 
@@ -47,6 +47,7 @@ const Message = () => {
             </InputContent>
             <Content>
                 <Conversation/>
+                <Chat/>
             </Content>
         </StyledMessage>
     );

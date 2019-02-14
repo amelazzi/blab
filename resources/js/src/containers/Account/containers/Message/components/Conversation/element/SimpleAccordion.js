@@ -10,7 +10,7 @@ const StyledCollpsible = styled(Collapsible)`
     width: 38rem;
     font-size: 2rem;
     color: ${dark};
-    padding: 1rem;
+    padding: 2rem 1rem;
     box-shadow: 0 4px 2px -2px ${light};
 `;
 

@@ -16,18 +16,19 @@ import {
 import styled from 'styled-components'
 
 const StyledContaier = styled.div`
-  background: white;
+  background: red;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 72rem;
   box-sizing: border-box;
   position: relative;
   * {
     box-sizing: border-box;
   }
-`
+`;
 
 const StyledHeader = styled.div`
+  background: orange;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -41,7 +42,7 @@ const StyledHeader = styled.div`
     color: ${dark};
     padding: 0 1rem 0 0;
   }
-`
+`;
 
 const StyledDisk = styled.div`
   width: 1rem;
@@ -52,17 +53,19 @@ const StyledDisk = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 0.35rem;
-`
+`;
 const StyledInnerDisk = styled.div`
   width: 0.6rem;
   height: 0.6rem;
   background: ${pink};
   border-radius: 100%;
-`
+`;
+
 const StyledBody = styled.div`
   width: 100%;
   padding: 1rem 1rem;
-`
+`;
+
 const StyledLeftRow = styled.div`
   width: auto;
   color: ${dark};
@@ -72,14 +75,15 @@ const StyledLeftRow = styled.div`
     margin: 0;
     font-size: 1rem;
   }
-`
+`;
+
 const StyledLeftMessage = styled.p`
   display: table;
   background: ${lightGray};
   padding: 0.7rem 1rem !important;
   border-radius: 0.5rem;
   margin-top: 0.5rem !important;
-`
+`;
 
 const StyledDivider = styled.div`
   width: 100%;
@@ -95,7 +99,7 @@ const StyledDivider = styled.div`
     background: white;
     padding: 0 2rem;
   }
-`
+`;
 
 const StyledRightRow = styled(StyledLeftRow)`
   p {
@@ -111,11 +115,12 @@ const StyledRightRow = styled(StyledLeftRow)`
   justify-content: center;
   align-items: flex-end;
   flex-flow: nowrap column;
-`
+`;
 
 const StyledRightMessage = styled(StyledLeftMessage)`
   background: ${blue};
-`
+`;
+
 const StyledWriting = styled(StyledDivider)`
   background: transparent;
   color: ${orange};
@@ -149,7 +154,8 @@ const StyledWriting = styled(StyledDivider)`
       transform: translateY(0rem);
     }
   }
-`
+`;
+
 const StyledFooter = styled.div`
   width: 100%;
   display: flex;
@@ -171,7 +177,8 @@ const StyledFooter = styled.div`
     font-size: 1rem;
     border-radius: 0.5rem;
   }
-`
+`;
+
 const StyledIconButton = styled.button`
   background: transparent;
   border: 0;
@@ -188,7 +195,8 @@ const StyledIconButton = styled.button`
     padding: 0;
     margin: 0;
   }
-`
+`;
+
 const CallRoute = () => {
   return (
     <StyledContaier>
