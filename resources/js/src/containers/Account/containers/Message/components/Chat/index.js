@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Header from './components/Header'
+import LiveChat from './components/LiveChat'
 import MsgInput from './components/MsgInput'
 
+import ChatRout from '../ChatRoute/ChatRoute'
 
 const StyledChat = styled.div`
     width: 100%;
@@ -16,6 +18,7 @@ const Chat = () => {
         <StyledChat>
             <Header picProfile={require("../../../../../../pictures/profile.png")}
                 name="Mark John"/>
+            <LiveChat/>
             <MsgInput/>
         </StyledChat>
     );

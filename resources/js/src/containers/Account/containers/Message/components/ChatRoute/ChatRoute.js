@@ -16,7 +16,6 @@ import {
 import styled from 'styled-components'
 
 const StyledContaier = styled.div`
-  background: red;
   display: block;
   width: 100%;
   height: 72rem;
@@ -28,7 +27,6 @@ const StyledContaier = styled.div`
 `;
 
 const StyledHeader = styled.div`
-  background: orange;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -69,6 +67,7 @@ const StyledBody = styled.div`
 const StyledLeftRow = styled.div`
   width: auto;
   color: ${dark};
+  background: red;
   margin-bottom: 1rem;
   p {
     padding: 0;

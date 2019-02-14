@@ -13,7 +13,7 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 5vh; 
 `
 
 const StyledRed = styled.div`

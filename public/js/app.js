@@ -76410,6 +76410,50 @@ var LiveClass = function LiveClass() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/Gus-Fring-Walter-White.png":
+/*!**************************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/Gus-Fring-Walter-White.png ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Gus-Fring-Walter-White.png?412cec6e841300cd2a9550e4a98267b9";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/Gus-Fring.png":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/Gus-Fring.png ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Gus-Fring.png?a210dde9413a64d39f87774d4e40695b";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/Walter-White.png":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/Walter-White.png ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Walter-White.png?2f3803e12a8adbe1c90a5885f68fc2ec";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/add.png":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/add.png ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/add.png?5298a1d3f77e8a2045b803812a3caf9f";
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Account/containers/Message/assets/facetime-button.png":
 /*!*******************************************************************************************!*\
   !*** ./resources/js/src/containers/Account/containers/Message/assets/facetime-button.png ***!
@@ -76421,6 +76465,39 @@ module.exports = "/images/facetime-button.png?c54dc805d943ca59a490a4a837cac1f9";
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/micheal-wong.png":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/micheal-wong.png ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/micheal-wong.png?dab2fbcf7de6602c33e654a378cb5947";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/micro.png":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/micro.png ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/micro.png?0230e6c44a0c0ec4d90b8326548f83db";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/more.png":
+/*!********************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/more.png ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/more.png?73830a49a1884f9f9d9ccdf1f0332ee7";
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Account/containers/Message/assets/phone-receiver.png":
 /*!******************************************************************************************!*\
   !*** ./resources/js/src/containers/Account/containers/Message/assets/phone-receiver.png ***!
@@ -76429,6 +76506,28 @@ module.exports = "/images/facetime-button.png?c54dc805d943ca59a490a4a837cac1f9";
 /***/ (function(module, exports) {
 
 module.exports = "/images/phone-receiver.png?6a899ceb8bde6b87609c0c299ad6965c";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/phone.png":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/phone.png ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/phone.png?4bead142bbf96cd22ca1b0336d7dfbb7";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/assets/video.png":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/assets/video.png ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/video.png?c9a4dcb32feaed648f868fb46f18a23b";
 
 /***/ }),
 
@@ -76511,6 +76610,122 @@ var Header = function Header(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/LiveChat.js":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/Chat/components/LiveChat.js ***!
+  \*******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-custom-scrollbars */ "./node_modules/react-custom-scrollbars/lib/index.js");
+/* harmony import */ var react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    border: 1px solid ", ";\n    margin-left: 50%;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n    float: right;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    width: 50%;\n    border-radius: 0.5rem;\n    padding: 0.7rem 1rem;\n    margin-bottom: 1.17rem;\n    \n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    width: calc(100% - 7rem);\n    margin-top: 5rem;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 6.8rem;\n    height: 6.8rem;\n    img{\n        width: 100%;\n        height: 100%;\n        border-radius: 50%;\n        object-fit: cover;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    width: 100%;\n    flex-direction: row;\n    justify-content: start;\n    color: black;\n    margin-bottom: 0.6rem;\n    p {\n        padding: 0;\n        margin: 0;\n        font-size: 1rem;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    height: 100%;\n    padding: 3rem;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var StyledLiveChat = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var StyledLeftRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var Messages = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+var StyledLeftMessage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"]);
+var StyledRightRow = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(StyledLeftRow)(_templateObject6());
+var StyledRightMessage = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(StyledLeftMessage)(_templateObject7(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"]);
+
+var LiveChat = function LiveChat() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    style: {
+      width: '100%',
+      height: '55rem'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLiveChat, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Messages, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftMessage, null, "Hello Professor"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftMessage, null, "I thought this would be an awesome way to interact with the interface."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Messages, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightMessage, null, "yes it is! and Welcome among us!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png")
+  })))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (LiveChat);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/MsgInput.js":
 /*!*******************************************************************************************************!*\
   !*** ./resources/js/src/containers/Account/containers/Message/components/Chat/components/MsgInput.js ***!
@@ -76564,7 +76779,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/Header.js");
-/* harmony import */ var _components_MsgInput__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/MsgInput */ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/MsgInput.js");
+/* harmony import */ var _components_LiveChat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/LiveChat */ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/LiveChat.js");
+/* harmony import */ var _components_MsgInput__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/MsgInput */ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/MsgInput.js");
+/* harmony import */ var _ChatRoute_ChatRoute__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ChatRoute/ChatRoute */ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/ChatRoute.js");
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n"]);
 
@@ -76581,16 +76798,540 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
+
 var StyledChat = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 
 var Chat = function Chat() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledChat, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     picProfile: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
     name: "Mark John"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MsgInput__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiveChat__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MsgInput__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Chat);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/ChatRoute.js":
+/*!**************************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/ChatRoute/ChatRoute.js ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _elements_Avatar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./elements/Avatar */ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Avatar.js");
+/* harmony import */ var _elements_Action__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./elements/Action */ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Action.js");
+/* harmony import */ var _elements_Chat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./elements/Chat */ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Chat.js");
+/* harmony import */ var _elements_Status__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./elements/Status */ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Status.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+function _templateObject13() {
+  var data = _taggedTemplateLiteral(["\n  background: transparent;\n  border: 0;\n  outline: 0;\n  filter: grayscale(100%);\n  opacity: 0.8;\n  position: absolute;\n  right: 5rem;\n  cursor: pointer;\n  &:first-of-type {\n    right: 1.5rem;\n  }\n  * {\n    padding: 0;\n    margin: 0;\n  }\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  padding: 1rem;\n  border-top: 0.1rem solid rgba(200, 200, 200, 0.2);\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  input {\n    color: ", ";\n    background: ", ";\n    outline: 0;\n    border: 0;\n    width: 100%;\n    padding: 1rem;\n    font-size: 1rem;\n    border-radius: 0.5rem;\n  }\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = _taggedTemplateLiteral(["\n  background: transparent;\n  color: ", ";\n  p {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n  small {\n    padding: 0 1rem;\n    display: block;\n  }\n  span {\n    font-size: 2rem;\n    padding: 0;\n    margin: 0 0 0.5rem 0;\n    animation: writing 1s infinite;\n    display: block;\n    &:nth-child(2) {\n      animation: writing 1s 0.3s infinite;\n    }\n    &:nth-child(3) {\n      animation: writing 1s 0.6s infinite;\n    }\n  }\n  @keyframes writing {\n    from {\n      transform: translateY(-1.1rem);\n    }\n    to {\n      transform: translateY(0rem);\n    }\n  }\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = _taggedTemplateLiteral(["\n  background: ", ";\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n  p {\n    padding: 0;\n    margin: 0;\n    font-size: 1rem;\n    color: white;\n    small {\n      color: ", ";\n    }\n  }\n  display: flex;\n  justify-content: center;\n  align-items: flex-end;\n  flex-flow: nowrap column;\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 1px;\n  background: ", ";\n  margin: 2rem 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  p {\n    color: ", ";\n    font-size: 1rem;\n    background: white;\n    padding: 0 2rem;\n  }\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n  display: table;\n  background: ", ";\n  padding: 0.7rem 1rem !important;\n  border-radius: 0.5rem;\n  margin-top: 0.5rem !important;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n  width: auto;\n  color: ", ";\n  background: red;\n  margin-bottom: 1rem;\n  p {\n    padding: 0;\n    margin: 0;\n    font-size: 1rem;\n  }\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  padding: 1rem 1rem;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  width: 0.6rem;\n  height: 0.6rem;\n  background: ", ";\n  border-radius: 100%;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  width: 1rem;\n  height: 1rem;\n  background: ", ";\n  border-radius: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 0.35rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  padding: 1rem;\n  border-bottom: 0.5rem solid rgba(200, 200, 200, 0.2);\n  p {\n    margin: 0;\n    padding: 0;\n    font-size: 1rem;\n    color: ", ";\n    padding: 0 1rem 0 0;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  display: block;\n  width: 100%;\n  height: 72rem;\n  box-sizing: border-box;\n  position: relative;\n  * {\n    box-sizing: border-box;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+
+
+var StyledContaier = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject());
+var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["dark"]);
+var StyledDisk = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["purple"]);
+var StyledInnerDisk = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["pink"]);
+var StyledBody = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject5());
+var StyledLeftRow = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject6(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["dark"]);
+var StyledLeftMessage = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].p(_templateObject7(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["lightGray"]);
+var StyledDivider = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject8(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["dark"]);
+var StyledRightRow = Object(styled_components__WEBPACK_IMPORTED_MODULE_6__["default"])(StyledLeftRow)(_templateObject9(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["dark"]);
+var StyledRightMessage = Object(styled_components__WEBPACK_IMPORTED_MODULE_6__["default"])(StyledLeftMessage)(_templateObject10(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["blue"]);
+var StyledWriting = Object(styled_components__WEBPACK_IMPORTED_MODULE_6__["default"])(StyledDivider)(_templateObject11(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["orange"]);
+var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject12(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["orange"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["lightGray"]);
+var StyledIconButton = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].button(_templateObject13());
+
+var CallRoute = function CallRoute() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContaier, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Micheal Wong"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDisk, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInnerDisk, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledBody, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Yesterday, 8:19 PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftMessage, null, "I thought this would be an awesome way to interact with the interface.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Yesterday 8:20 PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightMessage, null, "I agree! It definitely produces a better user experience.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDivider, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Today"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "7:40 PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftMessage, null, "Did you get that awesomesauce I sent?")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "7:46 PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightMessage, null, "I did, our whole team rubbed it allll over their bread."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightMessage, null, "It was delicious!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "7:47 PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLeftMessage, null, "Awesome!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "7:48 PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRightMessage, null, "Yeah, we all loved it!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledWriting, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Michael Wong is typing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, ".")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    placeholder: "Message Michael"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIconButton, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\uD83D\uDE04")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIconButton, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u2708"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CallRoute);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/chat.png":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/ChatRoute/chat.png ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/chat.png?0effc431f341a9d08fc00460e5cdbb28";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/down.png":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/ChatRoute/down.png ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/down.png?1f668a04745ff8ae04c348abe3de2edb";
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Action.js":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Action.js ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _assets_add_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../assets/add.png */ "./resources/js/src/containers/Account/containers/Message/assets/add.png");
+/* harmony import */ var _assets_add_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_add_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_micro_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../assets/micro.png */ "./resources/js/src/containers/Account/containers/Message/assets/micro.png");
+/* harmony import */ var _assets_micro_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_micro_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_more_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../assets/more.png */ "./resources/js/src/containers/Account/containers/Message/assets/more.png");
+/* harmony import */ var _assets_more_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_more_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_phone_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../assets/phone.png */ "./resources/js/src/containers/Account/containers/Message/assets/phone.png");
+/* harmony import */ var _assets_phone_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_phone_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_video_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../assets/video.png */ "./resources/js/src/containers/Account/containers/Message/assets/video.png");
+/* harmony import */ var _assets_video_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_video_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  width: 1.8rem;\n  height: 1.8rem;\n  object-fit: contain;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  padding: 1rem;\n  background: ", ";\n  border-radius: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  transition: 0.2s background-color ease-in-out;\n  &:hover {\n    background: rgba(255, 255, 255, 0.07);\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  width: 3.8rem;\n  min-width: 3.8rem;\n  height: 3.8rem;\n  background: ", ";\n  border-radius: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  width: 40vh;\n  height: 10vh;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  margin-top: 5vh; \n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+
+
+
+var StyledContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var StyledRed = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_7__["dark"]);
+var StyledOuter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), function (_ref) {
+  var highlight = _ref.highlight;
+  return highlight ? 'rgba(255, 255, 255, 0.07)' : 'transparent';
+});
+var StyledIcon = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img(_templateObject4());
+
+var Actions = function Actions() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledOuter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, {
+    src: _assets_micro_png__WEBPACK_IMPORTED_MODULE_3___default.a
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledOuter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, {
+    src: _assets_video_png__WEBPACK_IMPORTED_MODULE_6___default.a
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledOuter, {
+    highlight: true
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRed, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, {
+    src: _assets_phone_png__WEBPACK_IMPORTED_MODULE_5___default.a
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledOuter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, {
+    src: _assets_add_png__WEBPACK_IMPORTED_MODULE_2___default.a
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledOuter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, {
+    src: _assets_more_png__WEBPACK_IMPORTED_MODULE_4___default.a
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Actions);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Avatar.js":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Avatar.js ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _assets_micheal_wong_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../assets/micheal-wong.png */ "./resources/js/src/containers/Account/containers/Message/assets/micheal-wong.png");
+/* harmony import */ var _assets_micheal_wong_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_micheal_wong_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_Gus_Fring_Walter_White_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../assets/Gus-Fring-Walter-White.png */ "./resources/js/src/containers/Account/containers/Message/assets/Gus-Fring-Walter-White.png");
+/* harmony import */ var _assets_Gus_Fring_Walter_White_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_Gus_Fring_Walter_White_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_Gus_Fring_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../assets/Gus-Fring.png */ "./resources/js/src/containers/Account/containers/Message/assets/Gus-Fring.png");
+/* harmony import */ var _assets_Gus_Fring_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_Gus_Fring_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_Walter_White_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../assets/Walter-White.png */ "./resources/js/src/containers/Account/containers/Message/assets/Walter-White.png");
+/* harmony import */ var _assets_Walter_White_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_Walter_White_png__WEBPACK_IMPORTED_MODULE_5__);
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  width: 75%;\n  height: 75%;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  width: 75%;\n  height: 75%;\n  background: red;\n  border-radius: 100%;\n  background: rgba(255, 255, 255, 0.03);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  width: 30vh;\n  height: 30vh;\n  background: red;\n  border-radius: 100%;\n  background: rgba(255, 255, 255, 0.03);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+
+var avatars = {
+  'micheal-wong.png': _assets_micheal_wong_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+  'Gus-Fring-Walter-White.png': _assets_Gus_Fring_Walter_White_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+  'Gus-Fring.png': _assets_Gus_Fring_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+  'Walter-White.png': _assets_Walter_White_png__WEBPACK_IMPORTED_MODULE_5___default.a
+};
+var StyledContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var StyledInner = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var StyledImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img(_templateObject3());
+
+var Avatar = function Avatar(_ref) {
+  var contact = _ref.contact;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInner, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledImage, {
+    src: avatars[contact.avatar]
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Avatar);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Chat.js":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Chat.js ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _chat_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../chat.png */ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/chat.png");
+/* harmony import */ var _chat_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_chat_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _down_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../down.png */ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/down.png");
+/* harmony import */ var _down_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_down_png__WEBPACK_IMPORTED_MODULE_3__);
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  width: 1rem;\n  height: 1rem;\n  object-fit: contain;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  width: 1.4rem;\n  height: 1.4rem;\n  object-fit: contain;\n  margin-top: 0.3rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  width: 3.4rem;\n  height: 3.4rem;\n  background: rgba(255, 255, 255, 0.07);\n  border-radius: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 1rem 0;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  width: 16vh;\n  height: 14vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-flow: column nowrap;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var StyledContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var StyledChatContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var StyledChat = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img(_templateObject3());
+var StyledDown = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img(_templateObject4());
+
+var Chat = function Chat() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " chaaaat miaaw "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledChatContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledChat, {
+    src: _chat_png__WEBPACK_IMPORTED_MODULE_2___default.a
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDown, {
+    src: _down_png__WEBPACK_IMPORTED_MODULE_3___default.a
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Chat);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Status.js":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/ChatRoute/elements/Status.js ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  width: 0.6rem;\n  height: 0.6rem;\n  background: ", ";\n  border-radius: 100%;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  width: 1rem;\n  height: 1rem;\n  background: ", ";\n  border-radius: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 0.35rem;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  min-width: 20vh;\n  height: 14vh;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  p {\n    margin: 0;\n    padding: 0;\n    font-size: 1.2rem;\n    color: white;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var StyledDisk = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var StyledInnerDisk = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["pink"]);
+
+var Status = function Status(_ref) {
+  var contact = _ref.contact;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, contact.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDisk, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInnerDisk, null)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Status);
 
 /***/ }),
 

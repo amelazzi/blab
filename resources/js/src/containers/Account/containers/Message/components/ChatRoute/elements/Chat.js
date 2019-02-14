@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import ChatIcon from '../../../chat.png'
-import DownIcon from '../../../down.png'
+import ChatIcon from '../chat.png'
+import DownIcon from '../down.png'
 
 const StyledContainer = styled.div`
   width: 16vh;
