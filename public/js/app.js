@@ -76495,10 +76495,12 @@ var TutorInfo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_t
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 var MakingCalls = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
 
-var Header = function Header() {
+var Header = function Header(_ref) {
+  var picProfile = _ref.picProfile,
+      name = _ref.name;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TutorInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png")
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Mark John ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MakingCalls, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: picProfile
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", name, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MakingCalls, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../assets/phone-receiver.png */ "./resources/js/src/containers/Account/containers/Message/assets/phone-receiver.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../assets/facetime-button.png */ "./resources/js/src/containers/Account/containers/Message/assets/facetime-button.png")
@@ -76506,6 +76508,46 @@ var Header = function Header() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/MsgInput.js":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Message/components/Chat/components/MsgInput.js ***!
+  \*******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    padding: 1.5rem;\n    margin: 1.5rem;\n    border: 1px solid ", ";\n    border-radius: 0.2rem;\n    ::placeholder{\n        font-size: 1.6rem;\n    }\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledInput = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+
+var MsgInput = function MsgInput() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInput, {
+    placeholder: "Type a message"
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (MsgInput);
 
 /***/ }),
 
@@ -76522,6 +76564,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/Header.js");
+/* harmony import */ var _components_MsgInput__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/MsgInput */ "./resources/js/src/containers/Account/containers/Message/components/Chat/components/MsgInput.js");
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n"]);
 
@@ -76537,10 +76580,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledChat = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 
 var Chat = function Chat() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledChat, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledChat, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    picProfile: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    name: "Mark John"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MsgInput__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Chat);

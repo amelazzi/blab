@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Header from './components/Header'
+import MsgInput from './components/MsgInput'
 
 
 const StyledChat = styled.div`
@@ -13,7 +14,9 @@ const StyledChat = styled.div`
 const Chat = () => {
     return(
         <StyledChat>
-            <Header/>
+            <Header picProfile={require("../../../../../../pictures/profile.png")}
+                name="Mark John"/>
+            <MsgInput/>
         </StyledChat>
     );
 };

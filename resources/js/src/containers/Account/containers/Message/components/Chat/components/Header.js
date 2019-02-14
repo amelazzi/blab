@@ -54,14 +54,14 @@ const MakingCalls = styled.div`
 `;
 
 
-const Header = () => {
+const Header = ({picProfile, name}) => {
     return(
         <StyledHeader>
             <TutorInfo>
                 <ImgContainer>
-                    <img  src={require("../../../../../../../pictures/profile.png")}/>
+                    <img src={picProfile}/>
                 </ImgContainer>
-                <h1> Mark John </h1>
+                <h1> {name} </h1>
             </TutorInfo>
             <MakingCalls>
                 <button>
