@@ -4,8 +4,10 @@ import { dark, gray } from '../../../../../styles/utilities/Colors';
 
 
 const Card = styled.div`
+    background: white;
     width: 27rem;
     height: 27rem;
+    margin: 1rem;
     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
     display: flex;
     flex-direction: column;

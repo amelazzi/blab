@@ -86035,7 +86035,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    width: 27rem;\n    height: 27rem;\n    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);\n    display: flex;\n    flex-direction: column;\n    h1{\n        font-size: 2.4rem;\n        margin-top: 1rem;\n        margin-left: 1.5rem;\n    }\n    p{\n        color: ", ";\n        margin-left: 1.5rem;\n        line-height: 1;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    width: 27rem;\n    height: 27rem;\n    margin: 1rem;\n    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);\n    display: flex;\n    flex-direction: column;\n    h1{\n        font-size: 2.4rem;\n        margin-top: 1rem;\n        margin-left: 1.5rem;\n    }\n    p{\n        color: ", ";\n        margin-left: 1.5rem;\n        line-height: 1;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -86074,6 +86074,27 @@ var CourseCard = function CourseCard(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (CourseCard);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/TutorProfil/components/Review.js":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/TutorProfil/components/Review.js ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Review = function Review() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Review "));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Review);
 
 /***/ }),
 
@@ -86497,9 +86518,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var react_styled_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-styled-carousel */ "./node_modules/react-styled-carousel/build/components/Slider.js");
+/* harmony import */ var react_styled_carousel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_styled_carousel__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_SideBar_SideBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/SideBar/SideBar */ "./resources/js/src/containers/Account/containers/TutorProfil/components/SideBar/SideBar.js");
 /* harmony import */ var _components_CourseCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/CourseCard */ "./resources/js/src/containers/Account/containers/TutorProfil/components/CourseCard.js");
+/* harmony import */ var _components_Review__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Review */ "./resources/js/src/containers/Account/containers/TutorProfil/components/Review.js");
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n    width: 90rem;\n    margin: 2rem 0;\n    margin-bottom: 1rem;\n    padding: 0;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n    padding: 3rem 2rem;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px;\n    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    margin: 0 1rem;\n    font-size: 2.8rem;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    margin: 0;\n    &:nth-child(1){\n        width: 65%;\n    }\n    &:nth-child(2){\n        width: 30%;\n    }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    margin: 2rem 3rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
   var data = _taggedTemplateLiteral(["\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n"]);
 
@@ -86527,18 +86600,55 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledProfil = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var ProfileContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject4());
+var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_templateObject5());
+var Courses = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6());
+var StyledSlider = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(react_styled_carousel__WEBPACK_IMPORTED_MODULE_2___default.a)(_templateObject7());
 
 var TutorProfile = function TutorProfile() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledProfil, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideBar_SideBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledProfil, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideBar_SideBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+    type: "text",
+    placeholder: "Type to search"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+    type: "text",
+    placeholder: "Sort"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Courses, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Jeremey walter Course "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSlider, {
+    autoSlide: false,
+    cardsToShow: 3,
+    showArrows: false
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
     picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
     title: "Lifestyle",
     classNbr: "10",
     seenNbr: "29",
     likeNbr: "7",
     disLikeNbr: "5"
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+    title: "Lifestyle",
+    classNbr: "10",
+    seenNbr: "29",
+    likeNbr: "7",
+    disLikeNbr: "5"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+    title: "Lifestyle",
+    classNbr: "10",
+    seenNbr: "29",
+    likeNbr: "7",
+    disLikeNbr: "5"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+    title: "Lifestyle",
+    classNbr: "10",
+    seenNbr: "29",
+    likeNbr: "7",
+    disLikeNbr: "5"
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TutorProfile);
