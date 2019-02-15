@@ -4,7 +4,7 @@ import { light, dark, gray, fontFamily } from './utilities';
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   html {
-      font-size: 10px;
+    font-size: 10px;
   }
   body {
     ${fontFamily};

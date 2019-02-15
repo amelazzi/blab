@@ -4,6 +4,8 @@ import Scrollbar from 'react-custom-scrollbars'
 
 import { lightGray } from '../../../../../../../styles/utilities/Colors'
 
+import Typing from './Typing'
+
 
 const StyledLiveChat = styled.div`
     width: 100%;
@@ -78,6 +80,7 @@ const LiveChat = () => {
                             I thought this would be an awesome way to interact with the
                             interface.
                         </StyledLeftMessage>
+                        <Typing/>
                     </Messages>
                 </StyledLeftRow>
                 <StyledRightRow>
