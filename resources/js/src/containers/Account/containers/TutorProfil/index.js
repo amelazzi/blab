@@ -1,10 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Slider from 'react-styled-carousel'
+
+import { orange, purple } from '../../../../styles/utilities/Colors'
 
 import SideBar from './components/SideBar/SideBar'
 import CourseCard from './components/CourseCard'
 import Review from './components/Review'
+import DropDown from './components/DropDown'
+
 
 const StyledProfil = styled.div`
     display: flex;
@@ -54,6 +59,50 @@ const StyledSlider = styled(Slider)`
     padding: 0;
 `;
 
+const Reviews = styled.div`
+    margin: 2rem 0 0 3rem;
+    padding: 3rem 3rem;
+    box-shadow: -4px 4px 4px 0 rgba(0, 0, 0, 0.11);
+`;
+
+const ReviewsInfo = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 4rem;
+    h1, p{
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    h1{
+        margin-top: 0;
+    }
+    p{
+        color: ${orange};
+    }
+`;
+
+const StarContainer = styled.div`
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2rem;
+    margin-top: -0.5rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+`;
+
+const StyledLink = styled(Link)`
+    font-size: 1.8rem;
+    color: ${purple};
+    font-weight: 300;
+    margin-top: 3rem !important;
+`;
+
+
 const TutorProfile = () => {
     return(
         <StyledProfil>
@@ -76,6 +125,21 @@ const TutorProfile = () => {
                             title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/> 
                     </StyledSlider>
                 </Courses>
+                <Reviews>
+                    <ReviewsInfo>
+                        <h1> Blabber Review </h1>
+                        <StarContainer>
+                            <img src={require("../../../../pictures/ratedstar.png")} />
+                        </StarContainer>
+                        <p> 5.0 </p>
+                        <p> (23) </p>
+                        <DropDown></DropDown>
+                    </ReviewsInfo>
+                    <Review/>
+                    <Review/>
+                    <Review/>
+                    <StyledLink to="/"> + See More </StyledLink>
+                </Reviews>
             </ProfileContent>
         </StyledProfil>
     );
