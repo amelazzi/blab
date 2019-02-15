@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+
+import { gray, purple, lightGray, light } from '../../../../../styles/utilities/Colors';
+
 import Card from './Card'
 import TutorWallet from './TutorWallet'
-import { gray, purple, lightGray } from '../../../../../styles/utilities/Colors';
+import StudenWallet from './StudentWallet'
+
 
 const TabsContent = styled.div`
     display: flex;
-    border-bottom: 1px solid ${gray};
+    border-bottom: 1px solid ${light};
     align-items: flex-start;
     padding: 1rem 2rem 1rem 4rem;
     button{
@@ -72,7 +76,7 @@ class Tabs extends Component {
                             <Fab> + </Fab>
                         </Courses>) : 
                         (
-                            <TutorWallet></TutorWallet>
+                            <StudenWallet></StudenWallet>
                     )}
                 </div>
             </>

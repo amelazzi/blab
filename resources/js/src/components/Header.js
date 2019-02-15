@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
     }
 
     a {
-        color: ${light};
+        color: white;
         padding: 0 2rem;
         position: relative;
         text-decoration: none;
@@ -94,7 +94,7 @@ const Header = () => (
             <Link to="/getting-started"> Getting Started </Link>
             <Link to="/contact-us"> Contact us </Link>
             <Link to="/account"> Account </Link>
-            <Link to="/profil"> Profil </Link>
+            <Link to="/student-profil"> StProfil </Link>
             <Link to="/live"> Live </Link>
         </nav>
         <StyledLogIn>

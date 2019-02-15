@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { lightGray } from '../../../../../styles/utilities/Colors';
+import { pink, light } from '../../../../../styles/utilities/Colors';
 import ClassCard from './ClassCard'
 
 const StyledClass = styled.div`
@@ -10,15 +10,23 @@ const StyledClass = styled.div`
 const TabsContent = styled.div`
     display: flex;
     justify-content: space-between;
+    align-self: center;
+    border-bottom: 1px solid ${light};
     button{
         border: none;
         font-size: 2.4rem;
         background: none;
-        margin-top: 0.3rem;
-        border-bottom: 1px solid ${lightGray};
+        padding-bottom: 1rem;
+        :hover{
+            cursor: pointer;
+        }
     }
     input{
         margin: 0 !important;
+        border: none;
+        :first-child{
+            width: 18%;
+        }
     }
 `;
 

@@ -15,7 +15,7 @@ import GettingStarted from './containers/GettingStarted';
 import StartedStudent from './containers/StartedStudent';
 import StartedTutor from './containers/StartedTutor';
 import Account from './containers/Account';
-import Profil from './containers/Account/containers/Profil';
+import StudentProfil from './containers/Account/containers/StudentProfil';
 import LiveClass from './containers/Account/containers/LiveClass'
 
 
@@ -37,7 +37,7 @@ class App extends Component {
                     <Route path="/getting-started" component={GettingStarted} />
                     <Route path="/contact-us" component={ContactUs} />
                     <Route path="/account" component={Account} />
-                    <Route path="/profil" component={Profil} />
+                    <Route path="/student-profil" component={StudentProfil} />
                     <Route path="/log-in" component={Login} />
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/sign-up2" component={SignUp2} />

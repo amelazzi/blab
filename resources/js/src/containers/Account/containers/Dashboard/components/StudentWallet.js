@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { gray } from '../../../../../styles/utilities/Colors';
+import { gray, light } from '../../../../../styles/utilities/Colors';
 
 const Wallet = styled.div`
     padding: 6rem 4rem 0 2rem;
@@ -12,7 +12,7 @@ const CreditAccount = styled.div`
 
 const Balance = styled.div`
     padding-bottom: 4rem;
-    border-bottom: 1px solid ${gray};
+    border-bottom: 1px solid ${light};
     h2{
         padding: 3rem 0 0 0;
         font-size: 2.2rem;

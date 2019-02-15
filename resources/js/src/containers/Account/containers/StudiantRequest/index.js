@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import { lightGray, purple } from '../../../../styles/utilities/Colors';
+import { lightGray, purple, light } from '../../../../styles/utilities/Colors';
 
 import RowTitle from './components/RowTitle'
 import Row from './components/Row'
@@ -38,7 +38,7 @@ const InputContent = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0;
-    border-bottom: 1px solid ${lightGray};
+    border-bottom: 1px solid ${light};
 `;
 
 

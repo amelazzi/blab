@@ -1,28 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Card from './Card'
-import { gray, purple, lightGray } from '../../../../../styles/utilities/Colors';
 
-const TabsContent = styled.div`
-    display: flex;
-    border-bottom: 1px solid ${gray};
-    align-items: flex-start;
-    padding: 1rem 2rem 1rem 4rem;
-    button{
-        border: none;
-        font-size: 2.4rem;
-        background: none;
-        margin-right: 4rem;
-    }
-`;
-
-const Courses = styled.div`
-    padding: 6rem 4rem 0 2rem;
-`;
-
-const Course = styled.div`
-    padding-bottom: 6rem;
-`;
+import { gray, green, light } from '../../../../../styles/utilities/Colors';
 
 const MyEarning = styled.div`
     padding: 6rem 4rem 0 2rem;
@@ -30,10 +9,10 @@ const MyEarning = styled.div`
 
 const EarningCard = styled.div`
     padding: 1.4rem 2.2rem; 
-    border: 1px solid ${lightGray};
+    border: 1px solid ${light};
     display: grid;
-    grid-template-columns: 1fr 1fr 1.2fr 0.8fr;
-    box-shadow: 0 4px 4px 0 #3dec83;
+    grid-template-columns: 1fr 1.2fr 1.2fr 0.6fr;
+    box-shadow: 0 4px 4px 0 ${green};
     margin-top: 3rem;
     margin-bottom: 6rem;
 `;

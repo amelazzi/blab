@@ -62,6 +62,7 @@ const ParalelInput = styled.div`
 
 const StyledSignIn = styled.div`
     display: flex;
+    flex-direction: row;
     justify-content: center;
 `;
 
@@ -69,6 +70,7 @@ const StyledLink = styled(Link)`
     color: ${purple};
     font-size: 2.3rem;
     margin-left: 4px;
+    margin-top: -4px;
 `;
 
 const SignUp2 = () => {

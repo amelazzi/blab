@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
-import {lightGray, purple} from '../../../../../styles/utilities/Colors'
+import {lightGray, purple, light} from '../../../../../styles/utilities/Colors'
 
 const StyledSidBar = styled.div`
-    padding:  4.9rem 6rem 18.8rem 6rem;
-    -webkit-box-shadow: 0 0 10px 0px ${lightGray};
+    padding:  4.9rem 5rem 18.8rem 5rem;
+    border-right: 1px solid ${light};
     font-size: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -14,12 +14,17 @@ const StyledSidBar = styled.div`
 const StyledLink = styled(Link)`
     color: ${purple};
     font-size: 2rem;
+    :hover{
+        text-decoration: none;
+        color: ${purple};
+        cursor: pointer;
+    }
 `;
 
 const ImgContainer = styled.div`
     width: 30rem;
     height: 30rem;
-    margin-top: 4.6rem;
+    margin-top: 4rem;
     margin-bottom: 1.3rem;
     img{
         width: 100%;
@@ -34,9 +39,10 @@ const ProfilContent = styled.div`
     }
     h1{
         margin-top: 1.4rem;
-        margin-bottom: 2rem;
+        border-bottom: 1px solid ${light};
     }
     h2{
+        margin-top: 2rem;
         font-weight: 500;
     }
     p{

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import {lightGray, light} from '../../../../../styles/utilities/Colors'
+import {light, green, purple} from '../../../../../styles/utilities/Colors'
 
 const StyledCard  = styled.div`
     width: 100%;
@@ -8,11 +8,12 @@ const StyledCard  = styled.div`
     justify-content: flex-start;
     flex-wrap: nowrap;
     padding: 2rem;
-    border: 1px solid ${lightGray};
+    border: 1px solid ${light};
+    box-shadow: 0 4px 4px 0 ${green};
     button{
         margin-top: 13rem;
         margin-left: 38%;
-        border: 3px solid green;
+        border: 3px solid ${green};
         border-radius: 8px;
         padding: 0 3rem 0 3rem;
         background: white;
@@ -25,7 +26,7 @@ const TutorProfil = styled.div`
     text-align: center;
     padding-bottom: 4rem;
     width: 18%;
-    box-shadow: 3px 3px ${light};
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
     h3{
         font-size: 1.8rem;
         padding: 1rem 0 0 0;
@@ -51,6 +52,9 @@ const SessionTime = styled.div`
     margin-top: 3rem;
     p{
         font-size: 1.6rem;
+        :nth-child(2){
+            color: ${purple};
+        }
     }
 `;
 

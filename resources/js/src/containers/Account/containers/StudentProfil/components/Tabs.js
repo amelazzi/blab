@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { gray, purple, dark } from '../../../../../styles/utilities/Colors';
+import { gray, light, dark } from '../../../../../styles/utilities/Colors';
 
 const TabsContent = styled.div`
     display: flex;
-    border-bottom: 1px solid ${gray};
+    border-bottom: 1px solid ${light};
     align-items: flex-start;
     margin-top: 10.5rem;
     button{

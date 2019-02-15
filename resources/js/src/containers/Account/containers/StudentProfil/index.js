@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {lightGray} from '../../../../styles/utilities/Colors'
+import {lightGray, gray, dark} from '../../../../styles/utilities/Colors'
 
 import SideBar from './components/SideBar'
 import Tabs from './components/Tabs'
@@ -54,7 +54,7 @@ const StarContainer = styled.div`
 `;
 
 const StyledButton = styled.button`
-    border: 1px solid ${lightGray};
+    border: 1px solid ${dark};
     border-radius: 4px;
     background: white;
     margin-top: 4.6rem;

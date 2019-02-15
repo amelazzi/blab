@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components'
-import { lightGray, pink } from '../../../../../styles/utilities/Colors';
+import { lightGray, pink, light } from '../../../../../styles/utilities/Colors';
 
 const StyledNotif = styled.div`
     padding: 2rem 0 2rem 0;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid ${lightGray};
+    border-bottom: 1px solid ${light};
 `;
 
 const ImgContainer = styled.div`

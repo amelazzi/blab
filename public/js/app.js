@@ -81806,7 +81806,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_StartedStudent__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./containers/StartedStudent */ "./resources/js/src/containers/StartedStudent/index.js");
 /* harmony import */ var _containers_StartedTutor__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./containers/StartedTutor */ "./resources/js/src/containers/StartedTutor/index.js");
 /* harmony import */ var _containers_Account__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./containers/Account */ "./resources/js/src/containers/Account/index.js");
-/* harmony import */ var _containers_Account_containers_Profil__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./containers/Account/containers/Profil */ "./resources/js/src/containers/Account/containers/Profil/index.js");
+/* harmony import */ var _containers_Account_containers_StudentProfil__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./containers/Account/containers/StudentProfil */ "./resources/js/src/containers/Account/containers/StudentProfil/index.js");
 /* harmony import */ var _containers_Account_containers_LiveClass__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./containers/Account/containers/LiveClass */ "./resources/js/src/containers/Account/containers/LiveClass/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -81887,8 +81887,8 @@ function (_Component) {
         path: "/account",
         component: _containers_Account__WEBPACK_IMPORTED_MODULE_16__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-        path: "/profil",
-        component: _containers_Account_containers_Profil__WEBPACK_IMPORTED_MODULE_17__["default"]
+        path: "/student-profil",
+        component: _containers_Account_containers_StudentProfil__WEBPACK_IMPORTED_MODULE_17__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/log-in",
         component: _containers_Login__WEBPACK_IMPORTED_MODULE_9__["default"]
@@ -82050,7 +82050,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    font-size: 1.8rem;\n    display: flex;\n    justify-content: space-between;\n    * {\n        margin: 0;\n    }\n\n    nav {\n        width: 79%;\n        display: flex;\n        flex-flow: row nowrap;\n        justify-content: start;\n        padding: 2.5rem;\n        align-items: center;\n    }\n\n    a {\n        color: ", ";\n        padding: 0 2rem;\n        position: relative;\n        text-decoration: none;\n\n        &:hover,\n        &:focus,\n        &.active {\n            &:after {\n                content: '';\n                display: block;\n                position: absolute;\n                bottom: -4px;\n                left: calc(3.4rem / 2);\n                width: calc(100% - 3.2rem);\n                height: 0.5rem;\n                background: ", ";\n                border-radius: 1rem;\n            }\n        }\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    font-size: 1.8rem;\n    display: flex;\n    justify-content: space-between;\n    * {\n        margin: 0;\n    }\n\n    nav {\n        width: 79%;\n        display: flex;\n        flex-flow: row nowrap;\n        justify-content: start;\n        padding: 2.5rem;\n        align-items: center;\n    }\n\n    a {\n        color: white;\n        padding: 0 2rem;\n        position: relative;\n        text-decoration: none;\n\n        &:hover,\n        &:focus,\n        &.active {\n            &:after {\n                content: '';\n                display: block;\n                position: absolute;\n                bottom: -4px;\n                left: calc(3.4rem / 2);\n                width: calc(100% - 3.2rem);\n                height: 0.5rem;\n                background: ", ";\n                border-radius: 1rem;\n            }\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -82065,7 +82065,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["darkGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["light"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["pink"]);
+var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["darkGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["pink"]);
 var StyledLogo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
 var StyledLogIn = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["purple"]);
 var LogIn = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"])(_templateObject4());
@@ -82084,8 +82084,8 @@ var Header = function Header() {
   }, " Contact us "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/account"
   }, " Account "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/profil"
-  }, " Profil "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/student-profil"
+  }, " StProfil "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/live"
   }, " Live ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLogIn, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogIn, {
     to: "/log-in"
@@ -82418,7 +82418,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 0 0 8rem 0;\n    margin: 2rem;\n    text-align: center;\n    width: 260px;\n    box-shadow: 3px 3px ", ";\n    h1, h2, p{\n        padding: 0.25rem;\n    }\n    h1{\n        margin-top: 2rem;\n        font-size: 1.8rem;\n    }\n    h2{\n        font-size: 1.6rem;\n        color: ", "\n    }\n    p{\n        font-size: 1.4rem;\n        color: ", "\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 0 0 8rem 0;\n    margin: 2rem;\n    text-align: center;\n    width: 260px;\n    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);\n    h1, h2, p{\n        padding: 0.25rem;\n    }\n    h1{\n        margin-top: 2rem;\n        font-size: 1.8rem;\n    }\n    h2{\n        font-size: 1.6rem;\n        color: ", "\n    }\n    p{\n        font-size: 1.4rem;\n        color: ", "\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -82432,7 +82432,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var Rates = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 var StarContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
@@ -82611,7 +82611,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    margin: 2rem;\n    text-align: center;\n    width: 260px;\n    box-shadow: 3px 3px ", ";\n    h1, h2, p{\n        padding: 0.25rem;\n    }\n    h1{\n        margin-top: 2rem;\n        font-size: 1.8rem;\n    }\n    h2{\n        font-size: 1.6rem;\n        color: ", "\n    }\n    p{\n        font-size: 1.4rem;\n        color: ", "\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    margin: 2rem;\n    text-align: center;\n    width: 260px;\n    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);\n    h1, h2, p{\n        padding: 0.25rem;\n    }\n    h1{\n        margin-top: 2rem;\n        font-size: 1.8rem;\n    }\n    h2{\n        font-size: 1.6rem;\n        color: ", "\n    }\n    p{\n        font-size: 1.4rem;\n        color: ", "\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -82625,7 +82625,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var Footer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["pink"]);
 
@@ -82685,7 +82685,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    button{\n        border: none;\n        font-size: 2.4rem;\n        background: none;\n        margin-top: 0.3rem;\n        border-bottom: 1px solid ", ";\n    }\n    input{\n        margin: 0 !important;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    align-self: center;\n    border-bottom: 1px solid ", ";\n    button{\n        border: none;\n        font-size: 2.4rem;\n        background: none;\n        padding-bottom: 1rem;\n        :hover{\n            cursor: pointer;\n        }\n    }\n    input{\n        margin: 0 !important;\n        border: none;\n        :first-child{\n            width: 18%;\n        }\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -82711,7 +82711,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var StyledClass = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
-var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
 var CurrentClasses = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 
 var Tabs =
@@ -82830,7 +82830,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    margin-left: 10%;\n    margin-top: 3rem;\n    p{\n        font-size: 1.6rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    margin-left: 10%;\n    margin-top: 3rem;\n    p{\n        font-size: 1.6rem;\n        :nth-child(2){\n            color: ", ";\n        }\n    }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -82850,7 +82850,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    padding: 1rem;\n    text-align: center;\n    padding-bottom: 4rem;\n    width: 18%;\n    box-shadow: 3px 3px ", ";\n    h3{\n        font-size: 1.8rem;\n        padding: 1rem 0 0 0;\n    }\n    h4{\n        font-size: 1.8rem;\n        padding: 1rem 0 0 0;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 1rem;\n    text-align: center;\n    padding-bottom: 4rem;\n    width: 18%;\n    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);\n    h3{\n        font-size: 1.8rem;\n        padding: 1rem 0 0 0;\n    }\n    h4{\n        font-size: 1.8rem;\n        padding: 1rem 0 0 0;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -82860,7 +82860,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    display: flex;\n    justify-content: flex-start;\n    flex-wrap: nowrap;\n    padding: 2rem;\n    border: 1px solid ", ";\n    button{\n        margin-top: 13rem;\n        margin-left: 38%;\n        border: 3px solid green;\n        border-radius: 8px;\n        padding: 0 3rem 0 3rem;\n        background: white;\n        font-size: 1.8rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    display: flex;\n    justify-content: flex-start;\n    flex-wrap: nowrap;\n    padding: 2rem;\n    border: 1px solid ", ";\n    box-shadow: 0 4px 4px 0 ", ";\n    button{\n        margin-top: 13rem;\n        margin-left: 38%;\n        border: 3px solid ", ";\n        border-radius: 8px;\n        padding: 0 3rem 0 3rem;\n        background: white;\n        font-size: 1.8rem;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -82874,10 +82874,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
-var TutorProfil = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
+var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["green"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["green"]);
+var TutorProfil = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
-var SessionTime = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+var SessionTime = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
 
 var Card = function Card(_ref) {
   var tutorPic = _ref.tutorPic,
@@ -82889,6 +82889,92 @@ var Card = function Card(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/Dashboard/components/StudentWallet.js":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/Dashboard/components/StudentWallet.js ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    margin-right: 8rem;\n    button{\n        width: 21.5rem;\n        height: 6rem;\n        border: none;\n        background: none;\n        cursor: pointer;\n        padding: 0;\n        img{\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n            margin: 0;\n        }\n    }\n    p{\n        font-size: 25px;\n        font-weight: normal;\n        font-style: normal;\n        font-stretch: normal;\n        line-height: 1.7;\n        margin-top: 3.6rem;\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: start;\n    align-items: center;\n    text-align: center;\n    margin-top: 8.7rem;\n    margin-left: 9.4rem;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    padding-bottom: 4rem;\n    border-bottom: 1px solid ", ";\n    h2{\n        padding: 3rem 0 0 0;\n        font-size: 2.2rem;\n    }\n    p{\n        padding-left: 4rem;\n        font-size: 5rem;\n        font-weight: bold;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    padding-top: 4rem;   \n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    padding: 6rem 4rem 0 2rem;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var Wallet = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var CreditAccount = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var Balance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
+var Payment = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5());
+
+var StudentWallet = function StudentWallet() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wallet, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Balance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreditAccount, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Credit Account "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Payment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Paypal Account ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Credit Card ")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (StudentWallet);
 
 /***/ }),
 
@@ -82904,9 +82990,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card */ "./resources/js/src/containers/Account/containers/Dashboard/components/Card.js");
-/* harmony import */ var _TutorWallet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TutorWallet */ "./resources/js/src/containers/Account/containers/Dashboard/components/TutorWallet.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Card */ "./resources/js/src/containers/Account/containers/Dashboard/components/Card.js");
+/* harmony import */ var _TutorWallet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TutorWallet */ "./resources/js/src/containers/Account/containers/Dashboard/components/TutorWallet.js");
+/* harmony import */ var _StudentWallet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StudentWallet */ "./resources/js/src/containers/Account/containers/Dashboard/components/StudentWallet.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -82972,10 +83059,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["gray"]);
+
+var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
 var Courses = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var Course = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
-var Fab = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["purple"]);
+var Fab = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
 
 var Tabs =
 /*#__PURE__*/
@@ -83012,15 +83100,15 @@ function (_Component) {
             activeTab: 2
           });
         }
-      }, "My Wallet ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.state.activeTab == 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Courses, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Course, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Next class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, "My Wallet ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.state.activeTab == 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Courses, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Course, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Next class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
         tutorPic: __webpack_require__(/*! ../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
         tutorName: "John Doe",
         className: "English"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Course, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Missed class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Course, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Missed class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
         tutorPic: __webpack_require__(/*! ../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
         tutorName: "John Doe",
         className: "English"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fab, null, " + ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TutorWallet__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Fab, null, " + ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_StudentWallet__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
     }
   }]);
 
@@ -83043,40 +83131,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card */ "./resources/js/src/containers/Account/containers/Dashboard/components/Card.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
-function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: start;\n    align-items: center;\n    button{\n        width: 21.5rem;\n        height: 6rem;\n        border: none;\n        background: none;\n        cursor: pointer;\n        padding: 0;\n        margin: 0 4rem;\n        img{\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n            margin: 0;\n        }\n    }\n"]);
-
-  _templateObject7 = function _templateObject7() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n    border-right: 1px solid ", ";\n    :nth-child(3){\n        border: none;\n    }\n    text-align: center;\n    h2{\n        font-size: 2.2rem;\n    }\n    p{\n        font-size: 5rem;\n        font-weight: bold;\n    }\n"]);
-
-  _templateObject6 = function _templateObject6() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n    padding: 1.4rem 2.2rem; \n    border: 1px solid ", ";\n    display: grid;\n    grid-template-columns: 1fr 1fr 1.2fr 0.8fr;\n    box-shadow: 0 4px 4px 0 #3dec83;\n    margin-top: 3rem;\n    margin-bottom: 6rem;\n"]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    padding: 6rem 4rem 0 2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: start;\n    align-items: center;\n    button{\n        width: 21.5rem;\n        height: 6rem;\n        border: none;\n        background: none;\n        cursor: pointer;\n        padding: 0;\n        margin: 0 4rem;\n        img{\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n            margin: 0;\n        }\n    }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -83086,7 +83143,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    padding-bottom: 6rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    border-right: 1px solid ", ";\n    :nth-child(3){\n        border: none;\n    }\n    text-align: center;\n    h2{\n        font-size: 2.2rem;\n    }\n    p{\n        font-size: 5rem;\n        font-weight: bold;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -83096,7 +83153,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    padding: 6rem 4rem 0 2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 1.4rem 2.2rem; \n    border: 1px solid ", ";\n    display: grid;\n    grid-template-columns: 1fr 1.2fr 1.2fr 0.6fr;\n    box-shadow: 0 4px 4px 0 ", ";\n    margin-top: 3rem;\n    margin-bottom: 6rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -83106,7 +83163,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    border-bottom: 1px solid ", ";\n    align-items: flex-start;\n    padding: 1rem 2rem 1rem 4rem;\n    button{\n        border: none;\n        font-size: 2.4rem;\n        background: none;\n        margin-right: 4rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 6rem 4rem 0 2rem;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -83120,14 +83177,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-
-var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
-var Courses = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
-var Course = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
-var MyEarning = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
-var EarningCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"]);
-var EarningBalance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
-var WithDrow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject7());
+var MyEarning = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var EarningCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["green"]);
+var EarningBalance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["gray"]);
+var WithDrow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
 
 var TutorWallet = function TutorWallet() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MyEarning, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Withdrawn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $830 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Pending Clearance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $50 "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Analytics "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Total earning "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $2000 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Total completed class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 58 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EarningBalance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Earned this month "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $1800 "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WithDrow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Withdrow "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -85249,7 +85302,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledNotif = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var StyledNotif = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var NotifContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["pink"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
 
@@ -85291,7 +85344,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 0\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 0;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -85361,10 +85414,10 @@ var Notification = function Notification() {
 
 /***/ }),
 
-/***/ "./resources/js/src/containers/Account/containers/Profil/components/SideBar.js":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/src/containers/Account/containers/Profil/components/SideBar.js ***!
-  \*************************************************************************************/
+/***/ "./resources/js/src/containers/Account/containers/StudentProfil/components/SideBar.js":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/StudentProfil/components/SideBar.js ***!
+  \********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -85376,7 +85429,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    h1,h2{\n        font-size: 2.4rem;\n    }\n    h1{\n        margin-top: 1.4rem;\n        margin-bottom: 2rem;\n    }\n    h2{\n        font-weight: 500;\n    }\n    p{\n        margin-top: -1rem;\n        font-size: 2.4rem;\n        font-weight: 400;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    h1,h2{\n        font-size: 2.4rem;\n    }\n    h1{\n        margin-top: 1.4rem;\n        border-bottom: 1px solid ", ";\n    }\n    h2{\n        margin-top: 2rem;\n        font-weight: 500;\n    }\n    p{\n        margin-top: -1rem;\n        font-size: 2.4rem;\n        font-weight: 400;\n    }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -85386,7 +85439,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    width: 30rem;\n    height: 30rem;\n    margin-top: 4.6rem;\n    margin-bottom: 1.3rem;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 30rem;\n    height: 30rem;\n    margin-top: 4rem;\n    margin-bottom: 1.3rem;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -85396,7 +85449,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 2rem;\n    :hover{\n        text-decoration: none;\n        color: ", ";\n        cursor: pointer;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -85406,7 +85459,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    padding:  4.9rem 6rem 18.8rem 6rem;\n    -webkit-box-shadow: 0 0 10px 0px ", ";\n    font-size: 2.5rem;\n    display: flex;\n    flex-direction: column;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding:  4.9rem 5rem 18.8rem 5rem;\n    border-right: 1px solid ", ";\n    font-size: 2.5rem;\n    display: flex;\n    flex-direction: column;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -85421,10 +85474,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledSidBar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"]);
-var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"])(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+var StyledSidBar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["light"]);
+var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"])(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
-var ProfilContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4());
+var ProfilContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["light"]);
 
 var SideBar = function SideBar() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSidBar, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
@@ -85438,10 +85491,10 @@ var SideBar = function SideBar() {
 
 /***/ }),
 
-/***/ "./resources/js/src/containers/Account/containers/Profil/components/Tabs.js":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/src/containers/Account/containers/Profil/components/Tabs.js ***!
-  \**********************************************************************************/
+/***/ "./resources/js/src/containers/Account/containers/StudentProfil/components/Tabs.js":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/StudentProfil/components/Tabs.js ***!
+  \*****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -85504,7 +85557,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["gray"]);
+var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
 var About = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 var Review = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 
@@ -85554,10 +85607,10 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/js/src/containers/Account/containers/Profil/index.js":
-/*!************************************************************************!*\
-  !*** ./resources/js/src/containers/Account/containers/Profil/index.js ***!
-  \************************************************************************/
+/***/ "./resources/js/src/containers/Account/containers/StudentProfil/index.js":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/StudentProfil/index.js ***!
+  \*******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -85567,8 +85620,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
-/* harmony import */ var _components_SideBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/SideBar */ "./resources/js/src/containers/Account/containers/Profil/components/SideBar.js");
-/* harmony import */ var _components_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Tabs */ "./resources/js/src/containers/Account/containers/Profil/components/Tabs.js");
+/* harmony import */ var _components_SideBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/SideBar */ "./resources/js/src/containers/Account/containers/StudentProfil/components/SideBar.js");
+/* harmony import */ var _components_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Tabs */ "./resources/js/src/containers/Account/containers/StudentProfil/components/Tabs.js");
 function _templateObject8() {
   var data = _taggedTemplateLiteral(["\n    border: 1px solid ", ";\n    border-radius: 4px;\n    background: white;\n    margin-top: 4.6rem;\n    height: 4.2;\n    padding-right: 3rem;\n    padding-left: 3rem;\n"]);
 
@@ -85663,7 +85716,7 @@ var StyledH2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2(_tem
 var RatesContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5());
 var StyledH3 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h3(_templateObject6());
 var StarContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject7());
-var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject8(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject8(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 
 var Profil = function Profil() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledProfil, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfilContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Natasha Jane "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH2, null, " Blabee "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RatesContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH3, null, " 4.0 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -85751,7 +85804,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+var StyledRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["light"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["lightGray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
 var ProfilContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 var Description = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_templateObject4());
@@ -85802,7 +85855,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var StyledRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
 
 var RowTitle = function RowTitle() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Student "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Description "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Native language "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Skills "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Offer "));
@@ -85897,7 +85950,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var StyledIndex = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var Active = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var ActiveNumber = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
-var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject5());
 var Rows = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6());
 
@@ -85985,7 +86038,7 @@ var Account = function Account() {
   }, " Find a Blabber", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/account"
+    to: "/account/"
   }, " Message", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
@@ -86010,14 +86063,14 @@ var Account = function Account() {
     path: "/account/find-blabber",
     component: _containers_FindBlabber__WEBPACK_IMPORTED_MODULE_7__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/account",
-    component: _containers_Message__WEBPACK_IMPORTED_MODULE_10__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/account/notification",
     component: _containers_Notification__WEBPACK_IMPORTED_MODULE_8__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/account/student-request",
     component: _containers_StudiantRequest__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/account/",
+    component: _containers_Message__WEBPACK_IMPORTED_MODULE_10__["default"]
   })));
 };
 
@@ -87030,7 +87083,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 2.3rem;\n    margin-left: 4px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n    font-size: 2.3rem;\n    margin-left: 4px;\n    margin-top: -4px;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -87040,7 +87093,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: center;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -87809,7 +87862,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"])(_templateObject(), _utilities__WEBPACK_IMPORTED_MODULE_1__["fontFamily"], _utilities__WEBPACK_IMPORTED_MODULE_1__["gray"], _utilities__WEBPACK_IMPORTED_MODULE_1__["dark"], _utilities__WEBPACK_IMPORTED_MODULE_1__["gray"], _utilities__WEBPACK_IMPORTED_MODULE_1__["gray"]);
+var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"])(_templateObject(), _utilities__WEBPACK_IMPORTED_MODULE_1__["fontFamily"], _utilities__WEBPACK_IMPORTED_MODULE_1__["gray"], _utilities__WEBPACK_IMPORTED_MODULE_1__["dark"], _utilities__WEBPACK_IMPORTED_MODULE_1__["light"], _utilities__WEBPACK_IMPORTED_MODULE_1__["light"]);
 /* harmony default export */ __webpack_exports__["default"] = (GlobalStyle);
 
 /***/ }),
@@ -87818,7 +87871,7 @@ var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["createG
 /*!*****************************************************!*\
   !*** ./resources/js/src/styles/utilities/Colors.js ***!
   \*****************************************************/
-/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, orange, darkGray, gray, lightGray */
+/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, orange, red, green, darkGray, gray, lightGray */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87831,17 +87884,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pink", function() { return pink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "purple", function() { return purple; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "orange", function() { return orange; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "red", function() { return red; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "green", function() { return green; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "darkGray", function() { return darkGray; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gray", function() { return gray; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lightGray", function() { return lightGray; });
 var purpleGradient = 'linear-gradient(45deg, #6E41C3 0%, #6E41C3 30%, #A555B2 100%)';
 var darkPurpleGradient = 'linear-gradient(45deg, #47297D 0%, #46287B 16%, #6F346F 100%)';
-var light = '#F6F6FD';
+var light = '#aeaeae';
 var dark = 'rgb(0, 0, 0)';
 var blue = 'rgb(77, 112, 244)';
 var pink = 'rgb(217, 43, 95)';
 var purple = '#4D70F4';
 var orange = 'rgb(238, 97, 88)';
+var red = '#d93838';
+var green = '#3dec83';
 var darkGray = 'rgb(59, 59, 59)';
 var gray = 'rgb(89, 89, 89)';
 var lightGray = 'rgb(122, 122, 122)';
@@ -87894,7 +87951,7 @@ var fontFamily = "font-family: 'Notable', sans-serif";
 /*!****************************************************!*\
   !*** ./resources/js/src/styles/utilities/index.js ***!
   \****************************************************/
-/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, orange, darkGray, gray, lightGray, elevation, fontFamily */
+/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, orange, red, green, darkGray, gray, lightGray, elevation, fontFamily */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87915,6 +87972,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "purple", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["purple"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "orange", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["orange"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "red", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["red"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "green", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["green"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "darkGray", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["darkGray"]; });
 

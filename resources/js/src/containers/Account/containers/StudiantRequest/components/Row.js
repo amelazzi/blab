@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
-import { lightGray, purple } from '../../../../../styles/utilities/Colors'
+import { lightGray, purple, light } from '../../../../../styles/utilities/Colors'
 
 const StyledRow = styled.div`
     display: grid;
     grid-template-columns: 0.7fr 1fr 1fr 0.8fr 1fr;
-    border-bottom: 1px solid ${lightGray};
+    border-bottom: 1px solid ${light};
     padding-top: 2.2rem;
     h1{
         text-align: center;
