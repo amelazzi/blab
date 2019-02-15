@@ -63,10 +63,10 @@ const StyledButton = styled.button`
     padding-left: 3rem;
 `;
 
-const Profil = () =>{
+const StudentProfile = () =>{
     return(
         <StyledProfil>
-            <SideBar></SideBar>
+            <SideBar/>
             <ProfilContent>
                 <StyledH1> Natasha Jane </StyledH1>
                 <StyledH2> Blabee </StyledH2>
@@ -87,4 +87,4 @@ const Profil = () =>{
 
 };
 
-export default Profil;
+export default StudentProfile;

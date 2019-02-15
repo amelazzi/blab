@@ -28,7 +28,7 @@ const Input = styled.input`
 const InputContent = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 0
+    padding: 0;
 `;
 
 const RecentBlabbers = styled.div`

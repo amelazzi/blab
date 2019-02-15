@@ -16,6 +16,7 @@ import StartedStudent from './containers/StartedStudent';
 import StartedTutor from './containers/StartedTutor';
 import Account from './containers/Account';
 import StudentProfil from './containers/Account/containers/StudentProfil';
+import TutorProfile from './containers/Account/containers/TutorProfil'
 import LiveClass from './containers/Account/containers/LiveClass'
 
 
@@ -38,6 +39,7 @@ class App extends Component {
                     <Route path="/contact-us" component={ContactUs} />
                     <Route path="/account" component={Account} />
                     <Route path="/student-profil" component={StudentProfil} />
+                    <Route path="/tutor-profil" component={TutorProfile} />
                     <Route path="/log-in" component={Login} />
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/sign-up2" component={SignUp2} />
