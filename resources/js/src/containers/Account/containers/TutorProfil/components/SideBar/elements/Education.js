@@ -15,13 +15,13 @@ const StyledEducation = styled.div`
     }
 `;
 
-const Education = () => {
+const Education = ({field, university, year}) => {
     return(
         <StyledEducation>
             <h1> Education </h1>
-            <h2> B.E. - English Language </h2>
-            <p> Converty University </p>
-            <p> 2017 </p>
+            <h2> {field} </h2>
+            <p> {university} </p>
+            <p> {year} </p>
         </StyledEducation>
     );
 };

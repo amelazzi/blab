@@ -17,13 +17,11 @@ const StyledAbout = styled.div`
 `;
 
 
-const About = () => {
+const About = ({text}) => {
     return(
         <StyledAbout>
             <h1> About </h1>
-            <p> Learn More about me here  Learn More about me hereLearn More about me here 
-                Learn More about me here Learn More about me here Learn More about me here 
-            </p>
+            <p> {text} </p>
         </StyledAbout>
     );
 };

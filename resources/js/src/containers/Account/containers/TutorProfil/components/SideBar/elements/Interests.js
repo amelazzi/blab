@@ -31,18 +31,12 @@ const InterestContainer = styled.div`
 
 
 
-const Interests = () => {
+const Interests = ({args}) => {
     return(
         <StyledInterest>
             <h1> Interest </h1>
             <InterestContainer>
-                <button> Traveling </button>
-                <button> Sports </button>
-                <button> Games </button>
-                <button> Food </button>
-                <button> Swimming </button>
-                <button> Cooking </button>
-                <button> Running </button>
+                {args}
             </InterestContainer>
         </StyledInterest>
     );

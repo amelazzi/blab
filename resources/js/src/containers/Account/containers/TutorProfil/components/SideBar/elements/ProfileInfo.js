@@ -19,8 +19,8 @@ const ProfilContent = styled.div`
     margin: 2rem 6rem;
     text-align: center;
     h1{
-        margin-top: 1rem;
-        font-size: 2.8rem;
+        margin-top: 1rem !important;
+        font-size: 2.8rem !important;
         font-weight: bold;
     }
 `;
@@ -33,10 +33,10 @@ const RatesContent = styled.div`
     align-items: center;
     p{
         color: ${dark};
-        font-size: 2.1rem;
-        font-weight: 600;
-        margin:0;
-        padding:0;
+        font-size: 2.1rem !important;
+        font-weight: 600 !important;
+        margin:0 !important;
+        padding:0 !important;
     }
 `;
 
@@ -53,13 +53,13 @@ const StarContainer = styled.div`
     }
 `;
 
-const ProfileInfo = () => {
+const ProfileInfo = ({profilePic, tutorName}) => {
     return(
         <ProfilContent>    
             <ImgContainer>
-                <img src={require("../../../../../../../pictures/profile.png")} />
+                <img src={profilePic} />
             </ImgContainer>
-            <h1> Jeremy Walter </h1>
+            <h1> {tutorName} </h1>
             <RatesContent>
                 <p> 4.0 </p>
                 <StarContainer>

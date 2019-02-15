@@ -86071,17 +86071,56 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+/*-------------------------------- Styling Components --------------------------------*/
+
 var StyledSidBar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["light"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"]);
 var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"])(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
 var ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
 var MsgBtn = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
 var BookingBtn = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(MsgBtn)(_templateObject5(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"]);
 var Divider = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject6(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["light"]);
+/*-------------------------------- Variable --------------------------------*/
+
+var Hobies = [{
+  name: "Traveling"
+}, {
+  name: "Sports"
+}, {
+  name: "Games"
+}, {
+  name: "Food"
+}, {
+  name: "Swimming"
+}, {
+  name: "Cooking"
+}, {
+  name: "Running"
+}];
+var Interest = Hobies.map(function (hoby) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    key: hoby.name
+  }, hoby.name);
+});
+/*-------------------------------- Component --------------------------------*/
 
 var SideBar = function SideBar() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSidBar, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     to: "/account"
-  }, " Dashboard "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_ProfileInfo__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MsgBtn, null, "Send Message"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BookingBtn, null, "Booking")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Languages__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_About__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Education__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Interests__WEBPACK_IMPORTED_MODULE_8__["default"], null));
+  }, " Dashboard "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_ProfileInfo__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+    tutorName: "Jeremy Walter"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MsgBtn, null, "Send Message"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BookingBtn, null, "Booking")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Languages__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    country: "France",
+    nativeLaguage: "Spanish"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_About__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    text: "Learn More about me here  Learn More about me hereLearn More about me here  Learn More about me here Learn More about me here Learn More about me here  "
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Education__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    field: "B.E. - English Language",
+    university: "Converty University",
+    year: "2017"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Interests__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    args: Interest
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SideBar);
@@ -86118,8 +86157,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var StyledAbout = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 
-var About = function About() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledAbout, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " About "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Learn More about me here  Learn More about me hereLearn More about me here Learn More about me here Learn More about me here Learn More about me here"));
+var About = function About(_ref) {
+  var text = _ref.text;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledAbout, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " About "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", text, " "));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
@@ -86154,8 +86194,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var StyledEducation = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 
-var Education = function Education() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledEducation, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Education "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " B.E. - English Language "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Converty University "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 2017 "));
+var Education = function Education(_ref) {
+  var field = _ref.field,
+      university = _ref.university,
+      year = _ref.year;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledEducation, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Education "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " ", field, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", university, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", year, " "));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Education);
@@ -86203,8 +86246,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var StyledInterest = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var InterestContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 
-var Interests = function Interests() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInterest, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Interest "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InterestContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Traveling "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Sports "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Games "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Food "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Swimming "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Cooking "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Running ")));
+var Interests = function Interests(_ref) {
+  var args = _ref.args;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInterest, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Interest "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InterestContainer, null, args));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Interests);
@@ -86235,7 +86279,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    margin: 0 2.5rem;\n    h2{\n        font-size: 2.4rem;\n        margin-top: 2rem;\n        font-weight: 500;\n        padding: 0;\n        margin: 1rem;\n    }\n    p{\n        color: ", ";\n        font-size: 2.4rem;\n        font-weight: 400;\n        padding: 0;\n        margin: 0;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin: 0 2.5rem;\n    h2{\n        font-size: 2.4rem;\n        margin-top: 2rem;\n        font-weight: 500;\n        padding: 0;\n        margin: 1rem;\n    }\n    p{\n        color: ", " !important;\n        font-size: 2.4rem !important;\n        font-weight: 400 !important;\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -86252,8 +86296,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var LanguageInfo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["gray"]);
 var LanguageContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 
-var Languages = function Languages() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LanguageInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LanguageContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Country : "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " France ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LanguageContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Native Language : "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Spanish ")));
+var Languages = function Languages(_ref) {
+  var country = _ref.country,
+      nativeLaguage = _ref.nativeLaguage;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LanguageInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LanguageContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Country : "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " ", country, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LanguageContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Native Language : "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " ", nativeLaguage, " ")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Languages);
@@ -86284,7 +86330,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    width: 60%;\n    display: flex;\n    justify-content: space-around;\n    margin: auto;\n    align-items: center;\n    p{\n        color: ", ";\n        font-size: 2.1rem;\n        font-weight: 600;\n        margin:0;\n        padding:0;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 60%;\n    display: flex;\n    justify-content: space-around;\n    margin: auto;\n    align-items: center;\n    p{\n        color: ", ";\n        font-size: 2.1rem !important;\n        font-weight: 600 !important;\n        margin:0 !important;\n        padding:0 !important;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -86294,7 +86340,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    margin: 2rem 6rem;\n    text-align: center;\n    h1{\n        margin-top: 1rem;\n        font-size: 2.8rem;\n        font-weight: bold;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin: 2rem 6rem;\n    text-align: center;\n    h1{\n        margin-top: 1rem !important;\n        font-size: 2.8rem !important;\n        font-weight: bold;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -86323,10 +86369,12 @@ var ProfilContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].di
 var RatesContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 var StarContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
 
-var ProfileInfo = function ProfileInfo() {
+var ProfileInfo = function ProfileInfo(_ref) {
+  var profilePic = _ref.profilePic,
+      tutorName = _ref.tutorName;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfilContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png")
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Jeremy Walter "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RatesContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 4.0 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: profilePic
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", tutorName, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RatesContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 4.0 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../../../../../pictures/ratedstar.png */ "./resources/js/src/pictures/ratedstar.png")
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../../../../../pictures/ratedstar.png */ "./resources/js/src/pictures/ratedstar.png")

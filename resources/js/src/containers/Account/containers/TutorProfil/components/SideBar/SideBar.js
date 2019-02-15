@@ -11,6 +11,8 @@ import Education from './elements/Education'
 import Interests from './elements/Interests'
 
 
+/*-------------------------------- Styling Components --------------------------------*/
+
 const StyledSidBar = styled.div`
     background: white;
     width: 36rem;
@@ -40,7 +42,6 @@ const StyledLink = styled(Link)`
         cursor: pointer;
     }
 `;
-
 
 const ButtonContainer = styled.div`
     display: flex;
@@ -72,23 +73,45 @@ const Divider = styled.div`
 `;
 
 
+/*-------------------------------- Variable --------------------------------*/
+var Hobies =[
+    {name: "Traveling"},
+    {name: "Sports"},
+    {name: "Games"},
+    {name: "Food"},
+    {name: "Swimming"},
+    {name: "Cooking"},
+    {name: "Running"},
+];
+
+const Interest = Hobies.map((hoby) =>
+    <button key={hoby.name}>{hoby.name}</button>
+);
+
+/*-------------------------------- Component --------------------------------*/
+
 const SideBar = () => {
     return(
         <StyledSidBar>
             <StyledLink to='/account'> Dashboard </StyledLink>
-            <ProfileInfo/>
+            <ProfileInfo profilePic={require("../../../../../../pictures/profile.png")} 
+                tutorName="Jeremy Walter"/>
             <ButtonContainer>
                 <MsgBtn>Send Message</MsgBtn>
                 <BookingBtn>Booking</BookingBtn>
             </ButtonContainer>
             <Divider/>
-                <Languages/>
+                <Languages country="France" nativeLaguage="Spanish"/>
             <Divider/>
-                <About/>
+                <About text="Learn More about me here  Learn More about me hereLearn More about me here 
+                Learn More about me here Learn More about me here Learn More about me here 
+                "/>
             <Divider/>
-                <Education/>
+                <Education field="B.E. - English Language"
+                    university="Converty University"
+                    year="2017"/>
             <Divider/>
-                <Interests/>
+                <Interests args={Interest}/>
         </StyledSidBar>
     );
 };

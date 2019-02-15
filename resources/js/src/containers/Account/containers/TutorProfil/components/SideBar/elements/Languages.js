@@ -13,11 +13,11 @@ const LanguageInfo = styled.div`
         margin: 1rem;
     }
     p{
-        color: ${gray};
-        font-size: 2.4rem;
-        font-weight: 400;
-        padding: 0;
-        margin: 0;
+        color: ${gray} !important;
+        font-size: 2.4rem !important;
+        font-weight: 400 !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 `;
 
@@ -28,16 +28,16 @@ const LanguageContent = styled.div`
     align-items: center;  
 `;
 
-const Languages = () => {
+const Languages = ({country, nativeLaguage}) => {
     return(
         <LanguageInfo>
             <LanguageContent>
                 <p> Country : </p>
-                <h2> France </h2>
+                <h2> {country} </h2>
             </LanguageContent>
             <LanguageContent>
                 <p> Native Language : </p>
-                <h2> Spanish </h2>
+                <h2> {nativeLaguage} </h2>
             </LanguageContent>
         </LanguageInfo>
     );
