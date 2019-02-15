@@ -66,9 +66,22 @@ const StyledLogIn = styled.div`
     font-weight: bold;
 `;
 
+const LogIn = styled(Link)`
+    :after {
+        background: white !important;
+    }
+`;
+
 const StyledLink = styled.div`
     background: ${darkGray};
     border-radius: 8px;
+`;
+
+const SignIn = styled(Link)`
+    :after {
+        bottom: -16px !important;
+        background: white !important;
+    }
 `;
 
 const Header = () => (
@@ -85,9 +98,9 @@ const Header = () => (
             <Link to="/live"> Live </Link>
         </nav>
         <StyledLogIn>
-            <Link to="/log-in"> Log in </Link>
+            <LogIn to="/log-in"> Log in </LogIn>
             <StyledLink>
-                <Link to="/sign-up"> Sign up </Link>
+                <SignIn to="/sign-up"> Sign up </SignIn>
             </StyledLink>
         </StyledLogIn>
     </StyledHeader>

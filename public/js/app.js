@@ -81999,8 +81999,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
-function _templateObject4() {
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n    :after {\n        bottom: -16px !important;\n        background: white !important;\n    }\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
   var data = _taggedTemplateLiteral(["\n    background: ", ";\n    border-radius: 8px;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    :after {\n        background: white !important;\n    }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -82048,7 +82068,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["darkGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["light"], _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["pink"]);
 var StyledLogo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
 var StyledLogIn = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["purple"]);
-var StyledLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["darkGray"]);
+var LogIn = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"])(_templateObject4());
+var StyledLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5(), _styles_utilities__WEBPACK_IMPORTED_MODULE_3__["darkGray"]);
+var SignIn = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"])(_templateObject6());
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLogo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -82065,9 +82087,9 @@ var Header = function Header() {
     to: "/profil"
   }, " Profil "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/live"
-  }, " Live ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLogIn, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, " Live ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLogIn, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogIn, {
     to: "/log-in"
-  }, " Log in "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, " Log in "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SignIn, {
     to: "/sign-up"
   }, " Sign up "))));
 };
