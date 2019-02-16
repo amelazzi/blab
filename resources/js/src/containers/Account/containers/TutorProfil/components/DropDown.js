@@ -67,8 +67,8 @@ class SimpleDropdown extends Component {
           Recent
         </StyledButton>
         <StyledDropdownMenu hidden={hidden}>
-            <DropdownItem> Hello </DropdownItem>
-            <DropdownItem> Salut </DropdownItem>
+            <DropdownItem> Top </DropdownItem>
+            <DropdownItem> Favoris </DropdownItem>
         </StyledDropdownMenu>
       </Dropdown>
     );

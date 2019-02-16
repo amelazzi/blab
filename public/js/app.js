@@ -81809,6 +81809,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_Account_containers_StudentProfil__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./containers/Account/containers/StudentProfil */ "./resources/js/src/containers/Account/containers/StudentProfil/index.js");
 /* harmony import */ var _containers_Account_containers_TutorProfil__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./containers/Account/containers/TutorProfil */ "./resources/js/src/containers/Account/containers/TutorProfil/index.js");
 /* harmony import */ var _containers_Account_containers_LiveClass__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./containers/Account/containers/LiveClass */ "./resources/js/src/containers/Account/containers/LiveClass/index.js");
+/* harmony import */ var _containers_Forum__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./containers/Forum */ "./resources/js/src/containers/Forum/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -81859,6 +81860,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledContainer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject());
 
 var App =
@@ -81888,6 +81890,9 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/account",
         component: _containers_Account__WEBPACK_IMPORTED_MODULE_16__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/forum",
+        component: _containers_Forum__WEBPACK_IMPORTED_MODULE_20__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/student-profil",
         component: _containers_Account_containers_StudentProfil__WEBPACK_IMPORTED_MODULE_17__["default"]
@@ -82085,6 +82090,8 @@ var Header = function Header() {
   }, " Home "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/getting-started"
   }, " Getting Started "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/forum"
+  }, " Forum "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/contact-us"
   }, " Contact us "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/account"
@@ -86180,7 +86187,7 @@ function (_Component) {
         }
       }, "Recent"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDropdownMenu, {
         hidden: hidden
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, " Hello "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, " Salut ")));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, " Top "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, " Favoris ")));
     }
   }]);
 
@@ -87274,6 +87281,205 @@ var ContactUs = function ContactUs() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ContactUs);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Forum/components/NewDiscussion.js":
+/*!***********************************************************************!*\
+  !*** ./resources/js/src/containers/Forum/components/NewDiscussion.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
+function _templateObject11() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    width: 2rem;\n    height: 2rem;\n    color: ", ";\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    display: flex; \n    flex-direction: row;\n    justify-content: start;\n    align-items: center;\n    p{\n        color: ", ";\n        font-size: 2.7rem;\n        font-weight: 500;\n        padding: 0 !important;\n        margin: 0.65rem 3.6rem !important;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    border-bottom: 1px solid ", ";\n    margin: 3rem 0rem;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 8rem 3rem;\n    button{\n        border: none;\n        background: ", ";\n        color: white;\n        border-radius: 1.2rem;\n        font-size: 2.7rem;\n        padding-left: 2rem;\n        padding-right: 2rem;\n        margin: 0rem 3rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledNewDiscussion = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var Divider = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"]);
+var Key = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["dark"]);
+var RedRectangle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["red"]);
+var GreenRectangle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(RedRectangle)(_templateObject5(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["green"]);
+var PurpleRectangle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(RedRectangle)(_templateObject6(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var PinkRectangle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(RedRectangle)(_templateObject7(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["pink"]);
+var YellowRectangle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(RedRectangle)(_templateObject8(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["yellow"]);
+var GrayRectangle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(RedRectangle)(_templateObject9(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
+var BlueRectangle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(RedRectangle)(_templateObject10(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["blue"]);
+var OrangeRectangle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(RedRectangle)(_templateObject11(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["orange"]);
+
+var NewDiscussion = function NewDiscussion() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledNewDiscussion, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, " Start New Discussion "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Key, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RedRectangle, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " FAQ\u2019s ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Key, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(GreenRectangle, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Off Topic Zone ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Key, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PurpleRectangle, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Live Class ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Key, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PinkRectangle, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Payment ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Key, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(YellowRectangle, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Courses ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Key, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(GrayRectangle, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lesson Plan ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Key, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BlueRectangle, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Blabber ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Key, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OrangeRectangle, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Blabees ")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NewDiscussion);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Forum/index.js":
+/*!****************************************************!*\
+  !*** ./resources/js/src/containers/Forum/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
+/* harmony import */ var _components_NewDiscussion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/NewDiscussion */ "./resources/js/src/containers/Forum/components/NewDiscussion.js");
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    padding: 8rem 3.6rem;\n    h1{\n        text-align: center;\n        font-size: 4.5rem;\n        font-weight: bold;\n    }\n    h2{\n        text-align: center;\n        font-size: 4rem;\n        font-weight: 500;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var StyledForum = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["lightPurple"]);
+var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+
+var Forum = function Forum() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledForum, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Welcome to our Blab forum "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " check everyday for new topics "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NewDiscussion__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Forum);
 
 /***/ }),
 
@@ -88797,7 +89003,7 @@ var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["createG
 /*!*****************************************************!*\
   !*** ./resources/js/src/styles/utilities/Colors.js ***!
   \*****************************************************/
-/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, orange, red, green, darkGray, gray, lightGray */
+/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, lightPurple, orange, yellow, red, green, darkGray, gray, lightGray */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -88809,7 +89015,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blue", function() { return blue; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pink", function() { return pink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "purple", function() { return purple; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lightPurple", function() { return lightPurple; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "orange", function() { return orange; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "yellow", function() { return yellow; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "red", function() { return red; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "green", function() { return green; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "darkGray", function() { return darkGray; });
@@ -88819,15 +89027,17 @@ var purpleGradient = 'linear-gradient(45deg, #6E41C3 0%, #6E41C3 30%, #A555B2 10
 var darkPurpleGradient = 'linear-gradient(45deg, #47297D 0%, #46287B 16%, #6F346F 100%)';
 var light = '#aeaeae';
 var dark = 'rgb(0, 0, 0)';
-var blue = 'rgb(77, 112, 244)';
+var blue = '#53bfee';
 var pink = 'rgb(217, 43, 95)';
 var purple = '#4D70F4';
-var orange = 'rgb(238, 97, 88)';
+var lightPurple = '#f6f8ff';
+var orange = '#f1b36a';
+var yellow = '#f5dc58';
 var red = '#d93838';
 var green = '#3dec83';
 var darkGray = 'rgb(59, 59, 59)';
 var gray = 'rgb(89, 89, 89)';
-var lightGray = 'rgb(122, 122, 122)';
+var lightGray = '#c4c4c4';
 
 /***/ }),
 
@@ -88877,7 +89087,7 @@ var fontFamily = "font-family: 'Notable', sans-serif";
 /*!****************************************************!*\
   !*** ./resources/js/src/styles/utilities/index.js ***!
   \****************************************************/
-/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, orange, red, green, darkGray, gray, lightGray, elevation, fontFamily */
+/*! exports provided: purpleGradient, darkPurpleGradient, light, dark, blue, pink, purple, lightPurple, orange, yellow, red, green, darkGray, gray, lightGray, elevation, fontFamily */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -88897,7 +89107,11 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "purple", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["purple"]; });
 
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "lightPurple", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["lightPurple"]; });
+
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "orange", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["orange"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "yellow", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["yellow"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "red", function() { return _Colors__WEBPACK_IMPORTED_MODULE_0__["red"]; });
 

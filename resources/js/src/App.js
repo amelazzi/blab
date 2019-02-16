@@ -18,6 +18,7 @@ import Account from './containers/Account';
 import StudentProfil from './containers/Account/containers/StudentProfil';
 import TutorProfile from './containers/Account/containers/TutorProfil'
 import LiveClass from './containers/Account/containers/LiveClass'
+import Forum from './containers/Forum';
 
 
 const StyledContainer = styled.div`
@@ -38,6 +39,7 @@ class App extends Component {
                     <Route path="/getting-started" component={GettingStarted} />
                     <Route path="/contact-us" component={ContactUs} />
                     <Route path="/account" component={Account} />
+                    <Route path="/forum" component={Forum} />
                     <Route path="/student-profil" component={StudentProfil} />
                     <Route path="/tutor-profil" component={TutorProfile} />
                     <Route path="/log-in" component={Login} />

@@ -92,6 +92,7 @@ const Header = () => (
             </StyledLogo>
             <Link to="/"> Home </Link>
             <Link to="/getting-started"> Getting Started </Link>
+            <Link to="/forum"> Forum </Link>
             <Link to="/contact-us"> Contact us </Link>
             <Link to="/account"> Account </Link>
             <Link to="/student-profil"> StProfil </Link>
