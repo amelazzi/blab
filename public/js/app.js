@@ -87284,6 +87284,121 @@ var ContactUs = function ContactUs() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Forum/components/DropDown.js":
+/*!******************************************************************!*\
+  !*** ./resources/js/src/containers/Forum/components/DropDown.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-button-component */ "./node_modules/styled-button-component/lib/index.js");
+/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_button_component__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-dropdown-component */ "./node_modules/styled-dropdown-component/lib/index.js");
+/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    border: none;\n    border-radius: 0px;\n    font-size: 1.9rem;\n    border: 1px solid ", ";\n    margin-top: 0;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    margin: 0;\n    color: ", ";\n    justify-content: space-between;\n    align-items: center;\n    border: none !important; \n    box-shadow: none;\n    font-size: 2.8rem;\n    margin-bottom: 0.2rem;\n    &:hover{\n        background: white !important;\n        border: none !important; \n        border-radius: 8px !important;\n        color: ", ";\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+var StyledButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(styled_button_component__WEBPACK_IMPORTED_MODULE_1__["Button"])(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"]);
+var StyledDropdownMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownMenu"])(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
+
+var SimpleDropdown =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(SimpleDropdown, _Component);
+
+  function SimpleDropdown(props) {
+    var _this;
+
+    _classCallCheck(this, SimpleDropdown);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(SimpleDropdown).call(this));
+    _this.state = {
+      hidden: true
+    };
+    return _this;
+  }
+
+  _createClass(SimpleDropdown, [{
+    key: "handleOpenCloseDropdown",
+    value: function handleOpenCloseDropdown() {
+      this.setState({
+        hidden: !this.state.hidden
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var hidden = this.state.hidden;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["Dropdown"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, {
+        secondary: true,
+        dropdownToggle: true,
+        onClick: function onClick() {
+          return _this2.handleOpenCloseDropdown();
+        }
+      }, "Latest"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDropdownMenu, {
+        hidden: hidden
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, " Top "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, " Favoris ")));
+    }
+  }]);
+
+  return SimpleDropdown;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (SimpleDropdown);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Forum/components/NewDiscussion.js":
 /*!***********************************************************************!*\
   !*** ./resources/js/src/containers/Forum/components/NewDiscussion.js ***!
@@ -87432,6 +87547,79 @@ var NewDiscussion = function NewDiscussion() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Forum/components/Topic.js":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/containers/Forum/components/Topic.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    width: 2.7rem;\n    height: 2.7rem;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n    }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: start;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    p{\n        width: 72%;\n        font-size: 1.9rem;\n        font-weight: 300;\n        line-height: normal;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    padding: 1rem;\n    padding-left: 4rem;\n    margin: 1.8rem 0;\n    border: 1px solid ", ";\n    border-left: 5px solid ", ";\n    box-shadow: 0 4px 2px -2px ", ";\n    border-radius: 9px;\n    h3{\n        font-size: 2.8rem;\n    }\n    small{\n        font-size: 1.8rem;\n        color: ", ";\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledTopic = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["red"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["lightGray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var TopicInfo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var Comments = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+
+var Topic = function Topic() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTopic, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " hello im the topic "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " 5 minutes ago "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopicInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Comments, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../pictures/comments.png */ "./resources/js/src/pictures/comments.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " 25 comments "))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Topic);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Forum/index.js":
 /*!****************************************************!*\
   !*** ./resources/js/src/containers/Forum/index.js ***!
@@ -87446,8 +87634,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
 /* harmony import */ var _components_NewDiscussion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/NewDiscussion */ "./resources/js/src/containers/Forum/components/NewDiscussion.js");
+/* harmony import */ var _components_DropDown__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/DropDown */ "./resources/js/src/containers/Forum/components/DropDown.js");
+/* harmony import */ var _components_Topic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Topic */ "./resources/js/src/containers/Forum/components/Topic.js");
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    display: flex;\n    flex-direction: column;\n    width: 72rem;\n    padding: 8rem 4.3rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    margin-top: 8rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -87457,7 +87657,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    padding: 8rem 3.6rem;\n    h1{\n        text-align: center;\n        font-size: 4.5rem;\n        font-weight: bold;\n    }\n    h2{\n        text-align: center;\n        font-size: 4rem;\n        font-weight: 500;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    padding: 6rem 3.6rem;\n    h1{\n        text-align: center;\n        font-size: 4.5rem;\n        font-weight: bold;\n    }\n    h2{\n        text-align: center;\n        font-size: 4rem;\n        font-weight: 500;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -87472,11 +87672,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
+
 var StyledForum = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["lightPurple"]);
 var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var TopicsContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 
 var Forum = function Forum() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledForum, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Welcome to our Blab forum "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " check everyday for new topics "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NewDiscussion__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledForum, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Welcome to our Blab forum "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " check everyday for new topics "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopicsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Topic__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Topic__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Topic__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NewDiscussion__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Forum);
@@ -88793,6 +88996,17 @@ module.exports = "/images/book.png?762c29e3b6a4724b24853e9359c216fa";
 
 /***/ }),
 
+/***/ "./resources/js/src/pictures/comments.png":
+/*!************************************************!*\
+  !*** ./resources/js/src/pictures/comments.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/comments.png?6ce2301ad135d17224d4fe809f29a48c";
+
+/***/ }),
+
 /***/ "./resources/js/src/pictures/congrats.png":
 /*!************************************************!*\
   !*** ./resources/js/src/pictures/congrats.png ***!
@@ -89033,7 +89247,7 @@ var purple = '#4D70F4';
 var lightPurple = '#f6f8ff';
 var orange = '#f1b36a';
 var yellow = '#f5dc58';
-var red = '#d93838';
+var red = '#ff6565';
 var green = '#3dec83';
 var darkGray = 'rgb(59, 59, 59)';
 var gray = 'rgb(89, 89, 89)';
