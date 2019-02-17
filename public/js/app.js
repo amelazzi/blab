@@ -87295,12 +87295,12 @@ var ContactUs = function ContactUs() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-button-component */ "./node_modules/styled-button-component/lib/index.js");
-/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_button_component__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
-/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-dropdown-component */ "./node_modules/styled-dropdown-component/lib/index.js");
-/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-button-component */ "./node_modules/styled-button-component/lib/index.js");
+/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_button_component__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-dropdown-component */ "./node_modules/styled-dropdown-component/lib/index.js");
+/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -87320,7 +87320,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    border: none;\n    border-radius: 0px;\n    font-size: 1.9rem;\n    border: 1px solid ", ";\n    margin-top: 0;\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 100%;\n    border: none;\n    margin: 0;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -87330,7 +87330,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    margin: 0;\n    color: ", ";\n    justify-content: space-between;\n    align-items: center;\n    border: none !important; \n    box-shadow: none;\n    font-size: 2.8rem;\n    margin-bottom: 0.2rem;\n    &:hover{\n        background: white !important;\n        border: none !important; \n        border-radius: 8px !important;\n        color: ", ";\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    margin: 0;\n    color: ", ";\n    justify-content: space-between;\n    align-items: center;\n    border: none !important; \n    box-shadow: none;\n    font-size: 2.8rem;\n    margin-bottom: 0.2rem;\n    &:hover{\n        background: white !important;\n        border: none !important; \n        border-radius: 8px !important;\n        color: ", ";\n        cursor: pointer;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -87346,8 +87346,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(styled_button_component__WEBPACK_IMPORTED_MODULE_1__["Button"])(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"]);
-var StyledDropdownMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownMenu"])(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
+var StyledButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(styled_button_component__WEBPACK_IMPORTED_MODULE_2__["Button"])(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["dark"]);
+var StyledDropdownMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3__["DropdownMenu"])(_templateObject2());
 
 var SimpleDropdown =
 /*#__PURE__*/
@@ -87379,15 +87379,15 @@ function (_Component) {
       var _this2 = this;
 
       var hidden = this.state.hidden;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["Dropdown"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3__["Dropdown"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, {
         secondary: true,
         dropdownToggle: true,
         onClick: function onClick() {
           return _this2.handleOpenCloseDropdown();
         }
-      }, "Latest"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDropdownMenu, {
+      }, this.props.type), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDropdownMenu, {
         hidden: hidden
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, " Top "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownItem"], null, " Favoris ")));
+      }, this.props.args));
     }
   }]);
 
@@ -87610,10 +87610,14 @@ var TopicInfo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_t
 var Comments = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
 
-var Topic = function Topic() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTopic, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " hello im the topic "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " 5 minutes ago "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopicInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Comments, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+var Topic = function Topic(_ref) {
+  var title = _ref.title,
+      time = _ref.time,
+      content = _ref.content,
+      comments = _ref.comments;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTopic, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " ", title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " ", time, " ago "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopicInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", content, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Comments, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../pictures/comments.png */ "./resources/js/src/pictures/comments.png")
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " 25 comments "))));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " ", comments, " comments "))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Topic);
@@ -87677,9 +87681,34 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var StyledForum = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["lightPurple"]);
 var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var TopicsContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+/*----------------------------- Variables --------------------------*/
+
+var LatestTopics = [{
+  title: "Welcome to Blab",
+  time: "5minutes",
+  content: "Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet",
+  comments: "25"
+}, {
+  title: "Welcome to Blab2",
+  time: "5minutes",
+  content: "Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet",
+  comments: "25"
+}];
+var LatestTopic = LatestTopics.map(function (topic) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Topic__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    key: topic.title,
+    title: topic.title,
+    time: topic.time,
+    content: topic.content,
+    comments: topic.comments
+  });
+});
 
 var Forum = function Forum() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledForum, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Welcome to our Blab forum "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " check everyday for new topics "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopicsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Topic__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Topic__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Topic__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NewDiscussion__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledForum, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Welcome to our Blab forum "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " check everyday for new topics "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopicsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    type: "Latest",
+    args: LatestTopic
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NewDiscussion__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Forum);

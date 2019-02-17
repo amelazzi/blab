@@ -1,13 +1,9 @@
-import React, {Component} from 'react';
- 
-import { Button } from 'styled-button-component';
+import React, {Component} from 'react'
 import styled from 'styled-components'
-import { dark , gray, lightGray, light, purple} from '../../../styles/utilities/Colors'
-import {
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-} from 'styled-dropdown-component';
+import { Button } from 'styled-button-component'
+import { Dropdown, DropdownMenu} from 'styled-dropdown-component'
+
+import { dark } from '../../../styles/utilities/Colors'
  
 
 const StyledButton = styled(Button)`
@@ -25,16 +21,14 @@ const StyledButton = styled(Button)`
         border: none !important; 
         border-radius: 8px !important;
         color: ${dark};
+        cursor: pointer;
     }
 `;
 
 const StyledDropdownMenu = styled(DropdownMenu)`
     width: 100%;
     border: none;
-    border-radius: 0px;
-    font-size: 1.9rem;
-    border: 1px solid ${gray};
-    margin-top: 0;
+    margin: 0;
 `;
 
 class SimpleDropdown extends Component {
@@ -60,11 +54,10 @@ class SimpleDropdown extends Component {
           dropdownToggle
           onClick={() => this.handleOpenCloseDropdown()}
         >
-          Latest
+          {this.props.type}
         </StyledButton>
         <StyledDropdownMenu hidden={hidden}>
-            <DropdownItem> Top </DropdownItem>
-            <DropdownItem> Favoris </DropdownItem>
+            {this.props.args}
         </StyledDropdownMenu>
       </Dropdown>
     );

@@ -39,6 +39,17 @@ const TopicsContainer = styled.div`
 `;
 
 
+/*----------------------------- Variables --------------------------*/
+
+var LatestTopics =[
+    {title: "Welcome to Blab", time: "5minutes", content:"Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet", comments:"25"},
+    {title: "Welcome to Blab2", time: "5minutes", content:"Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet", comments:"25"},
+];
+
+const LatestTopic = LatestTopics.map((topic) =>
+    <Topic key={topic.title} title={topic.title} time={topic.time} content={topic.content} comments={topic.comments}/>
+);
+
 const Forum = () => {
     return(
         <StyledForum>
@@ -46,10 +57,8 @@ const Forum = () => {
             <h2> check everyday for new topics </h2>
             <Content>
                 <TopicsContainer>
-                    <DropDown/>
-                    <Topic/>
-                    <Topic/>
-                    <Topic/>
+                    <DropDown type="Latest"
+                        args={LatestTopic}/>
                 </TopicsContainer>
                 <NewDiscussion/>
             </Content>

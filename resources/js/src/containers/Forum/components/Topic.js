@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { lightGray, purple, orange, red } from '../../../styles/utilities';
+import { lightGray, purple, red } from '../../../styles/utilities';
 
 const StyledTopic = styled.div`
     padding: 1rem;
@@ -48,18 +48,18 @@ const IconContainer = styled.div`
 `;
 
 
-const Topic = () => {
+const Topic = ({title, time, content, comments}) => {
     return(
         <StyledTopic>
-            <h3> hello im the topic </h3>
-            <small> 5 minutes ago </small>
+            <h3> {title} </h3>
+            <small> {time} ago </small>
             <TopicInfo>
-                <p> Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet </p>
+                <p> {content} </p>
                 <Comments>
                     <IconContainer>
                         <img src={require("../../../pictures/comments.png")}/>
                     </IconContainer>
-                    <small> 25 comments </small>
+                    <small> {comments} comments </small>
                 </Comments>
             </TopicInfo>
         </StyledTopic>
