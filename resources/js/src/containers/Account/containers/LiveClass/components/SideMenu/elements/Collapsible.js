@@ -16,7 +16,6 @@ const StyledCollpsible = styled(Collapsible)`
     font-size: 1.9rem;
     border: none;
     border-radius: 0;
-    margin-bottom: 0.2rem;
     &:hover{
         background: ${purple} !important;
         border: none !important; 
@@ -27,13 +26,10 @@ const StyledCollpsible = styled(Collapsible)`
 `;
 
 
-const SimpleCollapsible = () => {
+const SimpleCollapsible = ({trigger, arg}) => {
     return(
-        <StyledCollpsible trigger="All Conversations">
-            <CollabsibleItem/>
-            <CollabsibleItem/>
-            <CollabsibleItem/>
-            <CollabsibleItem/>  
+        <StyledCollpsible trigger={trigger}>
+            <CollabsibleItem args={arg}/>
         </StyledCollpsible>
     );
 };

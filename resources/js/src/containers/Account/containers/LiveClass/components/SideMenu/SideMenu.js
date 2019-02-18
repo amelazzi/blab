@@ -1,34 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
+import Scrollbar from 'react-custom-scrollbars'
+
 import { purple } from '../../../../../../styles/utilities/Colors'
 
 import SimpleCollapsible from './elements/Collapsible'
-import { DropdownItem } from 'styled-dropdown-component'
+import PopularCourse from './elements/PopularCourse'
 
 const StyleSideMenu = styled.div`
     width: 28rem;
-    h1{
-        font-size: 2rem;
-        color: ${purple};
-        padding: 1rem;
-        font-weight: 500;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 0.84;
-        letter-spacing: normal;
+`;
+
+const StyledH1 = styled.h1`
+    font-size: 2rem;
+    color: ${purple};
+    padding: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.84;
+    letter-spacing: normal;
+    &:last-of-type{
+        margin-top: 3rem;
     }
 `;
 
-const StyledDropdownItem = styled(DropdownItem)`
-    display: flex;
-    justify-content: space-between;
-    font-size: 22px;
-    font-weight: normal;
-    padding-left: 1rem !important;
-    :hover{
-        cursor: pointer;
-    }
-`;
 
 /*----------------------------- Variables --------------------------*/
 
@@ -39,16 +35,33 @@ var BasicClasses =[
 ];
 
 const BasicClass = BasicClasses.map((BasicClass) =>
-    <StyledDropdownItem key={BasicClass.name}>{BasicClass.name}</StyledDropdownItem>
+    <p key={BasicClass.name}>{BasicClass.name}</p>
 );
 
 const SideMenu = () => {
     return(
         <StyleSideMenu>
-            <h1> All Classes </h1>
-            <SimpleCollapsible />
-            <SimpleCollapsible />
-            <SimpleCollapsible />
+            <StyledH1> Current Course</StyledH1>
+            <SimpleCollapsible trigger="OnBroad Study" arg={BasicClass} />
+            <StyledH1> Popular Courses </StyledH1>
+            <Scrollbar style={ {width: '100%', height: '170rem'} }>
+                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
+                    title="Homework Help" classNbr="10"/>
+                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
+                    title="Homework Help" classNbr="10"/>
+                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
+                    title="Homework Help" classNbr="10"/>
+                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
+                    title="Homework Help" classNbr="10"/>
+                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
+                    title="Homework Help" classNbr="10"/>
+                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
+                    title="Homework Help" classNbr="10"/>
+                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
+                    title="Homework Help" classNbr="10"/>
+                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
+                    title="Homework Help" classNbr="10"/>
+            </Scrollbar>
         </StyleSideMenu>
     );
 };

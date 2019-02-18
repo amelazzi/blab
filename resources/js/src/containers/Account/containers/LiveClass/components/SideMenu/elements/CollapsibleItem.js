@@ -11,10 +11,10 @@ const StyledItem = styled.div`
 `;
 
 
-const CollapsibleItem = () => {
+const CollapsibleItem = ({args}) => {
     return(
         <StyledItem>
-            <p> hello i'm here </p>
+            {args}
         </StyledItem>
     );
 };
