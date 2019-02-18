@@ -5,14 +5,14 @@ import { purple,gray, dark } from '../../styles/utilities';
 import { Link } from 'react-router-dom';
 
 const StyledLogin = styled.div`
-    padding: 8rem;
     background: white;
+    padding: 8rem;
     text-align: center;
     h1{
         padding: 2rem;
         font-size: 6rem;
         color: ${purple};
-        font-weight: bold
+        font-weight: bold;
     }
     h2{
         color: ${gray};
@@ -21,7 +21,6 @@ const StyledLogin = styled.div`
     form{
         width: 50%;
         margin-left: 25%;
-        background: white;
         padding: 4.5rem;
         padding-bottom: 0;
         display: flex;
@@ -33,8 +32,46 @@ const StyledLogin = styled.div`
         background: ${purple};
         color: white;
         font-size: 3rem;
-        font-weight: bold
+        font-weight: bold;
     }
+`;
+
+const FButton = styled.div`
+    background: #3a559f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    padding-right: 4rem;
+    margin: 2rem;
+`;
+
+const IconContainer = styled.div`
+    width: 5.8rem;
+    height: 5.8rem;
+    background: white;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 5px 0 5px -5px #333;
+    margin: 0 !important;
+    padding: 0 !important;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
+        outline: none !important;
+        
+    }
+`;
+
+
+const GButton = styled(FButton)`
+    background: white;
+    color: ${dark};
+    margin-top: 0;
+    padding-right: 5rem;
+    border: 2px solid ${dark};
 `;
 
 const StyledFooter = styled.div`
@@ -42,6 +79,7 @@ const StyledFooter = styled.div`
     justify-content: space-between;
     width: 60%;
     margin-left: 20%;
+    margin-top: 2rem;
     h3{
         color: ${dark};
         font-size: 2.3rem;
@@ -64,6 +102,7 @@ const StyledLink = styled(Link)`
     margin-left: 4px;
 `;
 
+
 const Login = () => {
     return (
         <StyledLogin>
@@ -73,6 +112,18 @@ const Login = () => {
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <input type="submit" value="Sign In" />
+                <FButton> 
+                    <IconContainer>
+                        <img src={require("../../pictures/facebook.png")} />
+                    </IconContainer>
+                    Continue with Facebook 
+                </FButton>
+                <GButton> 
+                    <IconContainer>
+                        <img src={require("../../pictures/google.png")} />
+                    </IconContainer>
+                    Continue with Google 
+                </GButton>
             </form>
             <StyledFooter>
                 <StyledH3> forgot your password? </StyledH3>
