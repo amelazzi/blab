@@ -1,45 +1,43 @@
 import React from 'react'
 import styled from 'styled-components'
-import { dark, gray } from '../../../../../styles/utilities/Colors';
+import { dark } from '../../../../../../../styles/utilities/Colors';
 
-
-const Card = styled.div`
-    background: white;
-    width: 27rem;
-    height: 27rem;
-    margin: 1rem;
-    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
+const StyledItem = styled.div`
+    width: 95%;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.15);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    padding: 1.5rem 1rem;
+    padding-right: 7rem;
+    margin: 1.25rem 0rem;
     h1{
         font-size: 2.4rem;
-        margin-top: 1rem;
-        margin-left: 1.5rem;
-    }
-    p{
-        color: ${dark};
-        margin-left: 1.5rem;
-        line-height: 1;
+        margin-left: 7rem;
     }
 `;
 
-const ImgContainer = styled.div`
-    width: 100%;
-    height: 13.5rem;
+const IconContainer = styled.div`
+    max-width: 9.6rem;
+    max-height: 9.6rem;
+    min-width: 9.6rem;
+    min-height: 9.6rem;
     img{
         width: 100%;
         height: 100%;
+        border-radius: 50%;
         object-fit: cover;
     }
 `;
 
 const Reactions = styled.div`
-    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    margin-left: 15rem;
 `;
 
 const Reaction = styled.div`
@@ -47,6 +45,7 @@ const Reaction = styled.div`
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    margin-left: 6rem;
     p{
         color: ${dark};
         margin: 0;
@@ -66,36 +65,36 @@ const ReactionIcon = styled.div`
     }
 `;
 
-const CourseCard = ({picture, title, classNbr, seenNbr, likeNbr, disLikeNbr}) => {
+
+
+const ClassItem = () => {
     return(
-        <Card>
-            <ImgContainer>
-                <img src={picture} />
-            </ImgContainer>
-            <h1> {title} </h1>
-            <p> Total Class: {classNbr} </p>
+        <StyledItem>
+            <IconContainer>
+                <img src={require("../../../../../../../pictures/profile.png")} />
+            </IconContainer>
+            <h1>Basic_english_01</h1>
             <Reactions>
                 <Reaction>
                     <ReactionIcon>
-                        <img src={require("../../../../../pictures/ratedstar.png")} />
+                        <img src={require("../../../../../../../pictures/ratedstar.png")} />
                     </ReactionIcon>
-                    <p> {seenNbr} </p>
+                    <p> 12 </p>
                 </Reaction>
                 <Reaction>
                     <ReactionIcon>
-                        <img src={require("../../../../../pictures/ratedstar.png")} />
+                        <img src={require("../../../../../../../pictures/ratedstar.png")} />
                     </ReactionIcon>
-                    <p> {likeNbr} </p>
+                    <p> 4 </p>
                 </Reaction>
                 <Reaction>
                     <ReactionIcon>
-                        <img src={require("../../../../../pictures/ratedstar.png")} />
+                        <img src={require("../../../../../../../pictures/ratedstar.png")} />
                     </ReactionIcon>
-                    <p> {disLikeNbr} </p>
+                    <p> 6 </p>
                 </Reaction>
             </Reactions>
-        </Card>
+        </StyledItem>
     );
 };
-
-export default CourseCard;
+export default ClassItem;

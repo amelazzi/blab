@@ -6,10 +6,6 @@ import Tabs from './components/Tabs'
 const StyledTutorClass  = styled.div`
     background: white;
     width: 75%;
-    h1{
-        padding-left: 2rem;
-        font-size: 3rem;
-    }
 `;
 
 const Input = styled.input`

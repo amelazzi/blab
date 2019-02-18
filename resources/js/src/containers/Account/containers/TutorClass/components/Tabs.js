@@ -1,6 +1,7 @@
 import React , { Component } from 'react'
+import {Link} from 'react-router-dom'
 import styled from 'styled-components'
-import { pink, light, lightPurple, blue, purple } from '../../../../../styles/utilities/Colors';
+import { pink, light, lightPurple, blue, purple, dark } from '../../../../../styles/utilities/Colors';
 import CourseCard from '../../TutorProfil/components/CourseCard'
 
 const StyledClass = styled.div`
@@ -56,6 +57,15 @@ const CurrentClasses = styled.div`
     padding: 2rem;
 `;
 
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${dark};
+    :hover{
+        text-decoration: none;
+        color: ${dark};
+    }
+`;
+
 class Tabs extends Component {
     constructor(props) {
         super(props);
@@ -80,14 +90,18 @@ class Tabs extends Component {
                 <TabsBody>
                     {this.state.activeTab == 1 ? (
                         <CurrentClasses>
-                            <CourseCard picture={require("../../../../../pictures/lifestyle.png")}
-                                title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/>
-                            <CourseCard picture={require("../../../../../pictures/lifestyle.png")}
-                                title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/>
-                            <CourseCard picture={require("../../../../../pictures/lifestyle.png")}
-                                title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/> 
+                            <StyledLink to="/account/">
                                 <CourseCard picture={require("../../../../../pictures/lifestyle.png")}
-                                title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/>
+                                    title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/>
+                            </StyledLink>
+                            <StyledLink to="/account/">
+                                <CourseCard picture={require("../../../../../pictures/lifestyle.png")}
+                                    title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/>
+                            </StyledLink>
+                            <StyledLink to="/account/">
+                                <CourseCard picture={require("../../../../../pictures/lifestyle.png")}
+                                    title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/>
+                            </StyledLink>
                         </CurrentClasses>) : 
                         ( 
                         <div>
