@@ -11,6 +11,7 @@ import FindBlabber from './containers/FindBlabber';
 import Notification from './containers/Notification';
 import StudentRequest from './containers/StudiantRequest'
 import Message from './containers/Message';
+import TutorClass from './containers/TutorClass';
 
 
 const StyledAccount  = styled.div`
@@ -30,13 +31,16 @@ const Account = () => {
                     <Link to="/account/my-class"> My Class 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
+                    <Link to="/account/"> Tutor Class 
+                        <img src={require("../../pictures/book.png")}/>
+                    </Link>
                     <Link to="/account/blabber"> Blabber 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                     <Link to="/account/find-blabber"> Find a Blabber 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
-                    <Link to="/account/"> Message 
+                    <Link to="/account/message"> Message 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                     <Link to="/account/notification"> Notification 
@@ -51,11 +55,12 @@ const Account = () => {
             <Switch>
                 <Route path="/account/dashboard" exact component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
+                <Route path="/account/" component={TutorClass} />
                 <Route path="/account/blabber" component={Blabber} />
                 <Route path="/account/find-blabber" component={FindBlabber} />
                 <Route path="/account/notification" component={Notification} />
                 <Route path="/account/student-request" component={StudentRequest} />
-                <Route path="/account/" component={Message} />
+                <Route path="/account/message" component={Message} />
             </Switch>
         </StyledAccount>
     );

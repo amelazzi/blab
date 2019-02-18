@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import {purple, dark, lightGray} from '../../../styles/utilities/Colors'
 
 const StyledSidBar = styled.div`
+    z-index: 2;
     width: 34rem;
     &,
     *{

@@ -82362,7 +82362,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    width: 34rem;\n    &,\n    *{\n        box-sizing: border-box;\n    }\n    padding:  12rem 0 12rem 2rem;\n    -webkit-box-shadow: 0 0 10px 0px ", ";\n    font-size: 2.5rem;\n    display: flex;\n    nav {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n    }\n\n    a {\n        color: ", ";\n        position: relative;\n        text-decoration: none;\n        padding: 1rem;\n        margin-bottom: 2rem;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        &:hover{\n            color: ", ";\n            border-right: 3px solid ", "\n        }\n    }\n    img{\n        padding-right: 1rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    z-index: 2;\n    width: 34rem;\n    &,\n    *{\n        box-sizing: border-box;\n    }\n    padding:  12rem 0 12rem 2rem;\n    -webkit-box-shadow: 0 0 10px 0px ", ";\n    font-size: 2.5rem;\n    display: flex;\n    nav {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n    }\n\n    a {\n        color: ", ";\n        position: relative;\n        text-decoration: none;\n        padding: 1rem;\n        margin-bottom: 2rem;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        &:hover{\n            color: ", ";\n            border-right: 3px solid ", "\n        }\n    }\n    img{\n        padding-right: 1rem;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -85988,6 +85988,240 @@ var StudiantRequest = function StudiantRequest() {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Account/containers/TutorClass/components/Tabs.js":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/TutorClass/components/Tabs.js ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var _TutorProfil_components_CourseCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../TutorProfil/components/CourseCard */ "./resources/js/src/containers/Account/containers/TutorProfil/components/CourseCard.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: flex-start;\n    padding: 2rem;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    z-index: 0;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    border: 2px solid ", " !important;\n    border-radius: 11px  !important;\n    padding: 0.3rem 2rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    align-self: center;\n    padding: 0.6rem 5rem 0.6rem 7rem;\n    background: white;\n    width: 100%;\n    z-index: 3;\n    box-shadow: 0 5px 5px -5px #333;\n    button{\n        border: none;\n        font-size: 2.4rem;\n        background: none;\n        :hover{\n            cursor: pointer;\n        }\n        :nth-child(2){\n            margin-left: 4rem;\n        }\n    }\n    input{\n        margin: 0 !important;\n        border: none;\n        :first-child{\n            width: 18%;\n        }\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    display: flex;\n    flex-direction: column;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var StyledClass = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var StyledBtn = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["purple"]);
+var TabsBody = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightPurple"]);
+var CurrentClasses = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5());
+
+var Tabs =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Tabs, _Component);
+
+  function Tabs(props) {
+    var _this;
+
+    _classCallCheck(this, Tabs);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Tabs).call(this, props));
+    _this.state = {
+      activeTabs: []
+    };
+    _this.state.activeTab = 1;
+    return _this;
+  }
+
+  _createClass(Tabs, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledClass, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabsContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: function onClick() {
+          return _this2.setState({
+            activeTab: 1
+          });
+        }
+      }, "My Class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: function onClick() {
+          return _this2.setState({
+            activeTab: 2
+          });
+        }
+      }, "Lesson Plan ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledBtn, null, "Blab Academy ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabsBody, null, this.state.activeTab == 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CurrentClasses, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TutorProfil_components_CourseCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        picture: __webpack_require__(/*! ../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+        title: "Lifestyle",
+        classNbr: "10",
+        seenNbr: "29",
+        likeNbr: "7",
+        disLikeNbr: "5"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TutorProfil_components_CourseCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        picture: __webpack_require__(/*! ../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+        title: "Lifestyle",
+        classNbr: "10",
+        seenNbr: "29",
+        likeNbr: "7",
+        disLikeNbr: "5"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TutorProfil_components_CourseCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        picture: __webpack_require__(/*! ../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+        title: "Lifestyle",
+        classNbr: "10",
+        seenNbr: "29",
+        likeNbr: "7",
+        disLikeNbr: "5"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TutorProfil_components_CourseCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        picture: __webpack_require__(/*! ../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+        title: "Lifestyle",
+        classNbr: "10",
+        seenNbr: "29",
+        likeNbr: "7",
+        disLikeNbr: "5"
+      })) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Hello from tab 2 "))));
+    }
+  }]);
+
+  return Tabs;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Tabs);
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/Account/containers/TutorClass/index.js":
+/*!****************************************************************************!*\
+  !*** ./resources/js/src/containers/Account/containers/TutorClass/index.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_Tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Tabs */ "./resources/js/src/containers/Account/containers/TutorClass/components/Tabs.js");
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    input {\n        z-index: 3;\n        padding: 3.2rem 2rem;\n        padding-bottom: 1rem;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    margin: 0;\n    border: none !important;\n    &:nth-child(1){\n        width: 65%;\n    }\n    &:nth-child(2){\n        width: 30%;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    width: 75%;\n    h1{\n        padding-left: 2rem;\n        font-size: 3rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var StyledTutorClass = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject2());
+var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+
+var TutorClass = function TutorClass() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTutorClass, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+    type: "text",
+    placeholder: "Type to search"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
+    type: "text",
+    placeholder: "Sort"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Tabs__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TutorClass);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Account/containers/TutorProfil/components/CourseCard.js":
 /*!*********************************************************************************************!*\
   !*** ./resources/js/src/containers/Account/containers/TutorProfil/components/CourseCard.js ***!
@@ -86917,6 +87151,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_Notification__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./containers/Notification */ "./resources/js/src/containers/Account/containers/Notification/index.js");
 /* harmony import */ var _containers_StudiantRequest__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./containers/StudiantRequest */ "./resources/js/src/containers/Account/containers/StudiantRequest/index.js");
 /* harmony import */ var _containers_Message__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./containers/Message */ "./resources/js/src/containers/Account/containers/Message/index.js");
+/* harmony import */ var _containers_TutorClass__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./containers/TutorClass */ "./resources/js/src/containers/Account/containers/TutorClass/index.js");
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    background: white;\n"]);
 
@@ -86928,6 +87163,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -86952,6 +87188,10 @@ var Account = function Account() {
   }, " My Class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/account/"
+  }, " Tutor Class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/account/blabber"
   }, " Blabber", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
@@ -86960,7 +87200,7 @@ var Account = function Account() {
   }, " Find a Blabber", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/account/"
+    to: "/account/message"
   }, " Message", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/book.png */ "./resources/js/src/pictures/book.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
@@ -86979,6 +87219,9 @@ var Account = function Account() {
     path: "/account/my-class",
     component: _containers_Class__WEBPACK_IMPORTED_MODULE_5__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/account/",
+    component: _containers_TutorClass__WEBPACK_IMPORTED_MODULE_11__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/account/blabber",
     component: _containers_Blabber__WEBPACK_IMPORTED_MODULE_6__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
@@ -86991,7 +87234,7 @@ var Account = function Account() {
     path: "/account/student-request",
     component: _containers_StudiantRequest__WEBPACK_IMPORTED_MODULE_9__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/account/",
+    path: "/account/message",
     component: _containers_Message__WEBPACK_IMPORTED_MODULE_10__["default"]
   })));
 };
