@@ -2,9 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 import SideBar from './components/SideBar'
-import SideMenu from './components/SideMenu'
-import WatchingClass from './components/WatchingClass'
-import { purple } from '../../../../styles/utilities/Colors';
+import SideMenu from './components/SideMenu/SideMenu'
+import WatchingClass from './components/watchinClass/WatchingClass'
 
 const StyledLiveClass = styled.div`
     display: flex;
@@ -34,7 +33,7 @@ const Container = styled.div`
 const LiveClass = () => {
     return(
         <StyledLiveClass>
-            <SideBar></SideBar>
+            <SideBar/>
             <GlobalContainer>
                 <input type="text"  placeholder="Type to search"/>
                 <Container>

@@ -25,13 +25,13 @@ const Account = () => {
         <StyledAccount> 
             <SideBar>
                 <nav>
-                    <Link to="/account/dashboard"> Dashboard 
+                    <Link to="/account/"> Dashboard 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                     <Link to="/account/my-class"> My Class 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
-                    <Link to="/account/"> Tutor Class 
+                    <Link to="/account/tutor-class"> Tutor Class 
                         <img src={require("../../pictures/book.png")}/>
                     </Link>
                     <Link to="/account/blabber"> Blabber 
@@ -53,9 +53,9 @@ const Account = () => {
             </SideBar>  
 
             <Switch>
-                <Route path="/account/dashboard" exact component={Dashboard} />
+                <Route exact path="/account/"  component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
-                <Route path="/account/" component={TutorClass} />
+                <Route path="/account/tutor-class" component={TutorClass} />
                 <Route path="/account/blabber" component={Blabber} />
                 <Route path="/account/find-blabber" component={FindBlabber} />
                 <Route path="/account/notification" component={Notification} />

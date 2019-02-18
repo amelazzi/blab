@@ -5,7 +5,6 @@ import Header from './components/Header'
 import LiveChat from './components/LiveChat'
 import MsgInput from './components/MsgInput'
 
-import ChatRout from '../ChatRoute/ChatRoute'
 
 const StyledChat = styled.div`
     width: 100%;

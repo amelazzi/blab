@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { purple } from '../../../../../styles/utilities/Colors'
+import { purple } from '../../../../../../styles/utilities/Colors'
 
-import SimpleDropdown from './DropDown'
+import SimpleCollapsible from './elements/Collapsible'
 import { DropdownItem } from 'styled-dropdown-component'
 
 const StyleSideMenu = styled.div`
@@ -46,12 +46,9 @@ const SideMenu = () => {
     return(
         <StyleSideMenu>
             <h1> All Classes </h1>
-            <SimpleDropdown classType="Basic"
-                args={BasicClass}/>
-            <SimpleDropdown classType="Basic"
-                args={BasicClass}/>
-            <SimpleDropdown classType="Basic"
-                args={BasicClass}/> 
+            <SimpleCollapsible />
+            <SimpleCollapsible />
+            <SimpleCollapsible />
         </StyleSideMenu>
     );
 };

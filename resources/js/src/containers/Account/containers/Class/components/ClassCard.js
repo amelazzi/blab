@@ -54,7 +54,7 @@ const ClassCard = ({blabberName, className, timeLeft}) => {
             <h1> {blabberName} </h1>
             <h2> {className} </h2>
             <p> Next Class: {timeLeft} </p>
-            <Footer></Footer>
+            <Footer/>
         </StyledCard>
     );
 };
