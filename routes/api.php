@@ -8,18 +8,19 @@ Route::group(['middleware' => ['json.response']], function () {
         return $request->user();
     });
 
-
     Route::group([
         'namespace' => 'Auth',
         'middleware' => 'api',
     ], function () {
-        // php artisan passport:client --personal
         Route::post('/login', 'LoginController@login');
         Route::post('/register', 'RegisterController@register');
 
         Route::post('/password/create', 'ResetPasswordController@create');
         Route::get('/password/find/{token}', 'ResetPasswordController@find');
         Route::post('/password/reset', 'ResetPasswordController@reset');
+
+        Route::post('/login/{social}/callback', 'SocialController@handleProviderCallback')->where('social', 'facebook|google|');
+
     });
 
     Route::middleware('auth:api')->group(function () {
@@ -38,8 +39,6 @@ Route::group(['middleware' => ['json.response']], function () {
         Route::resource('languages', 'LanguageController');
         Route::resource('classes', 'BlabClassController');
     });
-
-
 
 });
 
