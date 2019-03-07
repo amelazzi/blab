@@ -1,5 +1,10 @@
-import React from 'react';
-import Main from './components/Main';
+import React from 'react'
+import styled from 'styled-components'
+import Slider from 'react-styled-carousel'
+
+import {dark, gray} from '../../styles/utilities/Colors'
+
+import Main from './components/Main'
 import Head from './components/Head'
 import RightSection from '../../components/RightSection'
 import LeftSection from '../../components/LeftSection'
@@ -7,9 +12,7 @@ import Card from './components/Card'
 import Testimony from './components/Testimony'
 import RatedTutor from './components/RatedTutor'
 
-import {dark, gray} from '../../styles/utilities/Colors'
 
-import styled from 'styled-components'
 
 const StyledHome = styled.div`
     background: white;
@@ -18,9 +21,8 @@ const StyledHome = styled.div`
 const CardsContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    background: white;
     padding: 14rem;
-    padding-bottom: 10rem;
+    padding-bottom: 0;
 `;
 
 const StyledH1 = styled.h1`
@@ -28,6 +30,7 @@ const StyledH1 = styled.h1`
     color: ${dark};
     font-size: 4.5rem;
     font-weight: bold;
+    margin-top: 10rem;
 `;
 
 const StyledH2 = styled.h2`
@@ -37,18 +40,20 @@ const StyledH2 = styled.h2`
     padding: 2rem;
 `;
 
-const Testimonies = styled.div`
-    padding: 10rem;
-    background: white;
+
+const StyledSlider = styled(Slider)`
+    margin: 10rem;
+    margin-bottom: 5rem;
 `;
 
+
 const TopTutors = styled.div`
-    background: white;
     padding: 4rem;
     padding-bottom: 14rem;
     display: flex;
     justify-content: space-between;
 `;
+
 
 const Home = () => {
     return (
@@ -88,13 +93,23 @@ const Home = () => {
                     </Card>
                 </CardsContainer>
                 <StyledH1> What our customers are saying </StyledH1>
-                <Testimonies>
+                <StyledSlider autoSlide={false} cardsToShow={1} showArrows={false}>
                     <Testimony pic={require("../../pictures/profile.png")}
                         text="Blab really help me in my transfer to Spain, I am
                         now fluent in spanish thanks tu tutors at Blab."
                         author="Paul Robinson">
                     </Testimony>
-                </Testimonies>
+                    <Testimony pic={require("../../pictures/profile.png")}
+                        text="Blab really help me in my transfer to Spain, I am
+                        now fluent in spanish thanks tu tutors at Blab."
+                        author="Paul Robinson">
+                    </Testimony>
+                    <Testimony pic={require("../../pictures/profile.png")}
+                        text="Blab really help me in my transfer to Spain, I am
+                        now fluent in spanish thanks tu tutors at Blab."
+                        author="Paul Robinson">
+                    </Testimony>
+                </StyledSlider>
                 <StyledH1> Featured Tutors </StyledH1>
                 <StyledH2> Take a look at our top rating tutors for the week </StyledH2>
                 <TopTutors>

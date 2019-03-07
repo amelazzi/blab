@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
     }
 
     nav {
-        width: 79.5%;
+        width: 79%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;
@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
     }
 
     a {
-        color: ${light};
+        color: white;
         padding: 0 2rem;
         position: relative;
         text-decoration: none;
@@ -66,9 +66,22 @@ const StyledLogIn = styled.div`
     font-weight: bold;
 `;
 
+const LogIn = styled(Link)`
+    :after {
+        background: white !important;
+    }
+`;
+
 const StyledLink = styled.div`
     background: ${darkGray};
     border-radius: 8px;
+`;
+
+const SignIn = styled(Link)`
+    :after {
+        bottom: -16px !important;
+        background: white !important;
+    }
 `;
 
 const Header = () => (
@@ -77,16 +90,19 @@ const Header = () => (
             <StyledLogo>
                 <Link to="/">Blab</Link>
             </StyledLogo>
-            <Link to="/about"> Home </Link>
-            <Link to="/about"> Language </Link>
-            <Link to="/contact-us"> Getting Started </Link>
+            <Link to="/"> Home </Link>
+            <Link to="/getting-started"> Getting Started </Link>
+            <Link to="/forum"> Forum </Link>
             <Link to="/contact-us"> Contact us </Link>
-            <Link to="/about"> Account </Link>
+            <Link to="/account"> Account </Link>
+            <Link to="/student-profil"> StProfil </Link>
+            <Link to="/tutor-profil"> TuProfil </Link>
+            <Link to="/live"> Live </Link>
         </nav>
         <StyledLogIn>
-            <Link to="/contact-us"> Log in </Link>
+            <LogIn to="/log-in"> Log in </LogIn>
             <StyledLink>
-                <Link to="/contact-us"> Sign up </Link>
+                <SignIn to="/sign-up"> Sign up </SignIn>
             </StyledLink>
         </StyledLogIn>
     </StyledHeader>
