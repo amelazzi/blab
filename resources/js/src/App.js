@@ -6,7 +6,7 @@ import ContactUs from './containers/ContactUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import GlobalStyle from './styles/GlobalStyle';
-import Stripe from './components/Stripe';
+// import Stripe from './components/Stripe';
 import styled from 'styled-components';
 import Login from './containers/Login';
 import SignUp from './containers/SignUp';
@@ -34,7 +34,7 @@ class App extends Component {
     render() {
         return (
             <Router>
-                {/* <StyledContainer>
+                <StyledContainer>
                     <Header />
                     <Route exact path="/" component={Home} />
                     <Route path="/getting-started" component={GettingStarted} />
@@ -52,8 +52,8 @@ class App extends Component {
                     <Route path="/getting-started-tutor" component={StartedTutor} />
                     <Footer />
                     <GlobalStyle />
-                </StyledContainer> */}
-                <Stripe />
+                </StyledContainer>
+                {/* <Stripe /> */}
             </Router>
         );
     }

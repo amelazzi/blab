@@ -67513,12 +67513,12 @@ var possibleConstructorReturn = function (self, call) {
   return call && (typeof call === "object" || typeof call === "function") ? call : self;
 };
 
-//
+// 
 var isPlainObject = (function (x) {
   return (typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && x.constructor === Object;
 });
 
-//
+// 
 
 
 /**
@@ -67585,7 +67585,7 @@ var StyledComponentsError = function (_Error) {
   return StyledComponentsError;
 }(Error);
 
-//
+// 
 
 var objToCss = function objToCss(obj, prevKey) {
   var css = Object.keys(obj).filter(function (key) {
@@ -67642,7 +67642,7 @@ var flatten = function flatten(chunks, executionContext) {
   }, []);
 };
 
-//
+// 
 
 var COMMENT_REGEX = /^\s*\/\/.*$/gm;
 
@@ -67698,7 +67698,7 @@ var splitByRules = function splitByRules(css) {
   return stylisSplitter('', css);
 };
 
-//
+// 
 
 function isStyledComponent(target) /* : %checks */{
   return (
@@ -67707,7 +67707,7 @@ function isStyledComponent(target) /* : %checks */{
   );
 }
 
-//
+// 
 
 /* This function is DEPRECATED and will be removed on the next major version release.
  * It was needed to rehydrate all style blocks prepended to chunks before React
@@ -67721,7 +67721,7 @@ function consolidateStreamedStyles() {
   }
 }
 
-//
+// 
 /* eslint-disable no-bitwise */
 
 /* This is the "capacity" of our alphabet i.e. 2x26 for all letters plus their capitalised
@@ -67746,7 +67746,7 @@ var generateAlphabeticName = function generateAlphabeticName(code) {
   return getAlphabeticChar(x % charsLength) + name;
 };
 
-//
+// 
 
 var interleave = (function (strings, interpolations) {
   var result = [strings[0]];
@@ -67758,11 +67758,11 @@ var interleave = (function (strings, interpolations) {
   return result;
 });
 
-//
+// 
 var EMPTY_ARRAY = Object.freeze([]);
 var EMPTY_OBJECT = Object.freeze({});
 
-//
+// 
 
 var css = (function (styles) {
   for (var _len = arguments.length, interpolations = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -67778,10 +67778,10 @@ var css = (function (styles) {
   return flatten(interleave(styles, interpolations));
 });
 
-//
+// 
 
 
-var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).SC_ATTR || 'data-styled-components';
+var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}).SC_ATTR || 'data-styled-components';
 var SC_STREAM_ATTR = 'data-styled-streamed';
 var CONTEXT_KEY = '__styled-components-stylesheet__';
 
@@ -67789,7 +67789,7 @@ var IS_BROWSER = typeof window !== 'undefined' && 'HTMLElement' in window;
 
 var DISABLE_SPEEDY = "development" !== 'production';
 
-//
+// 
 var SC_COMPONENT_ID = /^[^\S\n]*?\/\* sc-component-id:\s*(\S+)\s+\*\//gm;
 
 var extractComps = (function (maybeCSS) {
@@ -67809,14 +67809,14 @@ var extractComps = (function (maybeCSS) {
   });
 });
 
-//
+// 
 /* eslint-disable camelcase, no-undef */
 
 var getNonce = (function () {
   return  true ? __webpack_require__.nc : undefined;
 });
 
-//
+// 
 // Helper to call a given function, only once
 var once = (function (cb) {
   var called = false;
@@ -67829,7 +67829,7 @@ var once = (function (cb) {
   };
 });
 
-//
+// 
 /* These are helpers for the StyleTags to keep track of the injected
  * rule names for each (component) ID that they're keeping track of.
  * They're crucial for detecting whether a name has already been
@@ -67878,7 +67878,7 @@ var cloneNames = function cloneNames(names) {
   return clone;
 };
 
-//
+// 
 
 /* These are helpers that deal with the insertRule (aka speedy) API
  * They are used in the StyleTags and specifically the speedy tag
@@ -67927,7 +67927,7 @@ var deleteRules = function deleteRules(sheet, removalIndex, size) {
   }
 };
 
-//
+// 
 
 /* this marker separates component styles and is important for rehydration */
 var makeTextMarker = function makeTextMarker(id) {
@@ -68336,7 +68336,7 @@ var makeRehydrationTag = function makeRehydrationTag(tag, els, extracted, immedi
   });
 };
 
-//
+// 
 
 var SPLIT_REGEX = /\s+/;
 
@@ -68708,7 +68708,7 @@ StyleSheetManager.childContextTypes = (_StyleSheetManager$ch = {}, _StyleSheetMa
   })
 } : undefined;
 
-//
+// 
 
 var ServerStyleSheet = function () {
   function ServerStyleSheet() {
@@ -68802,7 +68802,7 @@ var ServerStyleSheet = function () {
   return ServerStyleSheet;
 }();
 
-//
+// 
 
 var LIMIT = 200;
 
@@ -68824,7 +68824,7 @@ var createWarnTooManyClasses = (function (displayName) {
   };
 });
 
-//
+// 
 
 var determineTheme = (function (props, fallbackTheme, defaultProps) {
   // Props should take precedence over ThemeProvider, which should take precedence over
@@ -68838,7 +68838,7 @@ var determineTheme = (function (props, fallbackTheme, defaultProps) {
   return theme;
 });
 
-//
+// 
 var escapeRegex = /[[\].#*$><+~=|^:(),"'`-]+/g;
 var dashesAtEnds = /(^-|-$)/g;
 
@@ -68855,25 +68855,25 @@ function escape(str) {
   .replace(dashesAtEnds, '');
 }
 
-//
+// 
 
 function getComponentName(target) {
   return target.displayName || target.name || 'Component';
 }
 
-//
+// 
 
 function isTag(target) /* : %checks */{
   return typeof target === 'string';
 }
 
-//
+// 
 
 function generateDisplayName(target) {
   return isTag(target) ? 'styled.' + target : 'Styled(' + getComponentName(target) + ')';
 }
 
-//
+// 
 /* eslint-disable max-len */
 /**
  * Trying to avoid the unknown-prop errors on styled components by filtering by
@@ -68901,7 +68901,7 @@ var validAttr = (function (name) {
   return ATTRIBUTE_REGEX.test(name) || isCustomAttribute(name.toLowerCase());
 });
 
-//
+// 
 
 function hasInInheritanceChain(child, parent) {
   var target = child;
@@ -68917,7 +68917,7 @@ function hasInInheritanceChain(child, parent) {
   return false;
 }
 
-//
+// 
 /**
  * Creates a broadcast that can be listened to, i.e. simple event emitter
  *
@@ -69433,7 +69433,7 @@ function murmurhash(str) {
   return h >>> 0;
 }
 
-//
+// 
 
 var areStylesCacheable = IS_BROWSER;
 
@@ -69527,7 +69527,7 @@ var _ComponentStyle = (function (nameGenerator, flatten, stringifyRules) {
   return ComponentStyle;
 });
 
-//
+// 
 // Thanks to ReactDOMFactories for this handy list!
 
 var domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 'b', 'base', 'bdi', 'bdo', 'big', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'cite', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 'dialog', 'div', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'marquee', 'menu', 'menuitem', 'meta', 'meter', 'nav', 'noscript', 'object', 'ol', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 'progress', 'q', 'rp', 'rt', 'ruby', 's', 'samp', 'script', 'section', 'select', 'small', 'source', 'span', 'strong', 'style', 'sub', 'summary', 'sup', 'table', 'tbody', 'td', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'track', 'u', 'ul', 'var', 'video', 'wbr',
@@ -69535,7 +69535,7 @@ var domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 
 // SVG
 'circle', 'clipPath', 'defs', 'ellipse', 'foreignObject', 'g', 'image', 'line', 'linearGradient', 'mask', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'text', 'tspan'];
 
-//
+// 
 
 var _styled = (function (styledComponent, constructWithOptions) {
   var styled = function styled(tag) {
@@ -69550,7 +69550,7 @@ var _styled = (function (styledComponent, constructWithOptions) {
   return styled;
 });
 
-//
+// 
 
 var replaceWhitespace = function replaceWhitespace(str) {
   return str.replace(/\s|\\n/g, '');
@@ -69571,7 +69571,7 @@ var _keyframes = (function (nameGenerator, stringifyRules, css) {
   };
 });
 
-//
+// 
 
 var _injectGlobal = (function (stringifyRules, css) {
   var injectGlobal = function injectGlobal() {
@@ -69588,7 +69588,7 @@ var _injectGlobal = (function (stringifyRules, css) {
   return injectGlobal;
 });
 
-//
+// 
 
 var _constructWithOptions = (function (css) {
   var constructWithOptions = function constructWithOptions(componentConstructor, tag) {
@@ -69620,7 +69620,7 @@ var _constructWithOptions = (function (css) {
   return constructWithOptions;
 });
 
-//
+// 
 
 var withTheme = (function (Component$$1) {
   var isStatelessFunctionalComponent = typeof Component$$1 === 'function' &&
@@ -69710,14 +69710,14 @@ var withTheme = (function (Component$$1) {
   return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_5___default()(WithTheme, Component$$1);
 });
 
-//
+// 
 
 /* eslint-disable */
 var __DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = {
   StyleSheet: StyleSheet
 };
 
-//
+// 
 
 /* Warning if you've imported this file on React Native */
 if ( true && typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
@@ -73677,7 +73677,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//
+// 
 
 var interleave = (function (strings, interpolations) {
   var result = [strings[0]];
@@ -73769,34 +73769,34 @@ var possibleConstructorReturn = function (self, call) {
   return call && (typeof call === "object" || typeof call === "function") ? call : self;
 };
 
-//
+// 
 var isPlainObject = (function (x) {
   return (typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && x.constructor === Object;
 });
 
-//
+// 
 var EMPTY_ARRAY = Object.freeze([]);
 var EMPTY_OBJECT = Object.freeze({});
 
-//
+// 
 function isFunction(test) {
   return typeof test === 'function';
 }
 
-//
+// 
 
 function getComponentName(target) {
   return ( true ? typeof target === 'string' && target : undefined) || target.displayName || target.name || 'Component';
 }
 
-//
+// 
 function isStyledComponent(target) {
   return target && typeof target.styledComponentId === 'string';
 }
 
-//
+// 
 
-var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
+var SC_ATTR = typeof process !== 'undefined' && Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}).SC_ATTR || 'data-styled';
 
 var SC_VERSION_ATTR = 'data-styled-version';
 
@@ -73809,7 +73809,7 @@ var DISABLE_SPEEDY = typeof SC_DISABLE_SPEEDY === 'boolean' && SC_DISABLE_SPEEDY
 // Shared empty execution context when generating static styles
 var STATIC_EXECUTION_CONTEXT = {};
 
-//
+// 
 
 
 /**
@@ -73873,7 +73873,7 @@ var StyledComponentsError = function (_Error) {
   return StyledComponentsError;
 }(Error);
 
-//
+// 
 var SC_COMPONENT_ID = /^[^\S\n]*?\/\* sc-component-id:\s*(\S+)\s+\*\//gm;
 
 var extractComps = (function (maybeCSS) {
@@ -73893,7 +73893,7 @@ var extractComps = (function (maybeCSS) {
   });
 });
 
-//
+// 
 
 var COMMENT_REGEX = /^\s*\/\/.*$/gm;
 
@@ -73994,14 +73994,14 @@ function stringifyRules(rules, selector, prefix) {
   return stylis(prefix || !selector ? '' : selector, cssStr);
 }
 
-//
+// 
 /* eslint-disable camelcase, no-undef */
 
 var getNonce = (function () {
   return  true ? __webpack_require__.nc : undefined;
 });
 
-//
+// 
 /* These are helpers for the StyleTags to keep track of the injected
  * rule names for each (component) ID that they're keeping track of.
  * They're crucial for detecting whether a name has already been
@@ -74050,7 +74050,7 @@ var cloneNames = function cloneNames(names) {
   return clone;
 };
 
-//
+// 
 
 /* These are helpers that deal with the insertRule (aka speedy) API
  * They are used in the StyleTags and specifically the speedy tag
@@ -74099,7 +74099,7 @@ var deleteRules = function deleteRules(sheet, removalIndex, size) {
   }
 };
 
-//
+// 
 
 /* this marker separates component styles and is important for rehydration */
 var makeTextMarker = function makeTextMarker(id) {
@@ -74489,7 +74489,7 @@ var rehydrate = function rehydrate(tag, els, extracted) {
   }
 };
 
-//
+// 
 
 var SPLIT_REGEX = /\s+/;
 
@@ -74821,7 +74821,7 @@ var StyleSheet = function () {
   return StyleSheet;
 }();
 
-//
+// 
 
 var Keyframes = function () {
   function Keyframes(name, rules) {
@@ -74852,7 +74852,7 @@ var Keyframes = function () {
   return Keyframes;
 }();
 
-//
+// 
 
 /**
  * inlined version of
@@ -74882,7 +74882,7 @@ function hyphenateStyleName(string) {
   return string.replace(uppercasePattern, '-$1').toLowerCase().replace(msPattern, '-ms-');
 }
 
-//
+// 
 
 // Taken from https://github.com/facebook/react/blob/b87aabdfe1b7461e7331abb3601d9e6bb27544bc/packages/react-dom/src/shared/dangerousStyleValue.js
 function addUnitIfNeeded(name, value) {
@@ -74899,7 +74899,7 @@ function addUnitIfNeeded(name, value) {
   return String(value).trim();
 }
 
-//
+// 
 
 /**
  * It's falsish not falsy because 0 is allowed.
@@ -74973,7 +74973,7 @@ function flatten(chunk, executionContext, styleSheet) {
   return isPlainObject(chunk) ? objToCss(chunk) : chunk.toString();
 }
 
-//
+// 
 
 function css(styles) {
   for (var _len = arguments.length, interpolations = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -74989,7 +74989,7 @@ function css(styles) {
   return flatten(interleave(styles, interpolations));
 }
 
-//
+// 
 
 function constructWithOptions(componentConstructor, tag) {
   var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : EMPTY_OBJECT;
@@ -75019,7 +75019,7 @@ function constructWithOptions(componentConstructor, tag) {
   return templateFunction;
 }
 
-//
+// 
 // Source: https://github.com/garycourt/murmurhash-js/blob/master/murmurhash2_gc.js
 function murmurhash(c) {
   for (var e = c.length | 0, a = e | 0, d = 0, b; e >= 4;) {
@@ -75038,7 +75038,7 @@ function murmurhash(c) {
   return (a ^ a >>> 15) >>> 0;
 }
 
-//
+// 
 /* eslint-disable no-bitwise */
 
 /* This is the "capacity" of our alphabet i.e. 2x26 for all letters plus their capitalised
@@ -75063,7 +75063,7 @@ function generateAlphabeticName(code) {
   return getAlphabeticChar(x % charsLength) + name;
 }
 
-//
+// 
 
 function hasFunctionObjectKey(obj) {
   // eslint-disable-next-line guard-for-in, no-restricted-syntax
@@ -75097,7 +75097,7 @@ function isStaticRules(rules, attrs) {
   return true;
 }
 
-//
+// 
 
 var isHMREnabled =  true && module.hot;
 
@@ -75157,7 +75157,7 @@ var ComponentStyle = function () {
   return ComponentStyle;
 }();
 
-//
+// 
 
 var LIMIT = 200;
 
@@ -75179,7 +75179,7 @@ var createWarnTooManyClasses = (function (displayName) {
   };
 });
 
-//
+// 
 
 var determineTheme = (function (props, fallbackTheme) {
   var defaultProps = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : EMPTY_OBJECT;
@@ -75195,7 +75195,7 @@ var determineTheme = (function (props, fallbackTheme) {
   return theme;
 });
 
-//
+// 
 var escapeRegex = /[[\].#*$><+~=|^:(),"'`-]+/g;
 var dashesAtEnds = /(^-|-$)/g;
 
@@ -75212,13 +75212,13 @@ function escape(str) {
   .replace(dashesAtEnds, '');
 }
 
-//
+// 
 
 function isTag(target) {
   return typeof target === 'string' && ( true ? target.charAt(0) === target.charAt(0).toLowerCase() : undefined);
 }
 
-//
+// 
 
 function generateDisplayName(target) {
   // $FlowFixMe
@@ -75314,12 +75314,12 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
   return targetComponent;
 }
 
-//
+// 
 function isDerivedReactComponent(fn) {
   return !!(fn && fn.prototype && fn.prototype.isReactComponent);
 }
 
-//
+// 
 // Helper to call a given function, only once
 var once = (function (cb) {
   var called = false;
@@ -75332,7 +75332,7 @@ var once = (function (cb) {
   };
 });
 
-//
+// 
 
 var ThemeContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["createContext"])();
 
@@ -75406,7 +75406,7 @@ var ThemeProvider = function (_Component) {
   return ThemeProvider;
 }(react__WEBPACK_IMPORTED_MODULE_2__["Component"]);
 
-//
+// 
 
 var ServerStyleSheet = function () {
   function ServerStyleSheet() {
@@ -75506,7 +75506,7 @@ var ServerStyleSheet = function () {
   return ServerStyleSheet;
 }();
 
-//
+// 
 
 var StyleSheetContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["createContext"])();
 
@@ -75558,7 +75558,7 @@ var StyleSheetManager = function (_Component) {
   })
 } : undefined;
 
-//
+// 
 
 var didWarnAboutClassNameUsage = new Set();
 
@@ -75611,7 +75611,7 @@ var classNameUsageCheckInjector = (function (target) {
   };
 });
 
-//
+// 
 
 var identifiers = {};
 
@@ -75910,7 +75910,7 @@ function createStyledComponent(target, options, rules) {
   return WrappedStyledComponent;
 }
 
-//
+// 
 // Thanks to ReactDOMFactories for this handy list!
 
 var domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 'b', 'base', 'bdi', 'bdo', 'big', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'cite', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 'dialog', 'div', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'marquee', 'menu', 'menuitem', 'meta', 'meter', 'nav', 'noscript', 'object', 'ol', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 'progress', 'q', 'rp', 'rt', 'ruby', 's', 'samp', 'script', 'section', 'select', 'small', 'source', 'span', 'strong', 'style', 'sub', 'summary', 'sup', 'table', 'tbody', 'td', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'track', 'u', 'ul', 'var', 'video', 'wbr',
@@ -75918,7 +75918,7 @@ var domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 
 // SVG
 'circle', 'clipPath', 'defs', 'ellipse', 'foreignObject', 'g', 'image', 'line', 'linearGradient', 'mask', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'text', 'tspan'];
 
-//
+// 
 
 var styled = function styled(tag) {
   return constructWithOptions(createStyledComponent, tag);
@@ -75929,7 +75929,7 @@ domElements.forEach(function (domElement) {
   styled[domElement] = styled(domElement);
 });
 
-//
+// 
 
 var GlobalStyle = function () {
   function GlobalStyle(rules, componentId) {
@@ -75970,7 +75970,7 @@ var GlobalStyle = function () {
   return GlobalStyle;
 }();
 
-//
+// 
 
 // place our cache into shared context so it'll persist between HMRs
 if (IS_BROWSER) {
@@ -76085,7 +76085,7 @@ function createGlobalStyle(strings) {
   return GlobalStyleComponent;
 }
 
-//
+// 
 
 var replaceWhitespace = function replaceWhitespace(str) {
   return str.replace(/\s|\\n/g, '');
@@ -76108,7 +76108,7 @@ function keyframes(strings) {
   return new Keyframes(name, stringifyRules(rules, name, '@keyframes'));
 }
 
-//
+// 
 
 var withTheme = (function (Component$$1) {
   var WithTheme = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function (props, ref) {
@@ -76138,14 +76138,14 @@ var withTheme = (function (Component$$1) {
   return WithTheme;
 });
 
-//
+// 
 
 /* eslint-disable */
 var __DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = {
   StyleSheet: StyleSheet
 };
 
-//
+// 
 
 /* Warning if you've imported this file on React Native */
 if ( true && typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
@@ -81847,6 +81847,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+ // import Stripe from './components/Stripe';
 
 
 
@@ -84082,7 +84083,7 @@ var WatchingClass = function WatchingClass() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Evans Barrow "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     to: "/"
   }, " Send Message ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ClassInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_ClassDetail__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    resume: "Every lesson go deep into understanding the basic of  English Language.",
+    resume: "Every lesson go deep into understanding the basic of \r English Language.",
     args: Goals
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Transaltion__WEBPACK_IMPORTED_MODULE_6__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Topics, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledBtn, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../../../../pictures/comments.png */ "./resources/js/src/pictures/comments.png")
@@ -84093,16 +84094,16 @@ var WatchingClass = function WatchingClass() {
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
     profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber  epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero  praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
+    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber \r epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero \r praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
     profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber  epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero  praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
+    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber \r epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero \r praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
     profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber  epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero  praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
+    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber \r epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero \r praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
     profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber  epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero  praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
+    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber \r epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero \r praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
   })))));
 };
 
@@ -85702,7 +85703,7 @@ var StudiantRequest = function StudiantRequest() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Rows, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RowTitle__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
     pic: __webpack_require__(/*! ../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
     name: "John Mark",
-    descript: "I need a teacher to guide me in my spanish language,  i am a novies just tryi...",
+    descript: "I need a teacher to guide me in my spanish language, \r i am a novies just tryi...",
     nativeLanguage: "Spanich",
     skills: "Basic"
   })));
@@ -86678,7 +86679,7 @@ var SideBar = function SideBar() {
     country: "France",
     nativeLaguage: "Spanish"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_About__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    text: "Learn More about me here  Learn More about me hereLearn More about me here  Learn More about me here Learn More about me here Learn More about me here  "
+    text: "Learn More about me here  Learn More about me hereLearn More about me here \r Learn More about me here Learn More about me here Learn More about me here \r "
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Education__WEBPACK_IMPORTED_MODULE_7__["default"], {
     field: "B.E. - English Language",
     university: "Converty University",
@@ -88537,38 +88538,38 @@ var Home = function Home() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHome, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/pic1.png */ "./resources/js/src/pictures/pic1.png"),
     title: "Over 30 languages course taken on this platform.",
-    text: "Let us take you on a journey through the varieties of  languages thought on this platform by qualified tours."
+    text: "Let us take you on a journey through the varieties of \r languages thought on this platform by qualified tours."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/pic2.png */ "./resources/js/src/pictures/pic2.png"),
     title: "Why use Blab?",
-    text: "Over here at Blab, we take learning really serious,  thats why we have put together the best tutors to take you throught the experience of learning your favorite languageat your convenience. With our mobile friendly platform, you can your online classes at anywhere you are in the world."
+    text: "Over here at Blab, we take learning really serious, \r thats why we have put together the best tutors to take you throught\r the experience of learning your favorite languageat your convenience.\r With our mobile friendly platform, you can your online classes at\r anywhere you are in the world."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Learn at your convinence",
-    text: "Learning has been made easier with our mobile friendly package. Swith between your computer, tablet or mobile devices at anytime."
+    text: "Learning has been made easier with our mobile friendly package.\r Swith between your computer, tablet or mobile devices at\r anytime."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Get the best qualified Tutors",
-    text: "Hire a tutor from our wide range of qualified  teachers who are passionate to impact knowledge to you."
+    text: "Hire a tutor from our wide range of qualified \r teachers who are passionate to impact knowledge to you."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
     icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
     title: "Wide range of Language",
-    text: "Select a language to learn from our wide range of foreign language."
+    text: "Select a language to learn from our wide range of\r foreign language."
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " What our customers are saying "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSlider, {
     autoSlide: false,
     cardsToShow: 1,
     showArrows: false
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimony__WEBPACK_IMPORTED_MODULE_9__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    text: "Blab really help me in my transfer to Spain, I am now fluent in spanish thanks tu tutors at Blab.",
+    text: "Blab really help me in my transfer to Spain, I am\r now fluent in spanish thanks tu tutors at Blab.",
     author: "Paul Robinson"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimony__WEBPACK_IMPORTED_MODULE_9__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    text: "Blab really help me in my transfer to Spain, I am now fluent in spanish thanks tu tutors at Blab.",
+    text: "Blab really help me in my transfer to Spain, I am\r now fluent in spanish thanks tu tutors at Blab.",
     author: "Paul Robinson"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimony__WEBPACK_IMPORTED_MODULE_9__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    text: "Blab really help me in my transfer to Spain, I am now fluent in spanish thanks tu tutors at Blab.",
+    text: "Blab really help me in my transfer to Spain, I am\r now fluent in spanish thanks tu tutors at Blab.",
     author: "Paul Robinson"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Featured Tutors "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH2, null, " Take a look at our top rating tutors for the week "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopTutors, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RatedTutor__WEBPACK_IMPORTED_MODULE_10__["default"], {
     pic: __webpack_require__(/*! ../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
@@ -89140,7 +89141,7 @@ var StartedStudent = function StartedStudent() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " How it works "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/1.png */ "./resources/js/src/pictures/1.png"),
     title: "Become a Blabee",
-    text: "Here on Blab, you are regarded as a Blabee while Toturs regarder as Blabers. So have fun pairing with a blabber today."
+    text: "Here on Blab, you are regarded as a Blabee while Toturs\r regarder as Blabers.\r So have fun pairing with a blabber today."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/2.png */ "./resources/js/src/pictures/2.png"),
     title: "Mobility",
@@ -89148,15 +89149,15 @@ var StartedStudent = function StartedStudent() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/3.png */ "./resources/js/src/pictures/3.png"),
     title: "Make Payment",
-    text: "Pay for yout class after being paired with a blabber. Each class cost $10, and you only pay for the class you receive."
+    text: "Pay for yout class after being paired with a blabber.\r Each class cost $10, and you only pay for the class you receive."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/4.png */ "./resources/js/src/pictures/4.png"),
     title: "Taking Class",
-    text: "Receive your class online via our platform, with access to live chat and video coverage."
+    text: "Receive your class online via our platform,\r with access to live chat and video coverage."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/5.png */ "./resources/js/src/pictures/5.png"),
     title: "Request for Blabber",
-    text: "Request a tutor right from your dashboard, send out specific iinformation and receive various request  by available blabbers."
+    text: "Request a tutor right from your dashboard, send out specific\r iinformation and receive various request  by available blabbers."
   })));
 };
 
@@ -89247,23 +89248,23 @@ var StartedStudent = function StartedStudent() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " How it works "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/1.png */ "./resources/js/src/pictures/1.png"),
     title: "Become a Blabber",
-    text: "Here on Blab, you are regarded as a Blabber while students are regarded as a blabee. So have fun pairing and teaching a blabee today."
+    text: "Here on Blab, you are regarded as a Blabber while students are regarded as a blabee.\r So have fun pairing and teaching a blabee today."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/2.png */ "./resources/js/src/pictures/2.png"),
     title: "Mobility",
-    text: "Explore our convinient services to teach students any time and anywhere, regardless of your device"
+    text: "Explore our convinient services to teach students any time and anywhere,\r regardless of your device"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/get-paied.png */ "./resources/js/src/pictures/get-paied.png"),
     title: "Receiving Payment",
-    text: "Get paid via  our system which pay directly to your paypal or payonner  account linked to your account."
+    text: "Get paid via  our system which pay directly to your paypal or payonner \r account linked to your account."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
     picture: __webpack_require__(/*! ../../pictures/4.png */ "./resources/js/src/pictures/4.png"),
     title: "Tutoring",
-    text: "Teach your students online via our live class session,  which includes live video and chat services."
+    text: "Teach your students online via our live class session, \r which includes live video and chat services."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     picture: __webpack_require__(/*! ../../pictures/find-student.png */ "./resources/js/src/pictures/find-student.png"),
     title: "Find Student",
-    text: "Search for new students via our student offers menu,  and select based on your native language."
+    text: "Search for new students via our student offers menu, \r and select based on your native language."
   })));
 };
 
@@ -89730,8 +89731,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/macos/Desktop/blab/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/macos/Desktop/blab/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! H:\Laravel\blab\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! H:\Laravel\blab\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
