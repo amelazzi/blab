@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { darkGray, light, pink, purple } from '../styles/utilities';
+import { darkGray, light, pink, purple, dark } from '../styles/utilities';
 
 const StyledHeader = styled.header`
     background: ${darkGray};
@@ -59,30 +59,31 @@ const StyledLogo = styled.div`
 const StyledLogIn = styled.div`
     display: flex;
     flex-flow: row nowrap;
-    justify-content: start;
+    justify-content: space-between;
     background: ${purple};
-    width: 20.5%;
-    padding: 2.5rem;
+    width: 22%;
+    padding: 2rem 2.3rem;
     font-weight: bold;
 `;
 
-const LogIn = styled(Link)`
-    :after {
-        background: white !important;
-    }
-`;
-
 const StyledLink = styled.div`
-    background: ${darkGray};
-    border-radius: 8px;
+    background: white;
+    border-radius: 3rem;
+    padding: 0.8rem 1rem;
 `;
 
-const SignIn = styled(Link)`
+const LogIn = styled(Link)`
+    font-size: 1.4rem;
+    color: ${dark} !important;
     :after {
         bottom: -16px !important;
-        background: white !important;
+        background: none !important;
     }
 `;
+
+const SignIn = styled(LogIn)`
+`;
+
 
 const Header = () => (
     <StyledHeader>
@@ -100,7 +101,9 @@ const Header = () => (
             <Link to="/live"> Live </Link>
         </nav>
         <StyledLogIn>
-            <LogIn to="/log-in"> Log in </LogIn>
+            <StyledLink>
+                <LogIn to="/log-in"> Log in </LogIn>
+            </StyledLink>
             <StyledLink>
                 <SignIn to="/sign-up"> Sign up </SignIn>
             </StyledLink>

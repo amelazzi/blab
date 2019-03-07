@@ -28,10 +28,10 @@ const StyledContent = styled.div`
         margin-bottom: 16px;
         color: ${dark};
         font-size: 4.5rem;
-        font-weight: bold
+        font-weight: bold;
     }
     p{  
-        width:90%
+        width:90%;
         margin-bottom: 16px;
         margin-left: 8px;
         color: ${lightGray};
