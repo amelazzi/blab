@@ -6,8 +6,6 @@ import {dark, gray} from '../../styles/utilities/Colors'
 
 import Main from './components/Main'
 import Head from './components/Head'
-import RightSection from '../../components/RightSection'
-import LeftSection from '../../components/LeftSection'
 import Card from './components/Card'
 import Testimony from './components/Testimony'
 import RatedTutor from './components/RatedTutor'
@@ -40,10 +38,12 @@ const StyledH2 = styled.h2`
     padding: 2rem;
 `;
 
-
+const Testimonies = styled.div`
+    padding: 2rem 20rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+`;
 const StyledSlider = styled(Slider)`
-    margin: 10rem;
-    margin-bottom: 5rem;
+    padding: 10rem 0rem;
 `;
 
 
@@ -72,24 +72,26 @@ const Home = () => {
                         text="We have a large global reach of native language for easy communication among our students and instrutors">
                     </Card>
                 </CardsContainer>
-                <StyledH1> What our customers are saying? </StyledH1>
-                <StyledSlider autoSlide={false} cardsToShow={1} showArrows={false}>
-                    <Testimony pic={require("../../pictures/profile.png")}
-                        text="Blab really help me in my transfer to Spain, I am
-                        now fluent in spanish thanks tu tutors at Blab."
-                        author="Paul Robinson">
-                    </Testimony>
-                    <Testimony pic={require("../../pictures/profile.png")}
-                        text="Blab really help me in my transfer to Spain, I am
-                        now fluent in spanish thanks tu tutors at Blab."
-                        author="Paul Robinson">
-                    </Testimony>
-                    <Testimony pic={require("../../pictures/profile.png")}
-                        text="Blab really help me in my transfer to Spain, I am
-                        now fluent in spanish thanks tu tutors at Blab."
-                        author="Paul Robinson">
-                    </Testimony>
-                </StyledSlider>
+                <Testimonies>
+                    <StyledH1> What our customers are saying? </StyledH1>
+                    <StyledSlider autoSlide={false} cardsToShow={1} showArrows={false}>
+                        <Testimony pic={require("../../pictures/home/paul.png")}
+                            text="Blab really help me in my transfer to Spain, I am
+                            now fluent in spanish thanks tu tutors at Blab."
+                            author="Paul Robinson">
+                        </Testimony>
+                        <Testimony pic={require("../../pictures/home/paul.png")}
+                            text="Blab really help me in my transfer to Spain, I am
+                            now fluent in spanish thanks tu tutors at Blab."
+                            author="Paul Robinson">
+                        </Testimony>
+                        <Testimony pic={require("../../pictures/home/paul.png")}
+                            text="Blab really help me in my transfer to Spain, I am
+                            now fluent in spanish thanks tu tutors at Blab."
+                            author="Paul Robinson">
+                        </Testimony>
+                    </StyledSlider>
+                </Testimonies>
                 <StyledH1> Featured Tutors </StyledH1>
                 <StyledH2> Take a look at our top rating tutors for the week </StyledH2>
                 <TopTutors>

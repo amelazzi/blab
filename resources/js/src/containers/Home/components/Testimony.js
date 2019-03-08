@@ -9,27 +9,29 @@ const StyledTestimony = styled.div`
 `;
 
 const ImgContainer = styled.div`
-    width: 25%;
+    max-width: 20rem;
+    max-height: 20rem;
+    min-width: 20rem;
+    min-height: 20rem;
     img{
         width: 100%;
-        border: none;
-        border-radius: 8px;
+        height: 100%;
+        border-radius: 0.8rem;
     }
 `;
 
 const Content = styled.div`
-    width: 70%;
-    padding: 4rem;
-    h1,h2{
-        color: ${dark};
-        font-size: 3.2rem;
+    margin: 0rem 6rem;
+    p{
+        font-size: 2.6rem;
+        line-height: 1.2;
     }
     h1{
-        font-weight: bold;
+        font-size: 2.8rem;
+        margin: 4rem 0rem !important;
+        font-weight: lighter;
     }
-    h2{
-        margin-top: 32px; 
-    }
+    
 `;
 
 const Testimony = ({pic, text, author}) => {
@@ -39,8 +41,8 @@ const Testimony = ({pic, text, author}) => {
                 <img src={pic} />
             </ImgContainer>
             <Content>
-                <h1> "{text}" </h1>
-                <h2> {author} </h2>
+                <p> "{text}" </p>
+                <h1> {author} </h1>
             </Content>
         </StyledTestimony>
     );
