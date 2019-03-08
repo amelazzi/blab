@@ -88196,8 +88196,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    border: none;\n    background: ", ";\n    color: white;\n    padding: 0.8rem 2.8rem;\n    font-size: 1.6rem;\n    font-weight: 300;\n    :hover{\n        cursor: pointer;\n    }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    margin: 0;\n    padding: 0.6rem 1rem;\n    padding-left: 4rem;\n    border: none;\n    flex:1;\n    font-size: 1.8rem;\n    line-height: 0.6;\n\n    background: url(", ") no-repeat;\n    background-size: 2.5rem;\n    background-position: 0.8rem center;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    border-radius: 8px;\n    padding: 0 3rem 0 3rem;\n    background: ", ";\n    color: white;\n    font-size: 2.5rem;\n    :hover{\n        text-decoration: none;\n        color: white;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    background: white;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -88207,7 +88227,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    padding: 12rem 1rem 12rem 1rem;\n    h1{\n        width : 50%;\n        font-size: 4.5rem;\n        font-weight: bold;\n    }\n    p{\n        padding: 2rem 0 5rem 0;\n        width : 40%;\n        font-size: 2.8rem;\n        line-height: 1\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding : 12rem 32rem;\n    text-align: center;\n    color: white;\n    margin: auto;\n    h1{\n        color: white;\n        font-size: 4rem;\n        font-weight: 600;\n    }\n    p{\n        font-size: 1.6rem;\n        line-height: 1;\n        margin: 4.5rem 0rem;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -88217,7 +88237,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    padding : 4rem;\n    background: white;\n"]);
+  var data = _taggedTemplateLiteral(["\n    background-image: url(", ");\n    background-size: cover;\n    background-repeat: no-repeat;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -88232,14 +88252,19 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledHead = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+
+var backgroundImg = __webpack_require__(/*! ../../../pictures/home/background.png */ "./resources/js/src/pictures/home/background.png");
+
+var searchIcon = __webpack_require__(/*! ../../../pictures/home/search.png */ "./resources/js/src/pictures/home/search.png");
+
+var StyledHead = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), backgroundImg);
 var HeadContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
-var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"])(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
+var SearchContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var SearchInput = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject4(), searchIcon);
+var SearchButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject5(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"]);
 
 var Head = function Head() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHead, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeadContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Learn languages at ease on Blab "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Let us take you through your journey of being a Blabee and a Blabbers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-    to: "/log-in"
-  }, " Get Started ")));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHead, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeadContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " What we offer on our platform? "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " We offer a interactive sessions between our students and instructor (blabees and blabber), learning has never been more fun and interactive with our live classes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SearchContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SearchInput, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SearchButton, null, " Search "))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Head);
@@ -89411,6 +89436,28 @@ module.exports = "/images/get-started-student.png?8e9f9bf1ed7f0c9e18ca282fdb4267
 /***/ (function(module, exports) {
 
 module.exports = "/images/google.png?cca2c0a9a794ff8dcbc85ed376265659";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/home/background.png":
+/*!*******************************************************!*\
+  !*** ./resources/js/src/pictures/home/background.png ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/background.png?7f944fa857866b68ade732d92441d8f4";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/home/search.png":
+/*!***************************************************!*\
+  !*** ./resources/js/src/pictures/home/search.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/search.png?773b936110256d40a5fe40aa9fa43666";
 
 /***/ }),
 

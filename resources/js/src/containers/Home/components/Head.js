@@ -3,36 +3,61 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { purple } from '../../../styles/utilities/Colors';
 
+const backgroundImg = require("../../../pictures/home/background.png");
+const searchIcon = require("../../../pictures/home/search.png");
 
 const StyledHead = styled.div`
-    padding : 4rem;
-    background: white;
+    background-image: url(${backgroundImg});
+    background-size: cover;
+    background-repeat: no-repeat;
 `;
 
 const HeadContent = styled.div`
-    padding: 12rem 1rem 12rem 1rem;
+    padding : 12rem 32rem;
+    text-align: center;
+    color: white;
+    margin: auto;
     h1{
-        width : 50%;
-        font-size: 4.5rem;
-        font-weight: bold;
+        color: white;
+        font-size: 4rem;
+        font-weight: 600;
     }
     p{
-        padding: 2rem 0 5rem 0;
-        width : 40%;
-        font-size: 2.8rem;
-        line-height: 1
+        font-size: 1.6rem;
+        line-height: 1;
+        margin: 4.5rem 0rem;
     }
 `;
 
-const StyledLink = styled(Link)`
-    border-radius: 8px;
-    padding: 0 3rem 0 3rem;
+const SearchContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    background: white;
+`;
+
+const SearchInput = styled.input`
+    margin: 0;
+    padding: 0.6rem 1rem;
+    padding-left: 4rem;
+    border: none;
+    flex:1;
+    font-size: 1.8rem;
+    line-height: 0.6;
+
+    background: url(${searchIcon}) no-repeat;
+    background-size: 2.5rem;
+    background-position: 0.8rem center;
+`;
+
+const SearchButton = styled.button`
+    border: none;
     background: ${purple};
     color: white;
-    font-size: 2.5rem;
+    padding: 0.8rem 2.8rem;
+    font-size: 1.6rem;
+    font-weight: 300;
     :hover{
-        text-decoration: none;
-        color: white;
+        cursor: pointer;
     }
 `;
 
@@ -40,11 +65,15 @@ const Head = () => {
     return (
         <StyledHead>
             <HeadContent>
-                <h1> Learn languages at ease on Blab </h1>
-                <p> Let us take you through your journey of being 
-                    a Blabee and a Blabbers    
+                <h1> What we offer on our platform? </h1>
+                <p> We offer a interactive sessions between our students and instructor 
+                    (blabees and blabber), learning has never been more fun and interactive 
+                    with our live classes   
                 </p>
-                <StyledLink to="/log-in"> Get Started </StyledLink>
+                <SearchContainer>
+                    <SearchInput/>
+                    <SearchButton> Search </SearchButton>
+                </SearchContainer>
             </HeadContent>
         </StyledHead>
     );
