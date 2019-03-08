@@ -9,6 +9,7 @@ import Head from './components/Head'
 import Card from './components/Card'
 import Testimony from './components/Testimony'
 import RatedTutor from './components/RatedTutor'
+import RightSection from '../../components/RightSection';
 
 
 
@@ -92,6 +93,17 @@ const Home = () => {
                         </Testimony>
                     </StyledSlider>
                 </Testimonies>
+                <div>
+                    <StyledH1> How does it work? </StyledH1>
+                    <RightSection picture={require("../../pictures/home/students.png")}
+                        title="A Student"
+                        text="You can signup as a blabee (Student) on our platform, with a minimalist dashboard you can easily access various sections of the screen.
+                        Go to our getting started page to check full functions of our blabee"/>
+                    <RightSection picture={require("../../pictures/home/teacher.png")}
+                        title="A Student"
+                        text="Signup as a blabber (Tutor) on our platform, with a minimalist dashboard you can easily access various sections of the screen. You also get to be involved in our professional lesson plan guide to guide you. 
+                        Go to our getting started page to check full functions of our blabber"/>
+                </div>
                 <StyledH1> Featured Tutors </StyledH1>
                 <StyledH2> Take a look at our top rating tutors for the week </StyledH2>
                 <TopTutors>

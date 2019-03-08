@@ -1,22 +1,27 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import styled from 'styled-components';
-import { dark, lightGray, blue } from '../styles/utilities/Colors';
+import { dark, lightGray, blue, darkGray, purple } from '../styles/utilities/Colors';
 
 const StyledSection = styled.div`
     background: white; 
-    align-items: center;    
-    padding: 7rem;
+    margin-top: 0.5rem;  
+    padding: 4.5rem 12rem 2.5rem 3rem; 
     display: flex;
     flex-direction: row;
-    img{
-        width: 100%;
-    }
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 `;
 
 const StyledImg = styled.div`
     margin-top: 4rem;
     padding: 8px;
     width: 50%;
+    height: 47rem;
+    img{
+        width: 47rem;
+        height: 100%;
+        object-fit: cover;
+    }
 `;
 
 const StyledContent = styled.div`
@@ -24,20 +29,26 @@ const StyledContent = styled.div`
     padding: 16px;
     padding-right: 0;
     h1{
-        margin-top: 8rem;
-        margin-bottom: 16px;
+        margin-top: 7.5rem;
         color: ${dark};
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         font-weight: bold;
     }
     p{  
-        width:90%;
-        margin-bottom: 16px;
-        margin-left: 8px;
-        color: ${lightGray};
-        font-size: 2.8rem;
-        line-height: 1.2;
+        margin: 4rem 0rem;
+        color: ${darkGray};
+        font-size: 2.1rem;
+        line-height: normal;
     }
+`;
+
+const StyledButton = styled.button`
+    border: none;
+    background: ${purple};
+    border-radius: 7.4rem;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1.2rem 3.8rem;
 `;
 
 const RightSection = ({picture, title, text}) => (
@@ -48,6 +59,9 @@ const RightSection = ({picture, title, text}) => (
         <StyledContent>
             <h1> {title} </h1>
             <p> {text} </p>
+            <Link to="/">
+                <StyledButton> Getting Started </StyledButton>
+            </Link>
         </StyledContent>
     </StyledSection>
 );
