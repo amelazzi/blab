@@ -88152,8 +88152,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    width: 16.2rem;\n    height: 16.2rem;\n    margin: auto;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    border: 1px solid ", ";\n    width: 325px;\n    padding: 24px;\n    text-align: center;\n    img{\n        width: 80%;\n    }\n    h1{\n        padding: 8px;\n        padding-left: 0;\n        padding-right: 0;\n        font-weight: bold;\n        font-size: 2.8rem;\n    }\n    p{\n        padding: 8px;\n        padding-top: 0;\n        padding-bottom: 0;\n        color: ", ";\n        font-size: 2.2rem;\n        line-height: 1.3;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    width: 31rem;\n    text-align: center;\n    p{\n        color: ", ";\n        font-size: 2.1rem;\n        line-height: normal;\n        margin-top: 6rem;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -88167,15 +88177,15 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["darkGray"]);
+var StyledCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["darkGray"]);
+var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 
 var Card = function Card(_ref) {
   var icon = _ref.icon,
-      title = _ref.title,
       text = _ref.text;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: icon
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", text, " "));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", text, " "));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Card);
@@ -88509,7 +88519,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    color: ", ";\n    font-size: 4.5rem;\n    font-weight: bold;\n    margin-top: 10rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    text-align: center;\n    color: ", ";\n    font-size: 4rem;\n    font-weight: bold;\n    margin-top: 6rem;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -88519,7 +88529,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 14rem;\n    padding-bottom: 0;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    padding: 6rem 15.6rem;\n    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -88559,27 +88569,16 @@ var StyledSlider = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["defaul
 var TopTutors = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject6());
 
 var Home = function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHome, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/pic1.png */ "./resources/js/src/pictures/pic1.png"),
-    title: "Over 30 languages course taken on this platform.",
-    text: "Let us take you on a journey through the varieties of  languages thought on this platform by qualified tours."
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/pic2.png */ "./resources/js/src/pictures/pic2.png"),
-    title: "Why use Blab?",
-    text: "Over here at Blab, we take learning really serious,  thats why we have put together the best tutors to take you throught the experience of learning your favorite languageat your convenience. With our mobile friendly platform, you can your online classes at anywhere you are in the world."
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
-    title: "Learn at your convinence",
-    text: "Learning has been made easier with our mobile friendly package. Swith between your computer, tablet or mobile devices at anytime."
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHome, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Why use Blab? "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardsContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    icon: __webpack_require__(/*! ../../pictures/home/learning.png */ "./resources/js/src/pictures/home/learning.png"),
+    text: "We work on our platform to create a good learning style between our teachers and sstudent"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
-    title: "Get the best qualified Tutors",
-    text: "Hire a tutor from our wide range of qualified  teachers who are passionate to impact knowledge to you."
+    icon: __webpack_require__(/*! ../../pictures/home/access.png */ "./resources/js/src/pictures/home/access.png"),
+    text: "Easy access to our platform via our mobile friendly package. switch between your computer, tablet or mobile devices at anytime "
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    icon: __webpack_require__(/*! ../../pictures/icon.png */ "./resources/js/src/pictures/icon.png"),
-    title: "Wide range of Language",
-    text: "Select a language to learn from our wide range of foreign language."
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " What our customers are saying "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSlider, {
+    icon: __webpack_require__(/*! ../../pictures/home/global.png */ "./resources/js/src/pictures/home/global.png"),
+    text: "We have a large global reach of native language for easy communication among our students and instrutors"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " What our customers are saying? "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSlider, {
     autoSlide: false,
     cardsToShow: 1,
     showArrows: false
@@ -89439,6 +89438,17 @@ module.exports = "/images/google.png?cca2c0a9a794ff8dcbc85ed376265659";
 
 /***/ }),
 
+/***/ "./resources/js/src/pictures/home/access.png":
+/*!***************************************************!*\
+  !*** ./resources/js/src/pictures/home/access.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/access.png?fd8afb98727013a0a2514254f34f64c5";
+
+/***/ }),
+
 /***/ "./resources/js/src/pictures/home/background.png":
 /*!*******************************************************!*\
   !*** ./resources/js/src/pictures/home/background.png ***!
@@ -89450,6 +89460,28 @@ module.exports = "/images/background.png?7f944fa857866b68ade732d92441d8f4";
 
 /***/ }),
 
+/***/ "./resources/js/src/pictures/home/global.png":
+/*!***************************************************!*\
+  !*** ./resources/js/src/pictures/home/global.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/global.png?fd10938a07f77e8cf313859770bcc83f";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/home/learning.png":
+/*!*****************************************************!*\
+  !*** ./resources/js/src/pictures/home/learning.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/learning.png?89050a506f32d1d4d730f987f0869974";
+
+/***/ }),
+
 /***/ "./resources/js/src/pictures/home/search.png":
 /*!***************************************************!*\
   !*** ./resources/js/src/pictures/home/search.png ***!
@@ -89458,17 +89490,6 @@ module.exports = "/images/background.png?7f944fa857866b68ade732d92441d8f4";
 /***/ (function(module, exports) {
 
 module.exports = "/images/search.png?773b936110256d40a5fe40aa9fa43666";
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/icon.png":
-/*!********************************************!*\
-  !*** ./resources/js/src/pictures/icon.png ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/icon.png?36da1e72f62588bd913d14c2436c0622";
 
 /***/ }),
 
@@ -89491,28 +89512,6 @@ module.exports = "/images/lifestyle.png?820c3de7ba4c404de6629b5191150463";
 /***/ (function(module, exports) {
 
 module.exports = "/images/paypal.png?624ba67119885c5e553cee64a5763286";
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/pic1.png":
-/*!********************************************!*\
-  !*** ./resources/js/src/pictures/pic1.png ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/pic1.png?a264cb9c026d3aac67eaabe747c475d1";
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/pic2.png":
-/*!********************************************!*\
-  !*** ./resources/js/src/pictures/pic2.png ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/pic2.png?6d85c058dd7f6c59afd269261c93ea20";
 
 /***/ }),
 

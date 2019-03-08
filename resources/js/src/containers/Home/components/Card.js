@@ -4,35 +4,33 @@ import { dark, darkGray } from '../../../styles/utilities/Colors';
 
 const StyledCard = styled.div`
     background: white;
-    border: 1px solid ${dark};
-    width: 325px;
-    padding: 24px;
+    width: 31rem;
     text-align: center;
-    img{
-        width: 80%;
-    }
-    h1{
-        padding: 8px;
-        padding-left: 0;
-        padding-right: 0;
-        font-weight: bold;
-        font-size: 2.8rem;
-    }
     p{
-        padding: 8px;
-        padding-top: 0;
-        padding-bottom: 0;
         color: ${darkGray};
-        font-size: 2.2rem;
-        line-height: 1.3;
+        font-size: 2.1rem;
+        line-height: normal;
+        margin-top: 6rem;
     }
 `;
 
-const Card = ({icon, title, text}) => {
+const IconContainer = styled.div`
+    width: 16.2rem;
+    height: 16.2rem;
+    margin: auto;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+`;
+
+const Card = ({icon, text}) => {
     return (
         <StyledCard>
-            <img src={icon}/>
-            <h1> {title} </h1>
+            <IconContainer>
+                <img src={icon}/>
+            </IconContainer>
             <p> {text} </p>
         </StyledCard>
     );
