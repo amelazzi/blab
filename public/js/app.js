@@ -82126,7 +82126,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    width: 40%;\n    color: ", ";\n    h1{\n        margin-top: 8rem;\n        margin-bottom: 16px;\n        font-size: 4.2rem;\n        font-weight: bold;\n    }\n    p{  \n        margin-top: 3rem;\n        font-size: 3rem;\n        line-height: 1.2;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 40%;\n    color: ", ";\n    h1{\n        margin-top: 8rem;\n        margin-bottom: 16px;\n        font-size: 4.2rem;\n        font-weight: bold;\n    }\n    p{  \n        margin-top: 3rem;\n        font-size: 3rem;\n        line-height: 1.2;\n        font-weight: 300;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -82191,7 +82191,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    width: 40%;\n    margin-left: 10%;\n    color: ", ";\n    h1{\n        margin-top: 8rem;\n        margin-bottom: 16px;\n        font-size: 4.2rem;\n        font-weight: bold;\n    }\n    p{  \n        margin-top: 3rem;\n        font-size: 3rem;\n        line-height: 1.2;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 40%;\n    margin-left: 10%;\n    color: ", ";\n    h1{\n        margin-top: 8rem;\n        margin-bottom: 16px;\n        font-size: 4.2rem;\n        font-weight: bold;\n    }\n    p{  \n        margin-top: 3rem;\n        font-size: 3rem;\n        line-height: 1.2;\n        font-weight: 300;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -89265,13 +89265,13 @@ var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_tem
 var StartedStudent = function StartedStudent() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Styled, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_2__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_StartedHead__WEBPACK_IMPORTED_MODULE_3__["default"], {
     type: "Student (Blabee)",
-    picture: __webpack_require__(/*! ../../pictures/get-started-student.png */ "./resources/js/src/pictures/get-started-student.png")
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/students.png */ "./resources/js/src/pictures/gettingStarted/students.png")
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " How it works "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
     picture: __webpack_require__(/*! ../../pictures/gettingStarted/become-blabee.png */ "./resources/js/src/pictures/gettingStarted/become-blabee.png"),
     title: "Become a Blabee",
     text: "Here on Blab, you are regarded as a Blabee while Toturs regarder as Blabers. So have fun pairing with a blabber today."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/2.png */ "./resources/js/src/pictures/2.png"),
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/mobility.png */ "./resources/js/src/pictures/gettingStarted/mobility.png"),
     title: "Mobility",
     text: "Learn and study on the regardless of your device"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -89279,7 +89279,7 @@ var StartedStudent = function StartedStudent() {
     title: "Make Payment",
     text: "Pay for yout class after being paired with a blabber. Each class cost $10, and you only pay for the class you receive."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/4.png */ "./resources/js/src/pictures/4.png"),
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/taking-class.png */ "./resources/js/src/pictures/gettingStarted/taking-class.png"),
     title: "Taking Class",
     text: "Receive your class online via our platform, with access to live chat and video coverage."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -89372,64 +89372,35 @@ var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_tem
 var StartedStudent = function StartedStudent() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Styled, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_StartedHead__WEBPACK_IMPORTED_MODULE_5__["default"], {
     type: "Tutor (Blabber)",
-    picture: __webpack_require__(/*! ../../pictures/teacher.png */ "./resources/js/src/pictures/teacher.png")
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/teachers.png */ "./resources/js/src/pictures/gettingStarted/teachers.png")
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " How it works "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/1.png */ "./resources/js/src/pictures/1.png"),
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/become-blabee.png */ "./resources/js/src/pictures/gettingStarted/become-blabee.png"),
     title: "Become a Blabber",
     text: "Here on Blab, you are regarded as a Blabber while students are regarded as a blabee. So have fun pairing and teaching a blabee today."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/2.png */ "./resources/js/src/pictures/2.png"),
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/mobility.png */ "./resources/js/src/pictures/gettingStarted/mobility.png"),
     title: "Mobility",
     text: "Explore our convinient services to teach students any time and anywhere, regardless of your device"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/get-paied.png */ "./resources/js/src/pictures/get-paied.png"),
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/receive-payment.png */ "./resources/js/src/pictures/gettingStarted/receive-payment.png"),
     title: "Receiving Payment",
     text: "Get paid via  our system which pay directly to your paypal or payonner  account linked to your account."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/4.png */ "./resources/js/src/pictures/4.png"),
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/taking-class.png */ "./resources/js/src/pictures/gettingStarted/taking-class.png"),
     title: "Tutoring",
     text: "Teach your students online via our live class session,  which includes live video and chat services."
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LeftSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    picture: __webpack_require__(/*! ../../pictures/find-student.png */ "./resources/js/src/pictures/find-student.png"),
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/find-student.png */ "./resources/js/src/pictures/gettingStarted/find-student.png"),
     title: "Find Student",
     text: "Search for new students via our student offers menu,  and select based on your native language."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RightSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    picture: __webpack_require__(/*! ../../pictures/gettingStarted/taking-class.png */ "./resources/js/src/pictures/gettingStarted/taking-class.png"),
+    title: "Blab Academy",
+    text: "Goto our academy everyday for updated lesson plans to guide your next class, and also find latest updates from our supervisors"
   })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (StartedStudent);
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/1.png":
-/*!*****************************************!*\
-  !*** ./resources/js/src/pictures/1.png ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/1.png?78c19c4a10d6ae2ed309ab8376b00d83";
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/2.png":
-/*!*****************************************!*\
-  !*** ./resources/js/src/pictures/2.png ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/2.png?e5a866f61f045d599ac3d7bf81d110d0";
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/4.png":
-/*!*****************************************!*\
-  !*** ./resources/js/src/pictures/4.png ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/4.png?cd0bd0621d93ffa5fc00b6906bb0dc88";
 
 /***/ }),
 
@@ -89477,39 +89448,6 @@ module.exports = "/images/facebook.png?5a161dd8acc9ff5060731e94a2dcf924";
 
 /***/ }),
 
-/***/ "./resources/js/src/pictures/find-student.png":
-/*!****************************************************!*\
-  !*** ./resources/js/src/pictures/find-student.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/find-student.png?652c6cfafa04dbd4b0e4443544bf9bd6";
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/get-paied.png":
-/*!*************************************************!*\
-  !*** ./resources/js/src/pictures/get-paied.png ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/get-paied.png?dfd038098baf64b709052332071f5f64";
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/get-started-student.png":
-/*!***********************************************************!*\
-  !*** ./resources/js/src/pictures/get-started-student.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/get-started-student.png?8e9f9bf1ed7f0c9e18ca282fdb4267ef";
-
-/***/ }),
-
 /***/ "./resources/js/src/pictures/gettingStarted/become-blabee.png":
 /*!********************************************************************!*\
   !*** ./resources/js/src/pictures/gettingStarted/become-blabee.png ***!
@@ -89518,6 +89456,17 @@ module.exports = "/images/get-started-student.png?8e9f9bf1ed7f0c9e18ca282fdb4267
 /***/ (function(module, exports) {
 
 module.exports = "/images/become-blabee.png?bc8d6b6e783bfa350175c4c53b5a4b0d";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/gettingStarted/find-student.png":
+/*!*******************************************************************!*\
+  !*** ./resources/js/src/pictures/gettingStarted/find-student.png ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/find-student.png?b69261ee49c8adb70cc521aad5a55a2e";
 
 /***/ }),
 
@@ -89543,6 +89492,28 @@ module.exports = "/images/make-payment.png?53992e85eb737c7eee8ec91e9b4e2e6a";
 
 /***/ }),
 
+/***/ "./resources/js/src/pictures/gettingStarted/mobility.png":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/pictures/gettingStarted/mobility.png ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/mobility.png?faa3830d3ac289147d53b3b144bb2b32";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/gettingStarted/receive-payment.png":
+/*!**********************************************************************!*\
+  !*** ./resources/js/src/pictures/gettingStarted/receive-payment.png ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/receive-payment.png?7f4519ca74720186b8e3ce31f356a411";
+
+/***/ }),
+
 /***/ "./resources/js/src/pictures/gettingStarted/request-blaber.png":
 /*!*********************************************************************!*\
   !*** ./resources/js/src/pictures/gettingStarted/request-blaber.png ***!
@@ -89554,6 +89525,28 @@ module.exports = "/images/request-blaber.png?46b0601f9fcc1480090d7e83ea5c04c3";
 
 /***/ }),
 
+/***/ "./resources/js/src/pictures/gettingStarted/students.png":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/pictures/gettingStarted/students.png ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/students.png?00d61b0c92553b366d16dec53b84229c";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/gettingStarted/taking-class.png":
+/*!*******************************************************************!*\
+  !*** ./resources/js/src/pictures/gettingStarted/taking-class.png ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/taking-class.png?24ffc13fd80579b64866321c9d589627";
+
+/***/ }),
+
 /***/ "./resources/js/src/pictures/gettingStarted/teacher.png":
 /*!**************************************************************!*\
   !*** ./resources/js/src/pictures/gettingStarted/teacher.png ***!
@@ -89562,6 +89555,17 @@ module.exports = "/images/request-blaber.png?46b0601f9fcc1480090d7e83ea5c04c3";
 /***/ (function(module, exports) {
 
 module.exports = "/images/teacher.png?467cad22e78c520528eede25baf72cf5";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/gettingStarted/teachers.png":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/pictures/gettingStarted/teachers.png ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/teachers.png?2724a289d3c667fe8b90464100e25843";
 
 /***/ }),
 
@@ -89760,17 +89764,6 @@ module.exports = "/images/step2.png?a16fbfcd5066ddec3467a10c54aff8a6";
 /***/ (function(module, exports) {
 
 module.exports = "/images/student.png?35e21faa1cbbfeb8cc0c71faf75658db";
-
-/***/ }),
-
-/***/ "./resources/js/src/pictures/teacher.png":
-/*!***********************************************!*\
-  !*** ./resources/js/src/pictures/teacher.png ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/teacher.png?12bd83a6cbe98f36a5f53e58c3859469";
 
 /***/ }),
 

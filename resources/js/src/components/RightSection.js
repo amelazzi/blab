@@ -31,6 +31,7 @@ const StyledContent = styled.div`
         margin-top: 3rem;
         font-size: 3rem;
         line-height: 1.2;
+        font-weight: 300;
     }
 `;
 

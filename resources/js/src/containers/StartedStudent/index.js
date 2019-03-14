@@ -20,7 +20,7 @@ const StartedStudent = () => {
         <Styled> 
             <Main>
                 <StartedHead type="Student (Blabee)" 
-                    picture={require("../../pictures/get-started-student.png")}>
+                    picture={require("../../pictures/gettingStarted/students.png")}>
                 </StartedHead>
                 <StyledH1> How it works </StyledH1>
                 <LefSection picture={require("../../pictures/gettingStarted/become-blabee.png")}
@@ -29,7 +29,7 @@ const StartedStudent = () => {
                     regarder as Blabers.
                     So have fun pairing with a blabber today.">
                 </LefSection>
-                <RightSection picture={require("../../pictures/2.png")}
+                <RightSection picture={require("../../pictures/gettingStarted/mobility.png")}
                     title="Mobility"
                     text="Learn and study on the regardless of your device">
                 </RightSection>
@@ -38,7 +38,7 @@ const StartedStudent = () => {
                     text="Pay for yout class after being paired with a blabber.
                     Each class cost $10, and you only pay for the class you receive.">
                 </LefSection>
-                <RightSection picture={require("../../pictures/4.png")}
+                <RightSection picture={require("../../pictures/gettingStarted/taking-class.png")}
                     title="Taking Class"
                     text="Receive your class online via our platform,
                     with access to live chat and video coverage.">
