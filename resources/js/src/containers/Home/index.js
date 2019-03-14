@@ -9,7 +9,8 @@ import Head from './components/Head'
 import Card from './components/Card'
 import Testimony from './components/Testimony'
 import RatedTutor from './components/RatedTutor'
-import RightSection from '../../components/RightSection';
+import RightSection from '../../components/RightSection'
+import Footer from './components/Footer'
 
 
 
@@ -50,9 +51,10 @@ const StyledSlider = styled(Slider)`
 
 const TopTutors = styled.div`
     padding: 4rem;
-    padding-bottom: 14rem;
+    padding-bottom: 8rem;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 `;
 
 
@@ -132,6 +134,7 @@ const Home = () => {
                         votes="15">
                     </RatedTutor>
                 </TopTutors>
+                <Footer/>
             </Main>
         </StyledHome>
     );

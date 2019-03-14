@@ -88176,6 +88176,47 @@ var Card = function Card(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/src/containers/Home/components/Footer.js":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/containers/Home/components/Footer.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    height: 53rem;\n    padding: 6rem 23rem;\n    margin-top: 0.5rem;\n    background-image: url(", ");\n    background-size: cover;\n    background-repeat: no-repeat;\n\n    text-align: center;\n    color: ", ";\n    h1{\n        margin: 3rem;\n        font-size: 4rem;\n    }\n    p{\n        font-size: 1.6rem;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var background = __webpack_require__(/*! ../../../pictures/home/footer.png */ "./resources/js/src/pictures/home/footer.png");
+
+var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), background, _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
+
+var Footer = function Footer() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Ready to step into the world of knowledge? "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Take your first step into a world of interactive, fun and comprehnsive knowledge, signup today and get started. and visit our forum to check out whats trending on new topics discussed everyday "));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
 /***/ "./resources/js/src/containers/Home/components/Head.js":
 /*!*************************************************************!*\
   !*** ./resources/js/src/containers/Home/components/Head.js ***!
@@ -88471,8 +88512,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Testimony__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Testimony */ "./resources/js/src/containers/Home/components/Testimony.js");
 /* harmony import */ var _components_RatedTutor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/RatedTutor */ "./resources/js/src/containers/Home/components/RatedTutor.js");
 /* harmony import */ var _components_RightSection__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/RightSection */ "./resources/js/src/components/RightSection.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Footer */ "./resources/js/src/containers/Home/components/Footer.js");
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n    padding: 4rem;\n    padding-bottom: 14rem;\n    display: flex;\n    justify-content: space-between;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 4rem;\n    padding-bottom: 8rem;\n    display: flex;\n    justify-content: space-between;\n    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -88553,6 +88595,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledHome = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var CardsContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var StyledH1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["dark"]);
@@ -88619,7 +88662,7 @@ var Home = function Home() {
     language: "Chiness",
     rate: "4.7",
     votes: "15"
-  }))));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -89458,6 +89501,17 @@ module.exports = "/images/access.png?fd8afb98727013a0a2514254f34f64c5";
 /***/ (function(module, exports) {
 
 module.exports = "/images/background.png?7f944fa857866b68ade732d92441d8f4";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/home/footer.png":
+/*!***************************************************!*\
+  !*** ./resources/js/src/pictures/home/footer.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/footer.png?d2931415785402a89709e27ee114e04d";
 
 /***/ }),
 
