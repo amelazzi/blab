@@ -1,10 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import styled from 'styled-components';
-import { dark, lightGray, blue, darkGray, purple } from '../styles/utilities/Colors';
+import { dark, darkGray, purple } from '../styles/utilities/Colors';
 
 const StyledSection = styled.div`
-    background: white; 
     margin-top: 0.5rem;  
     padding: 4.5rem 12rem 2.5rem 3rem; 
     display: flex;
@@ -16,7 +15,7 @@ const StyledImg = styled.div`
     margin-top: 4rem;
     padding: 8px;
     width: 50%;
-    height: 47rem;
+    height: 52rem;
     img{
         width: 47rem;
         height: 100%;
@@ -49,6 +48,9 @@ const StyledButton = styled.button`
     color: white;
     font-size: 1.8rem;
     padding: 1.2rem 3.8rem;
+    :hover{
+        cursor: pointer;
+    }
 `;
 
 const RightSection = ({picture, title, text}) => (

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { darkGray, light, pink } from '../styles/utilities';
+import { darkGray, light, purple } from '../styles/utilities';
 
 const StyledFooter = styled.footer`
     background: ${darkGray};
+    border-top: 8px solid ${purple};
     font-size: 1.8rem;
 
     display: flex;

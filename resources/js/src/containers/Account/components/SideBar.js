@@ -2,17 +2,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import {purple, dark, lightGray} from '../../../styles/utilities/Colors'
+import {purple, dark, lightGray, darkPurpleGradient, darkPurple} from '../../../styles/utilities/Colors'
 
 const StyledSidBar = styled.div`
+    background: ${purple};
     z-index: 2;
     width: 34rem;
     &,
     *{
         box-sizing: border-box;
     }
-    padding:  12rem 0 12rem 2rem;
-    -webkit-box-shadow: 0 0 10px 0px ${lightGray};
+    padding:  12rem 0rem;
+    box-shadow: 5px 0 5px -5px ${dark};
     font-size: 2.5rem;
     display: flex;
     nav {
@@ -22,21 +23,17 @@ const StyledSidBar = styled.div`
     }
 
     a {
-        color: ${dark};
+        color: white;
         position: relative;
         text-decoration: none;
-        padding: 1rem;
-        margin-bottom: 2rem;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 0.8rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &:hover{
-            color: ${purple};
-            border-right: 3px solid ${purple}
+        :hover{
+            background: ${darkPurple};
         }
-    }
-    img{
-        padding-right: 1rem;
     }
 `;
 

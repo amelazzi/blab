@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { gray, purple, lightGray, light } from '../../../../../styles/utilities/Colors';
+import { light, pink, darkGreen } from '../../../../../styles/utilities/Colors';
 
 import Card from './Card'
 import TutorWallet from './TutorWallet'
 import StudenWallet from './StudentWallet'
 
 
-const TabsContent = styled.div`
+const TabsButton = styled.div`
     display: flex;
     border-bottom: 1px solid ${light};
     align-items: flex-start;
@@ -21,24 +21,19 @@ const TabsContent = styled.div`
     }
 `;
 
-const Courses = styled.div`
-    padding: 6rem 4rem 0 2rem;
+const TabsContent = styled.div`
+    padding: 0rem 3rem;
+    h2{
+        margin-top: 1rem;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.7;
+        margin-left: 2rem;
+    }
 `;
 
-const Course = styled.div`
-    padding-bottom: 6rem;
-`;
-
-const Fab = styled.button`
-    background: ${purple};
-    border: none;
-    border-radius: 100%;
-    padding: 0;
-    width: 8rem;
-    height: 8rem;
-    margin-left: 92%;
-    color: white;
-    font-size: 3.8rem;
+const Cards = styled.div`
+    margin-top: 5rem;
 `;
 
 class Tabs extends Component {
@@ -52,33 +47,28 @@ class Tabs extends Component {
     render() {
         return (
             <>
-                <TabsContent>
+                <TabsButton>
                     <button onClick={() => this.setState({ activeTab: 1 })}> 
                         My Course </button>
                     <button onClick={() => this.setState({ activeTab: 2 })}> 
                         My Wallet </button>
-                </TabsContent>
-                <div>
+                </TabsButton>
+                <TabsContent>
+                    <h2> Welcome</h2>
                     {this.state.activeTab == 1 ? (
-                        <Courses>
-                            <Course>
-                                <h1> Next class </h1>
-                                <Card tutorPic={require("../../../../../pictures/profile.png")}
-                                    tutorName="John Doe"
-                                    className="English"/>
-                            </Course>
-                            <Course>
-                                <h1> Missed class </h1>
-                                <Card tutorPic={require("../../../../../pictures/profile.png")}
-                                    tutorName="John Doe"
-                                    className="English"/>
-                            </Course>
-                            <Fab> + </Fab>
-                        </Courses>) : 
+                        <Cards>
+                            <Card title="WELCOME BLABEES"
+                                content="Search for a babber now to begin receiving classes. click on the icon below to proceed"
+                                fabColor={pink}/>
+                            <Card title="UPDATE YOUR PROFILE"
+                                content="Update your profile and add a profile picture from the icon above,or click on the icon below to proceed"
+                                fabColor={darkGreen}/>
+                        </Cards>
+                    ) : 
                         (
                             <StudenWallet></StudenWallet>
                     )}
-                </div>
+                </TabsContent>
             </>
         );
     }

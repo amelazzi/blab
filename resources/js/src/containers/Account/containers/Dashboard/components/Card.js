@@ -1,79 +1,47 @@
 import React from 'react';
 import styled from 'styled-components'
-import {light, green, purple} from '../../../../../styles/utilities/Colors'
+import {light, green, purple, dark, pink} from '../../../../../styles/utilities/Colors'
 
 const StyledCard  = styled.div`
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    padding: 2rem;
+    padding: 4rem 6rem;
+    margin-bottom: 10rem;
     border: 1px solid ${light};
     box-shadow: 0 4px 4px 0 ${green};
-    button{
-        margin-top: 13rem;
-        margin-left: 38%;
-        border: 3px solid ${green};
-        border-radius: 8px;
-        padding: 0 3rem 0 3rem;
-        background: white;
-        font-size: 1.8rem;
-    }
-`;
+    position: relative;
 
-const TutorProfil = styled.div`
-    padding: 1rem;
     text-align: center;
-    padding-bottom: 4rem;
-    width: 18%;
-    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
-    h3{
-        font-size: 1.8rem;
-        padding: 1rem 0 0 0;
-    }
-    h4{
-        font-size: 1.8rem;
-        padding: 1rem 0 0 0;
-    }
-`;
 
-const ImgContainer = styled.div`
-    width: 30%;
-    margin-left: 35%;
-    img{
-        width: 100%;
-        border-radius: 100%;
+    color: ${dark};
+    font-size: 3rem;
+    font-weight: 500;
+    h1{
+        line-height: 1.7;
     }
-`;
-
-const SessionTime = styled.div`
-    text-align: center;
-    margin-left: 10%;
-    margin-top: 3rem;
     p{
-        font-size: 1.6rem;
-        :nth-child(2){
-            color: ${purple};
-        }
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        line-height: 1.2;
     }
 `;
 
-const Card = ({tutorPic, tutorName, className}) => {
+const Fab = styled.div`
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    background: ${props=>props.fabColor};
+    position:absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-75%, -75%);
+`;
+
+const Card = ({title, content, fabColor}) => {
     return (
         <StyledCard> 
-            <TutorProfil>
-                <ImgContainer>
-                    <img src={tutorPic} />
-                </ImgContainer>
-                <h3> {tutorName} </h3>
-                <h4> {className} class </h4>
-            </TutorProfil>
-            <SessionTime>
-                <p> Next class starts: </p>
-                <p> 05 : 09 : 45 </p>
-                <p>  h : m  : s </p>
-            </SessionTime>
-            <button> Start Class </button>
+            <h1> {title} </h1>
+            <p> {content} </p>
+            <Fab fabColor={fabColor}> + </Fab>
         </StyledCard>
     );
 };

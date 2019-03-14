@@ -54,7 +54,7 @@ const Account = () => {
             </SideBar>  
 
             <Switch>
-                <Route path="/account/dashboard"  component={Dashboard} />
+                <Route exact path="/account/" component={Dashboard} />
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/tutor-class" component={TutorClass} />
                 <Route path="/account/blabber" component={Blabber} />
@@ -62,7 +62,7 @@ const Account = () => {
                 <Route path="/account/notification" component={Notification} />
                 <Route path="/account/student-request" component={StudentRequest} />
                 <Route path="/account/message" component={Message} />
-                <Route exact path="/account/" component={ClassIinfo} />
+                <Route path="/account/class-info" component={ClassIinfo} />
 
             </Switch>
         </StyledAccount>
