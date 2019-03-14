@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import Card from './components/Card'
-import { lightGray } from '../../styles/utilities/Colors'
+import { gray } from '../../styles/utilities/Colors'
 
 const StyledGetStarted = styled.div`
     background: white;
@@ -13,7 +13,7 @@ const StyledGetStarted = styled.div`
     }
     h2{
         font-size: 3.5rem;
-        color: ${lightGray};
+        color: ${gray};
         font-weight: 200;
     }
 
@@ -24,7 +24,7 @@ const Cards = styled.div`
     width: 75%;
     margin-left: 12.5%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 `;
 
 const StyledLink = styled(Link)`
@@ -41,11 +41,11 @@ const GettingStarted = () => {
             <h2> Select your status </h2>
             <Cards>
                 <StyledLink to="/getting-started-student"> 
-                    <Card icon={require("../../pictures/student.png")}
+                    <Card icon={require("../../pictures/gettingStarted/graduation.png")}
                         type="Students"></Card> 
                 </StyledLink>
                 <StyledLink to="/getting-started-tutor">
-                    <Card icon={require("../../pictures/student.png")}
+                    <Card icon={require("../../pictures/gettingStarted/teacher.png")}
                         type="Tutors"></Card>
                 </StyledLink>
             </Cards>  

@@ -87988,7 +87988,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    width: 60%;\n    margin-top: 6rem;\n    margin-left: 40%;\n    border-top-left-radius: 32px;\n    h2{\n        color: white !important;\n        padding: 16px 16px;\n        font-size: 2.4rem !important;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n    width: 60%;\n    margin-left: 40%;\n    border-top-left-radius: 32px;\n    h2{\n        color: white !important;\n        padding: 16px 16px;\n        font-size: 2.4rem !important;\n    }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -87998,7 +87998,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    width: 70%;\n    margin-left: 15%;\n    img{\n        width: 100%;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 14.7rem;\n    height: 14.7rem;\n    margin: auto;\n    img{\n        width: 100%;\n        object-fit: cover;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -88008,7 +88008,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    padding: 4rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 5.5rem 7rem 3rem 7rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -88018,7 +88018,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    width: 300px;\n    text-align: center;\n    -webkit-box-shadow: 1px 1px 10px ", ";\n        box-shadow: 1px 1px 10px ", ";\n    h1{\n        color: ", ";\n        padding: 4rem 0 0 0;\n        font-size: 3rem !important;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 300px;\n    text-align: center;\n    -webkit-box-shadow: 1px 1px 10px ", ";\n        box-shadow: 1px 1px 10px ", ";\n    h1{\n        margin-top: 6rem !important;\n        color: ", ";\n        font-size: 3rem !important;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -88075,7 +88075,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    padding: 5rem;\n    width: 75%;\n    margin-left: 12.5%;\n    display: flex;\n    justify-content: space-between\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 5rem;\n    width: 75%;\n    margin-left: 12.5%;\n    display: flex;\n    justify-content: space-between;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -88101,7 +88101,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledGetStarted = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["lightGray"]);
+var StyledGetStarted = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["gray"]);
 var Cards = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"])(_templateObject3());
 
@@ -88109,12 +88109,12 @@ var GettingStarted = function GettingStarted() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledGetStarted, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Cool! you have taken your first step. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Select your status "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Cards, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     to: "/getting-started-student"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    icon: __webpack_require__(/*! ../../pictures/student.png */ "./resources/js/src/pictures/student.png"),
+    icon: __webpack_require__(/*! ../../pictures/gettingStarted/graduation.png */ "./resources/js/src/pictures/gettingStarted/graduation.png"),
     type: "Students"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     to: "/getting-started-tutor"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    icon: __webpack_require__(/*! ../../pictures/student.png */ "./resources/js/src/pictures/student.png"),
+    icon: __webpack_require__(/*! ../../pictures/gettingStarted/teacher.png */ "./resources/js/src/pictures/gettingStarted/teacher.png"),
     type: "Tutors"
   }))));
 };
@@ -89468,6 +89468,28 @@ module.exports = "/images/get-paied.png?dfd038098baf64b709052332071f5f64";
 /***/ (function(module, exports) {
 
 module.exports = "/images/get-started-student.png?8e9f9bf1ed7f0c9e18ca282fdb4267ef";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/gettingStarted/graduation.png":
+/*!*****************************************************************!*\
+  !*** ./resources/js/src/pictures/gettingStarted/graduation.png ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/graduation.png?e7819d1e873d7d0bf08c2614a746bfa8";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/gettingStarted/teacher.png":
+/*!**************************************************************!*\
+  !*** ./resources/js/src/pictures/gettingStarted/teacher.png ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/teacher.png?467cad22e78c520528eede25baf72cf5";
 
 /***/ }),
 

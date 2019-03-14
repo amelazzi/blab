@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { dark, purple, gray, lightGray } from '../../../styles/utilities/Colors';
+import { dark, purple, lightGray } from '../../../styles/utilities/Colors';
 
 const StyledCard = styled.div`
     width: 300px;
@@ -8,27 +8,28 @@ const StyledCard = styled.div`
     -webkit-box-shadow: 1px 1px 10px ${lightGray};
         box-shadow: 1px 1px 10px ${lightGray};
     h1{
+        margin-top: 6rem !important;
         color: ${dark};
-        padding: 4rem 0 0 0;
         font-size: 3rem !important;
     }
 `;
 
 const StyledContent = styled.div`
-    padding: 4rem;
+    padding: 5.5rem 7rem 3rem 7rem;
 `;
 
 const StyledImg = styled.div`
-    width: 70%;
-    margin-left: 15%;
+    width: 14.7rem;
+    height: 14.7rem;
+    margin: auto;
     img{
         width: 100%;
+        object-fit: cover;
     }
 `;
 const StyledFooter = styled.div`
     background: ${purple};
     width: 60%;
-    margin-top: 6rem;
     margin-left: 40%;
     border-top-left-radius: 32px;
     h2{
