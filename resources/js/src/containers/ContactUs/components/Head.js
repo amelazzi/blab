@@ -3,10 +3,15 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { purple, gray } from '../../../styles/utilities/Colors';
 
+const background = require("../../../pictures/contact.png")
 
 const StyledHead = styled.div`
     padding : 6rem 6rem 0 6rem;
-    background: white;
+    background-image: url(${background});
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 85%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 `;
 
 const HeadContent = styled.div`

@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { purple, gray, dark, lightGray } from '../../../styles/utilities/Colors';
 
 const Forms = styled.div`
-    padding: 8rem 0 16rem 12rem;    
+    padding: 8rem 0 16rem 12rem;   
+    margin-top: 1rem; 
     display: flex;
     flex-direction: column;
     background: white;

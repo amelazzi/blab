@@ -86953,7 +86953,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    padding: 8rem 0 16rem 12rem;    \n    display: flex;\n    flex-direction: column;\n    background: white;\n    textarea{\n        width: 71rem;\n        height: 16rem;\n        padding: 0.5rem 0 0.5rem 0.5rem !important;\n        color: ", " !important;\n    }\n\n    textarea::-webkit-input-placeholder {\n        color: ", " !important;\n        font-weight: 300 !important;\n        font-size: 1.8rem !important;\n    }\n\n    input[type=\"submit\"]{\n        border: none;\n        width: 250px;\n        padding: 1rem 4rem 1rem 4rem;\n        background: ", ";\n        color: white;\n        font-size: 1.8rem;\n        font-weight: normal;\n        margin-left: 0 !important;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding: 8rem 0 16rem 12rem;   \n    margin-top: 1rem; \n    display: flex;\n    flex-direction: column;\n    background: white;\n    textarea{\n        width: 71rem;\n        height: 16rem;\n        padding: 0.5rem 0 0.5rem 0.5rem !important;\n        color: ", " !important;\n    }\n\n    textarea::-webkit-input-placeholder {\n        color: ", " !important;\n        font-weight: 300 !important;\n        font-size: 1.8rem !important;\n    }\n\n    input[type=\"submit\"]{\n        border: none;\n        width: 250px;\n        padding: 1rem 4rem 1rem 4rem;\n        background: ", ";\n        color: white;\n        font-size: 1.8rem;\n        font-weight: normal;\n        margin-left: 0 !important;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -87021,7 +87021,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    padding : 6rem 6rem 0 6rem;\n    background: white;\n"]);
+  var data = _taggedTemplateLiteral(["\n    padding : 6rem 6rem 0 6rem;\n    background-image: url(", ");\n    background-size: 40%;\n    background-repeat: no-repeat;\n    background-position: 85%;\n    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -87036,7 +87036,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledHead = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+
+var background = __webpack_require__(/*! ../../../pictures/contact.png */ "./resources/js/src/pictures/contact.png");
+
+var StyledHead = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), background);
 var HeadContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["purple"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_3__["gray"]);
 
 var Head = function Head() {
@@ -89056,6 +89059,17 @@ module.exports = "/images/avatar.png?d73a4a6a729824445e75f3e1715f6ffd";
 /***/ (function(module, exports) {
 
 module.exports = "/images/comments.png?6ce2301ad135d17224d4fe809f29a48c";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/contact.png":
+/*!***********************************************!*\
+  !*** ./resources/js/src/pictures/contact.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/contact.png?356cc44197cb8faea1accf68815f1bd0";
 
 /***/ }),
 
