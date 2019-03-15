@@ -85045,8 +85045,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
-/* harmony import */ var _components_Notif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Notif */ "./resources/js/src/containers/Account/containers/Notification/components/Notif.js");
+/* harmony import */ var _components_Notif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Notif */ "./resources/js/src/containers/Account/containers/Notification/components/Notif.js");
 function _templateObject4() {
   var data = _taggedTemplateLiteral(["\n    margin-top: 6rem;\n"]);
 
@@ -85092,7 +85091,6 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-
 var StyledNotification = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject2());
 var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
@@ -85105,19 +85103,19 @@ var Notification = function Notification() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
     type: "text",
     placeholder: "Sort"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Notifications, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Notifications, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Your class with Mark John has started",
     detail: "Spanish class",
     time: "20 min"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Your class with Mark John has started",
     detail: "Spanish class",
     time: "20 min"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Your class with Mark John has started",
     detail: "Spanish class",
     time: "20 min"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Your class with Mark John has started",
     detail: "Spanish class",
     time: "20 min"
@@ -87558,11 +87556,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-button-component */ "./node_modules/styled-button-component/lib/index.js");
-/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_button_component__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-dropdown-component */ "./node_modules/styled-dropdown-component/lib/index.js");
-/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
+/* harmony import */ var react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-custom-scrollbars */ "./node_modules/react-custom-scrollbars/lib/index.js");
+/* harmony import */ var react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-button-component */ "./node_modules/styled-button-component/lib/index.js");
+/* harmony import */ var styled_button_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_button_component__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-dropdown-component */ "./node_modules/styled-dropdown-component/lib/index.js");
+/* harmony import */ var styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -87608,8 +87608,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var StyledButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(styled_button_component__WEBPACK_IMPORTED_MODULE_2__["Button"])(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["dark"]);
-var StyledDropdownMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3__["DropdownMenu"])(_templateObject2());
+
+var StyledButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(styled_button_component__WEBPACK_IMPORTED_MODULE_3__["Button"])(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["dark"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_5__["dark"]);
+var StyledDropdownMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["DropdownMenu"])(_templateObject2());
 
 var SimpleDropdown =
 /*#__PURE__*/
@@ -87623,7 +87624,7 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SimpleDropdown).call(this));
     _this.state = {
-      hidden: true
+      hidden: false
     };
     return _this;
   }
@@ -87641,7 +87642,7 @@ function (_Component) {
       var _this2 = this;
 
       var hidden = this.state.hidden;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_3__["Dropdown"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_dropdown_component__WEBPACK_IMPORTED_MODULE_4__["Dropdown"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, {
         secondary: true,
         dropdownToggle: true,
         onClick: function onClick() {
@@ -87649,7 +87650,12 @@ function (_Component) {
         }
       }, this.props.type), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDropdownMenu, {
         hidden: hidden
-      }, this.props.args));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2___default.a, {
+        style: {
+          width: '100%',
+          height: '75vh'
+        }
+      }, this.props.args)));
     }
   }]);
 
@@ -87675,7 +87681,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/utilities */ "./resources/js/src/styles/utilities/index.js");
 function _templateObject11() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n"]);
 
   _templateObject11 = function _templateObject11() {
     return data;
@@ -87685,7 +87691,7 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -87695,7 +87701,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -87705,7 +87711,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -87715,7 +87721,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -87725,7 +87731,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -87735,7 +87741,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n    color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: ", ";\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -87745,7 +87751,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    width: 2rem;\n    height: 2rem;\n    color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 2rem;\n    height: 2rem;\n    background: ", ";\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -87947,6 +87953,21 @@ var TopicsContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].
 
 var LatestTopics = [{
   title: "Welcome to Blab",
+  time: "5minutes",
+  content: "Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet",
+  comments: "25"
+}, {
+  title: "Welcome to Blab2",
+  time: "5minutes",
+  content: "Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet",
+  comments: "25"
+}, {
+  title: "Welcome to Blab3",
+  time: "5minutes",
+  content: "Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet",
+  comments: "25"
+}, {
+  title: "Welcome to Blab2",
   time: "5minutes",
   content: "Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet",
   comments: "25"

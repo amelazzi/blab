@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
+import Scrollbar from 'react-custom-scrollbars'
 import { Button } from 'styled-button-component'
 import { Dropdown, DropdownMenu} from 'styled-dropdown-component'
 
@@ -35,7 +36,7 @@ class SimpleDropdown extends Component {
   constructor(props) {
     super();
     this.state = {
-      hidden: true,
+      hidden: false,
     };
   }
  
@@ -48,18 +49,19 @@ class SimpleDropdown extends Component {
   render() {
     const { hidden } = this.state;
     return (
-      <Dropdown>
-        <StyledButton
-          secondary
-          dropdownToggle
-          onClick={() => this.handleOpenCloseDropdown()}
-        >
-          {this.props.type}
-        </StyledButton>
-        <StyledDropdownMenu hidden={hidden}>
-            {this.props.args}
-        </StyledDropdownMenu>
-      </Dropdown>
+        <Dropdown>
+            <StyledButton
+            secondary
+            dropdownToggle
+            onClick={() => this.handleOpenCloseDropdown()}>
+            {this.props.type}
+            </StyledButton>
+            <StyledDropdownMenu hidden={hidden}>
+                <Scrollbar style={ {width: '100%', height: '75vh'} }>
+                    {this.props.args}
+                </Scrollbar>
+            </StyledDropdownMenu>
+        </Dropdown>
     );
   }
 };

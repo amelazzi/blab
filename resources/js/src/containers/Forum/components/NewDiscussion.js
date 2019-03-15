@@ -40,35 +40,35 @@ const Key = styled.div`
 const RedRectangle = styled.div`
     width: 2rem;
     height: 2rem;
-    color: ${red};
+    background: ${red};
 `;
 
 const GreenRectangle = styled(RedRectangle)`
-    color: ${green};
+    background: ${green};
 `;
 
 const PurpleRectangle = styled(RedRectangle)`
-    color: ${purple};
+    background: ${purple};
 `;
 
 const PinkRectangle = styled(RedRectangle)`
-    color: ${pink};
+    background: ${pink};
 `;
 
 const YellowRectangle = styled(RedRectangle)`
-    color: ${yellow};
+    background: ${yellow};
 `;
 
 const GrayRectangle = styled(RedRectangle)`
-    color: ${lightGray};
+    background: ${lightGray};
 `;
 
 const BlueRectangle = styled(RedRectangle)`
-    color: ${blue};
+    background: ${blue};
 `;
 
 const OrangeRectangle = styled(RedRectangle)`
-    color: ${orange};
+    background: ${orange};
 `;
 
 const NewDiscussion = () => {

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Conversation from './components/Conversation'
 import Chat from './components/Chat'
-import { gray, lightGray } from '../../../../styles/utilities/Colors';
+import { gray } from '../../../../styles/utilities/Colors';
 
 const StyledMessage = styled.div`
     background: white;

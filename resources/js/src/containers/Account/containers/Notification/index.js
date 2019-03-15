@@ -1,6 +1,5 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components'
-import { purple } from '../../../../styles/utilities/Colors';
 
 import Notif from './components/Notif'
 

@@ -44,6 +44,9 @@ const TopicsContainer = styled.div`
 var LatestTopics =[
     {title: "Welcome to Blab", time: "5minutes", content:"Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet", comments:"25"},
     {title: "Welcome to Blab2", time: "5minutes", content:"Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet", comments:"25"},
+    {title: "Welcome to Blab3", time: "5minutes", content:"Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet", comments:"25"},
+    {title: "Welcome to Blab2", time: "5minutes", content:"Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet", comments:"25"},
+    {title: "Welcome to Blab2", time: "5minutes", content:"Welcome all to blab, introduce yourself here, this is where blabbers and blabees meet", comments:"25"}
 ];
 
 const LatestTopic = LatestTopics.map((topic) =>

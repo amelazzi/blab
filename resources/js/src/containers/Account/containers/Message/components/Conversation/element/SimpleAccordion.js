@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Scrollbar from 'react-custom-scrollbars'
 
 import SimpleConversation from './SimpleConversation'
-import { dark, light } from '../../../../../../../styles/utilities/Colors';
+import { dark, light } from '../../../../../../../styles/utilities/Colors'
 
 const StyledCollpsible = styled(Collapsible)`
     width: 38rem;
