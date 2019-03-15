@@ -38,6 +38,22 @@ const BasicClass = BasicClasses.map((BasicClass) =>
     <p key={BasicClass.name}>{BasicClass.name}</p>
 );
 
+
+const PopularCourses = [
+    {id: "1", picture: require("../../../../../../pictures/lifestyle.png"), title:"Homework Help", classNbr:"10"},
+    {id: "2", picture: require("../../../../../../pictures/lifestyle.png"), title:"Homework Help", classNbr:"8"},
+    {id: "3", picture: require("../../../../../../pictures/lifestyle.png"), title:"Homework Help", classNbr:"6"},
+    {id: "4",picture: require("../../../../../../pictures/lifestyle.png"), title:"Homework Help", classNbr:"12"},
+    {id: "5",picture: require("../../../../../../pictures/lifestyle.png"), title:"Homework Help", classNbr:"7"}
+];
+
+const PopularCours = PopularCourses.map((cours)=>
+    <PopularCourse key={cours.id} picture={cours.picture} title={cours.title} classNbr={cours.classNbr} />
+);
+
+
+/*----------------------------- Display Commponent --------------------------*/
+
 const SideMenu = () => {
     return(
         <StyleSideMenu>
@@ -45,22 +61,7 @@ const SideMenu = () => {
             <SimpleCollapsible trigger="OnBroad Study" arg={BasicClass} />
             <StyledH1> Popular Courses </StyledH1>
             <Scrollbar style={ {width: '100%', height: '170rem'} }>
-                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
-                    title="Homework Help" classNbr="10"/>
-                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
-                    title="Homework Help" classNbr="10"/>
-                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
-                    title="Homework Help" classNbr="10"/>
-                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
-                    title="Homework Help" classNbr="10"/>
-                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
-                    title="Homework Help" classNbr="10"/>
-                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
-                    title="Homework Help" classNbr="10"/>
-                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
-                    title="Homework Help" classNbr="10"/>
-                <PopularCourse picture={require("../../../../../../pictures/lifestyle.png")} 
-                    title="Homework Help" classNbr="10"/>
+                {PopularCours}
             </Scrollbar>
         </StyleSideMenu>
     );

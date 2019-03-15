@@ -83390,6 +83390,41 @@ var BasicClass = BasicClasses.map(function (BasicClass) {
     key: BasicClass.name
   }, BasicClass.name);
 });
+var PopularCourses = [{
+  id: "1",
+  picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Homework Help",
+  classNbr: "10"
+}, {
+  id: "2",
+  picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Homework Help",
+  classNbr: "8"
+}, {
+  id: "3",
+  picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Homework Help",
+  classNbr: "6"
+}, {
+  id: "4",
+  picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Homework Help",
+  classNbr: "12"
+}, {
+  id: "5",
+  picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Homework Help",
+  classNbr: "7"
+}];
+var PopularCours = PopularCourses.map(function (cours) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    key: cours.id,
+    picture: cours.picture,
+    title: cours.title,
+    classNbr: cours.classNbr
+  });
+});
+/*----------------------------- Display Commponent --------------------------*/
 
 var SideMenu = function SideMenu() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyleSideMenu, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Current Course"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Collapsible__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -83400,39 +83435,7 @@ var SideMenu = function SideMenu() {
       width: '100%',
       height: '170rem'
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Homework Help",
-    classNbr: "10"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Homework Help",
-    classNbr: "10"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Homework Help",
-    classNbr: "10"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Homework Help",
-    classNbr: "10"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Homework Help",
-    classNbr: "10"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Homework Help",
-    classNbr: "10"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Homework Help",
-    classNbr: "10"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_PopularCourse__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    picture: __webpack_require__(/*! ../../../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Homework Help",
-    classNbr: "10"
-  })));
+  }, PopularCours));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SideMenu);
