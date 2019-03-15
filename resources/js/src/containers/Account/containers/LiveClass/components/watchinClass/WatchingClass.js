@@ -150,6 +150,21 @@ const Goals = ClassGoals.map((goal) =>
 );
 
 
+const Notes = [
+    {id: "1", pic: require("../../../../../../pictures/profile.png"), 
+        content:"Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."},
+    {id: "2", pic: require("../../../../../../pictures/profile.png"), 
+        content:"Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."},
+    {id: "3", pic: require("../../../../../../pictures/profile.png"), 
+        content:"Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."},
+    {id: "4", pic: require("../../../../../../pictures/profile.png"), 
+        content:"Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."},
+];
+
+const Nt = Notes.map((nt)=>
+    <Note key={nt.id} profilePic={nt.pic} content={nt.content} />
+);
+
 const WatchingClass = () => {
     return(
         <StyledWatching> 
@@ -181,22 +196,7 @@ const WatchingClass = () => {
                         Add notes 
                     </StyledBtn>
                     <Scrollbar style={ {width: '100%', height: '40rem'} }>
-                        <Note profilePic={require("../../../../../../pictures/profile.png")}
-                            content="Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber 
-                            epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero 
-                            praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."/>
-                        <Note profilePic={require("../../../../../../pictures/profile.png")}
-                            content="Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber 
-                            epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero 
-                            praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."/>
-                        <Note profilePic={require("../../../../../../pictures/profile.png")}
-                            content="Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber 
-                            epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero 
-                            praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."/>
-                        <Note profilePic={require("../../../../../../pictures/profile.png")}
-                            content="Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber 
-                            epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero 
-                            praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."/>
+                        {Nt}
                     </Scrollbar>
                 </Topics>
             </ClassInfoContainer>

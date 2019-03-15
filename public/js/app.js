@@ -83759,6 +83759,30 @@ var Goals = ClassGoals.map(function (goal) {
     key: goal.content
   }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", goal.content, " "), " ");
 });
+var Notes = [{
+  id: "1",
+  pic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+  content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
+}, {
+  id: "2",
+  pic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+  content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
+}, {
+  id: "3",
+  pic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+  content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
+}, {
+  id: "4",
+  pic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+  content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
+}];
+var Nt = Notes.map(function (nt) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    key: nt.id,
+    profilePic: nt.pic,
+    content: nt.content
+  });
+});
 
 var WatchingClass = function WatchingClass() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledWatching, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TitleContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Live Class "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " 22:56 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(VideoContainer, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ClassInfoContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Basic English "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TutorInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -83775,19 +83799,7 @@ var WatchingClass = function WatchingClass() {
       width: '100%',
       height: '40rem'
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber  epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero  praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber  epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero  praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber  epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero  praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_elements_Note__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    profilePic: __webpack_require__(/*! ../../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
-    content: "Lorem ipsum dolor sit amet, mei ut mediocrem reformidans, pro ei liber  epicurei. At adipisci qualisque mel. Eu idque partiendo mei, homero  praesent philosophia ex ius. Sea veri cetero id, verear indoctum ex duo."
-  })))));
+  }, Nt))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (WatchingClass);
