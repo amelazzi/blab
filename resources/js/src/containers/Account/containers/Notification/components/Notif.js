@@ -34,11 +34,11 @@ const NotifContainer = styled.div`
     }
 `;
 
-const Notif = ({title, detail, time}) => {
+const Notif = ({icon, title, detail, time}) => {
     return (
         <StyledNotif>
             <ImgContainer>
-                <img src={require("../../../../../pictures/book.png")} />
+                <img src={icon} />
             </ImgContainer>
             <NotifContainer>
                 <h1> {title} </h1>

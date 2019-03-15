@@ -13,8 +13,12 @@ const TabsContent = styled.div`
         background: none;
         font-weight: 600;
         margin-right: 6.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 `;
+
 
 const About = styled.div`
     height: 36rem;
@@ -23,6 +27,18 @@ const About = styled.div`
         color: ${dark};
         font-size: 24px;
         font-weight: normal;
+    }
+`;
+
+const StyledIcon = styled.div`
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: -0.2rem;
+    margin-right: 1rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 `;
 
@@ -50,7 +66,11 @@ class Tabs extends Component {
             <>
                 <TabsContent>
                     <button onClick={() => this.setState({ activeTab: 1 })}> 
-                        About </button>
+                        <StyledIcon>
+                            <img src={require("../../../../../pictures/avatar.png")} />
+                        </StyledIcon>
+                        About 
+                    </button>
                     <button onClick={() => this.setState({ activeTab: 2 })}> 
                         Review </button>
                 </TabsContent>

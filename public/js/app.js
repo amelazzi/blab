@@ -84729,11 +84729,12 @@ var ImgContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
 var NotifContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["pink"], _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["lightGray"]);
 
 var Notif = function Notif(_ref) {
-  var title = _ref.title,
+  var icon = _ref.icon,
+      title = _ref.title,
       detail = _ref.detail,
       time = _ref.time;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledNotif, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../../../../pictures/book.png */ "./resources/js/src/pictures/book.png")
+    src: icon
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NotifContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " ", title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " ", detail, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", time, " ago ")));
 };
 
@@ -84753,9 +84754,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_Notif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Notif */ "./resources/js/src/containers/Account/containers/Notification/components/Notif.js");
+/* harmony import */ var react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-custom-scrollbars */ "./node_modules/react-custom-scrollbars/lib/index.js");
+/* harmony import */ var react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Notif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Notif */ "./resources/js/src/containers/Account/containers/Notification/components/Notif.js");
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    margin-top: 6rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin-top: 2rem;\n    padding: 1rem;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -84785,7 +84788,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    width: 75%;\n    padding: 2rem 2rem 0 2rem;\n    padding-bottom: 12rem;\n    h1{\n        padding-left: 2rem;\n        font-size: 3rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 75%;\n    padding: 2rem;\n    h1{\n        padding-left: 2rem;\n        font-size: 3rem;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -84799,10 +84802,58 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledNotification = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input(_templateObject2());
 var InputContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
-var Notifications = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
+var SstyledScrollbar = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(react_custom_scrollbars__WEBPACK_IMPORTED_MODULE_2___default.a)(_templateObject4());
+/*--------------------------- Variables ---------------------------*/
+
+var Nots = [{
+  icon: __webpack_require__(/*! ../../../../pictures/notification/clock.png */ "./resources/js/src/pictures/notification/clock.png"),
+  title: "Your class with Mark John has started",
+  detail: "Spanish class",
+  time: "20 min"
+}, {
+  icon: __webpack_require__(/*! ../../../../pictures/notification/hand-shake.png */ "./resources/js/src/pictures/notification/hand-shake.png"),
+  title: "You haven been matched with Mark John",
+  detail: "Proceed to class",
+  time: "20 min"
+}, {
+  icon: __webpack_require__(/*! ../../../../pictures/notification/reply.png */ "./resources/js/src/pictures/notification/reply.png"),
+  title: "Mark John replied  to your offer",
+  detail: "Reply him now",
+  time: "20 min"
+}, {
+  icon: __webpack_require__(/*! ../../../../pictures/notification/download.png */ "./resources/js/src/pictures/notification/download.png"),
+  title: "Your video was downloaded successfully",
+  detail: "Japaness class (Mark John",
+  time: "20 min"
+}, {
+  icon: __webpack_require__(/*! ../../../../pictures/notification/no-stopping.png */ "./resources/js/src/pictures/notification/no-stopping.png"),
+  title: "Your download was unsuccessful",
+  detail: "Click to resume",
+  time: "20 min"
+}, {
+  icon: __webpack_require__(/*! ../../../../pictures/notification/no-stopping.png */ "./resources/js/src/pictures/notification/no-stopping.png"),
+  title: "Your download",
+  detail: "Click to resume",
+  time: "20 min"
+}, {
+  icon: __webpack_require__(/*! ../../../../pictures/notification/no-stopping.png */ "./resources/js/src/pictures/notification/no-stopping.png"),
+  title: "Your downloadqsdf",
+  detail: "Click to resume",
+  time: "20 min"
+}];
+var Not = Nots.map(function (ntf) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    key: ntf.title,
+    icon: ntf.icon,
+    title: ntf.title,
+    detail: ntf.detail,
+    time: ntf.time
+  });
+});
 
 var Notification = function Notification() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledNotification, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
@@ -84811,23 +84862,12 @@ var Notification = function Notification() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
     type: "text",
     placeholder: "Sort"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Notifications, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Your class with Mark John has started",
-    detail: "Spanish class",
-    time: "20 min"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Your class with Mark John has started",
-    detail: "Spanish class",
-    time: "20 min"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Your class with Mark John has started",
-    detail: "Spanish class",
-    time: "20 min"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Notif__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Your class with Mark John has started",
-    detail: "Spanish class",
-    time: "20 min"
-  })));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SstyledScrollbar, {
+    style: {
+      width: '100%',
+      height: '70rem'
+    }
+  }, Not));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Notification);
@@ -84942,8 +84982,18 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function _templateObject3() {
+function _templateObject4() {
   var data = _taggedTemplateLiteral(["\n    height: 36rem;\n    padding: 0.8rem 0 0 0;\n    p{\n        color: ", ";\n        font-size: 24px;\n        font-weight: normal;\n    }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    width: 2.5rem;\n    height: 2.5rem;\n    margin-top: -0.2rem;\n    margin-right: 1rem;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -84963,7 +85013,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    border-bottom: 1px solid ", ";\n    align-items: flex-start;\n    margin-top: 10.5rem;\n    button{\n        border: none;\n        font-size: 2.6rem;\n        background: none;\n        font-weight: 600;\n        margin-right: 6.6rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    border-bottom: 1px solid ", ";\n    align-items: flex-start;\n    margin-top: 10.5rem;\n    button{\n        border: none;\n        font-size: 2.6rem;\n        background: none;\n        font-weight: 600;\n        margin-right: 6.6rem;\n        display: flex;\n        flex-direction: row;\n        justify-content: space-between;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -84979,7 +85029,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var TabsContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["light"]);
 var About = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
-var Review = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
+var StyledIcon = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
+var Review = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 
 var Tabs =
 /*#__PURE__*/
@@ -85010,7 +85061,9 @@ function (_Component) {
             activeTab: 1
           });
         }
-      }, "About "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: __webpack_require__(/*! ../../../../../pictures/avatar.png */ "./resources/js/src/pictures/avatar.png")
+      })), "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
           return _this2.setState({
             activeTab: 2
@@ -85042,8 +85095,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../styles/utilities/Colors */ "./resources/js/src/styles/utilities/Colors.js");
 /* harmony import */ var _components_SideBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/SideBar */ "./resources/js/src/containers/Account/containers/StudentProfil/components/SideBar.js");
 /* harmony import */ var _components_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Tabs */ "./resources/js/src/containers/Account/containers/StudentProfil/components/Tabs.js");
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n    width: 2.3rem;\n    height: 2.3rem;\n    margin-right: 1rem;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n    }\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n    border: 1px solid ", ";\n    border-radius: 4px;\n    background: white;\n    margin-top: 4.6rem;\n    height: 4.2;\n    padding-right: 3rem;\n    padding-left: 3rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    border: 1px solid ", ";\n    border-radius: 4px;\n    background: white;\n    margin-top: 4.6rem;\n    padding-right: 3rem;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    :hover{\n        cursor: pointer;\n    }\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -85137,6 +85200,7 @@ var RatesContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
 var StyledH3 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h3(_templateObject6());
 var StarContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject7());
 var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject8(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["dark"]);
+var StyledIcon = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject9());
 
 var StudentProfile = function StudentProfile() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledProfil, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfilContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH1, null, " Natasha Jane "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH2, null, " Blabee "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RatesContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH3, null, " 4.0 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -85147,7 +85211,9 @@ var StudentProfile = function StudentProfile() {
     src: __webpack_require__(/*! ../../../../pictures/ratedstar.png */ "./resources/js/src/pictures/ratedstar.png")
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../../pictures/star-2.png */ "./resources/js/src/pictures/star-2.png")
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, null, " Edit Profile "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledIcon, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../../../pictures/info.png */ "./resources/js/src/pictures/info.png")
+  })), "Edit Profile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (StudentProfile);
@@ -88959,14 +89025,14 @@ module.exports = "/images/congratulation.png?792c6f9abb9fc794ca628ba60e543369";
 
 /***/ }),
 
-/***/ "./resources/js/src/pictures/book.png":
-/*!********************************************!*\
-  !*** ./resources/js/src/pictures/book.png ***!
-  \********************************************/
+/***/ "./resources/js/src/pictures/avatar.png":
+/*!**********************************************!*\
+  !*** ./resources/js/src/pictures/avatar.png ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/book.png?762c29e3b6a4724b24853e9359c216fa";
+module.exports = "/images/avatar.png?d73a4a6a729824445e75f3e1715f6ffd";
 
 /***/ }),
 
@@ -89223,6 +89289,17 @@ module.exports = "/images/teachers.png?2724a289d3c667fe8b90464100e25843";
 
 /***/ }),
 
+/***/ "./resources/js/src/pictures/info.png":
+/*!********************************************!*\
+  !*** ./resources/js/src/pictures/info.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/info.png?5f6cbf242d9c6f891043cadab0c6502b";
+
+/***/ }),
+
 /***/ "./resources/js/src/pictures/lifestyle.png":
 /*!*************************************************!*\
   !*** ./resources/js/src/pictures/lifestyle.png ***!
@@ -89245,6 +89322,61 @@ module.exports = "/images/master-card.png?23321ede77f80b118697efcd11c42626";
 
 /***/ }),
 
+/***/ "./resources/js/src/pictures/notification/clock.png":
+/*!**********************************************************!*\
+  !*** ./resources/js/src/pictures/notification/clock.png ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/clock.png?b3b0a8a0e2c59146bb0021ea72ba1887";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/notification/download.png":
+/*!*************************************************************!*\
+  !*** ./resources/js/src/pictures/notification/download.png ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/download.png?e16c9474316c81f4c798f19dc76d0fda";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/notification/hand-shake.png":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/pictures/notification/hand-shake.png ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/hand-shake.png?3287bda0756ae2a24c239ecab575b510";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/notification/no-stopping.png":
+/*!****************************************************************!*\
+  !*** ./resources/js/src/pictures/notification/no-stopping.png ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/no-stopping.png?fbac37591eac9d3e0158cf6eed8226fe";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/notification/reply.png":
+/*!**********************************************************!*\
+  !*** ./resources/js/src/pictures/notification/reply.png ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/reply.png?11d86a16f482a12a67cf00493b8cf0db";
+
+/***/ }),
+
 /***/ "./resources/js/src/pictures/paypal.png":
 /*!**********************************************!*\
   !*** ./resources/js/src/pictures/paypal.png ***!
@@ -89263,7 +89395,7 @@ module.exports = "/images/paypal.png?624ba67119885c5e553cee64a5763286";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/plus.png?9fccdc6b6c884264d9d6bc6a99e8ae0a";
+module.exports = "/images/plus.png?9675612370a68a6d6cdb910a88c3d148";
 
 /***/ }),
 
