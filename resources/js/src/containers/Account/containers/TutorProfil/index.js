@@ -102,6 +102,24 @@ const StyledLink = styled(Link)`
     margin-top: 3rem !important;
 `;
 
+/*--------------------------- Variables ---------------------------*/
+
+const Cards = [
+    {id:"1", picture: require("../../../../pictures/lifestyle.png"), 
+        title:"Lifestyle", classNbr:"10", seenNbr:"5", likeNbr:"8", disLikeNbr:"2"},
+    {id:"2", picture: require("../../../../pictures/lifestyle.png"), 
+        title:"Lifestyle", classNbr:"10", seenNbr:"5", likeNbr:"8", disLikeNbr:"2"},
+    {id:"3", picture: require("../../../../pictures/lifestyle.png"), 
+        title:"Lifestyle", classNbr:"10", seenNbr:"5", likeNbr:"8", disLikeNbr:"2"},
+    {id:"4", picture: require("../../../../pictures/lifestyle.png"), 
+        title:"Lifestyle", classNbr:"10", seenNbr:"5", likeNbr:"8", disLikeNbr:"2"},
+];
+
+const Card = Cards.map((cours)=>
+    <CourseCard key={cours.id} picture={cours.picture} title={cours.title} 
+        classNbr={cours.classNbr} seenNbr={cours.seenNbr} likeNbr={cours.seenNbr} disLikeNbr={cours.disLikeNbr} />
+);
+
 
 const TutorProfile = () => {
     return(
@@ -115,14 +133,7 @@ const TutorProfile = () => {
                 <Courses>
                     <StyledH1> Jeremey walter Course </StyledH1>
                     <StyledSlider autoSlide={false} cardsToShow={3} showArrows={false}>
-                        <CourseCard picture={require("../../../../pictures/lifestyle.png")}
-                            title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/>
-                        <CourseCard picture={require("../../../../pictures/lifestyle.png")}
-                            title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/>
-                        <CourseCard picture={require("../../../../pictures/lifestyle.png")}
-                            title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/> 
-                            <CourseCard picture={require("../../../../pictures/lifestyle.png")}
-                            title="Lifestyle" classNbr="10" seenNbr="29" likeNbr="7" disLikeNbr="5"/> 
+                        {Card}
                     </StyledSlider>
                 </Courses>
                 <Reviews>

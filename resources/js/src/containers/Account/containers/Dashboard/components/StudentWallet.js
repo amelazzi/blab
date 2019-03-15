@@ -80,7 +80,7 @@ const StudentWallet = () => {
                     </Content>
                     <Content>
                         <button>
-                            <img src={require("../../../../../pictures/paypal.png")}/>
+                            <img src={require("../../../../../pictures/master-card.png")}/>
                         </button>
                         <p> Credit Card </p>
                     </Content>

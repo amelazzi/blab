@@ -82969,7 +82969,7 @@ var StudentWallet = function StudentWallet() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wallet, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Balance, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Available balance "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " $300 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreditAccount, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Credit Account "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Payment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Paypal Account ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../../../../pictures/paypal.png */ "./resources/js/src/pictures/paypal.png")
+    src: __webpack_require__(/*! ../../../../../pictures/master-card.png */ "./resources/js/src/pictures/master-card.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Credit Card ")))));
 };
 
@@ -86548,6 +86548,52 @@ var Reviews = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_tem
 var ReviewsInfo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject9(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["orange"]);
 var StarContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject10());
 var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"])(_templateObject11(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_4__["purple"]);
+/*--------------------------- Variables ---------------------------*/
+
+var Cards = [{
+  id: "1",
+  picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Lifestyle",
+  classNbr: "10",
+  seenNbr: "5",
+  likeNbr: "8",
+  disLikeNbr: "2"
+}, {
+  id: "2",
+  picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Lifestyle",
+  classNbr: "10",
+  seenNbr: "5",
+  likeNbr: "8",
+  disLikeNbr: "2"
+}, {
+  id: "3",
+  picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Lifestyle",
+  classNbr: "10",
+  seenNbr: "5",
+  likeNbr: "8",
+  disLikeNbr: "2"
+}, {
+  id: "4",
+  picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
+  title: "Lifestyle",
+  classNbr: "10",
+  seenNbr: "5",
+  likeNbr: "8",
+  disLikeNbr: "2"
+}];
+var Card = Cards.map(function (cours) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    key: cours.id,
+    picture: cours.picture,
+    title: cours.title,
+    classNbr: cours.classNbr,
+    seenNbr: cours.seenNbr,
+    likeNbr: cours.seenNbr,
+    disLikeNbr: cours.disLikeNbr
+  });
+});
 
 var TutorProfile = function TutorProfile() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledProfil, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideBar_SideBar__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
@@ -86560,35 +86606,7 @@ var TutorProfile = function TutorProfile() {
     autoSlide: false,
     cardsToShow: 3,
     showArrows: false
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Lifestyle",
-    classNbr: "10",
-    seenNbr: "29",
-    likeNbr: "7",
-    disLikeNbr: "5"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Lifestyle",
-    classNbr: "10",
-    seenNbr: "29",
-    likeNbr: "7",
-    disLikeNbr: "5"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Lifestyle",
-    classNbr: "10",
-    seenNbr: "29",
-    likeNbr: "7",
-    disLikeNbr: "5"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CourseCard__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    picture: __webpack_require__(/*! ../../../../pictures/lifestyle.png */ "./resources/js/src/pictures/lifestyle.png"),
-    title: "Lifestyle",
-    classNbr: "10",
-    seenNbr: "29",
-    likeNbr: "7",
-    disLikeNbr: "5"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Reviews, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ReviewsInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Blabber Review "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, Card)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Reviews, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ReviewsInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Blabber Review "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../../pictures/ratedstar.png */ "./resources/js/src/pictures/ratedstar.png")
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 5.0 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " (23) "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_8__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Review__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Review__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Review__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     to: "/"
@@ -89176,6 +89194,17 @@ module.exports = "/images/teachers.png?2724a289d3c667fe8b90464100e25843";
 /***/ (function(module, exports) {
 
 module.exports = "/images/lifestyle.png?820c3de7ba4c404de6629b5191150463";
+
+/***/ }),
+
+/***/ "./resources/js/src/pictures/master-card.png":
+/*!***************************************************!*\
+  !*** ./resources/js/src/pictures/master-card.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/master-card.png?23321ede77f80b118697efcd11c42626";
 
 /***/ }),
 
