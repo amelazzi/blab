@@ -85976,12 +85976,17 @@ var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_tem
 var ProfileInfo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), _styles_utilities_Colors__WEBPACK_IMPORTED_MODULE_2__["orange"]);
 var StarContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5());
 
-var Review = function Review() {
+var Review = function Review(_ref) {
+  var picture = _ref.picture,
+      name = _ref.name,
+      starsNbr = _ref.starsNbr,
+      content = _ref.content,
+      time = _ref.time;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledReview, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png")
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Allison Moray "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: picture
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " ", name, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../../../pictures/ratedstar.png */ "./resources/js/src/pictures/ratedstar.png")
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 5 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Good and Wonderfull blabber, had a nice time with him "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " 2 days ago ")));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", starsNbr, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", content, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " ", time, " ago ")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Review);
@@ -86437,7 +86442,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: start;\n    align-items: center;\n    margin-bottom: 4rem;\n    h1, p{\n        font-size: 3rem;\n        margin: 2rem;\n    }\n    h1{\n        margin-top: 0;\n    }\n    p{\n        color: ", ";\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    justify-content: start;\n    align-items: center;\n    margin-bottom: 4rem;\n    h1, p{\n        font-size: 3rem;\n        margin: 0rem 2rem;\n    }\n    p{\n        color: ", ";\n    }\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -86594,6 +86599,38 @@ var Card = Cards.map(function (cours) {
     disLikeNbr: cours.disLikeNbr
   });
 });
+var Rvs = [{
+  id: "1",
+  picture: __webpack_require__(/*! ../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+  name: "Allison Moray",
+  starsNbr: "5",
+  content: "Good and Wonderfull blabber, had a nice time with him",
+  time: "2 days"
+}, {
+  id: "2",
+  picture: __webpack_require__(/*! ../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+  name: "Allison Moray",
+  starsNbr: "5",
+  content: "Good and Wonderfull blabber, had a nice time with him",
+  time: "2 days"
+}, {
+  id: "3",
+  picture: __webpack_require__(/*! ../../../../pictures/profile.png */ "./resources/js/src/pictures/profile.png"),
+  name: "Allison Moray",
+  starsNbr: "5",
+  content: "Good and Wonderfull blabber, had a nice time with him",
+  time: "2 days"
+}];
+var Rv = Rvs.map(function (rv) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Review__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    key: rv.id,
+    picture: rv.picture,
+    name: rv.name,
+    starsNbr: rv.starsNbr,
+    content: rv.content,
+    time: rv.time
+  });
+});
 
 var TutorProfile = function TutorProfile() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledProfil, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideBar_SideBar__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputContent, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Input, {
@@ -86608,7 +86645,7 @@ var TutorProfile = function TutorProfile() {
     showArrows: false
   }, Card)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Reviews, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ReviewsInfo, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Blabber Review "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StarContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../../../pictures/ratedstar.png */ "./resources/js/src/pictures/ratedstar.png")
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 5.0 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " (23) "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_8__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Review__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Review__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Review__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " 5.0 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " (23) "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DropDown__WEBPACK_IMPORTED_MODULE_8__["default"], null)), Rv, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     to: "/"
   }, " + See More "))));
 };

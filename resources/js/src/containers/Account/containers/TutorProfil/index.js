@@ -73,10 +73,7 @@ const ReviewsInfo = styled.div`
     margin-bottom: 4rem;
     h1, p{
         font-size: 3rem;
-        margin: 2rem;
-    }
-    h1{
-        margin-top: 0;
+        margin: 0rem 2rem;
     }
     p{
         color: ${orange};
@@ -120,6 +117,20 @@ const Card = Cards.map((cours)=>
         classNbr={cours.classNbr} seenNbr={cours.seenNbr} likeNbr={cours.seenNbr} disLikeNbr={cours.disLikeNbr} />
 );
 
+const Rvs = [
+    {id: "1", picture: require("../../../../pictures/profile.png"), name:"Allison Moray",
+        starsNbr:"5", content:"Good and Wonderfull blabber, had a nice time with him", time:"2 days"},
+    {id: "2", picture: require("../../../../pictures/profile.png"), name:"Allison Moray",
+        starsNbr:"5", content:"Good and Wonderfull blabber, had a nice time with him", time:"2 days"},
+    {id: "3", picture: require("../../../../pictures/profile.png"), name:"Allison Moray",
+        starsNbr:"5", content:"Good and Wonderfull blabber, had a nice time with him", time:"2 days"},
+];
+
+const Rv = Rvs.map((rv) =>
+    <Review key={rv.id} picture={rv.picture} name={rv.name} 
+        starsNbr={rv.starsNbr} content={rv.content} time={rv.time} />
+);
+
 
 const TutorProfile = () => {
     return(
@@ -144,11 +155,9 @@ const TutorProfile = () => {
                         </StarContainer>
                         <p> 5.0 </p>
                         <p> (23) </p>
-                        <DropDown></DropDown>
+                        <DropDown/>
                     </ReviewsInfo>
-                    <Review/>
-                    <Review/>
-                    <Review/>
+                    {Rv}
                     <StyledLink to="/"> + See More </StyledLink>
                 </Reviews>
             </ProfileContent>

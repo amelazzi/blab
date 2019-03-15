@@ -70,22 +70,22 @@ const StarContainer = styled.div`
     }
 `;
 
-const Review = () => {
+const Review = ({picture, name, starsNbr, content, time}) => {
     return(
         <StyledReview>
             <ImgContainer>
-                <img src={require("../../../../../pictures/profile.png")} />
+                <img src={picture} />
             </ImgContainer>
             <Content>
                 <ProfileInfo>
-                    <h2> Allison Moray </h2>
+                    <h2> {name} </h2>
                     <StarContainer>
                         <img src={require("../../../../../pictures/ratedstar.png")} />
                     </StarContainer>
-                    <p> 5 </p>
+                    <p> {starsNbr} </p>
                 </ProfileInfo>
-                <p> Good and Wonderfull blabber, had a nice time with him </p>
-                <small> 2 days ago </small>
+                <p> {content} </p>
+                <small> {time} ago </small>
             </Content>
         </StyledReview>
     );
