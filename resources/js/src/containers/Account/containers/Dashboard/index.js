@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
 import Tabs from './components/Tabs'
-import { purple } from '../../../../styles/utilities/Colors';
 
 const StyledDashboard  = styled.div`
     width: 75%;

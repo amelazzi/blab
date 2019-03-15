@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { light, pink, darkGreen } from '../../../../../styles/utilities/Colors';
+import { light, pink, darkGreen, green } from '../../../../../styles/utilities/Colors';
 
 import Card from './Card'
 import TutorWallet from './TutorWallet'
@@ -28,7 +28,7 @@ const TabsContent = styled.div`
         font-size: 3rem;
         font-weight: 500;
         line-height: 1.7;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
 `;
 
@@ -59,9 +59,11 @@ class Tabs extends Component {
                         <Cards>
                             <Card title="WELCOME BLABEES"
                                 content="Search for a babber now to begin receiving classes. click on the icon below to proceed"
+                                boxColor={green}
                                 fabColor={pink}/>
                             <Card title="UPDATE YOUR PROFILE"
                                 content="Update your profile and add a profile picture from the icon above,or click on the icon below to proceed"
+                                boxColor={green}
                                 fabColor={darkGreen}/>
                         </Cards>
                     ) : 

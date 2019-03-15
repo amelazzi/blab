@@ -19,6 +19,17 @@ const StyledAccount  = styled.div`
     display: flex;
     justify-content: space-between;
     background: white;
+    align-content: center;
+`;
+
+const StyledIcon = styled.div`
+    width: 3.5rem;
+    height: 3.5rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 `;
 
 const Account = () => {
@@ -27,28 +38,44 @@ const Account = () => {
             <SideBar>
                 <nav>
                     <Link to="/account/dashboard"> Dashboard 
-                        <img src={require("../../pictures/book.png")}/>
+                        <StyledIcon>
+                            <img src={require("../../pictures/sideBar/dashboard.png")}/>
+                        </StyledIcon>
                     </Link>
                     <Link to="/account/my-class"> My Class 
-                        <img src={require("../../pictures/book.png")}/>
+                        <StyledIcon>
+                            <img src={require("../../pictures/sideBar/book.png")}/>
+                        </StyledIcon>
                     </Link>
                     <Link to="/account/tutor-class"> Tutor Class 
-                        <img src={require("../../pictures/book.png")}/>
+                        <StyledIcon>
+                            <img src={require("../../pictures/sideBar/professor.png")}/>
+                        </StyledIcon>
                     </Link>
                     <Link to="/account/blabber"> Blabber 
-                        <img src={require("../../pictures/book.png")}/>
+                        <StyledIcon>
+                            <img src={require("../../pictures/sideBar/question.png")}/>
+                        </StyledIcon>
                     </Link>
                     <Link to="/account/find-blabber"> Find a Blabber 
-                        <img src={require("../../pictures/book.png")}/>
+                        <StyledIcon>
+                            <img src={require("../../pictures/sideBar/dashboard.png")}/>
+                        </StyledIcon>
                     </Link>
                     <Link to="/account/message"> Message 
-                        <img src={require("../../pictures/book.png")}/>
+                        <StyledIcon>
+                            <img src={require("../../pictures/sideBar/email.png")}/>
+                        </StyledIcon>
                     </Link>
                     <Link to="/account/notification"> Notification 
-                        <img src={require("../../pictures/book.png")}/>
+                        <StyledIcon>
+                            <img src={require("../../pictures/sideBar/notification.png")}/>
+                        </StyledIcon>
                     </Link>
                     <Link to="/account/student-request"> Student Request 
-                        <img src={require("../../pictures/book.png")}/>
+                        <StyledIcon>
+                            <img src={require("../../pictures/sideBar/dashboard.png")}/>
+                        </StyledIcon>
                     </Link>
                 </nav>  
             </SideBar>  

@@ -10,7 +10,7 @@ const StyledSignUp = styled.div`
     padding: 6rem;
     h2{
         text-align: center;
-        color: ${lightGray};
+        color: ${gray};
         font-size: 3rem;
     }
 
@@ -46,7 +46,7 @@ const Cards = styled.div`
     width: 75%;
     margin-left: 12.5%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 `;
 
 const StyledLink = styled(Link)`
@@ -61,7 +61,7 @@ const SignUp = () => {
         <StyledSignUp>
             <h2> Step 1 of 3 </h2>
             <MainTitle theme={theme}>
-                <StyledH1 theme={{ main: "#4D70F4" }} >SELECT</StyledH1>
+                <StyledH1 theme={{ main: "#4D70F4" }}>SELECT</StyledH1>
                 <StyledH1> YOUR MODE </StyledH1>
             </MainTitle>
             <h3> Are you registrating as a Student? or a Tutor? select 
@@ -69,12 +69,12 @@ const SignUp = () => {
             </h3>
             <Cards>
                 <StyledLink to="/sign-up2"> 
-                    <Card icon={require("../../pictures/student.png")} 
+                    <Card icon={require("../../pictures/gettingStarted/graduation.png")} 
                         title="Blabee" 
                         type="Student"></Card> 
                 </StyledLink>
                 <StyledLink to="/sign-up2">
-                    <Card icon={require("../../pictures/student.png")} 
+                    <Card icon={require("../../pictures/gettingStarted/teacher.png")} 
                         title="Blabber" 
                         type="Tutor"></Card>
                 </StyledLink>

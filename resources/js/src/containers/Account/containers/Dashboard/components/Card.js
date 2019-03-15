@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components'
-import {light, green, purple, dark, pink} from '../../../../../styles/utilities/Colors'
+import {light, dark} from '../../../../../styles/utilities/Colors'
+
 
 const StyledCard  = styled.div`
     width: 100%;
     padding: 4rem 6rem;
     margin-bottom: 10rem;
     border: 1px solid ${light};
-    box-shadow: 0 4px 4px 0 ${green};
+    box-shadow: 0 4px 4px 0 ${props=>props.boxColor};
     position: relative;
 
     text-align: center;
@@ -34,14 +35,23 @@ const Fab = styled.div`
     top: 100%;
     left: 100%;
     transform: translate(-75%, -75%);
+
+    padding: 2.5rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 `;
 
-const Card = ({title, content, fabColor}) => {
+const Card = ({title, content, boxColor, fabColor}) => {
     return (
-        <StyledCard> 
+        <StyledCard boxColor={boxColor}> 
             <h1> {title} </h1>
             <p> {content} </p>
-            <Fab fabColor={fabColor}> + </Fab>
+            <Fab fabColor={fabColor}>
+                <img src={require("../../../../../pictures/plus.png")}/>
+            </Fab>
         </StyledCard>
     );
 };

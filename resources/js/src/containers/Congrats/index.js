@@ -48,7 +48,7 @@ const Congrats = () => {
             <p> First Name your account has been registred. Click on the
                 link below to proceed to your dashboard
             </p>
-            <img src={require("../../pictures/congrats.png")} />
+            <img src={require("../../pictures/SignUp/congratulation.png")} />
             <StyledLink to="/"> Proceed </StyledLink>
         </StyledCongrats>
     );
