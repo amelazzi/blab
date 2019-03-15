@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components'
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom'
 
 
 import SideBar from './components/SideBar'
-import Dashboard from './containers/Dashboard';
-import MyClass from './containers/Class';
-import Blabber from './containers/Blabber';
-import FindBlabber from './containers/FindBlabber';
-import Notification from './containers/Notification';
-import StudentRequest from './containers/StudiantRequest'
-import Message from './containers/Message';
-import TutorClass from './containers/TutorClass';
-import ClassIinfo from './containers/TutorClass/components/classInfo/ClassInfo';
+import Dashboard from './containers/Dashboard'
+import MyClass from './containers/Class'
+import Blabber from './containers/Blabber'
+import Notification from './containers/Notification'
+import Message from './containers/Message'
+import TutorClass from './containers/TutorClass'
+import ClassIinfo from './containers/TutorClass/components/classInfo/ClassInfo'
 
 
 const StyledAccount  = styled.div`
@@ -57,11 +55,6 @@ const Account = () => {
                             <img src={require("../../pictures/sideBar/question.png")}/>
                         </StyledIcon>
                     </Link>
-                    <Link to="/account/find-blabber"> Find a Blabber 
-                        <StyledIcon>
-                            <img src={require("../../pictures/sideBar/dashboard.png")}/>
-                        </StyledIcon>
-                    </Link>
                     <Link to="/account/message"> Message 
                         <StyledIcon>
                             <img src={require("../../pictures/sideBar/email.png")}/>
@@ -72,11 +65,6 @@ const Account = () => {
                             <img src={require("../../pictures/sideBar/notification.png")}/>
                         </StyledIcon>
                     </Link>
-                    <Link to="/account/student-request"> Student Request 
-                        <StyledIcon>
-                            <img src={require("../../pictures/sideBar/dashboard.png")}/>
-                        </StyledIcon>
-                    </Link>
                 </nav>  
             </SideBar>  
 
@@ -85,9 +73,7 @@ const Account = () => {
                 <Route path="/account/my-class" component={MyClass} />
                 <Route path="/account/tutor-class" component={TutorClass} />
                 <Route path="/account/blabber" component={Blabber} />
-                <Route path="/account/find-blabber" component={FindBlabber} />
                 <Route path="/account/notification" component={Notification} />
-                <Route path="/account/student-request" component={StudentRequest} />
                 <Route path="/account/message" component={Message} />
                 <Route path="/account/class-info" component={ClassIinfo} />
 

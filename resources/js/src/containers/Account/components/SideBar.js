@@ -1,7 +1,6 @@
 
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import styled from 'styled-components'
 import {purple, dark, darkPurple} from '../../../styles/utilities/Colors'
 
 const StyledSidBar = styled.div`
