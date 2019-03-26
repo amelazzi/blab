@@ -19,7 +19,7 @@ Route::group(['middleware' => ['json.response']], function () {
         Route::get('/password/find/{token}', 'ResetPasswordController@find');
         Route::post('/password/reset', 'ResetPasswordController@reset');
 
-        Route::post('/login/{social}/callback', 'SocialController@handleProviderCallback')->where('social', 'facebook|google|');
+        Route::get('/login/{social}/callback', 'SocialController@handleProviderCallback')->where('social', 'facebook|google|');
 
     });
 

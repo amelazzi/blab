@@ -17,10 +17,9 @@ import StartedStudent from './containers/StartedStudent';
 import StartedTutor from './containers/StartedTutor';
 import Account from './containers/Account';
 import StudentProfil from './containers/Account/containers/StudentProfil';
-import TutorProfile from './containers/Account/containers/TutorProfil'
-import LiveClass from './containers/Account/containers/LiveClass'
+import TutorProfile from './containers/Account/containers/TutorProfil';
+import LiveClass from './containers/Account/containers/LiveClass';
 import Forum from './containers/Forum';
-
 
 const StyledContainer = styled.div`
     display: flex;
@@ -48,8 +47,14 @@ class App extends Component {
                     <Route path="/sign-up2" component={SignUp2} />
                     <Route path="/congrats" component={Congrats} />
                     <Route path="/live" component={LiveClass} />
-                    <Route path="/getting-started-student" component={StartedStudent} />
-                    <Route path="/getting-started-tutor" component={StartedTutor} />
+                    <Route
+                        path="/getting-started-student"
+                        component={StartedStudent}
+                    />
+                    <Route
+                        path="/getting-started-tutor"
+                        component={StartedTutor}
+                    />
                     <Footer />
                     <GlobalStyle />
                 </StyledContainer>

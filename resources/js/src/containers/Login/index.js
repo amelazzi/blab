@@ -1,24 +1,24 @@
 import React from 'react';
 
-import styled from 'styled-components'
-import { purple,gray, dark } from '../../styles/utilities';
+import styled from 'styled-components';
+import { purple, gray, dark } from '../../styles/utilities';
 import { Link } from 'react-router-dom';
 
 const StyledLogin = styled.div`
     background: white;
     padding: 8rem;
     text-align: center;
-    h1{
+    h1 {
         padding: 2rem;
         font-size: 6rem;
         color: ${purple};
         font-weight: bold;
     }
-    h2{
+    h2 {
         color: ${gray};
         font-size: 2.5rem;
     }
-    form{
+    form {
         width: 50%;
         margin-left: 25%;
         padding: 4.5rem;
@@ -26,7 +26,7 @@ const StyledLogin = styled.div`
         display: flex;
         flex-direction: column;
     }
-    input[type="submit"]{
+    input[type='submit'] {
         border: none;
         padding: 1rem;
         background: ${purple};
@@ -36,9 +36,10 @@ const StyledLogin = styled.div`
     }
 `;
 
-const FButton = styled.div`
+const FButton = styled.a`
+    text-decoration: none !important;
     background: #3a559f;
-    color: white;
+    color: white !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,26 +50,27 @@ const FButton = styled.div`
 `;
 
 const IconContainer = styled.div`
-    width: 5.8rem;
+    width: 5.2rem;
     height: 5.8rem;
-    background: white;
-    border-radius: 5px 0px 0px 5px;
-    box-shadow: 5px 0 5px -5px #333;
+    background: transparent;
+    border-radius: 0;
+    /* box-shadow: 5px 0 5px -5px #333; */
     margin: 0 !important;
-    padding: 0 !important;
-    img{
+    padding: 1rem !important;
+    img {
+        border-radius: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;  
+        object-fit: cover;
         outline: none !important;
-        
+        background: white;
     }
 `;
 
-
 const GButton = styled(FButton)`
     background: white;
-    color: ${dark};
+    color: ${dark}!important;
+
     margin-top: 0;
     padding-right: 5rem;
     border: 2px solid ${dark};
@@ -80,13 +82,13 @@ const StyledFooter = styled.div`
     width: 60%;
     margin-left: 20%;
     margin-top: 2rem;
-    h3{
+    h3 {
         color: ${dark};
         font-size: 2.3rem;
     }
 `;
 
-const StyledSignUp= styled.div`
+const StyledSignUp = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +104,6 @@ const StyledLink = styled(Link)`
     margin-left: 4px;
 `;
 
-
 const Login = () => {
     return (
         <StyledLogin>
@@ -112,17 +113,17 @@ const Login = () => {
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <input type="submit" value="Sign In" />
-                <FButton> 
+                <FButton href="/redirect/facebook">
                     <IconContainer>
-                        <img src={require("../../pictures/facebook.png")} />
+                        <img src={require('../../pictures/facebook.png')} />
                     </IconContainer>
-                    Continue with Facebook 
+                    Continue with Facebook
                 </FButton>
-                <GButton> 
+                <GButton href="/redirect/google">
                     <IconContainer>
-                        <img src={require("../../pictures/google.png")} />
+                        <img src={require('../../pictures/google.png')} />
                     </IconContainer>
-                    Continue with Google 
+                    Continue with Google
                 </GButton>
             </form>
             <StyledFooter>

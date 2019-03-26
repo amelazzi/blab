@@ -88647,7 +88647,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    width: 60%;\n    margin-left: 20%;\n    margin-top: 2rem;\n    h3{\n        color: ", ";\n        font-size: 2.3rem;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    width: 60%;\n    margin-left: 20%;\n    margin-top: 2rem;\n    h3 {\n        color: ", ";\n        font-size: 2.3rem;\n    }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -88657,7 +88657,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    color: ", ";\n    margin-top: 0;\n    padding-right: 5rem;\n    border: 2px solid ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    color: ", "!important;\n\n    margin-top: 0;\n    padding-right: 5rem;\n    border: 2px solid ", ";\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -88667,7 +88667,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    width: 5.8rem;\n    height: 5.8rem;\n    background: white;\n    border-radius: 5px 0px 0px 5px;\n    box-shadow: 5px 0 5px -5px #333;\n    margin: 0 !important;\n    padding: 0 !important;\n    img{\n        width: 100%;\n        height: 100%;\n        object-fit: cover;  \n        outline: none !important;\n        \n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    width: 5.2rem;\n    height: 5.8rem;\n    background: transparent;\n    border-radius: 0;\n    /* box-shadow: 5px 0 5px -5px #333; */\n    margin: 0 !important;\n    padding: 1rem !important;\n    img {\n        border-radius: 0;\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        outline: none !important;\n        background: white;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -88677,7 +88677,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    background: #3a559f;\n    color: white;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-radius: 5px;\n    font-size: 2.4rem;\n    padding-right: 4rem;\n    margin: 2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n    text-decoration: none !important;\n    background: #3a559f;\n    color: white !important;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-radius: 5px;\n    font-size: 2.4rem;\n    padding-right: 4rem;\n    margin: 2rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -88687,7 +88687,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 8rem;\n    text-align: center;\n    h1{\n        padding: 2rem;\n        font-size: 6rem;\n        color: ", ";\n        font-weight: bold;\n    }\n    h2{\n        color: ", ";\n        font-size: 2.5rem;\n    }\n    form{\n        width: 50%;\n        margin-left: 25%;\n        padding: 4.5rem;\n        padding-bottom: 0;\n        display: flex;\n        flex-direction: column;\n    }\n    input[type=\"submit\"]{\n        border: none;\n        padding: 1rem;\n        background: ", ";\n        color: white;\n        font-size: 3rem;\n        font-weight: bold;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    background: white;\n    padding: 8rem;\n    text-align: center;\n    h1 {\n        padding: 2rem;\n        font-size: 6rem;\n        color: ", ";\n        font-weight: bold;\n    }\n    h2 {\n        color: ", ";\n        font-size: 2.5rem;\n    }\n    form {\n        width: 50%;\n        margin-left: 25%;\n        padding: 4.5rem;\n        padding-bottom: 0;\n        display: flex;\n        flex-direction: column;\n    }\n    input[type='submit'] {\n        border: none;\n        padding: 1rem;\n        background: ", ";\n        color: white;\n        font-size: 3rem;\n        font-weight: bold;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -88703,7 +88703,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var StyledLogin = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["gray"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["purple"]);
-var FButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var FButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a(_templateObject2());
 var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
 var GButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(FButton)(_templateObject4(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["dark"], _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["dark"]);
 var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5(), _styles_utilities__WEBPACK_IMPORTED_MODULE_2__["dark"]);
@@ -88721,9 +88721,13 @@ var Login = function Login() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "submit",
     value: "Sign In"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FButton, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FButton, {
+    href: "/redirect/facebook"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/facebook.png */ "./resources/js/src/pictures/facebook.png")
-  })), "Continue with Facebook"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(GButton, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  })), "Continue with Facebook"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(GButton, {
+    href: "/redirect/google"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: __webpack_require__(/*! ../../pictures/google.png */ "./resources/js/src/pictures/google.png")
   })), "Continue with Google")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledH3, null, " forgot your password? "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSignUp, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " Don't have an account?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     to: "/sign-up"
